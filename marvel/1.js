@@ -333,7 +333,7 @@ setTimeout(() => {
     // imgdiv(name,img,q7,size,midcredit,pc)
 
 
-    imgdiv('Deadpool ', 'pool', '', '1.3GB')
+    imgdiv('Deadpool [1.1GB]', 'pool', 'https://share.bdff.workers.dev/0:/MARVEL/Deadpool.mp4', '1.1GB')
 
 
 
