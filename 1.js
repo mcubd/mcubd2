@@ -359,14 +359,15 @@ setTimeout(() => {
 
     // imgdiv('Yaariyan    [1.2GB]', 'yari', 'https://abcd.bdff.workers.dev/0:/Yaariyan.720.mp4', '1.2GB')
 
-    imgdiv('Doctor Strange [1.2GB]', 'dr', 'https://share.bdff.workers.dev/0:/MCU-720/Doctor.Strange.2016.720p.mp4', '1.2GB','6390','6775')
     
-
-
+    
+    
     imgdiv('Avengers: Endgame [1.6GB]','end','https://share.bdff.workers.dev/0:/MCU-720/Endgame720p.mp4','1.6GB')
+    
+    
+    imgdiv('Doctor Strange [1.2GB]', 'dr', 'https://share.bdff.workers.dev/0:/MCU-720/Doctor.Strange.2016.720p.mp4', '1.2GB','6390','6775')
 
-
-
+    
     imgdiv('Iron Man   [984MB]','iron','https://share.bdff.workers.dev/0:/MCU-720/IronMan-720p.mp4','984MB','','7508')
 
 
