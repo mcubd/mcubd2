@@ -117,7 +117,7 @@ document.getElementById('aa').style.display = 'block'
 
 document.getElementById('buttt').style.float = 'right'
 var op = document.getElementById('lp')
-op.src = './logoimg/log.png'
+op.src = '../logoimg/log.png'
 
 
 

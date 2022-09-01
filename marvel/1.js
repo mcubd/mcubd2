@@ -52,7 +52,7 @@ function mar() {
 
     xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------Marvel-butt-clicked-------------------------', true);
     xhttp.send();
-    // window.open('https://mcubd.herokuapp.com','_self')
+    window.open('https://mcubd.netlify.app/marvel/index','_self')
     
 }
 
