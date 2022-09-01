@@ -52,7 +52,7 @@ function mar() {
 
     xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------Marvel-butt-clicked-------------------------', true);
     xhttp.send();
-    window.open('https://mcubd.netlify.app/marvel/index','_self')
+    // window.open('https://mcubd.herokuapp.com','_self')
     
 }
 
@@ -336,41 +336,6 @@ setTimeout(() => {
 
 
     imgdiv('Guardian of the galaxy vol.2   [1.2GB]', './logoimg/galaxy2.jpg','https://abcd.bdff.workers.dev/0:/Guardian2-mp3.mp4', '1.2GB')
-
-
-
-    imgdiv('Avengers age of ultron [1.2GB]', './logoimg/Avengers2.jpg', 'https://abcd.bdff.workers.dev/0:/ultron-mp3.mp4', '1.2GB')
-
-
-    imgdiv('Guardian of the galaxy vol.1      [1.9GB]','./logoimg/galaxy.jpg','https://abcd.bdff.workers.dev/0:/guardian.mp4','1.9GB')
-
-
-
-    imgdiv('Avengers: Infinity War                [1.3GB]', './logoimg/war.jpg', 'https://abcd.bdff.workers.dev/0:/infinity.mp4', '1.3GB')
-
-    imgdiv('Ant-man [920MB]', './logoimg/ant.jpg', 'https://abcd.bdff.workers.dev/0:/Ant.Man-mp3.mp4', '920 MB')
-
-
-    // imgdiv('Doctor Strange in the Multiverse of Madness ,Coming soon.','drst2.jpg')
-    imgdiv('John Wick [1.7GB]', './logoimg/john1.jpg', 'https://abcd.bdff.workers.dev/0:/John.Wick.1-mp3.mp4', '1.7GB')
-
-    imgdiv('John Wick 2     [1.6GB]', './logoimg/john2.jpg', 'https://abcd.bdff.workers.dev/0:/John.Wick-2-mp3.mp4', '1.6GB')
-
-    imgdiv('Yaariyan    [1.2GB]', './logoimg/yari.jpg', 'https://abcd.bdff.workers.dev/0:/Yaariyan.720.mp4', '1.2GB')
-
-    imgdiv('Doctor Strange [1.2GB]', './logoimg/dr.jpg', 'https://share.bdff.workers.dev/0:/MCU-720/Doctor.Strange.2016.720p.mp4', '1.2GB','6390','6775')
-    
-
-
-    imgdiv('Avengers: Endgame [1.6GB]','./logoimg/end.jpg','https://share.bdff.workers.dev/0:/MCU-720/Endgame720p.mp4','1.6GB')
-
-
-
-    imgdiv('Iron Man   [984MB]','./logoimg/iron.jpg','https://share.bdff.workers.dev/0:/MCU-720/IronMan-720p.mp4','984MB','','7508')
-
-
-
-    imgdiv('Captain America: The First Avenger     [1.2GB]','./logoimg/cap.jpg','https://share.bdff.workers.dev/0:/MCU-720/captain-america-720.mp4','1.2GB')
 
 
 }, 1);

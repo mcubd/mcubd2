@@ -131,7 +131,6 @@ op.src = './logoimg/log.png'
 var scriptElement=document.createElement('script');
 scriptElement.type = 'text/javascript';
 scriptElement.src = './1.js';
-script.setAttribute('id', 'scr1')
 document.body.appendChild(scriptElement);
 
 
