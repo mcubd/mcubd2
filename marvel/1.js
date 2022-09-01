@@ -194,12 +194,12 @@ onli.onclick = () => {
 
         document.body.append(video)
 
-        var ti0 = setTimeout(() => {
-            var vid0 = document.getElementById("viddd");
-            if (vid0.readyState != 4  && vid0.currentTime < 2) {
-                alert('Video loading failed,Plz Reload the Website to fix it')
-            }
-        }, 60000);
+        // var ti0 = setTimeout(() => {
+        //     var vid0 = document.getElementById("viddd");
+        //     if (vid0.readyState != 4  && vid0.currentTime < 2) {
+        //         alert('Video loading failed,Plz Reload the Website to fix it')
+        //     }
+        // }, 60000);
 
         var ti = setTimeout(() => {
             var xhttp = new XMLHttpRequest();
