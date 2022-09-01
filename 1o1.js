@@ -71,8 +71,6 @@ button1.style.display = 'none'
 button2.style.display = 'none'
 button3.style.display = 'none'
 button4.style.display = 'none'
-
-hr.style.color = 'red'
 hr.style.display = 'none'
 button.style.display = 'none'
 
