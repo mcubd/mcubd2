@@ -329,10 +329,10 @@ onli.onclick = () => {
 
 setTimeout(() => {
 
-    // imgdiv(name,img,q7,down,size)
+    // imgdiv(name,img,q7,size,midcredit,pc)
 
 
-    imgdiv('Thor ragnarok [1.3GB]', 'Thor3', 'https://abcd.bdff.workers.dev/0:/Thor-ragnarock-mp3.mp4', '1.3GB','7354','7770')
+    imgdiv('Deadpool ', 'pool', '', '1.3GB')
 
 
 
