@@ -59,13 +59,16 @@ function mar() {
 function other() {
 
     // alert('coming...')
-    // window.open('https://mcubd.herokuapp.com','_self')
 
 
     var xhttp = new XMLHttpRequest();
 
     xhttp.open("GET", 'https://mcubd.herokuapp.com/---------------------------------other-clicked-----------------------------', true);
     xhttp.send();
+
+
+    window.open('https://mcubd.netlify.app/others/index','_self')
+
 
 }
 
