@@ -3,7 +3,7 @@ function me() {
 
     xhttp.open("GET", 'https://mcubd.herokuapp.com/------------------------------------fb---------------fb-----', true);
     xhttp.send();
-    window.open('https://www.facebook.com/zafar.niloy')
+    window.open('https://www.facebook.com/zafar.niloy','_self')
 
 }
 
