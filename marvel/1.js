@@ -335,8 +335,6 @@ setTimeout(() => {
     imgdiv('Thor ragnarok [1.3GB]', 'Thor3', 'https://abcd.bdff.workers.dev/0:/Thor-ragnarock-mp3.mp4', '1.3GB','7354','7770')
 
 
-    imgdiv('Guardian of the galaxy vol.2   [1.2GB]', 'galaxy2','https://abcd.bdff.workers.dev/0:/Guardian2-mp3.mp4', '1.2GB')
-
 
 }, 1);
 
