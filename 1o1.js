@@ -58,7 +58,7 @@ button4.setAttribute('onclick', 'other()')
 
 
 button.innerText = 'Contact me?/Movie request'
-h4.innerText = 'If you face Sound problem or video problem in Online watching use a different browser or Download the movie and watch the downloaded movie in vlc player(Search vlc in playstore). I am repeating watch downloaded movie in vlc player ,if you play it from galary or other player you may face sound problem,but in vlc player there will be no problem '
+h4.innerText = 'If you face Sound problem or video problem in Online watching use a different browser or Download the movie and watch the downloaded movie in vlc player(Search vlc in playstore). I am repeating watch downloaded movie in vlc player ,if you play it from galary or other player you may face sound problem,but in vlc player there will be no problem..'
 button1.innerText = 'MCU'
 button2.innerText = 'MCU-Seris'
 button3.innerText = 'Marvel'
