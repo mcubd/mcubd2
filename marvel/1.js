@@ -87,7 +87,7 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
 
     chidiv.classList.add('chi');
     iiidiv.classList.add('iii');
-    image.src = '../logoimg/'+bimg+'jpg'
+    image.src = '../logoimg/'+bimg+'.jpg'
 
     iiidiv.append(image)
     chidiv.append(iiidiv, p)
