@@ -352,11 +352,9 @@ setTimeout(() => {
 
 
     // imgdiv('Doctor Strange in the Multiverse of Madness ,Coming soon.','drst2.jpg')
-    imgdiv('John Wick [1.7GB]', 'john1', 'https://abcd.bdff.workers.dev/0:/John.Wick.1-mp3.mp4', '1.7GB')
 
-    imgdiv('John Wick 2     [1.6GB]', 'john2', 'https://abcd.bdff.workers.dev/0:/John.Wick-2-mp3.mp4', '1.6GB')
 
-    imgdiv('Yaariyan    [1.2GB]', 'yari', 'https://abcd.bdff.workers.dev/0:/Yaariyan.720.mp4', '1.2GB')
+    // imgdiv('Yaariyan    [1.2GB]', 'yari', 'https://abcd.bdff.workers.dev/0:/Yaariyan.720.mp4', '1.2GB')
 
     imgdiv('Doctor Strange [1.2GB]', 'dr', 'https://share.bdff.workers.dev/0:/MCU-720/Doctor.Strange.2016.720p.mp4', '1.2GB','6390','6775')
     
