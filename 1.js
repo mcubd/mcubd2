@@ -369,5 +369,8 @@ setTimeout(() => {
 
 
 
+    imgdiv('Captain America: The First Avenger     [1.2GB]','./logoimg/cap.jpg','https://share.bdff.workers.dev/0:/MCU-720/captain-america-720.mp4','1.2GB')
+
+
 }, 1);
 
