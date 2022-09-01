@@ -87,7 +87,7 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
 
     chidiv.classList.add('chi');
     iiidiv.classList.add('iii');
-    image.src = bimg
+    image.src ='./logoimg/'+ bimg+'.jpg'
 
     iiidiv.append(image)
     chidiv.append(iiidiv, p)
@@ -335,7 +335,7 @@ setTimeout(() => {
     imgdiv('Thor ragnarok [1.3GB]', './logoimg/Thor3.jpg', 'https://abcd.bdff.workers.dev/0:/Thor-ragnarock-mp3.mp4', '1.3GB','7354','7770')
 
 
-    imgdiv('Guardian of the galaxy vol.2   [1.2GB]', './logoimg/galaxy2.jpg','https://abcd.bdff.workers.dev/0:/Guardian2-mp3.mp4', '1.2GB')
+    imgdiv('Guardian of the galaxy vol.2   [1.2GB]', 'galaxy2','https://abcd.bdff.workers.dev/0:/Guardian2-mp3.mp4', '1.2GB')
 
 
 
