@@ -58,19 +58,21 @@ button4.setAttribute('onclick', 'other()')
 
 
 button.innerText = 'Contact me?/Movie request'
-h4.innerText = 'If you face Sound problem or video problem in Online watching use a different browser or Download the movie and watch the downloaded movie in vlc player(Search vlc in playstore). I am repeating watch downloaded movie in vlc player ,if you play it from galary or other player you may face sound problem,but in vlc player there will be no problem'
+h4.innerText = 'Our domain name changed from "mcubd1.web.app" to "mcubd.netlify.app"'
 button1.innerText = 'MCU'
 button2.innerText = 'MCU-Seris'
 button3.innerText = 'Marvel'
 button4.innerText = 'Others'
 
-aa.innerText = 'Vlc'
+// aa.innerText = 'Vlc'
 
 
 button1.style.display = 'none'
 button2.style.display = 'none'
 button3.style.display = 'none'
 button4.style.display = 'none'
+
+hr.style.color = 'red'
 hr.style.display = 'none'
 button.style.display = 'none'
 
