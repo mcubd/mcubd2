@@ -313,7 +313,40 @@ onli.onclick = () => {
         e9.style.marginBottom = '10px'
 
   
-        document.body.append(e1,e2,e3,e4,e5,e6)
+
+
+
+
+
+
+
+
+
+    if(epi9!=undefined && epi9 !=''){
+        document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9)
+    }else{
+        if(epi8!=undefined && epi8 !=''){
+            document.body.append(e1,e2,e3,e4,e5,e6,e7,e8)
+        }else{
+            if(epi7!=undefined && epi7 !=''){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7)
+            }else{
+                if(epi6!=undefined && epi6 !=''){
+                    document.body.append(e1,e2,e3,e4,e5,e6)
+                }else{
+                    if(epi5!=undefined && epi5 !=''){
+                        document.body.append(e1,e2,e3,e4,e5)
+                    }else{
+                        if(epi4!=undefined && epi4 !=''){
+                            document.body.append(e1,e2,e3,e4)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 
 
 
