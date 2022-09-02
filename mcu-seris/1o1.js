@@ -107,8 +107,8 @@ hr.style.cssText = 'margin: 0;border-color: #473737;'
 
 
 document.getElementById('but1').style.display = ''
-document.getElementById('but2').style.display = ''
-document.getElementById('but2').style.backgroundColor = 'grey'
+// document.getElementById('but2').style.display = ''
+// document.getElementById('but2').style.backgroundColor = 'grey'
 document.getElementById('but3').style.display = ''
 document.getElementById('but4').style.display = ''
 document.getElementById('hr').style.display = ''
