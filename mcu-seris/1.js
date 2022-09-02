@@ -314,8 +314,53 @@ onli.onclick = () => {
 
   
 
+        e1.onclick=function (){
+        alert('e1')
+        
+        }
 
 
+        e2.onclick=function (){
+        
+        
+        }
+
+        e3.onclick=function (){
+        
+        
+        }
+
+        e4.onclick=function (){
+        
+        
+        }
+
+        e5.onclick=function (){
+        
+        
+        }
+
+        e6.onclick=function (){
+        alert('e6')
+        
+        }
+
+        e7.onclick=function (){
+        
+        
+        }
+
+        e8.onclick=function (){
+        
+        
+        }
+
+        e9.onclick=function (){
+        
+        
+        }
+
+        
 
 
 
