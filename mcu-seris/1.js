@@ -324,7 +324,7 @@ onli.onclick = () => {
 
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var track  = document.createElement("track ");
+        var track  = document.createElement("text  ");
 
 
         video.setAttribute('controls', 'true')
@@ -334,9 +334,9 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         track.setAttribute('src', 'https://share.bdff.workers.dev/0:/Subtittle/moon1.srt')
-        track.setAttribute('kind', 'subtitles')
-        track.setAttribute('srclang', 'en')
-        track.setAttribute('label', 'English')
+        track.setAttribute('category', 'CC')
+        track.setAttribute('lang', 'en')
+        track.setAttribute('type', 'text/x-srt')
 
 
 
