@@ -23,6 +23,9 @@ function mcus() {
 
     xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------Marvel--seris--clicked------------------------', true);
     xhttp.send();
+
+    window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
+
 }
 
 function mcu() {
