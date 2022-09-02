@@ -315,9 +315,16 @@ onli.onclick = () => {
   
 
         e1.onclick=function (){
-
-            // var onli = document.getElementById('onli')
+            e1.remove()
             e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
 
                 // var video = document.createElement("video");
         // var source = document.createElement("source");
