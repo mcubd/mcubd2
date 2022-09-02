@@ -841,12 +841,13 @@ onli.onclick = () => {
 
 setTimeout(() => {
 
-    // imgdiv(name,img,q7,size,midcredit,pc)
 
 
-    imgdiv('Moon Knight', 'moon','450MB','hi1','eng1','hi2','eng2','hi3','eng3','hi4','eng4','hi5','eng5','hi6','eng6')
+
+    // imgdiv('Moon Knight', 'moon','450MB','hi1','eng1','hi2','eng2','hi3','eng3','hi4','eng4','hi5','eng5','hi6','eng6')
 
 
+    imgdiv('Moon Knight', 'moon','450MB','https://share.bdff.workers.dev/0:/MCU-SERIS/moon1.mp4','eng1','hi2','eng2','hi3','eng3','hi4','eng4','hi5','eng5','hi6','eng6')
 
 }, 1);
 
