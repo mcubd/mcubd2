@@ -333,7 +333,7 @@ onli.onclick = () => {
         video.setAttribute('controlsList', ' nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
 
-        track.setAttribute('src', '../moon1.srt')
+        track.setAttribute('src', './moon1.srt')
         track.setAttribute('kind', 'subtitles')
         track.setAttribute('srclang', 'en')
         track.setAttribute('label', 'English')
