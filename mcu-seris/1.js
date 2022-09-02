@@ -274,7 +274,7 @@ onli.onclick = () => {
 
         e2.style.display = 'block'
         e2.style.width = '100%'
-        e2.style.padding = '50px'
+        e2.style.padding = '20px'
         e2.style.marginBottom = '10px'
   
         e3.style.display = 'block'
