@@ -324,20 +324,14 @@ onli.onclick = () => {
 
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var track  = document.createElement("TRACK");
 
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
         video.setAttribute('id', 'viddd')
-        video.setAttribute('controlsList', ' nodownload ')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
 
-        track.setAttribute('src', 'https://mcubd.netlify.app/moon1.vtt')
-        track.setAttribute('kind', 'subtitles')
-        track.setAttribute('srclang', 'en')
-        track.setAttribute('label', 'English Subtitles')
-        track.setAttribute('default', true)
 
 
         
@@ -363,7 +357,7 @@ onli.onclick = () => {
             eng.remove()
             source.src = epi1e
 
-            video.append(source,track)
+            video.append(source)
             document.body.append(video)
         }
 
