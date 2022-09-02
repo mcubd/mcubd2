@@ -315,7 +315,34 @@ onli.onclick = () => {
   
 
         e1.onclick=function (){
-        alert('e1')
+
+            // var onli = document.getElementById('onli')
+            e2.remove()
+
+                // var video = document.createElement("video");
+        // var source = document.createElement("source");
+        // var mic = document.createElement("button");
+        // var poc = document.createElement("button");
+
+        // video.setAttribute('controls', 'true')
+        // video.setAttribute('autoplay', 'true')
+        // video.setAttribute('id', 'viddd')
+        // video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        // video.setAttribute('oncontextmenu', 'return false;')
+
+        // source.setAttribute('id', 'srcc')
+        // mic.setAttribute('id', 'mic')
+        // poc.setAttribute('id', 'poc')
+        
+        // video.width = w * .94
+        // video.style.marginTop = '20px'
+        // source.src = epi1
+
+        // mic.innerText = 'Mid-Credit'
+        // poc.innerText = 'Post-Credit'
+
+                // mic.style.padding = '20px'
+        // poc.style.padding = '20px'
         
         }
 
@@ -341,7 +368,7 @@ onli.onclick = () => {
         }
 
         e6.onclick=function (){
-        alert('e6')
+        
         
         }
 
