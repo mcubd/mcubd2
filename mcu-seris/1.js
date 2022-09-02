@@ -268,7 +268,7 @@ onli.onclick = () => {
 
         e1.style.display = 'block'
         e1.style.width = '100%'
-        e1.style.padding = '50px'
+        e1.style.padding = '20px'
         e1.style.marginBottom = '10px'
   
 
@@ -279,37 +279,37 @@ onli.onclick = () => {
   
         e3.style.display = 'block'
         e3.style.width = '100%'
-        e3.style.padding = '50px'
+        e3.style.padding = '20px'
         e3.style.marginBottom = '10px'
   
         e4.style.display = 'block'
         e4.style.width = '100%'
-        e4.style.padding = '50px'
+        e4.style.padding = '20px'
         e4.style.marginBottom = '10px'
   
         e5.style.display = 'block'
         e5.style.width = '100%'
-        e5.style.padding = '50px'
+        e5.style.padding = '20px'
         e5.style.marginBottom = '10px'
   
         e6.style.display = 'block'
         e6.style.width = '100%'
-        e6.style.padding = '50px'
+        e6.style.padding = '20px'
         e6.style.marginBottom = '10px'
   
         e7.style.display = 'block'
         e7.style.width = '100%'
-        e7.style.padding = '50px'
+        e7.style.padding = '20px'
         e7.style.marginBottom = '10px'
   
         e8.style.display = 'block'
         e8.style.width = '100%'
-        e8.style.padding = '50px'
+        e8.style.padding = '20px'
         e8.style.marginBottom = '10px'
   
         e9.style.display = 'block'
         e9.style.width = '100%'
-        e9.style.padding = '50px'
+        e9.style.padding = '20px'
         e9.style.marginBottom = '10px'
 
   
