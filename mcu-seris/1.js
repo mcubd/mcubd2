@@ -333,10 +333,10 @@ onli.onclick = () => {
         video.setAttribute('controlsList', ' nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
 
-        track.setAttribute('src', 'https://mcubd.netlify.app/moon1.srt')
+        track.setAttribute('src', 'https://mcubd.netlify.app/moon1.vtt')
         track.setAttribute('kind', 'subtitles')
         track.setAttribute('srclang', 'en')
-        track.setAttribute('label', 'English')
+        track.setAttribute('label', 'English Subtitles')
         track.setAttribute('default', true)
 
 
