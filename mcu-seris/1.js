@@ -337,8 +337,10 @@ onli.onclick = () => {
         track.setAttribute('kind', 'subtitles')
         track.setAttribute('srclang', 'en')
         track.setAttribute('label', 'English')
+        track.setAttribute('default', true)
 
 
+        
 
         source.setAttribute('id', 'srcc')
         
