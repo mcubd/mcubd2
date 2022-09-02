@@ -317,16 +317,13 @@ onli.onclick = () => {
             eng.style.padding = '15px'
     
             document.body.append(hi,eng)
+            // document.body.append(hi,eng)
 
-
-            // document.body.append(video, button)
 
 
 
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
@@ -335,17 +332,10 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
         
         video.width = w * .94
         video.style.marginTop = '20px'
         // source.src = epi1
-
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
         
 
 
@@ -380,10 +370,26 @@ onli.onclick = () => {
             e9.remove()
 
 
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
@@ -392,20 +398,29 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
         
         video.width = w * .94
         video.style.marginTop = '20px'
-        source.src = epi2
 
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
         
-        video.append(source)
-        document.body.append(video)
+        hi.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi2
+
+            video.append(source)
+            document.body.append(video)
+        }
+        eng.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi2e
+
+            video.append(source)
+            document.body.append(video)
+        }
+
+
         }
         e3.onclick=function (){
             e1.remove()
@@ -419,10 +434,26 @@ onli.onclick = () => {
             e9.remove()
 
 
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
@@ -431,20 +462,28 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
+
         
         video.width = w * .94
         video.style.marginTop = '20px'
-        source.src = epi3
 
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
-        
-        video.append(source)
-        document.body.append(video)
+        hi.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi3
+
+            video.append(source)
+            document.body.append(video)
+        }
+        eng.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi3e
+
+            video.append(source)
+            document.body.append(video)
+        }
+
         
         }
         e4.onclick=function (){
@@ -459,10 +498,26 @@ onli.onclick = () => {
             e9.remove()
 
 
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
@@ -471,20 +526,28 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
+
         
         video.width = w * .94
         video.style.marginTop = '20px'
-        source.src = epi4
-
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
         
-        video.append(source)
-        document.body.append(video)
+        hi.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi4
+
+            video.append(source)
+            document.body.append(video)
+        }
+        eng.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi4e
+
+            video.append(source)
+            document.body.append(video)
+        }
+
         }
         e5.onclick=function (){
             e1.remove()
@@ -498,10 +561,27 @@ onli.onclick = () => {
             e9.remove()
 
 
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
+
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
@@ -510,20 +590,29 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
+
         
         video.width = w * .94
         video.style.marginTop = '20px'
-        source.src = epi5
 
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
         
-        video.append(source)
-        document.body.append(video)
+        hi.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi5
+
+            video.append(source)
+            document.body.append(video)
+        }
+        eng.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi5e
+
+            video.append(source)
+            document.body.append(video)
+        }
+
         
         }
         e6.onclick=function (){
@@ -538,10 +627,26 @@ onli.onclick = () => {
             e9.remove()
 
 
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
@@ -550,20 +655,29 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
+
         
         video.width = w * .94
         video.style.marginTop = '20px'
-        source.src = epi6
 
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
         
-        video.append(source)
-        document.body.append(video)
+        hi.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi6
+
+            video.append(source)
+            document.body.append(video)
+        }
+        eng.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi6e
+
+            video.append(source)
+            document.body.append(video)
+        }
+
         
         }
         e7.onclick=function (){
@@ -578,10 +692,26 @@ onli.onclick = () => {
             e9.remove()
 
 
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
@@ -590,20 +720,29 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
+
         
         video.width = w * .94
         video.style.marginTop = '20px'
-        source.src = epi7
 
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
         
-        video.append(source)
-        document.body.append(video)
+        hi.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi7
+
+            video.append(source)
+            document.body.append(video)
+        }
+        eng.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi7e
+
+            video.append(source)
+            document.body.append(video)
+        }
+
         
         }
         e8.onclick=function (){
@@ -618,10 +757,26 @@ onli.onclick = () => {
             e9.remove()
 
 
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
@@ -630,20 +785,27 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
         
         video.width = w * .94
         video.style.marginTop = '20px'
-        source.src = epi8
-
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
         
-        video.append(source)
-        document.body.append(video)
+        hi.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi8
+
+            video.append(source)
+            document.body.append(video)
+        }
+        eng.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi8e
+
+            video.append(source)
+            document.body.append(video)
+        }
+
         
         }
         e9.onclick=function (){
@@ -658,10 +820,26 @@ onli.onclick = () => {
             e9.remove()
 
 
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
@@ -670,20 +848,28 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
+
         
         video.width = w * .94
         video.style.marginTop = '20px'
-        source.src = epi9
-
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
         
-        video.append(source)
-        document.body.append(video)
+        hi.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi9
+
+            video.append(source)
+            document.body.append(video)
+        }
+        eng.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi9e
+
+            video.append(source)
+            document.body.append(video)
+        }
+
         
         }
 
@@ -855,7 +1041,7 @@ setTimeout(() => {
     // imgdiv('Moon Knight', 'moon','450MB','hi1','eng1','hi2','eng2','hi3','eng3','hi4','eng4','hi5','eng5','hi6','eng6')
 
 
-    imgdiv('Moon Knight', 'moon','450MB','https://share.bdff.workers.dev/0:/MCU-SERIS/moon1.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon1-eng.mp4','hi2','eng2','hi3','eng3','hi4','eng4','hi5','eng5','hi6','eng6')
+    imgdiv('Moon Knight', 'moon','450MB','https://share.bdff.workers.dev/0:/MCU-SERIS/moon1.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon1-eng.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon2.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon2-eng.mp4','hi3','eng3','hi4','eng4','hi5','eng5','hi6','eng6')
 
 }, 1);
 
