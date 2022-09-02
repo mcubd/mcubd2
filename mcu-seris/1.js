@@ -62,7 +62,6 @@ function mar() {
 function other() {
 
     // alert('coming...')
-     window.open('https://mcubd.netlify.app/others/index','_self')
 
 
 
@@ -71,13 +70,17 @@ function other() {
     xhttp.open("GET", 'https://mcubd.herokuapp.com/---------------------------------other-clicked-----------------------------', true);
     xhttp.send();
 
+    window.open('https://mcubd.netlify.app/others/index','_self')
+
+
 }
 
 
 
 
+// function imgdiv(bname, bimg,size,t1,t2) {
 
-function imgdiv(bname, bimg, q7pp,size,t1,t2) {
+function imgdiv(bname, bimg,size,epi1,epi2,epi3,epi4,epi5,epi6,epi7,epi8,epi9) {
     var w = window.innerWidth;
     var h = window.innerHeight;
     var g = w * .3939
@@ -133,9 +136,7 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
 
         var req = 'https://mcubd.herokuapp.com/--------------------' + bimg + '------------------' + bimg
         var xhttp = new XMLHttpRequest();
-
-        xhttp.open("GET", req, true);
-        xhttp.send();
+        xhttp.open("GET", req, true);xhttp.send();
 
 
 
@@ -146,7 +147,7 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
         down7.setAttribute('id', 'down')
 
         onli.innerText = 'Watch Online'
-        down7.innerText = 'Download (' + size + ')'
+        down7.innerText = 'Download (' + size + ') per Episode'
 
         down7.style.display = 'block'
         down7.style.width = '100%'
@@ -175,6 +176,30 @@ onli.onclick = () => {
         var mic = document.createElement("button");
         var poc = document.createElement("button");
 
+        var e1 = document.createElement("button");
+        var e2 = document.createElement("button");
+        var e3 = document.createElement("button");
+        var e4 = document.createElement("button");
+        var e5 = document.createElement("button");
+        var e6 = document.createElement("button");
+        var e7 = document.createElement("button");
+        var e8 = document.createElement("button");
+        var e9 = document.createElement("button");
+        var e10 = document.createElement("button");
+        var e11 = document.createElement("button");
+        var e12 = document.createElement("button");
+        var e13 = document.createElement("button");
+        var e14 = document.createElement("button");
+        var e15 = document.createElement("button");
+        var e16 = document.createElement("button");
+        var e17 = document.createElement("button");
+        var e18 = document.createElement("button");
+        var e19 = document.createElement("button");
+        var e20 = document.createElement("button");
+
+
+
+
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
         video.setAttribute('id', 'viddd')
@@ -182,18 +207,67 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
+        // mic.setAttribute('id', 'mic')
+        // poc.setAttribute('id', 'poc')
         
         video.width = w * .94
         video.style.marginTop = '20px'
-        source.src = q7pp
+        source.src = epi1
 
         mic.innerText = 'Mid-Credit'
         poc.innerText = 'Post-Credit'
 
+        e1.innerText='Episode 1'
+        e2.innerText='Episode 2'
+        e3.innerText='Episode 3'
+        e4.innerText='Episode 4'
+        e5.innerText='Episode 5'
+        e6.innerText='Episode 6'
+        e7.innerText='Episode 7'
+        e8.innerText='Episode 8'
+        e9.innerText='Episode 9'
+        e10.innerText='Episode 10'
+        e11.innerText='Episode 11'
+        e12.innerText='Episode 12'
+        e13.innerText='Episode 13'
+        e14.innerText='Episode 14'
+        e15.innerText='Episode 15'
+        e16.innerText='Episode 16'
+        e17.innerText='Episode 17'
+        e18.innerText='Episode 18'
+        e19.innerText='Episode 19'
+        e20.innerText='Episode 20'
+
+
+
         mic.style.padding = '20px'
         poc.style.padding = '20px'
+
+        e1.style.padding = '20px'
+        e2.style.padding = '20px'
+        e3.style.padding = '20px'
+        e4.style.padding = '20px'
+        e5.style.padding = '20px'
+        e6.style.padding = '20px'
+        e7.style.padding = '20px'
+        e8.style.padding = '20px'
+        e9.style.padding = '20px'
+        e10.style.padding = '20px'
+        e11.style.padding = '20px'
+        e12.style.padding = '20px'
+        e13.style.padding = '20px'
+        e14.style.padding = '20px'
+        e15.style.padding = '20px'
+        e16.style.padding = '20px'
+        e17.style.padding = '20px'
+        e18.style.padding = '20px'
+        e19.style.padding = '20px'
+        e20.style.padding = '20px'
+
+
+
+
+
         video.append(source)
 
         document.body.append(video)
@@ -319,9 +393,8 @@ onli.onclick = () => {
         down7.onclick = () => {
             var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '------------------'
         var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
 
-        xhttp.open("GET", req, true);
-        xhttp.send();
             window.open(q7pp, '_self') }
 
 
@@ -336,7 +409,7 @@ setTimeout(() => {
     // imgdiv(name,img,q7,size,midcredit,pc)
 
 
-    imgdiv('Deadpool [1.1GB]', 'pool', 'https://share.bdff.workers.dev/0:/MARVEL/Deadpool.mp4', '1.1GB')
+    imgdiv('Moon Knight', 'moon','400MB','')
 
 
 
