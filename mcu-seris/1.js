@@ -326,71 +326,349 @@ onli.onclick = () => {
             e9.remove()
 
 
-                // var video = document.createElement("video");
-        // var source = document.createElement("source");
-        // var mic = document.createElement("button");
-        // var poc = document.createElement("button");
+        var video = document.createElement("video");
+        var source = document.createElement("source");
+        var mic = document.createElement("button");
+        var poc = document.createElement("button");
 
-        // video.setAttribute('controls', 'true')
-        // video.setAttribute('autoplay', 'true')
-        // video.setAttribute('id', 'viddd')
-        // video.setAttribute('controlsList', 'noplaybackrate nodownload ')
-        // video.setAttribute('oncontextmenu', 'return false;')
+        video.setAttribute('controls', 'true')
+        video.setAttribute('autoplay', 'true')
+        video.setAttribute('id', 'viddd')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('oncontextmenu', 'return false;')
 
-        // source.setAttribute('id', 'srcc')
-        // mic.setAttribute('id', 'mic')
-        // poc.setAttribute('id', 'poc')
+        source.setAttribute('id', 'srcc')
+        mic.setAttribute('id', 'mic')
+        poc.setAttribute('id', 'poc')
         
-        // video.width = w * .94
-        // video.style.marginTop = '20px'
-        // source.src = epi1
+        video.width = w * .94
+        video.style.marginTop = '20px'
+        source.src = epi1
 
-        // mic.innerText = 'Mid-Credit'
-        // poc.innerText = 'Post-Credit'
-
-                // mic.style.padding = '20px'
-        // poc.style.padding = '20px'
+        mic.innerText = 'Mid-Credit'
+        poc.innerText = 'Post-Credit'
+        mic.style.padding = '20px'
+        poc.style.padding = '20px'
         
+        video.append(source)
+        document.body.append(video)
         }
-
-
         e2.onclick=function (){
-        
-        
-        }
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
 
+
+        var video = document.createElement("video");
+        var source = document.createElement("source");
+        var mic = document.createElement("button");
+        var poc = document.createElement("button");
+
+        video.setAttribute('controls', 'true')
+        video.setAttribute('autoplay', 'true')
+        video.setAttribute('id', 'viddd')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('oncontextmenu', 'return false;')
+
+        source.setAttribute('id', 'srcc')
+        mic.setAttribute('id', 'mic')
+        poc.setAttribute('id', 'poc')
+        
+        video.width = w * .94
+        video.style.marginTop = '20px'
+        source.src = epi2
+
+        mic.innerText = 'Mid-Credit'
+        poc.innerText = 'Post-Credit'
+        mic.style.padding = '20px'
+        poc.style.padding = '20px'
+        
+        video.append(source)
+        document.body.append(video)
+        }
         e3.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+
+        var video = document.createElement("video");
+        var source = document.createElement("source");
+        var mic = document.createElement("button");
+        var poc = document.createElement("button");
+
+        video.setAttribute('controls', 'true')
+        video.setAttribute('autoplay', 'true')
+        video.setAttribute('id', 'viddd')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('oncontextmenu', 'return false;')
+
+        source.setAttribute('id', 'srcc')
+        mic.setAttribute('id', 'mic')
+        poc.setAttribute('id', 'poc')
         
+        video.width = w * .94
+        video.style.marginTop = '20px'
+        source.src = epi3
+
+        mic.innerText = 'Mid-Credit'
+        poc.innerText = 'Post-Credit'
+        mic.style.padding = '20px'
+        poc.style.padding = '20px'
+        
+        video.append(source)
+        document.body.append(video)
         
         }
-
         e4.onclick=function (){
-        
-        
-        }
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
 
+
+        var video = document.createElement("video");
+        var source = document.createElement("source");
+        var mic = document.createElement("button");
+        var poc = document.createElement("button");
+
+        video.setAttribute('controls', 'true')
+        video.setAttribute('autoplay', 'true')
+        video.setAttribute('id', 'viddd')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('oncontextmenu', 'return false;')
+
+        source.setAttribute('id', 'srcc')
+        mic.setAttribute('id', 'mic')
+        poc.setAttribute('id', 'poc')
+        
+        video.width = w * .94
+        video.style.marginTop = '20px'
+        source.src = epi4
+
+        mic.innerText = 'Mid-Credit'
+        poc.innerText = 'Post-Credit'
+        mic.style.padding = '20px'
+        poc.style.padding = '20px'
+        
+        video.append(source)
+        document.body.append(video)
+        }
         e5.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+
+        var video = document.createElement("video");
+        var source = document.createElement("source");
+        var mic = document.createElement("button");
+        var poc = document.createElement("button");
+
+        video.setAttribute('controls', 'true')
+        video.setAttribute('autoplay', 'true')
+        video.setAttribute('id', 'viddd')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('oncontextmenu', 'return false;')
+
+        source.setAttribute('id', 'srcc')
+        mic.setAttribute('id', 'mic')
+        poc.setAttribute('id', 'poc')
         
+        video.width = w * .94
+        video.style.marginTop = '20px'
+        source.src = epi5
+
+        mic.innerText = 'Mid-Credit'
+        poc.innerText = 'Post-Credit'
+        mic.style.padding = '20px'
+        poc.style.padding = '20px'
+        
+        video.append(source)
+        document.body.append(video)
         
         }
-
         e6.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+
+        var video = document.createElement("video");
+        var source = document.createElement("source");
+        var mic = document.createElement("button");
+        var poc = document.createElement("button");
+
+        video.setAttribute('controls', 'true')
+        video.setAttribute('autoplay', 'true')
+        video.setAttribute('id', 'viddd')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('oncontextmenu', 'return false;')
+
+        source.setAttribute('id', 'srcc')
+        mic.setAttribute('id', 'mic')
+        poc.setAttribute('id', 'poc')
         
+        video.width = w * .94
+        video.style.marginTop = '20px'
+        source.src = epi6
+
+        mic.innerText = 'Mid-Credit'
+        poc.innerText = 'Post-Credit'
+        mic.style.padding = '20px'
+        poc.style.padding = '20px'
+        
+        video.append(source)
+        document.body.append(video)
         
         }
-
         e7.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+
+        var video = document.createElement("video");
+        var source = document.createElement("source");
+        var mic = document.createElement("button");
+        var poc = document.createElement("button");
+
+        video.setAttribute('controls', 'true')
+        video.setAttribute('autoplay', 'true')
+        video.setAttribute('id', 'viddd')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('oncontextmenu', 'return false;')
+
+        source.setAttribute('id', 'srcc')
+        mic.setAttribute('id', 'mic')
+        poc.setAttribute('id', 'poc')
         
+        video.width = w * .94
+        video.style.marginTop = '20px'
+        source.src = epi7
+
+        mic.innerText = 'Mid-Credit'
+        poc.innerText = 'Post-Credit'
+        mic.style.padding = '20px'
+        poc.style.padding = '20px'
+        
+        video.append(source)
+        document.body.append(video)
         
         }
-
         e8.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+
+        var video = document.createElement("video");
+        var source = document.createElement("source");
+        var mic = document.createElement("button");
+        var poc = document.createElement("button");
+
+        video.setAttribute('controls', 'true')
+        video.setAttribute('autoplay', 'true')
+        video.setAttribute('id', 'viddd')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('oncontextmenu', 'return false;')
+
+        source.setAttribute('id', 'srcc')
+        mic.setAttribute('id', 'mic')
+        poc.setAttribute('id', 'poc')
         
+        video.width = w * .94
+        video.style.marginTop = '20px'
+        source.src = epi8
+
+        mic.innerText = 'Mid-Credit'
+        poc.innerText = 'Post-Credit'
+        mic.style.padding = '20px'
+        poc.style.padding = '20px'
+        
+        video.append(source)
+        document.body.append(video)
         
         }
-
         e9.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+
+        var video = document.createElement("video");
+        var source = document.createElement("source");
+        var mic = document.createElement("button");
+        var poc = document.createElement("button");
+
+        video.setAttribute('controls', 'true')
+        video.setAttribute('autoplay', 'true')
+        video.setAttribute('id', 'viddd')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('oncontextmenu', 'return false;')
+
+        source.setAttribute('id', 'srcc')
+        mic.setAttribute('id', 'mic')
+        poc.setAttribute('id', 'poc')
         
+        video.width = w * .94
+        video.style.marginTop = '20px'
+        source.src = epi9
+
+        mic.innerText = 'Mid-Credit'
+        poc.innerText = 'Post-Credit'
+        mic.style.padding = '20px'
+        poc.style.padding = '20px'
+        
+        video.append(source)
+        document.body.append(video)
         
         }
 
