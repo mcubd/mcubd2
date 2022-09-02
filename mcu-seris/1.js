@@ -330,7 +330,7 @@ onli.onclick = () => {
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
         video.setAttribute('id', 'viddd')
-        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('controlsList', ' nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
 
         track.setAttribute('src', 'https://share.bdff.workers.dev/0:/Subtittle/moon1.srt')
