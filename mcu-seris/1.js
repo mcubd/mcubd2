@@ -171,10 +171,32 @@ onli.onclick = () => {
         dow.remove()
 
 
-        var video = document.createElement("video");
-        var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
+        // var video = document.createElement("video");
+        // var source = document.createElement("source");
+        // var mic = document.createElement("button");
+        // var poc = document.createElement("button");
+
+        // video.setAttribute('controls', 'true')
+        // video.setAttribute('autoplay', 'true')
+        // video.setAttribute('id', 'viddd')
+        // video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        // video.setAttribute('oncontextmenu', 'return false;')
+
+        // source.setAttribute('id', 'srcc')
+        // mic.setAttribute('id', 'mic')
+        // poc.setAttribute('id', 'poc')
+        
+        // video.width = w * .94
+        // video.style.marginTop = '20px'
+        // source.src = epi1
+
+        // mic.innerText = 'Mid-Credit'
+        // poc.innerText = 'Post-Credit'
+
+                // mic.style.padding = '20px'
+        // poc.style.padding = '20px'
+
+
 
         var e1 = document.createElement("button");
         var e2 = document.createElement("button");
@@ -196,26 +218,6 @@ onli.onclick = () => {
         var e18 = document.createElement("button");
         var e19 = document.createElement("button");
         var e20 = document.createElement("button");
-
-
-
-
-        video.setAttribute('controls', 'true')
-        video.setAttribute('autoplay', 'true')
-        video.setAttribute('id', 'viddd')
-        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
-        video.setAttribute('oncontextmenu', 'return false;')
-
-        source.setAttribute('id', 'srcc')
-        // mic.setAttribute('id', 'mic')
-        // poc.setAttribute('id', 'poc')
-        
-        video.width = w * .94
-        video.style.marginTop = '20px'
-        source.src = epi1
-
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
 
         e1.innerText='Episode 1'
         e2.innerText='Episode 2'
@@ -240,8 +242,7 @@ onli.onclick = () => {
 
 
 
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
+
 
         e1.style.padding = '20px'
         e2.style.padding = '20px'
@@ -265,12 +266,13 @@ onli.onclick = () => {
         e20.style.padding = '20px'
 
 
+        document.body.append(e1,e2,e3,e4,e5,e6)
 
 
 
-        video.append(source)
+        // video.append(source)
 
-        document.body.append(video)
+        // document.body.append(video)
 
         // var ti0 = setTimeout(() => {
         //     var vid0 = document.getElementById("viddd");
