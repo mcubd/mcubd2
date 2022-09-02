@@ -324,12 +324,21 @@ onli.onclick = () => {
 
         var video = document.createElement("video");
         var source = document.createElement("source");
+        var track  = document.createElement("track ");
+
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
         video.setAttribute('id', 'viddd')
         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
+
+        track.setAttribute('src', 'https://share.bdff.workers.dev/0:/Subtittle/moon1.srt')
+        track.setAttribute('kind', 'subtitles')
+        track.setAttribute('srclang', 'en')
+        track.setAttribute('label', 'English')
+
+
 
         source.setAttribute('id', 'srcc')
         
@@ -352,7 +361,7 @@ onli.onclick = () => {
             eng.remove()
             source.src = epi1e
 
-            video.append(source)
+            video.append(source,track)
             document.body.append(video)
         }
 
