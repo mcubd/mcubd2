@@ -350,6 +350,9 @@ onli.onclick = () => {
 
 
 
+
+
+
         // video.append(source)
 
         // document.body.append(video)
@@ -440,29 +443,29 @@ onli.onclick = () => {
 
         }, 8160000);
 
-        video.oncanplay = function () {
-            var viddd1 = document.getElementById('viddd')
+        // video.oncanplay = function () {
+        //     var viddd1 = document.getElementById('viddd')
 
-            if (video.currentTime < 2 && video.readyState == 4 && viddd1 != null) {
-                if(t1!=undefined && t1 !=''){document.body.append(mic)
-                    mic.onclick=function(){
-            if(t1!=undefined && t1 !=''){
-        document.getElementById('viddd').currentTime=t1}else{alert('No Mid-credit')}}
+        //     if (video.currentTime < 2 && video.readyState == 4 && viddd1 != null) {
+        //         if(t1!=undefined && t1 !=''){document.body.append(mic)
+        //             mic.onclick=function(){
+        //     if(t1!=undefined && t1 !=''){
+        // document.getElementById('viddd').currentTime=t1}else{alert('No Mid-credit')}}
 
                 
-                }
+        //         }
 
 
-                if(t2!=undefined && t2 !=''){document.body.append(poc)
-                    poc.onclick=function(){
-            if(t2!=undefined && t2 !=''){
-        document.getElementById('viddd').currentTime=t2}else{alert('No Post-credit')}}
+        //         if(t2!=undefined && t2 !=''){document.body.append(poc)
+        //             poc.onclick=function(){
+        //     if(t2!=undefined && t2 !=''){
+        // document.getElementById('viddd').currentTime=t2}else{alert('No Post-credit')}}
                 
-                }
+        //         }
 
-            }
+        //     }
 
-        };
+        // };
 
 
 
