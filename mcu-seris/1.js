@@ -2000,6 +2000,450 @@ onli.onclick = () => {
         e9.style.marginBottom = '10px'
         
 
+        e1.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
+
+        hi.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-hi-e1----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi1, '_self') 
+
+        }
+        eng.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-eng-e1----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi1e, '_self') 
+
+        }
+
+
+        }
+        e2.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
+
+        hi.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-hi-e2----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi2, '_self') 
+
+        }
+        eng.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-eng-e2----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi2e, '_self') 
+
+        }
+
+
+        }
+        e3.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
+
+        hi.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-hi-e3----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi3, '_self') 
+
+        }
+        eng.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-eng-e3----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi3e, '_self') 
+
+        }
+
+
+        }
+        e4.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
+
+        hi.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-hi-e4----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi4, '_self') 
+
+        }
+        eng.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-eng-e4----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi4e, '_self') 
+
+        }
+
+
+        }
+        e5.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
+
+        hi.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-hi-e5----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi5, '_self') 
+
+        }
+        eng.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-eng-e5----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi5e, '_self') 
+
+        }
+
+
+        }
+        e6.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
+
+        hi.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-hi-e6----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi6, '_self') 
+
+        }
+        eng.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-eng-e6----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi6e, '_self') 
+
+        }
+
+
+        }
+        e7.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
+
+        hi.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-hi-e7----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi7, '_self') 
+
+        }
+        eng.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-eng-e7----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi7e, '_self') 
+
+        }
+
+
+        }
+        e8.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
+
+        hi.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-hi-e8----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi8, '_self') 
+
+        }
+        eng.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-eng-e8----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi8e, '_self') 
+
+        }
+
+
+        }
+        e9.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+
+
+        hi.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-hi-e9----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi9, '_self') 
+
+        }
+        eng.onclick=function (){
+            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '-eng-e9----------------'
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", req, true);xhttp.send();
+
+            window.open(epi9e, '_self') 
+
+        }
+
+
+        }
+
+
+
         if(epi9!=undefined && epi9 !=''){
             document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9)
         }else{
