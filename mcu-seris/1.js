@@ -1906,11 +1906,125 @@ onli.onclick = () => {
 
 
         down7.onclick = () => {
-            var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '------------------'
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("GET", req, true);xhttp.send();
+        //     var req = 'https://mcubd.herokuapp.com/-----------------download---' + bimg + '------------------'
+        // var xhttp = new XMLHttpRequest();
+        // xhttp.open("GET", req, true);xhttp.send();
 
-            window.open(q7pp, '_self') }
+        //     window.open(q7pp, '_self') 
+
+
+        var onli = document.getElementById('onli')
+        onli.remove()
+        var dow = document.getElementById('down')
+        dow.remove()
+
+
+
+
+        var e1 = document.createElement("button");
+        var e2 = document.createElement("button");
+        var e3 = document.createElement("button");
+        var e4 = document.createElement("button");
+        var e5 = document.createElement("button");
+        var e6 = document.createElement("button");
+        var e7 = document.createElement("button");
+        var e8 = document.createElement("button");
+        var e9 = document.createElement("button");
+
+
+        e1.innerText='Episode 1'
+        e2.innerText='Episode 2'
+        e3.innerText='Episode 3'
+        e4.innerText='Episode 4'
+        e5.innerText='Episode 5'
+        e6.innerText='Episode 6'
+        e7.innerText='Episode 7'
+        e8.innerText='Episode 8'
+        e9.innerText='Episode 9'
+
+        e1.style.padding = '20px'
+        e2.style.padding = '20px'
+        e3.style.padding = '20px'
+        e4.style.padding = '20px'
+        e5.style.padding = '20px'
+        e6.style.padding = '20px'
+        e7.style.padding = '20px'
+        e8.style.padding = '20px'
+        e9.style.padding = '20px'
+
+
+        e1.style.display = 'block'
+        e1.style.width = '100%'
+        e1.style.padding = '12px'
+        e1.style.marginBottom = '10px'
+  
+
+        e2.style.display = 'block'
+        e2.style.width = '100%'
+        e2.style.padding = '12px'
+        e2.style.marginBottom = '10px'
+  
+        e3.style.display = 'block'
+        e3.style.width = '100%'
+        e3.style.padding = '12px'
+        e3.style.marginBottom = '10px'
+  
+        e4.style.display = 'block'
+        e4.style.width = '100%'
+        e4.style.padding = '12px'
+        e4.style.marginBottom = '10px'
+  
+        e5.style.display = 'block'
+        e5.style.width = '100%'
+        e5.style.padding = '12px'
+        e5.style.marginBottom = '10px'
+  
+        e6.style.display = 'block'
+        e6.style.width = '100%'
+        e6.style.padding = '12px'
+        e6.style.marginBottom = '10px'
+  
+        e7.style.display = 'block'
+        e7.style.width = '100%'
+        e7.style.padding = '12px'
+        e7.style.marginBottom = '10px'
+  
+        e8.style.display = 'block'
+        e8.style.width = '100%'
+        e8.style.padding = '12px'
+        e8.style.marginBottom = '10px'
+  
+        e9.style.display = 'block'
+        e9.style.width = '100%'
+        e9.style.padding = '12px'
+        e9.style.marginBottom = '10px'
+        
+
+        if(epi9!=undefined && epi9 !=''){
+            document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9)
+        }else{
+            if(epi8!=undefined && epi8 !=''){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8)
+            }else{
+                if(epi7!=undefined && epi7 !=''){
+                    document.body.append(e1,e2,e3,e4,e5,e6,e7)
+                }else{
+                    if(epi6!=undefined && epi6 !=''){
+                        document.body.append(e1,e2,e3,e4,e5,e6)
+                    }else{
+                        if(epi5!=undefined && epi5 !=''){
+                            document.body.append(e1,e2,e3,e4,e5)
+                        }else{
+                            if(epi4!=undefined && epi4 !=''){
+                                document.body.append(e1,e2,e3,e4)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        }
 
 
     }
