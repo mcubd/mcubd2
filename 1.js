@@ -384,5 +384,8 @@ setTimeout(() => {
     imgdiv('Iron Man 3  [1.2GB]','iron3','https://share.bdff.workers.dev/0:/MCU-720/Iron-man3.mp4','1.2GB')
 
 
+    imgdiv('Captain America: The Winter Soldier  [1.3GB]','cap2','https://share.bdff.workers.dev/0:/MCU-720/cap2.mp4','1.3GB')
+
+
 }, 1);
 
