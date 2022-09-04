@@ -389,5 +389,8 @@ setTimeout(() => {
 
     imgdiv('Spider-Man: Homecoming  [1.3GB]','spi1','https://share.bdff.workers.dev/0:/MCU-720/spi1.mp4','1.3GB')
 
+
+    imgdiv('Ant-Man and the Wasp    [1.2GB]','ant2','https://share.bdff.workers.dev/0:/MCU-720/ant2.mp4','1.2GB')
+
 }, 1);
 
