@@ -338,6 +338,8 @@ setTimeout(() => {
 
     imgdiv('Deadpool [1.1GB]', 'pool', 'https://share.bdff.workers.dev/0:/MARVEL/Deadpool.mp4', '1.1GB')
 
+    imgdiv('Venom: Let There Be Carnage [925MB]','venom2','https://share.bdff.workers.dev/0:/MARVEL/venom2.mp4','925MB')
+
 
 
 }, 1);
