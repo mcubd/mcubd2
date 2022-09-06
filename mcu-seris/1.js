@@ -80,7 +80,7 @@ function other() {
 
 // function imgdiv(bname, bimg,size,t1,t2) {
 
-function imgdiv(bname, bimg,size,epi1,epi1e,epi2,epi2e,epi3,epi3e,epi4,epi4e,epi5,epi5e,epi6,epi6e,epi7,epi7e,epi8,epi8e,epi9,epi9e) {
+function imgdiv(bname, bimg,size,epi1,epi1e,epi2,epi2e,epi3,epi3e,epi4,epi4e,epi5,epi5e,epi6,epi6e,e1sub,e2sub,e3sub,e4sub,e5sub,e6sub,epi7,epi7e,epi8,epi8e,epi9,epi9e) {
     var w = window.innerWidth;
     var h = window.innerHeight;
     var g = w * .3939
@@ -334,7 +334,7 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
 
-        sub.setAttribute('src', 'e1sub')
+        sub.setAttribute('src', e1sub)
         sub.setAttribute('kind', 'subtitles')
         sub.setAttribute('srclang', 'en')
         sub.setAttribute('label', 'English')
@@ -502,12 +502,21 @@ onli.onclick = () => {
 
         var video = document.createElement("video");
         var source = document.createElement("source");
+        var sub = document.createElement("TRACK");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
         video.setAttribute('id', 'viddd')
         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
+
+
+    
+        sub.setAttribute('src', e2sub)
+        sub.setAttribute('kind', 'subtitles')
+        sub.setAttribute('srclang', 'en')
+        sub.setAttribute('label', 'English')
+        sub.setAttribute('default', true)
 
         source.setAttribute('id', 'srcc')
         
@@ -577,7 +586,7 @@ onli.onclick = () => {
             eng.remove()
             source.src = epi2e
 
-            video.append(source)
+            video.append(source,sub)
             document.body.append(video)
 
             setTimeout(() => {
@@ -664,12 +673,21 @@ onli.onclick = () => {
 
         var video = document.createElement("video");
         var source = document.createElement("source");
+        var sub = document.createElement("TRACK");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
         video.setAttribute('id', 'viddd')
         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
+
+
+
+        sub.setAttribute('src', e3sub)
+        sub.setAttribute('kind', 'subtitles')
+        sub.setAttribute('srclang', 'en')
+        sub.setAttribute('label', 'English')
+        sub.setAttribute('default', true)
 
         source.setAttribute('id', 'srcc')
 
@@ -739,7 +757,7 @@ onli.onclick = () => {
             eng.remove()
             source.src = epi3e
 
-            video.append(source)
+            video.append(source,sub)
             document.body.append(video)
 
             setTimeout(() => {
@@ -826,12 +844,21 @@ onli.onclick = () => {
 
         var video = document.createElement("video");
         var source = document.createElement("source");
+        var sub = document.createElement("TRACK");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
         video.setAttribute('id', 'viddd')
         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
+
+
+
+        sub.setAttribute('src', e4sub)
+        sub.setAttribute('kind', 'subtitles')
+        sub.setAttribute('srclang', 'en')
+        sub.setAttribute('label', 'English')
+        sub.setAttribute('default', true)
 
         source.setAttribute('id', 'srcc')
 
@@ -901,7 +928,7 @@ onli.onclick = () => {
             eng.remove()
             source.src = epi4e
 
-            video.append(source)
+            video.append(source,sub)
             document.body.append(video)
 
             setTimeout(() => {
@@ -987,6 +1014,7 @@ onli.onclick = () => {
 
         var video = document.createElement("video");
         var source = document.createElement("source");
+        var sub = document.createElement("TRACK");
 
 
         video.setAttribute('controls', 'true')
@@ -994,6 +1022,14 @@ onli.onclick = () => {
         video.setAttribute('id', 'viddd')
         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
+
+
+
+        sub.setAttribute('src', e5sub)
+        sub.setAttribute('kind', 'subtitles')
+        sub.setAttribute('srclang', 'en')
+        sub.setAttribute('label', 'English')
+        sub.setAttribute('default', true)
 
         source.setAttribute('id', 'srcc')
 
@@ -1064,7 +1100,7 @@ onli.onclick = () => {
             eng.remove()
             source.src = epi5e
 
-            video.append(source)
+            video.append(source,sub)
             document.body.append(video)
 
 
@@ -1152,12 +1188,21 @@ onli.onclick = () => {
 
         var video = document.createElement("video");
         var source = document.createElement("source");
+        var sub = document.createElement("TRACK");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
         video.setAttribute('id', 'viddd')
         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
+
+
+
+        sub.setAttribute('src', e6sub)
+        sub.setAttribute('kind', 'subtitles')
+        sub.setAttribute('srclang', 'en')
+        sub.setAttribute('label', 'English')
+        sub.setAttribute('default', true)
 
         source.setAttribute('id', 'srcc')
 
@@ -1229,7 +1274,7 @@ onli.onclick = () => {
             eng.remove()
             source.src = epi6e
 
-            video.append(source)
+            video.append(source,sub)
             document.body.append(video)
 
             setTimeout(() => {
