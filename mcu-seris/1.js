@@ -2542,7 +2542,7 @@ setTimeout(() => {
     // imgdiv('Moon Knight', 'moon','450MB','hi1','eng1','hi2','eng2','hi3','eng3','hi4','eng4','hi5','eng5','hi6','eng6')
 
 
-    imgdiv('Moon Knight', 'moonn','450MB','https://share.bdff.workers.dev/0:/MCU-SERIS/moon1.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon1-eng.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon2.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon2-eng.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon3.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon3-en.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon4.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon4-eng.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon5.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon5-eng.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon6.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon6-eng.mp4')
+    imgdiv('Moon Knight', 'moonn','450MB','https://share.bdff.workers.dev/0:/MCU-SERIS/moon1.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon1-eng.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon2.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon2-eng.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon3.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon3-en.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon4.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon4-eng.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon5.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon5-eng.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/moon6.mp4','https://share.bdff.workers.dev/0:/MCU-SERIS/English/moon6-eng.mp4','https://mcubd.netlify.app/sub/moon1.srt')
 
 }, 1);
 
