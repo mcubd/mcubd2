@@ -58,7 +58,7 @@ button4.setAttribute('onclick', 'other()')
 
 
 button.innerText = 'Contact me?/Movie request'
-h4.innerText = 'Video stuck ??? reload the website and continue watching from  where you left.                                                        In online watching video first loading can take 12-25 second,after 25 second if the video does not load refresh the website'
+h4.innerText = 'Video stuck ??? reload the website and continue watching from  where you left.\nIn online watching video first loading can take 12-25 second,after 25 second if the video does not load refresh the website'
 button1.innerText = 'MCU'
 button2.innerText = 'MCU-Seris'
 button3.innerText = 'Marvel'
