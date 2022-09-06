@@ -323,6 +323,7 @@ onli.onclick = () => {
 
 
         var video = document.createElement("video");
+        var sub = document.createElement("TRACK");
         var source = document.createElement("source");
 
 
@@ -331,6 +332,17 @@ onli.onclick = () => {
         video.setAttribute('id', 'viddd')
         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
         video.setAttribute('oncontextmenu', 'return false;')
+
+
+        sub.setAttribute('src', e1sub)
+        sub.setAttribute('kind', 'subtitles')
+        sub.setAttribute('srclang', 'en')
+        sub.setAttribute('label', English)
+        sub.setAttribute('default', yes)
+
+
+
+
 
 
 
@@ -409,7 +421,7 @@ onli.onclick = () => {
             eng.remove()
             source.src = epi1e
 
-            video.append(source)
+            video.append(source,sub)
             document.body.append(video)
 
             setTimeout(() => {
