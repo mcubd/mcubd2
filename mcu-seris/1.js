@@ -337,7 +337,7 @@ onli.onclick = () => {
         sub.setAttribute('src', 'e1sub')
         sub.setAttribute('kind', 'subtitles')
         sub.setAttribute('srclang', 'en')
-        sub.setAttribute('label', English)
+        sub.setAttribute('label', 'English')
         sub.setAttribute('default', yes)
 
 
