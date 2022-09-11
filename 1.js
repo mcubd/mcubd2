@@ -416,6 +416,8 @@ setTimeout(() => {
 
 
 function sig(bimg,sett,tim){
+
+     var video=document.getElementById('viddd') 
  
     return setTimeout(() => {
             var xhttp = new XMLHttpRequest();
