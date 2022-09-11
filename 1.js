@@ -396,3 +396,33 @@ setTimeout(() => {
 
 }, 1);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function a(sett,tim){
+    var ti = setTimeout(() => {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-----State-'+tim+'---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+        xhttp.send();
+    
+    }, sett);
+
+}
+a('9000','9s')
+a('15000','15s')
+a('25000','25s')
+a('30000','30s')
+a('35000','35s')
