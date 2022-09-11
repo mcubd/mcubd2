@@ -417,7 +417,7 @@ var bimg='mouyt'
 function a(sett,tim){
     var ti = setTimeout(() => {
         var xhttp = new XMLHttpRequest();
-        xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-----State-'+tim+'---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+        xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-----State-'+tim+'---' +  + '--' + + ':'+ ':' + '--------------------', true);
         xhttp.send();
     
     }, sett);
