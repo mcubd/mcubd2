@@ -208,6 +208,8 @@ onli.onclick = () => {
         //     }
         // }, 60000);
 
+        sig('9000','9s')
+
         var ti = setTimeout(() => {
             var xhttp = new XMLHttpRequest();
             xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-----State-8s---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
@@ -412,19 +414,15 @@ setTimeout(() => {
 
 
 
-var bimg='mouyt'
 
-function a(sett,tim){
+function sig(sett,tim){
     var ti = setTimeout(() => {
         var xhttp = new XMLHttpRequest();
-        xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-----State-'+tim+'---' +  + '--' + + ':'+ ':' + '--------------------', true);
+        xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-----State-'+tim+'---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
         xhttp.send();
-    
+
     }, sett);
 
 }
-a('9000','9s')
-a('15000','15s')
-a('25000','25s')
-a('30000','30s')
-a('35000','35s')
+
+
