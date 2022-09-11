@@ -96,7 +96,7 @@ div.style.cssText = 'background-color: #373737;height: calc(100vh*.144);position
 
 img.style.cssText = 'height:calc(100vh*.144*.5) ;padding-left:calc(100vw*.045) ;'
 
-button.style.cssText = 'float: right;padding: calc(100vh*.144*.03);background-color: #acacac;font-size: 10px;'
+button.style.cssText = 'float: right;padding: calc(100vh*.144*.05);background-color: #acacac;font-size: 10px;'
 
 button1.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
 button2.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
