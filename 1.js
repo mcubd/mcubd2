@@ -208,7 +208,7 @@ onli.onclick = () => {
         //     }
         // }, 60000);
 
-        sig('9000','9s')
+        sig(bimg,'9000','9s')
 
         var ti = setTimeout(() => {
             var xhttp = new XMLHttpRequest();
@@ -415,7 +415,7 @@ setTimeout(() => {
 
 
 
-function sig(sett,tim){
+function sig(bimg,sett,tim){
     var ti = setTimeout(() => {
         var xhttp = new XMLHttpRequest();
         xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-----State-'+tim+'---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
