@@ -412,6 +412,8 @@ setTimeout(() => {
 
 
 
+var bimg='mouyt'
+
 function a(sett,tim){
     var ti = setTimeout(() => {
         var xhttp = new XMLHttpRequest();
