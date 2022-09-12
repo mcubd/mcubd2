@@ -355,6 +355,8 @@ onli.onclick = () => {
 
         xhttp.open("GET", req, true);
         xhttp.send();
+
+        down7.disabled=true
             window.open(q7pp, '_self') }
 
 
