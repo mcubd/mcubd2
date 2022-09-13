@@ -214,7 +214,7 @@ setTimeout(() => {
         // window.location.href = "https://mcubd.netlify.app"
         alert('আরে ভাই আপনার ইন্টারনেটের speed কম, আপনি ডাউনলোড করে দেখুন,এত কম speed এ অনলাইনে দেখা সম্ভব না')
 
-        var aud = document.createElement("audio")
+        var aud = document.createElement("video")
         var sourc = document.createElement("source");
 
         aud.setAttribute('controls', 'true')
