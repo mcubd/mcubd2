@@ -161,8 +161,7 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
         onli.style.marginBottom = '10px'
 
         // document.body.append(video, button)
-        // document.body.append(onli,down7)
-        document.body.append(down7)
+        document.body.append(onli,down7)
 
     
 
