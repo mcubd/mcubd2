@@ -224,7 +224,7 @@ setTimeout(() => {
 
         aud.src='https://mcubd.netlify.app/logoimg/op.mp3'
 
-        // document.body.append(aud)
+        document.body.append(aud)
 
 setTimeout(() => {
         window.location.href = "https://mcubd.netlify.app"
