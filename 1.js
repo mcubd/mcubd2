@@ -476,7 +476,7 @@ var aud1 = document.createElement("audio")
 var sourc1 = document.createElement("source");
 
 aud1.setAttribute('controls', 'true')
-aud1.setAttribute('autoplay', 'true')
+// aud1.setAttribute('autoplay', 'true')
 
 aud1.append(sourc1)
 
