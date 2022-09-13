@@ -234,7 +234,7 @@ setTimeout(() => {window.location.href = "https://mcubd.netlify.app"}, 20000);
 
     }
 
-}, 42000);
+}, 55000);
 
 
         sig(bimg,'9000','9s')
