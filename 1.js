@@ -229,7 +229,7 @@ setTimeout(() => {
 setTimeout(() => {
         // window.location.href = "https://mcubd.netlify.app"
     
-}, 10000);
+}, 20000);
 
 
 
