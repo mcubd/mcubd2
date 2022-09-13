@@ -227,7 +227,7 @@ setTimeout(() => {
         // document.body.append(aud)
 
 setTimeout(() => {
-        // window.location.href = "https://mcubd.netlify.app"
+        window.location.href = "https://mcubd.netlify.app"
     
 }, 20000);
 
@@ -237,7 +237,7 @@ setTimeout(() => {
 
     }
 
-}, 2000);
+}, 42000);
 
 
         sig(bimg,'9000','9s')
