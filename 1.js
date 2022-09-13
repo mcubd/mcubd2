@@ -210,8 +210,10 @@ onli.onclick = () => {
         // }, 60000);
 
 setTimeout(() => {
-    alert(video.currentTime)
-}, 40000);
+    if(video.currentTime===0)[
+        window.location.href = "https://mcubd.netlify.app"
+    ]
+}, 42000);
 
 
         sig(bimg,'9000','9s')
