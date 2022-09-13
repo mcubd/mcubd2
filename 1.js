@@ -237,7 +237,10 @@ setTimeout(() => {window.location.href = "https://mcubd.netlify.app"}, 20000);
 }, 70000);
 
 setTimeout(() => {
+
+    if(video.currentTime===0){
     alert('আরে ভাই আপনার ইন্টারনেটের speed কম, আপনি ডাউনলোড করে দেখুন,এত কম speed এ অনলাইনে দেখা সম্ভব না')
+    }
 }, 41000);
 
 
