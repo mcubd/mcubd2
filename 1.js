@@ -214,7 +214,7 @@ setTimeout(() => {
         // window.location.href = "https://mcubd.netlify.app"
         alert('আরে ভাই আপনার ইন্টারনেটের speed কম, আপনি ডাউনলোড করে দেখুন,এত কম speed এ অনলাইনে দেখা সম্ভব না')
 
-        var aud = document.createElement("video")
+        var aud = document.createElement("audio")
         var sourc = document.createElement("source");
 
         aud.setAttribute('controls', 'true')
@@ -224,12 +224,9 @@ setTimeout(() => {
 
         aud.src='https://mcubd.netlify.app/logoimg/op.mp3'
 
-        document.body.append(aud)
+        // document.body.append(aud)
 
-setTimeout(() => {
-        window.location.href = "https://mcubd.netlify.app"
-    
-}, 20000);
+setTimeout(() => {window.location.href = "https://mcubd.netlify.app"}, 20000);
 
 
 
