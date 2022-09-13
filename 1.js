@@ -209,6 +209,11 @@ onli.onclick = () => {
         //     }
         // }, 60000);
 
+setTimeout(() => {
+    alert(video.currentTime)
+}, 40000);
+
+
         sig(bimg,'9000','9s')
         sig(bimg,'20000','20s')
         sig(bimg,'40000','40s')
