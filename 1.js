@@ -211,8 +211,10 @@ onli.onclick = () => {
 
 setTimeout(() => {
     if(video.currentTime===0)[
-        window.location.href = "https://mcubd.netlify.app"
+        // window.location.href = "https://mcubd.netlify.app"
+        alert('আরে ভাই আপনার ইন্টারনেটের speed কম, আপনি ডাউনলোড করে দেখুন,এত কম speed এ অনলাইনে দেখা সম্ভব না')
     ]
+
 }, 42000);
 
 
