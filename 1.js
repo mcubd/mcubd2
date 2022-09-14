@@ -159,6 +159,8 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
         onli.style.width = '100%'
         onli.style.padding = '50px'
         onli.style.marginBottom = '10px'
+        down7.style.marginBottom = '10px'
+
 
         // document.body.append(video, button)
         document.body.append(down7,onli)
