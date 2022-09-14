@@ -404,7 +404,13 @@ setTimeout(() => {
 
     // imgdiv(name,img,q7,down,size)
 
+    imgdiv('Thor ragnarok (2017) [1.3GB]', 'Thor3', 'https://abcd.bdff.workers.dev/0:/Thor-ragnarock-mp3.mp4', '1.3GB','7354','7770')
+
+
+    imgdiv('Guardian of the galaxy vol.2  (2017) [1.2GB]', 'galaxy2','https://abcd.bdff.workers.dev/0:/Guardian2-mp3.mp4', '1.2GB')
+
     imgdiv('Avengers: Infinity War   (2018)         [1.3GB]', 'war', 'https://abcd.bdff.workers.dev/0:/infinity.mp4', '1.3GB')
+
 
 
     imgdiv('Avengers: Endgame(2019) [1.6GB]','end','https://share.bdff.workers.dev/0:/MCU-720/Endgame720p.mp4','1.6GB')
@@ -413,7 +419,7 @@ setTimeout(() => {
     imgdiv('Avengers age of ultron (2015) [1.2GB]', 'Avengers2', 'https://abcd.bdff.workers.dev/0:/ultron-mp3.mp4', '1.2GB')
 
 
-    imgdiv('Thor ragnarok (2017) [1.3GB]', 'Thor3', 'https://abcd.bdff.workers.dev/0:/Thor-ragnarock-mp3.mp4', '1.3GB','7354','7770')
+
 
 
     imgdiv('Captain America: The First Avenger (2011)    [1.2GB]','cap','https://share.bdff.workers.dev/0:/MCU-720/captain-america-720.mp4','1.2GB')
@@ -434,7 +440,7 @@ setTimeout(() => {
 
 
 
-    imgdiv('Guardian of the galaxy vol.2  (2017) [1.2GB]', 'galaxy2','https://abcd.bdff.workers.dev/0:/Guardian2-mp3.mp4', '1.2GB')
+
 
 
 
