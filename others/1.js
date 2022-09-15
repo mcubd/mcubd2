@@ -71,6 +71,9 @@ function other() {
     xhttp.open("GET", 'https://mcubd.herokuapp.com/---------------------------------other-clicked-----------------------------', true);
     xhttp.send();
 
+    window.open('https://mcubd.netlify.app/others','_self')
+
+
 }
 
 
