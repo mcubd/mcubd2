@@ -18,6 +18,7 @@ function aaa() {
 function mcus() {
     // var xhttp = new XMLHttpRequest();
     // xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------Marvel--seris--clicked------------------------', true); xhttp.send();
+    alert(ipad)
 
 var xhttp = new XMLHttpRequest();
 xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
@@ -25,7 +26,7 @@ xhttp.setRequestHeader('reqs', 'Marvel--seris--clicked')
 xhttp.setRequestHeader('ipp', ipad)
 xhttp.send();
 
-    window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
+    // window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
 
 }
 
