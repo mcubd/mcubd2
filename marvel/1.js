@@ -232,7 +232,7 @@ onli.onclick = () => {
         down7.onclick = () => {
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
-            xhttp.setRequestHeader('reqs',bimg+ 'download')
+            xhttp.setRequestHeader('reqs',bimg+ '---download-')
             xhttp.setRequestHeader('ipp', ipad)
             xhttp.send();
             window.open(q7pp, '_self') }
