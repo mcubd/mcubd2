@@ -26,7 +26,7 @@ xhttp.setRequestHeader('reqs', 'Marvel--seris--clicked')
 xhttp.setRequestHeader('ipp', ipad)
 xhttp.send();
 
-    // window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
+    window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
 
 }
 
