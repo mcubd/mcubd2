@@ -5,6 +5,8 @@ function me() {
     xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
 
+    window.open('https://www.facebook.com/zafar.niloy','_self')
+
 }
 
 function aaa() {
