@@ -25,8 +25,10 @@ xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
 xhttp.setRequestHeader('reqs', 'Marvel--seris--clicked')
 xhttp.setRequestHeader('ipp', ipad)
 xhttp.send();
-
-    window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
+xhttp.onload = function() {
+alert('ok')
+  }
+    // window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
 
 }
 
