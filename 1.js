@@ -18,7 +18,7 @@ function aaa() {
 function mcus() {
     // var xhttp = new XMLHttpRequest();
     // xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------Marvel--seris--clicked------------------------', true); xhttp.send();
-    alert(ipad)
+    // alert(ipad)
 
 var xhttp = new XMLHttpRequest();
 xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
