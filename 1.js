@@ -400,7 +400,7 @@ function sig(bimg,sett,tim){
 
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
-            xhttp.setRequestHeader('reqs',bimg+'--state('+video.readyState+')---'+tim+'--'+Math.trunc(video.currentTime / 60 / 60)+':'+Math.trunc((video.currentTime / 60) % 60)+':'+Math.trunc(video.currentTime % 60)+'--seris--clicked')
+            xhttp.setRequestHeader('reqs',bimg+'--'+tim+'--state('+video.readyState+')-----'+Math.trunc(video.currentTime / 60 / 60)+':'+Math.trunc((video.currentTime / 60) % 60)+':'+Math.trunc(video.currentTime % 60)+'--seris--clicked')
             xhttp.setRequestHeader('ipp', ipad)
             xhttp.send();
     
