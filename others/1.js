@@ -253,7 +253,7 @@ setTimeout(() => {
     // imgdiv(name,img,q7,size,midcredit,pc)
 
 
-    imgdiv('The Little Rascals (1994) [700MB]','other','https://share.bdff.workers.dev/0:/OTHERS/The.Little.Rascals.1994.720p.BRRip.Hindi.Dual-Audio.MoviesVerse.Org.mp4','700MB')
+    imgdiv('The Little Rascals (1994) [700MB]','little','https://share.bdff.workers.dev/0:/OTHERS/The.Little.Rascals.1994.720p.BRRip.Hindi.Dual-Audio.MoviesVerse.Org.mp4','700MB')
 
     imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2','https://share.bdff.workers.dev/0:/OTHERS/kgf2.mp4','1.6GB')
 
