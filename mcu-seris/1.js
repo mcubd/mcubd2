@@ -1,3 +1,5 @@
+var ipad ='ll'
+
 function me() {
     var xhttp = new XMLHttpRequest();
 
