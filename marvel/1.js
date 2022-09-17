@@ -1,6 +1,6 @@
 function me() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'fb')
     xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
@@ -10,7 +10,7 @@ function me() {
 
 function aaa() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'vlc')
     xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
@@ -19,7 +19,7 @@ function aaa() {
 
 function mcus() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'mcu--seris')
     xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
@@ -30,7 +30,7 @@ function mcus() {
 
 function mcu() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'mcu')
     xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
@@ -40,7 +40,7 @@ function mcu() {
 
 function home() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'logo')
     xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
@@ -51,7 +51,7 @@ function home() {
 
 function mar() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'marvel')
     xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
@@ -61,7 +61,7 @@ function mar() {
 
 function other() {
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'others')
     xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
@@ -128,7 +128,7 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
         con.style.display = 'none'
 
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
+        xhttp.open("POST", 'https://nodebd.vercel.app/', true);
         xhttp.setRequestHeader('reqs', bimg)
         xhttp.setRequestHeader('ipp', ipad)
         xhttp.send();
@@ -231,7 +231,7 @@ onli.onclick = () => {
 
         down7.onclick = () => {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
+            xhttp.open("POST", 'https://nodebd.vercel.app/', true);
             xhttp.setRequestHeader('reqs',bimg+ '---download-')
             xhttp.setRequestHeader('ipp', ipad)
             xhttp.send();
@@ -270,7 +270,7 @@ function sig(bimg,sett,tim){
 
 
            var xhttp = new XMLHttpRequest();
-           xhttp.open("POST", 'https://zaynbd.herokuapp.com/', true);
+           xhttp.open("POST", 'https://nodebd.vercel.app/', true);
            xhttp.setRequestHeader('reqs',bimg+'--'+tim+'--state('+video.readyState+')--'+Math.trunc(video.currentTime / 60 / 60)+':'+Math.trunc((video.currentTime / 60) % 60)+':'+Math.trunc(video.currentTime % 60)+'-')
            xhttp.setRequestHeader('ipp', ipad)
            xhttp.send();
