@@ -1,10 +1,7 @@
-var ipad ='ll'
-
 function me() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'fb')
-    xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
     window.open('https://www.facebook.com/zafar.niloy','_self')
 
@@ -14,7 +11,6 @@ function aaa() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'vlc')
-    xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
 
 }
@@ -23,7 +19,6 @@ function mcus() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'mcu--seris')
-    xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
 
     window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
@@ -34,7 +29,6 @@ function mcu() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'mcu')
-    xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
 
     window.open('https://mcubd.netlify.app', '_self')
@@ -44,7 +38,6 @@ function home() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'logo')
-    xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
 
 
@@ -55,7 +48,6 @@ function mar() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'marvel')
-    xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
     window.open('https://mcubd.netlify.app/marvel/index','_self')
     
@@ -65,7 +57,6 @@ function other() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'others')
-    xhttp.setRequestHeader('ipp', ipad)
     xhttp.send();
     
     window.open('https://mcubd.netlify.app/others/index','_self')
@@ -132,7 +123,6 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
         xhttp.setRequestHeader('reqs', bimg)
-        xhttp.setRequestHeader('ipp', ipad)
         xhttp.send();
 
 
@@ -235,7 +225,6 @@ onli.onclick = () => {
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", 'https://nodebd.vercel.app/', true);
             xhttp.setRequestHeader('reqs',bimg+ '---download-')
-            xhttp.setRequestHeader('ipp', ipad)
             xhttp.send();
             window.open(q7pp, '_self') }
 
@@ -274,7 +263,6 @@ function sig(bimg,sett,tim){
            var xhttp = new XMLHttpRequest();
            xhttp.open("POST", 'https://nodebd.vercel.app/', true);
            xhttp.setRequestHeader('reqs',bimg+'--'+tim+'--state('+video.readyState+')--'+Math.trunc(video.currentTime / 60 / 60)+':'+Math.trunc((video.currentTime / 60) % 60)+':'+Math.trunc(video.currentTime % 60)+'-')
-           xhttp.setRequestHeader('ipp', ipad)
            xhttp.send();
    
        }, sett);
