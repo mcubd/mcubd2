@@ -8,13 +8,7 @@ function me() {
 
 }
 
-function aaa() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-    xhttp.setRequestHeader('reqs', 'vlc')
-    xhttp.send();
 
-}
 
 function mcus() {
     var xhttp = new XMLHttpRequest();

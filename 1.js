@@ -8,13 +8,7 @@ function me() {
 
 }
 
-function aaa() {
-var xhttp = new XMLHttpRequest();
-xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-xhttp.setRequestHeader('reqs', 'Vlc')
-xhttp.send();
 
-}
 
 function mcus() {
     // var xhttp = new XMLHttpRequest();
@@ -51,6 +45,8 @@ function mar() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'Marvel--but--clicked')
+    xhttp.setRequestHeader('reqs', kk)
+
     xhttp.send();
     window.open('https://mcubd.netlify.app/marvel/index','_self')
     
