@@ -1,3 +1,4 @@
+var ipad ='ok'
 function me() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
@@ -172,8 +173,8 @@ onli.onclick = () => {
 
         var video = document.createElement("video");
         var source = document.createElement("source");
-        var mic = document.createElement("button");
-        var poc = document.createElement("button");
+        // var mic = document.createElement("button");
+        // var poc = document.createElement("button");
 
         video.setAttribute('controls', 'true')
         video.setAttribute('autoplay', 'true')
@@ -182,18 +183,18 @@ onli.onclick = () => {
         video.setAttribute('oncontextmenu', 'return false;')
 
         source.setAttribute('id', 'srcc')
-        mic.setAttribute('id', 'mic')
-        poc.setAttribute('id', 'poc')
+        // mic.setAttribute('id', 'mic')
+        // poc.setAttribute('id', 'poc')
         
         video.width = w * .94
         video.style.marginTop = '20px'
         source.src = q7pp
 
-        mic.innerText = 'Mid-Credit'
-        poc.innerText = 'Post-Credit'
+        // mic.innerText = 'Mid-Credit'
+        // poc.innerText = 'Post-Credit'
 
-        mic.style.padding = '20px'
-        poc.style.padding = '20px'
+        // mic.style.padding = '20px'
+        // poc.style.padding = '20px'
         video.append(source)
 
         document.body.append(video)
