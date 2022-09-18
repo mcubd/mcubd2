@@ -1,3 +1,4 @@
+document.body.append(document.createElement("h6").innerText='22')
 
 function me() {
     // var xhttp = new XMLHttpRequest();
@@ -9,6 +10,7 @@ function me() {
 }
 
 
+document.body.append(document.createElement("h6").innerText='23')
 
 function mcus() {
 // var xhttp = new XMLHttpRequest();
@@ -59,6 +61,7 @@ function other() {
 
 
 
+document.body.append(document.createElement("h6").innerText='24')
 
 
 function imgdiv(bname, bimg, q7pp,size,t1,t2) {
@@ -111,6 +114,8 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
 
     }
 
+document.body.append(document.createElement("h6").innerText='25')
+
     chidiv.onclick = () => {
         var con = document.getElementById('cont')
         con.style.display = 'none'
@@ -145,6 +150,7 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
         // document.body.append(video, button)
         document.body.append(down7,onli)
 
+document.body.append(document.createElement("h6").innerText='26')
     
 
 
@@ -183,6 +189,8 @@ onli.onclick = () => {
         video.append(source)
 
         document.body.append(video)
+document.body.append(document.createElement("h6").innerText='27')
+
 
         // var ti0 = setTimeout(() => {
         //     var vid0 = document.getElementById("viddd");
@@ -191,39 +199,7 @@ onli.onclick = () => {
         //     }
         // }, 60000);
 
-setTimeout(() => {
-    if(video.currentTime===0){
-        // window.location.href = "https://mcubd.netlify.app"
-        alert('আরে ভাই আপনার ইন্টারনেটের speed কম, আপনি ডাউনলোড করে দেখুন,এত কম speed এ অনলাইনে দেখা সম্ভব না')
 
-        var aud = document.createElement("audio")
-        var sourc = document.createElement("source");
-
-        aud.setAttribute('controls', 'true')
-        aud.setAttribute('autoplay', 'true')
-
-        aud.append(sourc)
-
-        aud.src='https://mcubd.netlify.app/logoimg/op.mp3'
-
-        // document.body.append(aud)
-
-setTimeout(() => {window.location.href = "https://mcubd.netlify.app"}, 20000);
-
-
-
-        
-
-    }
-
-}, 70000);
-
-setTimeout(() => {
-
-    if(video.currentTime===0){
-    alert('আরে ভাই আপনার ইন্টারনেটের speed কম, আপনি ডাউনলোড করে দেখুন,এত কম speed এ অনলাইনে দেখা সম্ভব না')
-    }
-}, 41000);
 
 
         sig(bimg,'9000','9s')
@@ -252,31 +228,8 @@ setTimeout(() => {
         sig(bimg,'9300000','2h-35m')
         sig(bimg,'9600000','2h-40m')
 
+        document.body.append(document.createElement("h6").innerText='28')
 
-
-        video.oncanplay = function () {
-            var viddd1 = document.getElementById('viddd')
-
-            if (video.currentTime < 2 && video.readyState == 4 && viddd1 != null) {
-                if(t1!=undefined && t1 !=''){document.body.append(mic)
-                    mic.onclick=function(){
-            if(t1!=undefined && t1 !=''){
-        document.getElementById('viddd').currentTime=t1}else{alert('No Mid-credit')}}
-
-                
-                }
-
-
-                if(t2!=undefined && t2 !=''){document.body.append(poc)
-                    poc.onclick=function(){
-            if(t2!=undefined && t2 !=''){
-        document.getElementById('viddd').currentTime=t2}else{alert('No Post-credit')}}
-                
-                }
-
-            }
-
-        };
 
 
 
