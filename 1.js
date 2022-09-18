@@ -1,60 +1,57 @@
 
 function me() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-    xhttp.setRequestHeader('reqs', 'fb')
-    xhttp.send();
-    window.open('https://www.facebook.com/zafar.niloy','_self')
+    // var xhttp = new XMLHttpRequest();
+    // xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    // xhttp.setRequestHeader('reqs', 'fb')
+    // xhttp.send();
+    // window.open('https://www.facebook.com/zafar.niloy','_self')
 
 }
 
 
 
 function mcus() {
-    // var xhttp = new XMLHttpRequest();
-    // xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------Marvel--seris--clicked------------------------', true); xhttp.send();
-
-var xhttp = new XMLHttpRequest();
-xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-xhttp.setRequestHeader('reqs', 'Marvel--seris--clicked')
-xhttp.send();
+// var xhttp = new XMLHttpRequest();
+// xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+// xhttp.setRequestHeader('reqs', 'Marvel--seris--clicked')
+// xhttp.send();
 window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
 
 }
 
 function mcu() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-    xhttp.setRequestHeader('reqs', 'Mcu--but--clicked')
-    xhttp.send();
+    // var xhttp = new XMLHttpRequest();
+    // xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    // xhttp.setRequestHeader('reqs', 'Mcu--but--clicked')
+    // xhttp.send();
 
     window.open('https://mcubd.netlify.app', '_self')
 }
 
 function home() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-    xhttp.setRequestHeader('reqs', 'mcubd--logo--clicked')
-    xhttp.send();
+    // var xhttp = new XMLHttpRequest();
+    // xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    // xhttp.setRequestHeader('reqs', 'mcubd--logo--clicked')
+    // xhttp.send();
 
 
     window.open('https://mcubd.netlify.app', '_self')
 }
 
 function mar() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-    xhttp.setRequestHeader('reqs', 'Marvel--but--clicked')
-    xhttp.send();
+    // var xhttp = new XMLHttpRequest();
+    // xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    // xhttp.setRequestHeader('reqs', 'Marvel--but--clicked')
+    // xhttp.send();
     window.open('https://mcubd.netlify.app/marvel/index','_self')
     
 }
 
 function other() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-    xhttp.setRequestHeader('reqs', 'other---clicked')
-    xhttp.send();
+    // var xhttp = new XMLHttpRequest();
+    // xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    // xhttp.setRequestHeader('reqs', 'other---clicked')
+    // xhttp.send();
 
 
     window.open('https://mcubd.netlify.app/others/index','_self')
@@ -375,20 +372,15 @@ setTimeout(() => {
 
 function sig(bimg,sett,tim){
 
-     var video=document.getElementById('viddd') 
-    return setTimeout(() => {
-            // var xhttp = new XMLHttpRequest();
-            // xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-----State-'+tim+'---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
-            // xhttp.send();
+    //  var video=document.getElementById('viddd') 
+    // return setTimeout(() => {
 
-
-
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-            xhttp.setRequestHeader('reqs',bimg+'--'+tim+'--state('+video.readyState+')--'+Math.trunc(video.currentTime / 60 / 60)+':'+Math.trunc((video.currentTime / 60) % 60)+':'+Math.trunc(video.currentTime % 60)+'-')
-            xhttp.send();
+    //         var xhttp = new XMLHttpRequest();
+    //         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    //         xhttp.setRequestHeader('reqs',bimg+'--'+tim+'--state('+video.readyState+')--'+Math.trunc(video.currentTime / 60 / 60)+':'+Math.trunc((video.currentTime / 60) % 60)+':'+Math.trunc(video.currentTime % 60)+'-')
+    //         xhttp.send();
     
-        }, sett);
+    //     }, sett);
     
 }
 

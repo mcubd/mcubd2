@@ -6,7 +6,6 @@ var h4 = document.createElement("h4");
 var img = document.createElement("img");
 var hr = document.createElement("hr");
 var h7 = document.createElement("h7");
-var aa = document.createElement("a");
 
 var button1 = document.createElement("button");
 var button2 = document.createElement("button");
@@ -32,17 +31,9 @@ button3.setAttribute('id', 'but3')
 button4.setAttribute('id', 'but4')
 hr.setAttribute('id', 'hr')
 
-aa.setAttribute('id', 'aa')
 
 
 
-
-
-
-
-a.setAttribute('onclick', 'home()')
-aa.setAttribute('href', './logoimg/vlc.jpg')
-// aa.setAttribute('onclick', 'aaa()')
 
 
 button.setAttribute('onclick', 'me()')
@@ -53,7 +44,6 @@ button3.setAttribute('onclick', 'mar()')
 button4.setAttribute('onclick', 'other()')
 
 
-// image.setAttribute('alt','lp')
 
 
 
@@ -64,7 +54,6 @@ button2.innerText = 'MCU-Seris'
 button3.innerText = 'Marvel'
 button4.innerText = 'Others'
 
-// aa.innerText = 'Vlc'
 
 
 button1.style.display = 'none'
@@ -74,7 +63,6 @@ button4.style.display = 'none'
 hr.style.display = 'none'
 button.style.display = 'none'
 
-aa.style.display = 'none'
 
 
 
@@ -98,9 +86,6 @@ img.style.cssText = 'height:calc(100vh*.144*.5) ;padding-left:calc(100vw*.045) ;
 
 button.style.cssText = 'float: right;padding: calc(100vh*.144*.07);background-color: #acacac;font-size: 10px;'
 
-
-// button.style.cssText = 'float: right;padding: calc(100vh*.144*.03);background-color: #acacac;font-size: 10px;'
-
 button1.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
 button2.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
 button3.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
@@ -117,20 +102,9 @@ document.getElementById('but4').style.display = ''
 document.getElementById('hr').style.display = ''
 document.getElementById('buttt').style.display = ''
 
-document.getElementById('aa').style.display = 'block'
-
 document.getElementById('buttt').style.float = 'right'
 var op = document.getElementById('lp')
 op.src = './logoimg/log.png'
-
-
-
-
-// var css=document.createElement('link');
-// css.rel = 'stylesheet';
-// css.href = './1.css';
-// document.body.appendChild(css);
-
 
 var scriptElement=document.createElement('script');
 scriptElement.type = 'text/javascript';
