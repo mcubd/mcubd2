@@ -42,7 +42,7 @@ aa.setAttribute('id', 'aa')
 
 a.setAttribute('onclick', 'home()')
 aa.setAttribute('href', './logoimg/vlc.jpg')
-aa.setAttribute('onclick', 'aaa()')
+// aa.setAttribute('onclick', 'aaa()')
 
 
 button.setAttribute('onclick', 'me()')
