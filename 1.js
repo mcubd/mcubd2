@@ -393,4 +393,7 @@ function sig(bimg,sett,tim){
 }
 
 
-
+var xhttp = new XMLHttpRequest();
+xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+xhttp.setRequestHeader('reqs', 'oonline')
+xhttp.send();
