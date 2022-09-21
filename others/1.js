@@ -263,6 +263,10 @@ setTimeout(() => {
 
 
 
+    imgdiv('Pushpa: The Rise','pushpa','https://share.bdff.workers.dev/0:/OTHERS/pushpa.mp4','')
+
+
+
    
 
 
