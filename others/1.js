@@ -238,12 +238,15 @@ setTimeout(() => {
     // imgdiv(name,img,q7,size,midcredit,pc)
 
 
+    imgdiv('Chhichhore (2019) [1.4GB]','chi','https://share.bdff.workers.dev/0:/OTHERS/Chhichore.720p.mp4','1.4GB')
+
+
     imgdiv('The Little Rascals (1994) [750MB]','little','https://share.bdff.workers.dev/0:/OTHERS/The.Little.Rascals.1994.mp4','750MB')
 
     imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2','https://share.bdff.workers.dev/0:/OTHERS/kgf2.mp4','1.6GB')
 
 
-    imgdiv('John Wick [1.7GB]', 'john1', 'https://abcd.bdff.workers.dev/0:/John.Wick.1-mp3.mp4', '1.7GB')
+    // imgdiv('John Wick [1.7GB]', 'john1', 'https://abcd.bdff.workers.dev/0:/John.Wick.1-mp3.mp4', '1.7GB')
 
     imgdiv('John Wick 2     [1.6GB]', 'john2', 'https://abcd.bdff.workers.dev/0:/John.Wick-2-mp3.mp4', '1.6GB')
 
@@ -251,9 +254,14 @@ setTimeout(() => {
 
     imgdiv('Ra.One [1.5GB]','rone','https://share.bdff.workers.dev/0:/OTHERS/ra-one.mp4','1.5GB')
 
-    imgdiv('Chandni Chowk to China [1.5GB]','chandnichowk','https://share.bdff.workers.dev/0:/OTHERS/chandnichowk.mp4','1.5GB')
+    // imgdiv('Chandni Chowk to China [1.5GB]','chandnichowk','https://share.bdff.workers.dev/0:/OTHERS/chandnichowk.mp4','1.5GB')
 
-    imgdiv('Rab Ne Bana Di Jodi [1.5GB]','Rab.Ne.Bana.Di.Jodi','https://share.bdff.workers.dev/0:/OTHERS/Rab.Ne.Bana.Di.Jodi.mp4','1.5GB')
+    // imgdiv('Rab Ne Bana Di Jodi [1.5GB]','Rab.Ne.Bana.Di.Jodi','https://share.bdff.workers.dev/0:/OTHERS/Rab.Ne.Bana.Di.Jodi.mp4','1.5GB')
+
+
+    imgdiv('Attack: Part 1 (2022) [985MB]','attack','https://share.bdff.workers.dev/0:/OTHERS/Attack-Part-1.mp4','985MB')
+
+
 
    
 
