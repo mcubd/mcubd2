@@ -263,7 +263,7 @@ setTimeout(() => {
 
 
 
-    imgdiv('Pushpa: The Rise','pushpa','https://share.bdff.workers.dev/0:/OTHERS/pushpa.mp4','')
+    imgdiv('Pushpa: The Rise[1.63GB]','pushpa','https://share.bdff.workers.dev/0:/OTHERS/pushpa.mp4','1.63GB')
 
 
 
