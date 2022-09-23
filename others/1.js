@@ -8,8 +8,6 @@ function me() {
 
 }
 
-
-
 function mcus() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
@@ -62,9 +60,12 @@ function other() {
 
 
 
+// imgdiv('Chhichhore (2019) [1.4GB] & 720','chi',{q720p:'',q1080p:''},{size720:'',size1080:''})
+
+// function imgdiv(bname, bimg, q7pp,size,t1,t2) {
 
 
-function imgdiv(bname, bimg, q7pp,size,t1,t2) {
+function imgdiv(bname, bimg,videolink,size) {
     var w = window.innerWidth;
     var h = window.innerHeight;
     var g = w * .3939
@@ -124,6 +125,42 @@ function imgdiv(bname, bimg, q7pp,size,t1,t2) {
         xhttp.send();
 
 
+        var q720 = document.createElement("button");
+        var q1080 = document.createElement("button");
+        
+        q720.setAttribute('id', 'q720')
+        q1080.setAttribute('id', 'q1080')
+
+        q720.innerText = '720p ('+size.size720+')'
+        q1080.innerText = '1080p ('+size.size1080+')'
+
+        q1080.style.display = 'block'
+        q1080.style.width = '100%'
+        q1080.style.padding ='50px'
+        
+        q720.style.display = 'block'
+        q720.style.width = '100%'
+        q720.style.padding = '50px'
+        q720.style.marginBottom = '10px'
+
+        document.body.append(q720,q1080)
+    
+
+
+
+        q720.onclick = () => {
+        var onli = document.getElementById('onli')
+        onli.remove()
+        var dow = document.getElementById('down')
+        dow.remove()
+
+
+        var video = document.createElement("video");
+        var source = document.createElement("source");
+
+        }
+
+
 
         var onli = document.createElement("button");
         var down7 = document.createElement("button");
@@ -175,11 +212,6 @@ onli.onclick = () => {
         video.style.marginTop = '20px'
         source.src = q7pp
 
-        // mic.innerText = 'Mid-Credit'
-        // poc.innerText = 'Post-Credit'
-
-        // mic.style.padding = '20px'
-        // poc.style.padding = '20px'
         video.append(source)
 
         document.body.append(video)
@@ -237,6 +269,9 @@ setTimeout(() => {
 
     // imgdiv(name,img,q7,size,midcredit,pc)
 
+    // imgdiv('Chhichhore (2019) [1.4GB] & 720','chi',{q720p:'',q1080p:''},{size720:'',size1080:''})
+
+        imgdiv('Chhichhore (2019) [1.4GB] & 720','chi',{q720p:'',q1080p:''},{size720:'',size1080:''})
 
     imgdiv('Chhichhore (2019) [1.4GB]','chi','https://share.bdff.workers.dev/0:/OTHERS/Chhichore.720p.mp4','1.4GB')
 
