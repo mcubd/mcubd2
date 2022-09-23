@@ -771,7 +771,7 @@ onli.onclick = () => {
 
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-    xhttp.setRequestHeader('reqs', bimg+'downonly-click')
+    xhttp.setRequestHeader('reqs', bimg+'--downonly-button-not-onli-watch-click')
     xhttp.send();
 
     var down7 = document.createElement("button");
@@ -794,7 +794,7 @@ onli.onclick = () => {
     down7.onclick = () => {
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-        xhttp.setRequestHeader('reqs', bimg+'-downonly-download')
+        xhttp.setRequestHeader('reqs', bimg+'-downonly-download-started')
         xhttp.send();
         window.open(videolink.downonly, '_self') }
 
