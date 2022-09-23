@@ -419,6 +419,10 @@ setTimeout(() => {
 
         imgdiv('John Wick 2 || 1080 [1.6GB]','john2',{q1080p:'https://abcd.bdff.workers.dev/0:/John.Wick-2-mp3.mp4'},{size1080:'1.6GB'})
 
+
+
+        imgdiv('Dream Girl (2019) || 720p [400MB]','dream',{q720p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl-480.mp4'},{size720:'350MB'})
+
     // imgdiv('365  [1.3GB]','365','https://share.bdff.workers.dev/0:/Subtittle/365.mp4','1.3GB')
 
     // imgdiv('Ra.One [1.5GB]','rone','https://share.bdff.workers.dev/0:/OTHERS/ra-one.mp4','1.5GB')
