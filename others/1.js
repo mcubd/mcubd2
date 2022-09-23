@@ -421,7 +421,7 @@ setTimeout(() => {
 
 
 
-        imgdiv('Dream Girl (2019) || 720p [400MB] ||1080p [1.2GB]','dream',{q720p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl-480.mp4',q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl.mp4'},{size720:'350MB',qsize1080:'1.2GB'})
+        imgdiv('Dream Girl (2019) || 720p [400MB] ||1080p [1.2GB]','dream',{q720p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl-480.mp4',q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl.mp4'},{size720:'350MB',size1080:'1.2GB'})
 
     // imgdiv('365  [1.3GB]','365','https://share.bdff.workers.dev/0:/Subtittle/365.mp4','1.3GB')
 
