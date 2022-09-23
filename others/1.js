@@ -164,6 +164,12 @@ function imgdiv(bname, bimg,videolink,size) {
         var q1080 = document.getElementById('q1080')
         q1080.remove()
 
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+        xhttp.setRequestHeader('reqs', bimg+'720-click')
+        xhttp.send();
+
         var onli = document.createElement("button");
         var down7 = document.createElement("button");
         
@@ -254,7 +260,7 @@ onli.onclick = () => {
         down7.onclick = () => {
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-            xhttp.setRequestHeader('reqs', bimg+'--download')
+            xhttp.setRequestHeader('reqs', bimg+'-720-download')
             xhttp.send();
             window.open(videolink.q720p, '_self') }
 
@@ -269,6 +275,12 @@ onli.onclick = () => {
         var q1080 = document.getElementById('q1080')
         q1080.remove()
 
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+        xhttp.setRequestHeader('reqs', bimg+'-1080-click')
+        xhttp.send();
+
         var onli = document.createElement("button");
         var down7 = document.createElement("button");
         
@@ -276,7 +288,7 @@ onli.onclick = () => {
         down7.setAttribute('id', 'down')
 
         onli.innerText = 'Watch Online'
-        down7.innerText = 'Download (' + size.size720 + ')'
+        down7.innerText = 'Download (' + size.size1080 + ')'
 
         down7.style.display = 'block'
         down7.style.width = '100%'
@@ -315,7 +327,7 @@ onli.onclick = () => {
         
         video.width = w * .94
         video.style.marginTop = '20px'
-        source.src = videolink.q720p
+        source.src = videolink.q1080p
 
         video.append(source)
 
@@ -359,9 +371,9 @@ onli.onclick = () => {
         down7.onclick = () => {
             var xhttp = new XMLHttpRequest();
             xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-            xhttp.setRequestHeader('reqs', bimg+'--download')
+            xhttp.setRequestHeader('reqs', bimg+'-1080-download')
             xhttp.send();
-            window.open(videolink.q720p, '_self') }
+            window.open(videolink.q1080p, '_self') }
 
 
     }
