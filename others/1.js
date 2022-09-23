@@ -127,34 +127,82 @@ function imgdiv(bname, bimg,videolink,size) {
 
         var q720 = document.createElement("button");
         var q1080 = document.createElement("button");
+        var downonly = document.createElement("button");
+
         
         q720.setAttribute('id', 'q720')
         q1080.setAttribute('id', 'q1080')
+        downonly.setAttribute('id', 'downonly')
+
 
         q720.innerText = '720p ('+size.size720+')'
         q1080.innerText = '1080p ('+size.size1080+')'
+        downonly.innerText = 'Download only ('+size.sizedown+')'
+
 
         q1080.style.display = 'block'
         q1080.style.width = '100%'
         q1080.style.padding ='50px'
+        q1080.style.marginBottom = '10px'
+
         
         q720.style.display = 'block'
         q720.style.width = '100%'
         q720.style.padding = '50px'
         q720.style.marginBottom = '10px'
 
-        if(videolink.q720p==undefined || videolink.q720p=='' ){
-            if(videolink.q1080p==undefined || videolink.q1080p=='' ){}else{
-                document.body.append(q1080)
-            }
-        }else{
-            if(videolink.q1080p==undefined || videolink.q1080p=='' ){document.body.append(q720)}else{
-                document.body.append(q720,q1080)
-            }
-        }
+        downonly.style.display = 'block'
+        downonly.style.width = '100%'
+        downonly.style.padding = '50px'
+        downonly.style.marginBottom = '10px'
+
+        // if(videolink.q720p==undefined || videolink.q720p=='' ){
+        //     if(videolink.q1080p==undefined || videolink.q1080p=='' ){}else{
+        //         document.body.append(q1080)
+        //     }
+        // }else{
+        //     if(videolink.q1080p==undefined || videolink.q1080p=='' ){document.body.append(q720)}else{
+        //         document.body.append(q720,q1080)
+        //     }
+        // }
 
     
 
+
+
+        if(videolink.q720p==undefined || videolink.q720p=='' ){
+            if(videolink.q1080p==undefined || videolink.q1080p=='' ){
+                if(videolink.downonly==undefined || videolink.downonly=='' ){
+                }else{document.body.append(downonly)}
+            }else{
+                if(videolink.downonly==undefined || videolink.downonly=='' ){
+                    document.body.append(q1080)
+                }else{document.body.append(downonly,q1080)}
+            }
+        }else{
+            if(videolink.q1080p==undefined || videolink.q1080p=='' ){
+                if(videolink.downonly==undefined || videolink.downonly=='' ){
+                    document.body.append(q720)
+                }else{
+                    document.body.append(downonly,q720)
+                }
+            }
+            else{
+
+                if(videolink.downonly==undefined || videolink.downonly==''){
+                document.body.append(q720,q1080)
+                }else{
+                    document.body.append(downonly,q720,q1080)
+                }
+
+            }
+
+
+
+
+
+
+        }
 
 
         q720.onclick = () => {
@@ -163,6 +211,8 @@ function imgdiv(bname, bimg,videolink,size) {
             if(q720==null){}else{q720.remove()}
             var q1080 = document.getElementById('q1080')
             if(q1080==null){}else{q1080.remove()}
+            var downonly = document.getElementById('downonly')
+            if(downonly==null){}else{downonly.remove()}
 
 
         var xhttp = new XMLHttpRequest();
@@ -275,6 +325,8 @@ onli.onclick = () => {
         if(q720==null){}else{q720.remove()}
         var q1080 = document.getElementById('q1080')
         if(q1080==null){}else{q1080.remove()}
+        var downonly = document.getElementById('downonly')
+        if(downonly==null){}else{downonly.remove()}
 
 
 
@@ -381,6 +433,49 @@ onli.onclick = () => {
     }
 
 
+    downonly.onclick = () => {
+
+        var q720 = document.getElementById('q720')
+        if(q720==null){}else{q720.remove()}
+        var q1080 = document.getElementById('q1080')
+        if(q1080==null){}else{q1080.remove()}
+        var downonly = document.getElementById('downonly')
+        if(downonly==null){}else{downonly.remove()}
+
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    xhttp.setRequestHeader('reqs', bimg+'downonly-click')
+    xhttp.send();
+
+    var down7 = document.createElement("button");
+    
+    down7.setAttribute('id', 'down')
+
+    down7.innerText = 'Download (' + size.sizedownonly + ')'
+
+    down7.style.display = 'block'
+    down7.style.width = '100%'
+    down7.style.padding ='50px'
+    
+
+
+    // document.body.append(video, button)
+    document.body.append(down7)
+
+
+
+    down7.onclick = () => {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+        xhttp.setRequestHeader('reqs', bimg+'-downonly-download')
+        xhttp.send();
+        window.open(videolink.downonly, '_self') }
+
+
+}
+
+
    }
 
 
@@ -422,6 +517,9 @@ setTimeout(() => {
 
 
         imgdiv('Dream Girl (2019) || 720p [400MB] ||1080p [1.2GB]','dream',{q720p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl-480.mp4',q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl.mp4'},{size720:'350MB',size1080:'1.2GB'})
+
+
+
 
     // imgdiv('365  [1.3GB]','365','https://share.bdff.workers.dev/0:/Subtittle/365.mp4','1.3GB')
 
