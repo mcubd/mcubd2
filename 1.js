@@ -761,45 +761,11 @@ onli.onclick = () => {
 
     downonly.onclick = () => {
 
-        var q720 = document.getElementById('q720')
-        if(q720==null){}else{q720.remove()}
-        var q1080 = document.getElementById('q1080')
-        if(q1080==null){}else{q1080.remove()}
-        var downonly = document.getElementById('downonly')
-        if(downonly==null){}else{downonly.remove()}
-
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-    xhttp.setRequestHeader('reqs', bimg+'--downonly-button-not-onli-watch-click')
-    xhttp.send();
-
-    var down7 = document.createElement("button");
-    
-    down7.setAttribute('id', 'down')
-
-    down7.innerText = 'Download (' + size.sizedownonly + ')'
-
-    down7.style.display = 'block'
-    down7.style.width = '100%'
-    down7.style.padding ='50px'
-    
-
-
-    // document.body.append(video, button)
-    document.body.append(down7)
-
-
-
-    down7.onclick = () => {
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
         xhttp.setRequestHeader('reqs', bimg+'-downonly-download-started')
         xhttp.send();
         window.open(videolink.downonly, '_self') }
-
-
-}
 
 
    }
