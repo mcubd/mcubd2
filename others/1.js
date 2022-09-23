@@ -159,10 +159,10 @@ function imgdiv(bname, bimg,videolink,size) {
 
         q720.onclick = () => {
 
-        var q720 = document.getElementById('q720')
-        q720.remove()
-        var q1080 = document.getElementById('q1080')
-        q1080.remove()
+            var q720 = document.getElementById('q720')
+            if(q720==null){}else{q720.remove()}
+            var q1080 = document.getElementById('q1080')
+            if(q1080==null){}else{q1080.remove()}
 
 
         var xhttp = new XMLHttpRequest();
@@ -272,13 +272,10 @@ onli.onclick = () => {
 
 
         var q720 = document.getElementById('q720')
-        console.log(q720)
-
-        // q720.remove()
+        if(q720==null){}else{q720.remove()}
         var q1080 = document.getElementById('q1080')
-        console.log(q1080)
+        if(q1080==null){}else{q1080.remove()}
 
-        // q1080.remove()
 
 
         var xhttp = new XMLHttpRequest();
