@@ -1,50 +1,34 @@
-var ipad ='ll'
-
 function me() {
     var xhttp = new XMLHttpRequest();
-
-    xhttp.open("GET", 'https://mcubd.herokuapp.com/------------------------------------fb---------------fb-----', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    xhttp.setRequestHeader('reqs', 'fb')
     xhttp.send();
     window.open('https://www.facebook.com/zafar.niloy','_self')
 
 }
 
-function aaa() {
-    var xhttp = new XMLHttpRequest();
-
-    xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------Vlc------------------------------', true);
-    xhttp.send();
-
-}
-
 function mcus() {
-    // window.open('https://mcubd.herokuapp.com/ms','_self')
-
-
-    var xhttp = new XMLHttpRequest();
-
-    xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------Marvel--seris--clicked------------------------', true);
-    xhttp.send();
-
-    window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
+var xhttp = new XMLHttpRequest();
+xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+xhttp.setRequestHeader('reqs', 'Marvel--seris--clicked')
+xhttp.send();
+window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
 
 }
 
 function mcu() {
-    // location.reload(true);    
     var xhttp = new XMLHttpRequest();
-    
-    xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------MCU-but-clicked--------------------------', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    xhttp.setRequestHeader('reqs', 'Mcu--but--clicked')
     xhttp.send();
 
     window.open('https://mcubd.netlify.app', '_self')
 }
 
 function home() {
-    // location.reload(true);
     var xhttp = new XMLHttpRequest();
-    
-    xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------MCU-logo-clicked--------------------------', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    xhttp.setRequestHeader('reqs', 'mcubd--logo--clicked')
     xhttp.send();
 
 
@@ -52,29 +36,22 @@ function home() {
 }
 
 function mar() {
-
     var xhttp = new XMLHttpRequest();
-
-    xhttp.open("GET", 'https://mcubd.herokuapp.com/----------------------------------Marvel-butt-clicked-------------------------', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    xhttp.setRequestHeader('reqs', 'Marvel--but--clicked')
     xhttp.send();
     window.open('https://mcubd.netlify.app/marvel/index','_self')
     
 }
 
 function other() {
-
-    // alert('coming...')
-
-
-
     var xhttp = new XMLHttpRequest();
-
-    xhttp.open("GET", 'https://mcubd.herokuapp.com/---------------------------------other-clicked-----------------------------', true);
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    xhttp.setRequestHeader('reqs', 'other---clicked')
     xhttp.send();
 
+
     window.open('https://mcubd.netlify.app/others/index','_self')
-
-
 }
 
 
@@ -136,9 +113,10 @@ function imgdiv(bname, bimg,size,epi1,epi1e,epi2,epi2e,epi3,epi3e,epi4,epi4e,epi
         var con = document.getElementById('cont')
         con.style.display = 'none'
 
-        var req = 'https://mcubd.herokuapp.com/--------------------' + bimg + '------------------' + bimg
         var xhttp = new XMLHttpRequest();
-        xhttp.open("GET", req, true);xhttp.send();
+        xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+        xhttp.setRequestHeader('reqs', bimg)
+        xhttp.send();
 
 
 

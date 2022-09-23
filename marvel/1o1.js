@@ -6,7 +6,6 @@ var h4 = document.createElement("h4");
 var img = document.createElement("img");
 var hr = document.createElement("hr");
 var h7 = document.createElement("h7");
-var aa = document.createElement("a");
 
 var button1 = document.createElement("button");
 var button2 = document.createElement("button");
@@ -32,7 +31,6 @@ button3.setAttribute('id', 'but3')
 button4.setAttribute('id', 'but4')
 hr.setAttribute('id', 'hr')
 
-aa.setAttribute('id', 'aa')
 
 
 
@@ -41,8 +39,7 @@ aa.setAttribute('id', 'aa')
 
 
 a.setAttribute('onclick', 'home()')
-aa.setAttribute('href', './logoimg/vlc.jpg')
-aa.setAttribute('onclick', 'aaa()')
+
 
 
 button.setAttribute('onclick', 'me()')
@@ -64,7 +61,6 @@ button2.innerText = 'MCU-Seris'
 button3.innerText = 'Marvel'
 button4.innerText = 'Others'
 
-// aa.innerText = 'Vlc'
 
 
 button1.style.display = 'none'
@@ -74,7 +70,6 @@ button4.style.display = 'none'
 hr.style.display = 'none'
 button.style.display = 'none'
 
-aa.style.display = 'none'
 
 
 
@@ -85,7 +80,7 @@ div.append(a, button, hr, h7, button1, button2, button3, button4)
 
 
 
-document.body.append(div, h4, aa, div2)
+document.body.append(div, h4, div2)
 
 
 
@@ -114,7 +109,6 @@ document.getElementById('but4').style.display = ''
 document.getElementById('hr').style.display = ''
 document.getElementById('buttt').style.display = ''
 
-document.getElementById('aa').style.display = 'block'
 
 document.getElementById('buttt').style.float = 'right'
 var op = document.getElementById('lp')
