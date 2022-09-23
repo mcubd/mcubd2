@@ -270,10 +270,15 @@ onli.onclick = () => {
 
     q1080.onclick = () => {
 
+
         var q720 = document.getElementById('q720')
-        q720.remove()
+        console.log(q720)
+
+        // q720.remove()
         var q1080 = document.getElementById('q1080')
-        q1080.remove()
+        console.log(q1080)
+
+        // q1080.remove()
 
 
         var xhttp = new XMLHttpRequest();
