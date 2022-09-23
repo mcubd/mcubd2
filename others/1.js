@@ -398,7 +398,7 @@ setTimeout(() => {
 
     // imgdiv('Chhichhore (2019) [1.4GB] & 720','chi',{q720p:'',q1080p:''},{size720:'',size1080:''})
 
-        imgdiv('Chhichhore (2019) [1.4GB] & 720','chi',{q720p:'f',q1080p:'k'},{size720:'',size1080:''})
+        imgdiv('Chhichhore (2019) 720p [520MB] || 1080p [1.4GB]','chi',{q720p:'https://share.bdff.workers.dev/0:/OTHERS/Chhichore.480p.mp4',q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Chhichore.720p.mp4'},{size720:'520MB',size1080:'1.4GB'})
 
     imgdiv('Chhichhore (2019) [1.4GB]','chi','https://share.bdff.workers.dev/0:/OTHERS/Chhichore.720p.mp4','1.4GB')
 
