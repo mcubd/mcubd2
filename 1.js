@@ -33,9 +33,26 @@ h42.style.cssText = 'margin-top:10px;margin-left:40px'
 document.getElementById('intro').append(h42)
 
 var h43 = document.createElement("h4");
-h43.innerText='3.Iron Man 2 (2030)'
+h43.innerText='3.Iron Man 2 (2010)'
 h43.style.cssText = 'margin-top:10px;margin-left:40px'
 document.getElementById('intro').append(h43)
+
+var h44 = document.createElement("h4");
+h44.innerText='4.Thor (2011)'
+h44.style.cssText = 'margin-top:10px;margin-left:40px'
+document.getElementById('intro').append(h44)
+
+var h45 = document.createElement("h4");
+h45.innerText='5.Captain America: The First Avenger (2011)'
+h45.style.cssText = 'margin-top:10px;margin-left:40px'
+document.getElementById('intro').append(h45)
+
+
+var h46 = document.createElement("h4");
+h46.innerText="6.Marvel's The Avengers (2012)"
+h46.style.cssText = 'margin-top:10px;margin-left:40px'
+document.getElementById('intro').append(h46)
+
 
 
 
