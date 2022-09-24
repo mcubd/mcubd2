@@ -14,9 +14,12 @@ document.getElementById('cs').append(box)
 // bottom.innerText=''
 // bottom.style.cssText = ''
 // document.getElementById('cont').append(bottom)
-
-
 document.getElementById('cs').style.cssText = 'margin-bottom:600px'
+
+var img1 = document.createElement("img");
+img1.src='The Marvel Cinematic Universe Films Collection (2008-2022)'
+img1.style.cssText = 'text-align:center;margin-top:30px'
+document.getElementById('cs').append(img1)
 
 
 
