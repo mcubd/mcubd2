@@ -17,7 +17,7 @@ document.getElementById('cs').append(box)
 document.getElementById('cs').style.cssText = 'margin-bottom:600px'
 
 var img1 = document.createElement("img");
-img1.src='The Marvel Cinematic Universe Films Collection (2008-2022)'
+img1.src='https://mcubd.netlify.app/logoimg/1.gif'
 img1.style.cssText = 'text-align:center;margin-top:30px'
 document.getElementById('cs').append(img1)
 
