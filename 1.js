@@ -306,6 +306,12 @@ document.getElementById('intro').append(yy3)
 
 
 
+var hr1 = document.createElement("hr");
+hr1.style.cssText = 'border: 0; border-top: 1px solid grey'
+document.getElementById('intro').append(hr1)
+
+
+
 
 }
 
