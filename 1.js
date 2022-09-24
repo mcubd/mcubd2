@@ -1,6 +1,4 @@
 function order(){
-    var w = window.innerWidth;
-    var h = window.innerHeight;
 
 document.getElementById('cont').innerHTML=''
 document.getElementById('h4').innerHTML=''
@@ -18,7 +16,7 @@ document.getElementById('cs').append(box)
 // document.getElementById('cont').append(bottom)
 
 
-document.getElementById('cs').style.cssText = 'margin-bottom:'+h+' px'
+document.getElementById('cs').style.cssText = 'margin-bottom:60px'
 
 
 
