@@ -729,6 +729,16 @@ function seris(bname, bimg,videolink,size) {
              
             }
 
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.send();
+                window.open(videolink[0], '_self') 
+             
+            }
+
 
 
         }
@@ -796,6 +806,17 @@ function seris(bname, bimg,videolink,size) {
             document.body.append(video)
 
 
+             
+            }
+
+
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.send();
+                window.open(videolink[1], '_self') 
              
             }
 
@@ -869,6 +890,16 @@ function seris(bname, bimg,videolink,size) {
              
             }
 
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.send();
+                window.open(videolink[2], '_self') 
+             
+            }
+
 
 
         }
@@ -936,6 +967,16 @@ function seris(bname, bimg,videolink,size) {
             document.body.append(video)
 
 
+             
+            }
+
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.send();
+                window.open(videolink[4], '_self') 
              
             }
 
@@ -1009,6 +1050,16 @@ function seris(bname, bimg,videolink,size) {
              
             }
 
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.send();
+                window.open(videolink[4], '_self') 
+             
+            }
+
 
 
         }
@@ -1076,6 +1127,16 @@ function seris(bname, bimg,videolink,size) {
             document.body.append(video)
 
 
+             
+            }
+
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.send();
+                window.open(videolink[5], '_self') 
              
             }
 
@@ -1150,6 +1211,16 @@ function seris(bname, bimg,videolink,size) {
              
             }
 
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.send();
+                window.open(videolink[6], '_self') 
+             
+            }
+
 
 
         }
@@ -1217,6 +1288,16 @@ function seris(bname, bimg,videolink,size) {
             document.body.append(video)
 
 
+             
+            }
+
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.send();
+                window.open(videolink[7], '_self') 
              
             }
 
@@ -1291,6 +1372,17 @@ function seris(bname, bimg,videolink,size) {
             }
 
 
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.send();
+                window.open(videolink[8], '_self') 
+             
+            }
+
+
 
         }
         e10.onclick=function (){
@@ -1361,6 +1453,17 @@ function seris(bname, bimg,videolink,size) {
             }
 
 
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.send();
+                window.open(videolink[9], '_self') 
+             
+            }
+
+
 
         }
 
@@ -1368,351 +1471,6 @@ function seris(bname, bimg,videolink,size) {
 
 
 
-
-
-
-
-
-
-        // -------------------------------------------------
-
-        // var q720 = document.createElement("button");
-        // var q1080 = document.createElement("button");
-        // var downonly = document.createElement("button");
-
-        
-        // q720.setAttribute('id', 'q720')
-        // q1080.setAttribute('id', 'q1080')
-        // downonly.setAttribute('id', 'downonly')
-
-
-        // q720.innerText = '720p ('+size.size720+')'
-        // q1080.innerText = '1080p ('+size.size1080+')'
-        // downonly.innerText = 'Download only ('+size.sizedown+')'
-
-
-        // q1080.style.display = 'block'
-        // q1080.style.width = '100%'
-        // q1080.style.padding ='50px'
-        // q1080.style.marginBottom = '10px'
-
-        
-        // q720.style.display = 'block'
-        // q720.style.width = '100%'
-        // q720.style.padding = '50px'
-        // q720.style.marginBottom = '10px'
-
-        // downonly.style.display = 'block'
-        // downonly.style.width = '100%'
-        // downonly.style.padding = '50px'
-        // downonly.style.marginBottom = '10px'
-
-
-
-        // if(videolink.q720p==undefined || videolink.q720p=='' ){
-        //     if(videolink.q1080p==undefined || videolink.q1080p=='' ){
-        //         if(videolink.downonly==undefined || videolink.downonly=='' ){
-        //         }else{document.body.append(downonly)}
-        //     }else{
-        //         if(videolink.downonly==undefined || videolink.downonly=='' ){
-        //             document.body.append(q1080)
-        //         }else{document.body.append(downonly,q1080)}
-        //     }
-        // }else{
-        //     if(videolink.q1080p==undefined || videolink.q1080p=='' ){
-        //         if(videolink.downonly==undefined || videolink.downonly=='' ){
-        //             document.body.append(q720)
-        //         }else{
-        //             document.body.append(downonly,q720)
-        //         }
-        //     }
-        //     else{
-
-        //         if(videolink.downonly==undefined || videolink.downonly==''){
-        //         document.body.append(q720,q1080)
-        //         }else{
-        //             document.body.append(downonly,q720,q1080)
-        //         }
-
-        //     }
-
-
-
-
-
-
-        // }
-
-
-//         q720.onclick = () => {
-
-//             var q720 = document.getElementById('q720')
-//             if(q720==null){}else{q720.remove()}
-//             var q1080 = document.getElementById('q1080')
-//             if(q1080==null){}else{q1080.remove()}
-//             var downonly = document.getElementById('downonly')
-//             if(downonly==null){}else{downonly.remove()}
-
-
-//         var xhttp = new XMLHttpRequest();
-//         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-//         xhttp.setRequestHeader('reqs', bimg+'720-click')
-//         xhttp.send();
-
-//         var onli = document.createElement("button");
-//         var down7 = document.createElement("button");
-        
-//         onli.setAttribute('id', 'onli')
-//         down7.setAttribute('id', 'down')
-
-//         onli.innerText = 'Watch Online'
-//         down7.innerText = 'Download (' + size.size720 + ')'
-
-//         down7.style.display = 'block'
-//         down7.style.width = '100%'
-//         down7.style.padding ='50px'
-        
-//         onli.style.display = 'block'
-//         onli.style.width = '100%'
-//         onli.style.padding = '50px'
-//         onli.style.marginBottom = '10px'
-
-//         // document.body.append(video, button)
-//         document.body.append(onli,down7)
-    
-
-
-
-// onli.onclick = () => {
-//         var onli = document.getElementById('onli')
-//         onli.remove()
-//         var dow = document.getElementById('down')
-//         dow.remove()
-
-
-//         var video = document.createElement("video");
-//         var source = document.createElement("source");
-
-
-//         video.setAttribute('controls', 'true')
-//         video.setAttribute('autoplay', 'true')
-//         video.setAttribute('id', 'viddd')
-//         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
-//         video.setAttribute('oncontextmenu', 'return false;')
-
-//         source.setAttribute('id', 'srcc')
-
-        
-//         video.width = w * .94
-//         video.style.marginTop = '20px'
-//         source.src = videolink.q720p
-
-//         video.append(source)
-
-//         document.body.append(video)
-
-
-
-//         sig(bimg,'9000','9s')
-//         sig(bimg,'20000','20s')
-//         sig(bimg,'40000','40s')
-//         sig(bimg,'120000','2m')
-//         sig(bimg,'300000','5m')
-//         sig(bimg,'900000','15m')
-//         sig(bimg,'1200000','20m')
-//         sig(bimg,'1800000','30m')
-//         sig(bimg,'2400000','40m')
-//         sig(bimg,'3000000','50m')
-//         sig(bimg,'3600000','1h')
-//         sig(bimg,'4200000','1h-10m')
-//         sig(bimg,'4800000','1h-20m')
-//         sig(bimg,'5400000','1h-30m')
-//         sig(bimg,'6000000','1h-40m')
-//         sig(bimg,'6600000','1h-50m')
-//         sig(bimg,'7200000','2h')
-//         sig(bimg,'7500000','2h-5m')
-//         sig(bimg,'7800000','2h-10m')
-//         sig(bimg,'8100000','2h-15m')
-//         sig(bimg,'8400000','2h-20m')
-//         sig(bimg,'8700000','2h-25m')
-//         sig(bimg,'9000000','2h-30m')
-//         sig(bimg,'9300000','2h-35m')
-//         sig(bimg,'9600000','2h-40m')
-
-
-
-
-//         }
-
-
-
-//         down7.onclick = () => {
-//             var xhttp = new XMLHttpRequest();
-//             xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-//             xhttp.setRequestHeader('reqs', bimg+'-720-download')
-//             xhttp.send();
-//             window.open(videolink.q720p, '_self') }
-
-
-//     }
-
-
-//     q1080.onclick = () => {
-
-
-//         var q720 = document.getElementById('q720')
-//         if(q720==null){}else{q720.remove()}
-//         var q1080 = document.getElementById('q1080')
-//         if(q1080==null){}else{q1080.remove()}
-//         var downonly = document.getElementById('downonly')
-//         if(downonly==null){}else{downonly.remove()}
-
-
-
-//         var xhttp = new XMLHttpRequest();
-//         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-//         xhttp.setRequestHeader('reqs', bimg+'-1080-click')
-//         xhttp.send();
-
-//         var onli = document.createElement("button");
-//         var down7 = document.createElement("button");
-        
-//         onli.setAttribute('id', 'onli')
-//         down7.setAttribute('id', 'down')
-
-//         onli.innerText = 'Watch Online'
-//         down7.innerText = 'Download (' + size.size1080 + ')'
-
-//         down7.style.display = 'block'
-//         down7.style.width = '100%'
-//         down7.style.padding ='50px'
-        
-//         onli.style.display = 'block'
-//         onli.style.width = '100%'
-//         onli.style.padding = '50px'
-//         onli.style.marginBottom = '10px'
-
-//         // document.body.append(video, button)
-//         document.body.append(onli,down7)
-    
-
-
-
-// onli.onclick = () => {
-//         var onli = document.getElementById('onli')
-//         onli.remove()
-//         var dow = document.getElementById('down')
-//         dow.remove()
-
-
-//         var video = document.createElement("video");
-//         var source = document.createElement("source");
-
-
-//         video.setAttribute('controls', 'true')
-//         video.setAttribute('autoplay', 'true')
-//         video.setAttribute('id', 'viddd')
-//         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
-//         video.setAttribute('oncontextmenu', 'return false;')
-
-//         source.setAttribute('id', 'srcc')
-
-        
-//         video.width = w * .94
-//         video.style.marginTop = '20px'
-//         source.src = videolink.q1080p
-
-//         video.append(source)
-
-//         document.body.append(video)
-
-
-
-//         sig(bimg,'9000','9s')
-//         sig(bimg,'20000','20s')
-//         sig(bimg,'40000','40s')
-//         sig(bimg,'120000','2m')
-//         sig(bimg,'300000','5m')
-//         sig(bimg,'900000','15m')
-//         sig(bimg,'1200000','20m')
-//         sig(bimg,'1800000','30m')
-//         sig(bimg,'2400000','40m')
-//         sig(bimg,'3000000','50m')
-//         sig(bimg,'3600000','1h')
-//         sig(bimg,'4200000','1h-10m')
-//         sig(bimg,'4800000','1h-20m')
-//         sig(bimg,'5400000','1h-30m')
-//         sig(bimg,'6000000','1h-40m')
-//         sig(bimg,'6600000','1h-50m')
-//         sig(bimg,'7200000','2h')
-//         sig(bimg,'7500000','2h-5m')
-//         sig(bimg,'7800000','2h-10m')
-//         sig(bimg,'8100000','2h-15m')
-//         sig(bimg,'8400000','2h-20m')
-//         sig(bimg,'8700000','2h-25m')
-//         sig(bimg,'9000000','2h-30m')
-//         sig(bimg,'9300000','2h-35m')
-//         sig(bimg,'9600000','2h-40m')
-
-
-
-
-//         }
-
-
-
-//         down7.onclick = () => {
-//             var xhttp = new XMLHttpRequest();
-//             xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-//             xhttp.setRequestHeader('reqs', bimg+'-1080-download')
-//             xhttp.send();
-//             window.open(videolink.q1080p, '_self') }
-
-
-//     }
-
-
-//     downonly.onclick = () => {
-
-//         var q720 = document.getElementById('q720')
-//         if(q720==null){}else{q720.remove()}
-//         var q1080 = document.getElementById('q1080')
-//         if(q1080==null){}else{q1080.remove()}
-//         var downonly = document.getElementById('downonly')
-//         if(downonly==null){}else{downonly.remove()}
-
-
-//     var xhttp = new XMLHttpRequest();
-//     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-//     xhttp.setRequestHeader('reqs', bimg+'downonly-click')
-//     xhttp.send();
-
-//     var down7 = document.createElement("button");
-    
-//     down7.setAttribute('id', 'down')
-
-//     down7.innerText = 'Download (' + size.sizedownonly + ')'
-
-//     down7.style.display = 'block'
-//     down7.style.width = '100%'
-//     down7.style.padding ='50px'
-    
-
-
-//     // document.body.append(video, button)
-//     document.body.append(down7)
-
-
-
-//     down7.onclick = () => {
-//         var xhttp = new XMLHttpRequest();
-//         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-//         xhttp.setRequestHeader('reqs', bimg+'-downonly-download')
-//         xhttp.send();
-//         window.open(videolink.downonly, '_self') }
-
-
-// }
 
 
    }
