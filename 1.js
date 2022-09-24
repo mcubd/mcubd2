@@ -5,12 +5,15 @@ document.getElementById('order').remove();
 orderly()
 
 var box = document.createElement("h3");
-
 box.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
-
 box.style.cssText = 'text-align:center;margin-top:30px'
-
 document.getElementById('cs').append(box)
+
+var bottom = document.createElement("h3");
+bottom.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
+document.getElementById('cont').append(bottom)
+
+
 
 
 
