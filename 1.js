@@ -165,7 +165,7 @@ document.getElementById('intro').append(j4)
 
 var yt43 = document.createElement("h6");
 yt43.innerText="(PHASE 1 - PHASE 3 is known as infinity SAGA.PHASE 4 - PHASE 6 will be known as The Multiverse SAGA)"
-yt43.style.cssText = 'margin-top:30px;text-align:center;margin-bottom:30px'
+yt43.style.cssText = 'margin-top:30px;text-align:center;margin-bottom:30px;color:lightgray'
 document.getElementById('intro').append(yt43)
 
 var h14 = document.createElement("h1");
