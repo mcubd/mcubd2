@@ -672,84 +672,694 @@ function seris(bname, bimg,videolink,size) {
             e7.remove()
             e8.remove()
             e9.remove()
+            e10.remove()
 
-        //     var hi = document.createElement("button");
-        //     var eng = document.createElement("button");
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
             
     
-        //     hi.innerText = 'Hindi'
-        //     eng.innerText = 'English'
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
     
-        //     hi.style.display = 'block'
-        //     hi.style.width = '100%'
-        //     hi.style.padding ='50px'
-        //     hi.style.marginBottom = '10px'
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
             
-        //     eng.style.display = 'block'
-        //     eng.style.width = '100%'
-        //     eng.style.padding = '15px'
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
     
-        //     document.body.append(hi,eng)
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[0]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+             
+            }
 
 
 
-
-        // var video = document.createElement("video");
-        // var sub = document.createElement("TRACK");
-        // var source = document.createElement("source");
-
-
-        // video.setAttribute('controls', 'true')
-        // video.setAttribute('autoplay', 'true')
-        // video.setAttribute('id', 'viddd')
-        // video.setAttribute('controlsList', 'noplaybackrate nodownload ')
-        // video.setAttribute('oncontextmenu', 'return false;')
-
-
-        // sub.setAttribute('src', e1sub)
-        // sub.setAttribute('kind', 'subtitles')
-        // sub.setAttribute('srclang', 'en')
-        // sub.setAttribute('label', 'English')
-        // sub.setAttribute('default', true)
+        }
+        e2.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
 
 
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[1]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+             
+            }
 
 
 
+        }
+        e3.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
 
 
-        
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
 
-        // source.setAttribute('id', 'srcc')
-        
-        // video.width = w * .94
-        // video.style.marginTop = '20px'
-        
-
-
-        // hi.onclick=function (){
-        //     hi.remove()
-        //     eng.remove()
-        //     source.src = epi1
-
-        //     video.append(source)
-        //     document.body.append(video)
-
-
-
-
-
-        // }
-        // eng.onclick=function (){
-        //     hi.remove()
-        //     eng.remove()
-        //     source.src = epi1e
-
-        //     video.append(source,sub)
-        //     document.body.append(video)
+    
+            document.body.append(onli,down)
 
 
-        // }
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[2]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+             
+            }
+
+
+
+        }
+        e4.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[4]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+             
+            }
+
+
+
+        }
+        e5.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[4]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+             
+            }
+
+
+
+        }
+        e6.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[5]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+             
+            }
+
+
+
+        }
+
+        e7.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[6]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+             
+            }
+
+
+
+        }
+        e8.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[7]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+             
+            }
+
+
+
+        }
+        e9.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[8]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+             
+            }
+
+
+
+        }
+        e10.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[9]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+             
+            }
+
 
 
         }
@@ -1120,7 +1730,7 @@ setTimeout(() => {
 
     // imgdiv('Chhichhore (2019) [1.4GB] & 720','chi',{q720p:'',q1080p:''},{size720:'',size1080:''})
 
-        seris('Testing','pool',['h','gg'],{size1080:'300MB'})
+        seris('Inside Job {Season 1} (2021) 1080p [300MB]','inside',['https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E01.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E02.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E03.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E04.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E05.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E06.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E07.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E08.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E09.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E10.mp4'],'300MB')
 
 
         imgdiv('Minions (2015)   1080p [800MB]','minions',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Minions.mp4'},{size1080:'800MB'})
