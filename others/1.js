@@ -486,7 +486,728 @@ onli.onclick = () => {
 
 
     
+function seris(bname, bimg,videolink,size) {
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    var g = w * .3939
 
+
+    var chidiv = document.createElement("div");
+    var iiidiv = document.createElement("div");
+    var p = document.createElement("p");
+    p.innerText = bname
+    var image = document.createElement("img");
+
+    chidiv.classList.add('chi');
+    iiidiv.classList.add('iii');
+    image.src = '../logoimg/'+bimg+'.jpg'
+
+    iiidiv.append(image)
+    chidiv.append(iiidiv, p)
+    var con = document.getElementById('cont')
+    con.appendChild(chidiv)
+
+    if (h - w < 0) {
+        chidiv.style.backgroundColor = '#000000';
+        chidiv.style.padding = '0px'
+        chidiv.style.marginTop = '14px'
+        chidiv.style.float = 'left'
+        chidiv.style.height = h * .9 + 'px'
+        chidiv.style.width = g * .6 + 'px'
+
+        image.style.width = g * .6 + 'px'
+
+        iiidiv.style.height = h * .7 + 'px'
+        iiidiv.style.overflow = 'hidden'
+
+    } 
+    else {
+        chidiv.style.backgroundColor = '#000000';
+        chidiv.style.padding = '0px'
+        chidiv.style.marginTop = '14px'
+        chidiv.style.float = 'left'
+        chidiv.style.height = h * .55 + 'px'
+        chidiv.style.width = g + 'px'
+
+        image.style.width = g + 'px'
+
+        iiidiv.style.height = h * .4 + 'px'
+        iiidiv.style.overflow = 'hidden'
+
+    }
+
+    chidiv.onclick = () => {
+        var con = document.getElementById('cont')
+        con.style.display = 'none'
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+        xhttp.setRequestHeader('reqs', bimg)
+        xhttp.send();
+
+        // ------------------------------------------
+
+
+
+
+        if('kk'=='kk'){
+
+
+            var e1 = document.createElement("button");
+            var e2 = document.createElement("button");
+            var e3 = document.createElement("button");
+            var e4 = document.createElement("button");
+            var e5 = document.createElement("button");
+            var e6 = document.createElement("button");
+            var e7 = document.createElement("button");
+            var e8 = document.createElement("button");
+            var e9 = document.createElement("button");
+            var e10 = document.createElement("button");
+    
+        
+            e1.innerText='Episode 1'
+            e2.innerText='Episode 2'
+            e3.innerText='Episode 3'
+            e4.innerText='Episode 4'
+            e5.innerText='Episode 5'
+            e6.innerText='Episode 6'
+            e7.innerText='Episode 7'
+            e8.innerText='Episode 8'
+            e9.innerText='Episode 9'
+            e10.innerText='Episode 10'
+    
+    
+    
+    
+            e1.style.display = 'block'
+            e2.style.display = 'block'
+            e3.style.display = 'block'
+            e4.style.display = 'block'
+            e5.style.display = 'block'
+            e6.style.display = 'block'
+            e7.style.display = 'block'
+            e8.style.display = 'block'
+            e9.style.display = 'block'
+            e10.style.display = 'block'
+    
+    
+            e1.style.width = '100%'
+            e2.style.width = '100%'
+            e3.style.width = '100%'
+            e4.style.width = '100%'
+            e5.style.width = '100%'
+            e6.style.width = '100%'
+            e7.style.width = '100%'
+            e8.style.width = '100%'
+            e9.style.width = '100%'
+            e10.style.width = '100%'
+    
+    
+            e1.style.padding = '12px'
+            e2.style.padding = '12px'
+            e3.style.padding = '12px'
+            e4.style.padding = '12px'
+            e5.style.padding = '12px'
+            e6.style.padding = '12px'
+            e7.style.padding = '12px'
+            e8.style.padding = '12px'
+            e9.style.padding = '12px'
+            e10.style.padding = '12px'
+    
+    
+    
+    
+            e1.style.marginBottom = '10px'
+            e2.style.marginBottom = '10px'
+            e3.style.marginBottom = '10px'
+            e4.style.marginBottom = '10px'
+            e5.style.marginBottom = '10px'
+            e6.style.marginBottom = '10px'
+            e7.style.marginBottom = '10px'
+            e8.style.marginBottom = '10px'
+            e9.style.marginBottom = '10px'
+            e10.style.marginBottom = '10px'
+    
+      
+    
+            var count=videolink.length
+
+
+            if(count==0){
+            }else if(count==1){
+                document.body.append(e1)
+            }else if(count==2){
+                document.body.append(e1,e2)
+            }else if(count==3){
+                document.body.append(e1,e2,e3)
+            }else if(count==4){
+                document.body.append(e1,e2,e3,e4)
+            }else if(count==5){
+                document.body.append(e1,e2,e3,e4,e5)
+            }else if(count==6){
+                document.body.append(e1,e2,e3,e4,e5,e6)
+            }else if(count==7){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7)
+            }else if(count==8){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8)
+            }else if(count==9){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9)
+            }else if(count==10){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10)
+    
+            }else{
+    
+            }
+        }
+
+
+
+        e1.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+
+            var hi = document.createElement("button");
+            var eng = document.createElement("button");
+            
+    
+            hi.innerText = 'Hindi'
+            eng.innerText = 'English'
+    
+            hi.style.display = 'block'
+            hi.style.width = '100%'
+            hi.style.padding ='50px'
+            hi.style.marginBottom = '10px'
+            
+            eng.style.display = 'block'
+            eng.style.width = '100%'
+            eng.style.padding = '15px'
+    
+            document.body.append(hi,eng)
+            // document.body.append(hi,eng)
+
+
+
+
+        var video = document.createElement("video");
+        var sub = document.createElement("TRACK");
+        var source = document.createElement("source");
+
+
+        video.setAttribute('controls', 'true')
+        video.setAttribute('autoplay', 'true')
+        video.setAttribute('id', 'viddd')
+        video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+        video.setAttribute('oncontextmenu', 'return false;')
+
+
+        sub.setAttribute('src', e1sub)
+        sub.setAttribute('kind', 'subtitles')
+        sub.setAttribute('srclang', 'en')
+        sub.setAttribute('label', 'English')
+        sub.setAttribute('default', true)
+
+
+
+
+
+
+
+        
+
+        source.setAttribute('id', 'srcc')
+        
+        video.width = w * .94
+        video.style.marginTop = '20px'
+        // source.src = epi1
+        
+
+
+        hi.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi1
+
+            video.append(source)
+            document.body.append(video)
+
+            setTimeout(() => {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-hindi-e1---State-8s---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+            xhttp.send();
+
+        }, 8000);
+            setTimeout(() => {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-hindi-e1---State-20s---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+            xhttp.send();
+
+        }, 20000);
+            setTimeout(() => {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-hindi-e1---State-40s---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+            xhttp.send();
+
+        }, 40000);
+            setTimeout(() => {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-hindi-e1---State-2m---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+            xhttp.send();
+
+        }, 120000);
+            setTimeout(() => {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-hindi-e1---State-5m---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+            xhttp.send();
+
+        }, 300000);
+            setTimeout(() => {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-hindi-e1---State-15m---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+            xhttp.send();
+
+        }, 900000);
+            setTimeout(() => {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-hindi-e1---State-30m---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+            xhttp.send();
+
+        }, 1800000);
+            setTimeout(() => {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-hindi-e1---State-42m---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+            xhttp.send();
+
+        }, 2520000);
+
+
+
+        }
+        eng.onclick=function (){
+            hi.remove()
+            eng.remove()
+            source.src = epi1e
+
+            video.append(source,sub)
+            document.body.append(video)
+
+            setTimeout(() => {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-eng-e1---State-8s---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+                xhttp.send();
+    
+            }, 8000);
+                setTimeout(() => {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-eng-e1---State-20s---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+                xhttp.send();
+    
+            }, 20000);
+                setTimeout(() => {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-eng-e1---State-40s---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+                xhttp.send();
+    
+            }, 40000);
+                setTimeout(() => {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-eng-e1---State-2m---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+                xhttp.send();
+    
+            }, 120000);
+                setTimeout(() => {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-eng-e1---State-5m---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+                xhttp.send();
+    
+            }, 300000);
+                setTimeout(() => {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-eng-e1---State-15m---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+                xhttp.send();
+    
+            }, 900000);
+                setTimeout(() => {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-eng-e1---State-30m---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+                xhttp.send();
+    
+            }, 1800000);
+                setTimeout(() => {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-eng-e1---State-42m---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
+                xhttp.send();
+    
+            }, 2520000);
+        }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+        // -------------------------------------------------
+
+        // var q720 = document.createElement("button");
+        // var q1080 = document.createElement("button");
+        // var downonly = document.createElement("button");
+
+        
+        // q720.setAttribute('id', 'q720')
+        // q1080.setAttribute('id', 'q1080')
+        // downonly.setAttribute('id', 'downonly')
+
+
+        // q720.innerText = '720p ('+size.size720+')'
+        // q1080.innerText = '1080p ('+size.size1080+')'
+        // downonly.innerText = 'Download only ('+size.sizedown+')'
+
+
+        // q1080.style.display = 'block'
+        // q1080.style.width = '100%'
+        // q1080.style.padding ='50px'
+        // q1080.style.marginBottom = '10px'
+
+        
+        // q720.style.display = 'block'
+        // q720.style.width = '100%'
+        // q720.style.padding = '50px'
+        // q720.style.marginBottom = '10px'
+
+        // downonly.style.display = 'block'
+        // downonly.style.width = '100%'
+        // downonly.style.padding = '50px'
+        // downonly.style.marginBottom = '10px'
+
+
+
+        // if(videolink.q720p==undefined || videolink.q720p=='' ){
+        //     if(videolink.q1080p==undefined || videolink.q1080p=='' ){
+        //         if(videolink.downonly==undefined || videolink.downonly=='' ){
+        //         }else{document.body.append(downonly)}
+        //     }else{
+        //         if(videolink.downonly==undefined || videolink.downonly=='' ){
+        //             document.body.append(q1080)
+        //         }else{document.body.append(downonly,q1080)}
+        //     }
+        // }else{
+        //     if(videolink.q1080p==undefined || videolink.q1080p=='' ){
+        //         if(videolink.downonly==undefined || videolink.downonly=='' ){
+        //             document.body.append(q720)
+        //         }else{
+        //             document.body.append(downonly,q720)
+        //         }
+        //     }
+        //     else{
+
+        //         if(videolink.downonly==undefined || videolink.downonly==''){
+        //         document.body.append(q720,q1080)
+        //         }else{
+        //             document.body.append(downonly,q720,q1080)
+        //         }
+
+        //     }
+
+
+
+
+
+
+        // }
+
+
+//         q720.onclick = () => {
+
+//             var q720 = document.getElementById('q720')
+//             if(q720==null){}else{q720.remove()}
+//             var q1080 = document.getElementById('q1080')
+//             if(q1080==null){}else{q1080.remove()}
+//             var downonly = document.getElementById('downonly')
+//             if(downonly==null){}else{downonly.remove()}
+
+
+//         var xhttp = new XMLHttpRequest();
+//         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+//         xhttp.setRequestHeader('reqs', bimg+'720-click')
+//         xhttp.send();
+
+//         var onli = document.createElement("button");
+//         var down7 = document.createElement("button");
+        
+//         onli.setAttribute('id', 'onli')
+//         down7.setAttribute('id', 'down')
+
+//         onli.innerText = 'Watch Online'
+//         down7.innerText = 'Download (' + size.size720 + ')'
+
+//         down7.style.display = 'block'
+//         down7.style.width = '100%'
+//         down7.style.padding ='50px'
+        
+//         onli.style.display = 'block'
+//         onli.style.width = '100%'
+//         onli.style.padding = '50px'
+//         onli.style.marginBottom = '10px'
+
+//         // document.body.append(video, button)
+//         document.body.append(onli,down7)
+    
+
+
+
+// onli.onclick = () => {
+//         var onli = document.getElementById('onli')
+//         onli.remove()
+//         var dow = document.getElementById('down')
+//         dow.remove()
+
+
+//         var video = document.createElement("video");
+//         var source = document.createElement("source");
+
+
+//         video.setAttribute('controls', 'true')
+//         video.setAttribute('autoplay', 'true')
+//         video.setAttribute('id', 'viddd')
+//         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+//         video.setAttribute('oncontextmenu', 'return false;')
+
+//         source.setAttribute('id', 'srcc')
+
+        
+//         video.width = w * .94
+//         video.style.marginTop = '20px'
+//         source.src = videolink.q720p
+
+//         video.append(source)
+
+//         document.body.append(video)
+
+
+
+//         sig(bimg,'9000','9s')
+//         sig(bimg,'20000','20s')
+//         sig(bimg,'40000','40s')
+//         sig(bimg,'120000','2m')
+//         sig(bimg,'300000','5m')
+//         sig(bimg,'900000','15m')
+//         sig(bimg,'1200000','20m')
+//         sig(bimg,'1800000','30m')
+//         sig(bimg,'2400000','40m')
+//         sig(bimg,'3000000','50m')
+//         sig(bimg,'3600000','1h')
+//         sig(bimg,'4200000','1h-10m')
+//         sig(bimg,'4800000','1h-20m')
+//         sig(bimg,'5400000','1h-30m')
+//         sig(bimg,'6000000','1h-40m')
+//         sig(bimg,'6600000','1h-50m')
+//         sig(bimg,'7200000','2h')
+//         sig(bimg,'7500000','2h-5m')
+//         sig(bimg,'7800000','2h-10m')
+//         sig(bimg,'8100000','2h-15m')
+//         sig(bimg,'8400000','2h-20m')
+//         sig(bimg,'8700000','2h-25m')
+//         sig(bimg,'9000000','2h-30m')
+//         sig(bimg,'9300000','2h-35m')
+//         sig(bimg,'9600000','2h-40m')
+
+
+
+
+//         }
+
+
+
+//         down7.onclick = () => {
+//             var xhttp = new XMLHttpRequest();
+//             xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+//             xhttp.setRequestHeader('reqs', bimg+'-720-download')
+//             xhttp.send();
+//             window.open(videolink.q720p, '_self') }
+
+
+//     }
+
+
+//     q1080.onclick = () => {
+
+
+//         var q720 = document.getElementById('q720')
+//         if(q720==null){}else{q720.remove()}
+//         var q1080 = document.getElementById('q1080')
+//         if(q1080==null){}else{q1080.remove()}
+//         var downonly = document.getElementById('downonly')
+//         if(downonly==null){}else{downonly.remove()}
+
+
+
+//         var xhttp = new XMLHttpRequest();
+//         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+//         xhttp.setRequestHeader('reqs', bimg+'-1080-click')
+//         xhttp.send();
+
+//         var onli = document.createElement("button");
+//         var down7 = document.createElement("button");
+        
+//         onli.setAttribute('id', 'onli')
+//         down7.setAttribute('id', 'down')
+
+//         onli.innerText = 'Watch Online'
+//         down7.innerText = 'Download (' + size.size1080 + ')'
+
+//         down7.style.display = 'block'
+//         down7.style.width = '100%'
+//         down7.style.padding ='50px'
+        
+//         onli.style.display = 'block'
+//         onli.style.width = '100%'
+//         onli.style.padding = '50px'
+//         onli.style.marginBottom = '10px'
+
+//         // document.body.append(video, button)
+//         document.body.append(onli,down7)
+    
+
+
+
+// onli.onclick = () => {
+//         var onli = document.getElementById('onli')
+//         onli.remove()
+//         var dow = document.getElementById('down')
+//         dow.remove()
+
+
+//         var video = document.createElement("video");
+//         var source = document.createElement("source");
+
+
+//         video.setAttribute('controls', 'true')
+//         video.setAttribute('autoplay', 'true')
+//         video.setAttribute('id', 'viddd')
+//         video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+//         video.setAttribute('oncontextmenu', 'return false;')
+
+//         source.setAttribute('id', 'srcc')
+
+        
+//         video.width = w * .94
+//         video.style.marginTop = '20px'
+//         source.src = videolink.q1080p
+
+//         video.append(source)
+
+//         document.body.append(video)
+
+
+
+//         sig(bimg,'9000','9s')
+//         sig(bimg,'20000','20s')
+//         sig(bimg,'40000','40s')
+//         sig(bimg,'120000','2m')
+//         sig(bimg,'300000','5m')
+//         sig(bimg,'900000','15m')
+//         sig(bimg,'1200000','20m')
+//         sig(bimg,'1800000','30m')
+//         sig(bimg,'2400000','40m')
+//         sig(bimg,'3000000','50m')
+//         sig(bimg,'3600000','1h')
+//         sig(bimg,'4200000','1h-10m')
+//         sig(bimg,'4800000','1h-20m')
+//         sig(bimg,'5400000','1h-30m')
+//         sig(bimg,'6000000','1h-40m')
+//         sig(bimg,'6600000','1h-50m')
+//         sig(bimg,'7200000','2h')
+//         sig(bimg,'7500000','2h-5m')
+//         sig(bimg,'7800000','2h-10m')
+//         sig(bimg,'8100000','2h-15m')
+//         sig(bimg,'8400000','2h-20m')
+//         sig(bimg,'8700000','2h-25m')
+//         sig(bimg,'9000000','2h-30m')
+//         sig(bimg,'9300000','2h-35m')
+//         sig(bimg,'9600000','2h-40m')
+
+
+
+
+//         }
+
+
+
+//         down7.onclick = () => {
+//             var xhttp = new XMLHttpRequest();
+//             xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+//             xhttp.setRequestHeader('reqs', bimg+'-1080-download')
+//             xhttp.send();
+//             window.open(videolink.q1080p, '_self') }
+
+
+//     }
+
+
+//     downonly.onclick = () => {
+
+//         var q720 = document.getElementById('q720')
+//         if(q720==null){}else{q720.remove()}
+//         var q1080 = document.getElementById('q1080')
+//         if(q1080==null){}else{q1080.remove()}
+//         var downonly = document.getElementById('downonly')
+//         if(downonly==null){}else{downonly.remove()}
+
+
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+//     xhttp.setRequestHeader('reqs', bimg+'downonly-click')
+//     xhttp.send();
+
+//     var down7 = document.createElement("button");
+    
+//     down7.setAttribute('id', 'down')
+
+//     down7.innerText = 'Download (' + size.sizedownonly + ')'
+
+//     down7.style.display = 'block'
+//     down7.style.width = '100%'
+//     down7.style.padding ='50px'
+    
+
+
+//     // document.body.append(video, button)
+//     document.body.append(down7)
+
+
+
+//     down7.onclick = () => {
+//         var xhttp = new XMLHttpRequest();
+//         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+//         xhttp.setRequestHeader('reqs', bimg+'-downonly-download')
+//         xhttp.send();
+//         window.open(videolink.downonly, '_self') }
+
+
+// }
+
+
+   }
+
+
+
+
+
+}
 
 
 setTimeout(() => {
@@ -494,6 +1215,8 @@ setTimeout(() => {
     // imgdiv(name,img,q7,size,midcredit,pc)
 
     // imgdiv('Chhichhore (2019) [1.4GB] & 720','chi',{q720p:'',q1080p:''},{size720:'',size1080:''})
+
+        seris('Testing','pool',[],{size1080:'300MB'})
 
 
         imgdiv('Minions (2015)   1080p [800MB]','minions',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Minions.mp4'},{size1080:'800MB'})
