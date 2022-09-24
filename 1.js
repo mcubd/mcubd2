@@ -163,6 +163,11 @@ j4.style.cssText = 'margin-top:0px;margin-left:40px;margin-bottom:15px'
 document.getElementById('intro').append(j4)
 
 
+var yt43 = document.createElement("h6");
+yt43.innerText="(PHASE 1 - PHASE 3 is known as infinity SAGA.PHASE 4 - PHASE 6 will be called The Multiverse SAGA)"
+yt43.style.cssText = 'margin-top:0px;text-align:center;margin-bottom:15px'
+document.getElementById('intro').append(yt43)
+
 var h14 = document.createElement("h1");
 h14.innerText='PHASE 4'
 h14.style.cssText = 'text-align:center;margin-top:30px;margin-bottom:20px'
@@ -217,10 +222,7 @@ document.getElementById('intro').append(yt6)
 
 
 
-var yt43 = document.createElement("h6");
-yt43.innerText="(PHASE 1 - PHASE 3 is known as infinity SAGA.PHASE 4 - PHASE 6 will be called The Multiverse SAGA)"
-yt43.style.cssText = 'margin-top:0px;text-align:center;margin-bottom:15px'
-document.getElementById('intro').append(yt43)
+
 
 var h15 = document.createElement("h1");
 h15.innerText='PHASE 5'
