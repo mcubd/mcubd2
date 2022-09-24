@@ -11,7 +11,7 @@ box.style.cssText = 'text-align:center;margin-top:30px'
 
 var bottom = document.createElement("h3");
 bottom.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
-bottom.style.cssText = 'text-align:center;margin-top:30px;margin:0;padding:0;'
+bottom.style.cssText = 'text-align:center;'
 document.getElementById('cont').append(bottom)
 
 
