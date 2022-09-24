@@ -1,13 +1,16 @@
 function order(){
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
 document.getElementById('cont').innerHTML=''
 document.getElementById('h4').innerHTML=''
 document.getElementById('order').remove();
 orderly()
 
-// var box = document.createElement("h3");
-// box.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
-// box.style.cssText = 'text-align:center;margin-top:30px'
-// document.getElementById('cs').append(box)
+var box = document.createElement("h3");
+box.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
+box.style.cssText = 'text-align:center;margin-top:30px'
+document.getElementById('cs').append(box)
 
 // var bottom = document.createElement("h3");
 // bottom.innerText=''
@@ -15,6 +18,7 @@ orderly()
 // document.getElementById('cont').append(bottom)
 
 
+document.getElementById('cs').style.cssText = 'margin-bottom:h px'
 
 
 
