@@ -8,7 +8,7 @@ var box = document.createElement("h3");
 
 box.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
 
-box.style.cssText = 'text-align:center;margin-top:40px;margin-bottom:60px;'
+box.style.cssText = 'text-align:center;margin-top:100px'
 
 document.getElementById('cs').append(box)
 
