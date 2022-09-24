@@ -174,7 +174,6 @@ function imgdiv(bname, bimg,videolink,size) {
     var h = window.innerHeight;
     var g = w * .3939
 
-    document.getElementById('intro').innerHTML=''
 
 
     var chidiv = document.createElement("div");
@@ -222,6 +221,8 @@ function imgdiv(bname, bimg,videolink,size) {
     }
 
     chidiv.onclick = () => {
+        document.getElementById('intro').innerHTML=''
+
         var con = document.getElementById('cont')
         con.style.display = 'none'
 
