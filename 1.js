@@ -9,10 +9,10 @@ orderly()
 // box.style.cssText = 'text-align:center;margin-top:30px'
 // document.getElementById('cs').append(box)
 
-var bottom = document.createElement("h3");
-bottom.innerText=''
-bottom.style.cssText = ''
-document.getElementById('cont').append(bottom)
+// var bottom = document.createElement("h3");
+// bottom.innerText=''
+// bottom.style.cssText = ''
+// document.getElementById('cont').append(bottom)
 
 
 
