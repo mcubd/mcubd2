@@ -55,6 +55,23 @@ document.getElementById('intro').append(h46)
 
 
 
+var h12 = document.createElement("h1");
+h12.innerText='PHASE 2'
+h12.style.cssText = 'text-align:center;margin-top:30px;margin-bottom:20px'
+document.getElementById('intro').append(h12)
+
+
+var h47 = document.createElement("h6");
+h47.innerText="1.Iron Man 3 (2013)"
+h47.style.cssText = 'margin-top:0px;margin-left:40px;margin-bottom:15px'
+document.getElementById('intro').append(h47)
+
+
+var h48 = document.createElement("h6");
+h48.innerText="2.Thor: The Dark World (2013)"
+h48.style.cssText = 'margin-top:0px;margin-left:40px;margin-bottom:15px'
+document.getElementById('intro').append(h48)
+
 
 }
 
