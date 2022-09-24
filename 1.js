@@ -174,6 +174,8 @@ function imgdiv(bname, bimg,videolink,size) {
     var h = window.innerHeight;
     var g = w * .3939
 
+    document.getElementById('intro').innerHTML=''
+
 
     var chidiv = document.createElement("div");
     var iiidiv = document.createElement("div");
