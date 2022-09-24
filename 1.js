@@ -3,7 +3,7 @@ document.getElementById('cont').innerHTML=''
 document.getElementById('order').remove();
 orderly()
 
-var box = document.createElement("div");
+var box = document.createElement("p");
 
 box.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
 
