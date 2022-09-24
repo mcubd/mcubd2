@@ -269,7 +269,7 @@ document.getElementById('intro').append(yp5)
 
 
 var yp7 = document.createElement("h6");
-yp7.innerText="More Movies will take place in PHASE 5."
+yp7.innerText="(More Movies will take place in PHASE 5)"
 yp7.style.cssText = 'margin-top:0px;margin-bottom:15px;text-align: center;color: aqua;'
 document.getElementById('intro').append(yp7)
 
