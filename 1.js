@@ -18,7 +18,7 @@ document.getElementById('cs').append(box)
 // document.getElementById('cont').append(bottom)
 
 
-document.getElementById('cs').style.cssText = 'margin-bottom:h px'
+document.getElementById('cs').style.cssText = 'margin-bottom:'+h+' px'
 
 
 
