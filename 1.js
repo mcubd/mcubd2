@@ -1,6 +1,7 @@
 function order(){
 document.getElementById('cont').innerHTML=''
 document.getElementById('order').remove()
+orderly()
 
 }
 
