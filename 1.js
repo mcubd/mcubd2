@@ -266,10 +266,7 @@ yp5.style.cssText = 'margin-top:0px;margin-bottom:15px;text-align: center;color:
 document.getElementById('intro').append(yp5)
 
 
-var yp6 = document.createElement("h6");
-yp6.innerText="Thunderbolts (2024) {Upcoming}"
-yp6.style.cssText = 'margin-top:0px;margin-bottom:15px;text-align: center;color: aqua;'
-document.getElementById('intro').append(yp6)
+
 
 var yp7 = document.createElement("h6");
 yp7.innerText="More Movies will take place in PHASE 5."
