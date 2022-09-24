@@ -726,6 +726,34 @@ function seris(bname, bimg,videolink,size) {
             document.body.append(video)
 
 
+
+            sig(bimg,'9000','9s')
+            sig(bimg,'20000','20s')
+            sig(bimg,'40000','40s')
+            sig(bimg,'120000','2m')
+            sig(bimg,'300000','5m')
+            sig(bimg,'900000','15m')
+            sig(bimg,'1200000','20m')
+            sig(bimg,'1800000','30m')
+            sig(bimg,'2400000','40m')
+            sig(bimg,'3000000','50m')
+            sig(bimg,'3600000','1h')
+            sig(bimg,'4200000','1h-10m')
+            sig(bimg,'4800000','1h-20m')
+            sig(bimg,'5400000','1h-30m')
+            sig(bimg,'6000000','1h-40m')
+            sig(bimg,'6600000','1h-50m')
+            sig(bimg,'7200000','2h')
+            sig(bimg,'7500000','2h-5m')
+            sig(bimg,'7800000','2h-10m')
+            sig(bimg,'8100000','2h-15m')
+            sig(bimg,'8400000','2h-20m')
+            sig(bimg,'8700000','2h-25m')
+            sig(bimg,'9000000','2h-30m')
+            sig(bimg,'9300000','2h-35m')
+            sig(bimg,'9600000','2h-40m')
+
+
              
             }
 
@@ -1566,3 +1594,5 @@ function sig(bimg,sett,tim){
        }, sett);
    
 }
+
+
