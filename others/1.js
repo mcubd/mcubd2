@@ -1120,7 +1120,7 @@ setTimeout(() => {
 
     // imgdiv('Chhichhore (2019) [1.4GB] & 720','chi',{q720p:'',q1080p:''},{size720:'',size1080:''})
 
-        seris('Testing','pool',[],{size1080:'300MB'})
+        seris('Testing','pool',['h','gg'],{size1080:'300MB'})
 
 
         imgdiv('Minions (2015)   1080p [800MB]','minions',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Minions.mp4'},{size1080:'800MB'})
