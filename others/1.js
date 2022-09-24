@@ -834,6 +834,31 @@ function seris(bname, bimg,videolink,size) {
             document.body.append(video)
 
 
+            sig(bimg+'-ep-2','9000','9s')
+            sig(bimg+'-ep-2','20000','20s')
+            sig(bimg+'-ep-2','40000','40s')
+            sig(bimg+'-ep-2','120000','2m')
+            sig(bimg+'-ep-2','300000','5m')
+            sig(bimg+'-ep-2','900000','15m')
+            sig(bimg+'-ep-2','1200000','20m')
+            sig(bimg+'-ep-2','1800000','30m')
+            sig(bimg+'-ep-2','2400000','40m')
+            sig(bimg+'-ep-2','3000000','50m')
+            sig(bimg+'-ep-2','3600000','1h')
+            sig(bimg+'-ep-2','4200000','1h-10m')
+            sig(bimg+'-ep-2','4800000','1h-20m')
+            sig(bimg+'-ep-2','5400000','1h-30m')
+            sig(bimg+'-ep-2','6000000','1h-40m')
+            sig(bimg+'-ep-2','6600000','1h-50m')
+            sig(bimg+'-ep-2','7200000','2h')
+            sig(bimg+'-ep-2','7500000','2h-5m')
+            sig(bimg+'-ep-2','7800000','2h-10m')
+            sig(bimg+'-ep-2','8100000','2h-15m')
+            sig(bimg+'-ep-2','8400000','2h-20m')
+            sig(bimg+'-ep-2','8700000','2h-25m')
+            sig(bimg+'-ep-2','9000000','2h-30m')
+            sig(bimg+'-ep-2','9300000','2h-35m')
+            sig(bimg+'-ep-2','9600000','2h-40m')
              
             }
 
@@ -1580,10 +1605,6 @@ function sig(bimg,sett,tim){
 
     var video=document.getElementById('viddd') 
    return setTimeout(() => {
-           // var xhttp = new XMLHttpRequest();
-           // xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-----State-'+tim+'---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
-           // xhttp.send();
-
 
 
            var xhttp = new XMLHttpRequest();
