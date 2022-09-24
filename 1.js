@@ -1,7 +1,7 @@
 function order(){
 
 document.getElementById('cont').innerHTML=''
-document.getElementById('h4').innerHTML=''
+document.getElementById('h4').style.display = 'none'
 document.getElementById('order').remove();
 orderly()
 
@@ -102,6 +102,12 @@ var h13 = document.createElement("h1");
 h13.innerText='PHASE 3'
 h13.style.cssText = 'text-align:center;margin-top:30px;margin-bottom:20px'
 document.getElementById('intro').append(h13)
+
+
+var d = document.createElement("h6");
+d.innerText="6.Ant-Man (2015)"
+d.style.cssText = 'margin-top:0px;margin-left:40px;margin-bottom:15px'
+document.getElementById('intro').append(d)
 
 
 }
@@ -222,6 +228,8 @@ function imgdiv(bname, bimg,videolink,size) {
 
     chidiv.onclick = () => {
         document.getElementById('intro').innerHTML=''
+        document.getElementById('h4').style.display = ''
+
 
         var con = document.getElementById('cont')
         con.style.display = 'none'
