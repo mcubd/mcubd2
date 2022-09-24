@@ -205,15 +205,26 @@ document.getElementById('intro').append(yt5)
 
 
 var yt7 = document.createElement("h6");
-yt7.innerText="Upcoming"
-yt7.style.cssText = 'margin-top:0px;text-align: center;margin-bottom:15px;background-color: aqua;'
+yt7.innerText="Upcoming..."
+yt7.style.cssText = 'margin-top:0px;text-align: center;margin-bottom:15px;color: aqua;'
 document.getElementById('intro').append(yt7)
 
 
 var yt6 = document.createElement("h6");
 yt6.innerText="7.Black Panther: Wakanda Forever (2022) {Upcoming}"
-yt6.style.cssText = 'margin-top:0px;margin-bottom:15px;text-align: center;background-color: aqua;'
+yt6.style.cssText = 'margin-top:0px;margin-bottom:15px;text-align: center;color: aqua;'
 document.getElementById('intro').append(yt6)
+
+
+var h15 = document.createElement("h1");
+h15.innerText='PHASE 5'
+h15.style.cssText = 'text-align:center;margin-top:30px;margin-bottom:20px'
+document.getElementById('intro').append(h15)
+
+var yp0 = document.createElement("h6");
+yp0.innerText="Black Panther: Wakanda Forever (2022) {Upcoming}"
+yp0.style.cssText = 'margin-top:0px;margin-bottom:15px;text-align: center;color: aqua;'
+document.getElementById('intro').append(yp0)
 
 
 }
