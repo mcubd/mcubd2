@@ -1,9 +1,10 @@
 function order(){
 document.getElementById('cont').innerHTML=''
+document.getElementById('h4').innerHTML=''
 document.getElementById('order').remove();
 orderly()
 
-var box = document.createElement("p");
+var box = document.createElement("h3");
 
 box.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
 
