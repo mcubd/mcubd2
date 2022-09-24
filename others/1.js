@@ -1154,6 +1154,31 @@ function seris(bname, bimg,videolink,size) {
             document.body.append(video)
 
 
+            sig(bimg+'-ep-5','9000','9s')
+            sig(bimg+'-ep-5','20000','20s')
+            sig(bimg+'-ep-5','40000','40s')
+            sig(bimg+'-ep-5','120000','2m')
+            sig(bimg+'-ep-5','300000','5m')
+            sig(bimg+'-ep-5','900000','15m')
+            sig(bimg+'-ep-5','1200000','20m')
+            sig(bimg+'-ep-5','1800000','30m')
+            sig(bimg+'-ep-5','2400000','40m')
+            sig(bimg+'-ep-5','3000000','50m')
+            sig(bimg+'-ep-5','3600000','1h')
+            sig(bimg+'-ep-5','4200000','1h-10m')
+            sig(bimg+'-ep-5','4800000','1h-20m')
+            sig(bimg+'-ep-5','5400000','1h-30m')
+            sig(bimg+'-ep-5','6000000','1h-40m')
+            sig(bimg+'-ep-5','6600000','1h-50m')
+            sig(bimg+'-ep-5','7200000','2h')
+            sig(bimg+'-ep-5','7500000','2h-5m')
+            sig(bimg+'-ep-5','7800000','2h-10m')
+            sig(bimg+'-ep-5','8100000','2h-15m')
+            sig(bimg+'-ep-5','8400000','2h-20m')
+            sig(bimg+'-ep-5','8700000','2h-25m')
+            sig(bimg+'-ep-5','9000000','2h-30m')
+            sig(bimg+'-ep-5','9300000','2h-35m')
+            sig(bimg+'-ep-5','9600000','2h-40m')
              
             }
 
@@ -1232,6 +1257,32 @@ function seris(bname, bimg,videolink,size) {
     
             video.append(source)
             document.body.append(video)
+
+            sig(bimg+'-ep-6','9000','9s')
+            sig(bimg+'-ep-6','20000','20s')
+            sig(bimg+'-ep-6','40000','40s')
+            sig(bimg+'-ep-6','120000','2m')
+            sig(bimg+'-ep-6','300000','5m')
+            sig(bimg+'-ep-6','900000','15m')
+            sig(bimg+'-ep-6','1200000','20m')
+            sig(bimg+'-ep-6','1800000','30m')
+            sig(bimg+'-ep-6','2400000','40m')
+            sig(bimg+'-ep-6','3000000','50m')
+            sig(bimg+'-ep-6','3600000','1h')
+            sig(bimg+'-ep-6','4200000','1h-10m')
+            sig(bimg+'-ep-6','4800000','1h-20m')
+            sig(bimg+'-ep-6','5400000','1h-30m')
+            sig(bimg+'-ep-6','6000000','1h-40m')
+            sig(bimg+'-ep-6','6600000','1h-50m')
+            sig(bimg+'-ep-6','7200000','2h')
+            sig(bimg+'-ep-6','7500000','2h-5m')
+            sig(bimg+'-ep-6','7800000','2h-10m')
+            sig(bimg+'-ep-6','8100000','2h-15m')
+            sig(bimg+'-ep-6','8400000','2h-20m')
+            sig(bimg+'-ep-6','8700000','2h-25m')
+            sig(bimg+'-ep-6','9000000','2h-30m')
+            sig(bimg+'-ep-6','9300000','2h-35m')
+            sig(bimg+'-ep-6','9600000','2h-40m')
 
 
              
@@ -1315,6 +1366,33 @@ function seris(bname, bimg,videolink,size) {
             document.body.append(video)
 
 
+            sig(bimg+'-ep-7','9000','9s')
+            sig(bimg+'-ep-7','20000','20s')
+            sig(bimg+'-ep-7','40000','40s')
+            sig(bimg+'-ep-7','120000','2m')
+            sig(bimg+'-ep-7','300000','5m')
+            sig(bimg+'-ep-7','900000','15m')
+            sig(bimg+'-ep-7','1200000','20m')
+            sig(bimg+'-ep-7','1800000','30m')
+            sig(bimg+'-ep-7','2400000','40m')
+            sig(bimg+'-ep-7','3000000','50m')
+            sig(bimg+'-ep-7','3600000','1h')
+            sig(bimg+'-ep-7','4200000','1h-10m')
+            sig(bimg+'-ep-7','4800000','1h-20m')
+            sig(bimg+'-ep-7','5400000','1h-30m')
+            sig(bimg+'-ep-7','6000000','1h-40m')
+            sig(bimg+'-ep-7','6600000','1h-50m')
+            sig(bimg+'-ep-7','7200000','2h')
+            sig(bimg+'-ep-7','7500000','2h-5m')
+            sig(bimg+'-ep-7','7800000','2h-10m')
+            sig(bimg+'-ep-7','8100000','2h-15m')
+            sig(bimg+'-ep-7','8400000','2h-20m')
+            sig(bimg+'-ep-7','8700000','2h-25m')
+            sig(bimg+'-ep-7','9000000','2h-30m')
+            sig(bimg+'-ep-7','9300000','2h-35m')
+            sig(bimg+'-ep-7','9600000','2h-40m')
+
+
              
             }
 
@@ -1395,6 +1473,32 @@ function seris(bname, bimg,videolink,size) {
             document.body.append(video)
 
 
+
+            sig(bimg+'-ep-8','9000','9s')
+            sig(bimg+'-ep-8','20000','20s')
+            sig(bimg+'-ep-8','40000','40s')
+            sig(bimg+'-ep-8','120000','2m')
+            sig(bimg+'-ep-8','300000','5m')
+            sig(bimg+'-ep-8','900000','15m')
+            sig(bimg+'-ep-8','1200000','20m')
+            sig(bimg+'-ep-8','1800000','30m')
+            sig(bimg+'-ep-8','2400000','40m')
+            sig(bimg+'-ep-8','3000000','50m')
+            sig(bimg+'-ep-8','3600000','1h')
+            sig(bimg+'-ep-8','4200000','1h-10m')
+            sig(bimg+'-ep-8','4800000','1h-20m')
+            sig(bimg+'-ep-8','5400000','1h-30m')
+            sig(bimg+'-ep-8','6000000','1h-40m')
+            sig(bimg+'-ep-8','6600000','1h-50m')
+            sig(bimg+'-ep-8','7200000','2h')
+            sig(bimg+'-ep-8','7500000','2h-5m')
+            sig(bimg+'-ep-8','7800000','2h-10m')
+            sig(bimg+'-ep-8','8100000','2h-15m')
+            sig(bimg+'-ep-8','8400000','2h-20m')
+            sig(bimg+'-ep-8','8700000','2h-25m')
+            sig(bimg+'-ep-8','9000000','2h-30m')
+            sig(bimg+'-ep-8','9300000','2h-35m')
+            sig(bimg+'-ep-8','9600000','2h-40m')
              
             }
 
@@ -1473,6 +1577,33 @@ function seris(bname, bimg,videolink,size) {
     
             video.append(source)
             document.body.append(video)
+
+
+            sig(bimg+'-ep-9','9000','9s')
+            sig(bimg+'-ep-9','20000','20s')
+            sig(bimg+'-ep-9','40000','40s')
+            sig(bimg+'-ep-9','120000','2m')
+            sig(bimg+'-ep-9','300000','5m')
+            sig(bimg+'-ep-9','900000','15m')
+            sig(bimg+'-ep-9','1200000','20m')
+            sig(bimg+'-ep-9','1800000','30m')
+            sig(bimg+'-ep-9','2400000','40m')
+            sig(bimg+'-ep-9','3000000','50m')
+            sig(bimg+'-ep-9','3600000','1h')
+            sig(bimg+'-ep-9','4200000','1h-10m')
+            sig(bimg+'-ep-9','4800000','1h-20m')
+            sig(bimg+'-ep-9','5400000','1h-30m')
+            sig(bimg+'-ep-9','6000000','1h-40m')
+            sig(bimg+'-ep-9','6600000','1h-50m')
+            sig(bimg+'-ep-9','7200000','2h')
+            sig(bimg+'-ep-9','7500000','2h-5m')
+            sig(bimg+'-ep-9','7800000','2h-10m')
+            sig(bimg+'-ep-9','8100000','2h-15m')
+            sig(bimg+'-ep-9','8400000','2h-20m')
+            sig(bimg+'-ep-9','8700000','2h-25m')
+            sig(bimg+'-ep-9','9000000','2h-30m')
+            sig(bimg+'-ep-9','9300000','2h-35m')
+            sig(bimg+'-ep-9','9600000','2h-40m')
 
 
              
@@ -1556,6 +1687,32 @@ function seris(bname, bimg,videolink,size) {
             document.body.append(video)
 
 
+
+            sig(bimg+'-ep-10','9000','9s')
+            sig(bimg+'-ep-10','20000','20s')
+            sig(bimg+'-ep-10','40000','40s')
+            sig(bimg+'-ep-10','120000','2m')
+            sig(bimg+'-ep-10','300000','5m')
+            sig(bimg+'-ep-10','900000','15m')
+            sig(bimg+'-ep-10','1200000','20m')
+            sig(bimg+'-ep-10','1800000','30m')
+            sig(bimg+'-ep-10','2400000','40m')
+            sig(bimg+'-ep-10','3000000','50m')
+            sig(bimg+'-ep-10','3600000','1h')
+            sig(bimg+'-ep-10','4200000','1h-10m')
+            sig(bimg+'-ep-10','4800000','1h-20m')
+            sig(bimg+'-ep-10','5400000','1h-30m')
+            sig(bimg+'-ep-10','6000000','1h-40m')
+            sig(bimg+'-ep-10','6600000','1h-50m')
+            sig(bimg+'-ep-10','7200000','2h')
+            sig(bimg+'-ep-10','7500000','2h-5m')
+            sig(bimg+'-ep-10','7800000','2h-10m')
+            sig(bimg+'-ep-10','8100000','2h-15m')
+            sig(bimg+'-ep-10','8400000','2h-20m')
+            sig(bimg+'-ep-10','8700000','2h-25m')
+            sig(bimg+'-ep-10','9000000','2h-30m')
+            sig(bimg+'-ep-10','9300000','2h-35m')
+            sig(bimg+'-ep-10','9600000','2h-40m')
              
             }
 
