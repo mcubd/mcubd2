@@ -1,5 +1,6 @@
 var div = document.createElement("div");
 var div2 = document.createElement("div");
+var div3 = document.createElement("div");
 var a = document.createElement("a");
 var button = document.createElement("button");
 var h4 = document.createElement("h4");
@@ -20,6 +21,7 @@ var button4 = document.createElement("button");
 
 div.setAttribute('id', 'cs')
 div2.setAttribute('id', 'cont')
+div3.setAttribute('id', 'intro')
 img.setAttribute('id', 'lp')
 button.setAttribute('id', 'me')
 button.setAttribute('id', 'buttt')
@@ -86,7 +88,7 @@ div.append(a, button, hr, h7, button1, button2, button3, button4)
 
 
 
-document.body.append(div, h4,order, div2)
+document.body.append(div, h4,order,div3,div2)
 
 
 

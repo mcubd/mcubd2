@@ -8,18 +8,19 @@ orderly()
 var box = document.createElement("h3");
 box.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
 box.style.cssText = 'text-align:center;margin-top:30px'
-document.getElementById('cs').append(box)
+document.getElementById('intro').append(box)
 
 // var bottom = document.createElement("h3");
 // bottom.innerText=''
 // bottom.style.cssText = ''
 // document.getElementById('cont').append(bottom)
-document.getElementById('cs').style.cssText = 'margin-bottom:600px'
+
+// document.getElementById('intro').style.cssText = 'margin-bottom:600px'
 
 var h1 = document.createElement("h1");
 h1.innerText='PHASE 1'
 h1.style.cssText = 'text-align:center;margin-top:30px'
-document.getElementById('cs').append(h1)
+document.getElementById('intro').append(h1)
 
 
 
