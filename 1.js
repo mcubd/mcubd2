@@ -7,7 +7,7 @@ var box = document.createElement("div");
 
 box.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
 
-box.style.cssText = 'display:block;border-color: #473737;'
+box.style.cssText = 'display:block;border-color: #473737;height:60px;width:100%;'
 
 document.body.append(box)
 
