@@ -12,7 +12,7 @@ document.getElementById('intro').append(box)
 
 var hr = document.createElement("hr");
 // hr.innerText='The Marvel Cinematic Universe Films Collection (2008-2022)'
-// hr.style.cssText = 'text-align:center;margin-top:30px'
+hr.style.cssText = 'border: 0; border-top: 1px solid #dee2e6;'
 document.getElementById('intro').append(hr)
 
 // document.getElementById('intro').style.cssText = 'margin-bottom:600px'
