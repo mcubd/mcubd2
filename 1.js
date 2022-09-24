@@ -16,10 +16,10 @@ document.getElementById('cs').append(box)
 // document.getElementById('cont').append(bottom)
 document.getElementById('cs').style.cssText = 'margin-bottom:600px'
 
-var img1 = document.createElement("img");
-img1.src='https://mcubd.netlify.app/logoimg/1.gif'
-img1.style.cssText = 'text-align:center;margin-top:30px'
-document.getElementById('cs').append(img1)
+var h1 = document.createElement("h1");
+h1.innerText='PHASE 1'
+h1.style.cssText = 'text-align:center;margin-top:30px'
+document.getElementById('cs').append(h1)
 
 
 
