@@ -761,7 +761,7 @@ function seris(bname, bimg,videolink,size) {
 
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.setRequestHeader('reqs', bimg+'-ep-1-download')
                 xhttp.send();
                 window.open(videolink[0], '_self') 
              
@@ -867,7 +867,7 @@ function seris(bname, bimg,videolink,size) {
 
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.setRequestHeader('reqs', bimg+'-ep-2-download')
                 xhttp.send();
                 window.open(videolink[1], '_self') 
              
@@ -974,7 +974,7 @@ function seris(bname, bimg,videolink,size) {
 
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.setRequestHeader('reqs', bimg+'-ep-3-download')
                 xhttp.send();
                 window.open(videolink[2], '_self') 
              
@@ -1081,7 +1081,7 @@ function seris(bname, bimg,videolink,size) {
 
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.setRequestHeader('reqs', bimg+'-ep-4-download')
                 xhttp.send();
                 window.open(videolink[4], '_self') 
              
@@ -1186,7 +1186,7 @@ function seris(bname, bimg,videolink,size) {
 
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.setRequestHeader('reqs', bimg+'-ep-5-download')
                 xhttp.send();
                 window.open(videolink[4], '_self') 
              
@@ -1292,7 +1292,7 @@ function seris(bname, bimg,videolink,size) {
 
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.setRequestHeader('reqs', bimg+'-ep-6-download')
                 xhttp.send();
                 window.open(videolink[5], '_self') 
              
@@ -1400,7 +1400,7 @@ function seris(bname, bimg,videolink,size) {
 
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.setRequestHeader('reqs', bimg+'-ep-7-download')
                 xhttp.send();
                 window.open(videolink[6], '_self') 
              
@@ -1506,7 +1506,7 @@ function seris(bname, bimg,videolink,size) {
 
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.setRequestHeader('reqs', bimg+'-ep-8-download')
                 xhttp.send();
                 window.open(videolink[7], '_self') 
              
@@ -1614,7 +1614,7 @@ function seris(bname, bimg,videolink,size) {
 
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.setRequestHeader('reqs', bimg+'-ep-9-download')
                 xhttp.send();
                 window.open(videolink[8], '_self') 
              
@@ -1721,7 +1721,7 @@ function seris(bname, bimg,videolink,size) {
 
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-                xhttp.setRequestHeader('reqs', bimg+'--download')
+                xhttp.setRequestHeader('reqs', bimg+'-ep-10-download')
                 xhttp.send();
                 window.open(videolink[9], '_self') 
              
