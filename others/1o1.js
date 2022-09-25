@@ -11,6 +11,8 @@ var button1 = document.createElement("button");
 var button2 = document.createElement("button");
 var button3 = document.createElement("button");
 var button4 = document.createElement("button");
+var order = document.createElement("button");
+
 
 
 
@@ -30,6 +32,8 @@ button2.setAttribute('id', 'but2')
 button3.setAttribute('id', 'but3')
 button4.setAttribute('id', 'but4')
 hr.setAttribute('id', 'hr')
+order.setAttribute('id', 'order')
+
 
 
 
@@ -49,6 +53,9 @@ button2.setAttribute('onclick', 'mcus()')
 button3.setAttribute('onclick', 'mar()')
 button4.setAttribute('onclick', 'other()')
 
+order.setAttribute('onclick', 'order()')
+
+
 
 // image.setAttribute('alt','lp')
 
@@ -61,6 +68,9 @@ button2.innerText = 'MCU-Seris'
 button3.innerText = 'Marvel'
 button4.innerText = 'Others'
 
+order.innerText = 'Why so serious?'
+
+
 
 
 button1.style.display = 'none'
@@ -69,6 +79,8 @@ button3.style.display = 'none'
 button4.style.display = 'none'
 hr.style.display = 'none'
 button.style.display = 'none'
+order.style.display = 'none'
+
 
 
 
@@ -80,7 +92,7 @@ div.append(a, button, hr, h7, button1, button2, button3, button4)
 
 
 
-document.body.append(div, h4, div2)
+document.body.append(div, h4,order, div2)
 
 
 
@@ -99,6 +111,7 @@ button3.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3)
 button4.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
 
 hr.style.cssText = 'margin: 0;border-color: #473737;'
+order.style.cssText = 'padding: 8px   calc(100vw*.06) 15px calc(100vw*.06);background-color: rgb(154, 238, 29);margin-bottom: 45px;border-radius:10px ;'
 
 
 document.getElementById('but1').style.display = ''
@@ -108,6 +121,8 @@ document.getElementById('but4').style.display = ''
 document.getElementById('but4').style.backgroundColor = 'grey'
 document.getElementById('hr').style.display = ''
 document.getElementById('buttt').style.display = ''
+document.getElementById('order').style.display = ''
+
 
 
 document.getElementById('buttt').style.float = 'right'
