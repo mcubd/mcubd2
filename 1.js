@@ -4,7 +4,6 @@ function order(){
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'Orderly-marvel-mcu-movies-send1')
     xhttp.send();
-    window.open('https://www.facebook.com/zafar.niloy','_self')
 
 document.getElementById('cont').innerHTML=''
 document.getElementById('h4').style.display = 'none'
@@ -173,7 +172,6 @@ var xhttp = new XMLHttpRequest();
 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
 xhttp.setRequestHeader('reqs', 'Orderly-marvel-mcu-movies-send2')
 xhttp.send();
-window.open('https://www.facebook.com/zafar.niloy','_self')
 
 var yt43 = document.createElement("h6");
 yt43.innerText="(PHASE 1 - PHASE 3 is known as infinity SAGA.PHASE 4 - PHASE 6 will be known as The Multiverse SAGA)"
@@ -396,7 +394,6 @@ var xhttp = new XMLHttpRequest();
 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
 xhttp.setRequestHeader('reqs', 'Orderly-marvel-mcu-movies-send3')
 xhttp.send();
-window.open('https://www.facebook.com/zafar.niloy','_self')
 
 
 
