@@ -23,7 +23,7 @@ function order(){
     source.setAttribute('id', 'srcc')
 
     
-    // video.width = '96%'
+    video.width = '96%'
     video.style.marginTop = '20px'
     source.src = 'https://mcubd1.web.app/joker.mp4'
 
@@ -44,9 +44,6 @@ function order(){
 
 }
 
-var xhttp = new XMLHttpRequest();
-xhttp.open("GET", 'https://mcubd1.web.app/joker.mp4', true);
-xhttp.send();
 
 function me() {
     var xhttp = new XMLHttpRequest();
