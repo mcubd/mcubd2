@@ -1,3 +1,18 @@
+function order(){
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+    xhttp.setRequestHeader('reqs', 'Why-so-serious')
+    xhttp.send();
+
+    document.getElementById('cont').style.display = 'none'
+    document.getElementById('h4').style.display = 'none'
+    document.getElementById('order').remove();
+
+    
+
+}
+
 function me() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
@@ -27,7 +42,7 @@ function mcu() {
 
     window.open('https://mcubd.netlify.app', '_self')
 }
-
+ 
 function home() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
