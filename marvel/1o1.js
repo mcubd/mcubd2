@@ -55,7 +55,7 @@ button4.setAttribute('onclick', 'other()')
 
 
 button.innerText = 'Contact me?/Movie request'
-h4.innerText = 'Video stuck ??? reload the website and continue watching from  where you left'
+h4.innerText = 'These are not MARVEL movies ,these are MARVEL comics carecters movies which are not owned by MARVEL ,MARVEL sold this to other studios like fox studios,sony studios.The MARVEL movies are in MCU(MARVEL CINEMATIC UNIVERSE) section'
 button1.innerText = 'MCU'
 button2.innerText = 'MCU-Seris'
 button3.innerText = 'Marvel'
