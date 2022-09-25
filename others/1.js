@@ -6,7 +6,7 @@ function order(){
     xhttp.send();
 
     document.getElementById('cont').style.display = 'none'
-    document.getElementById('h4').style.display = 'none'
+    // document.getElementById('h4').style.display = 'none'
     document.getElementById('order').remove();
 
 
