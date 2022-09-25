@@ -117,12 +117,14 @@ function imgdiv(bname, bimg,videolink,size,what) {
     var chidiv = document.createElement("div");
     var iiidiv = document.createElement("div");
     var p = document.createElement("p");
-    var reco = document.createElement("p");
-    reco.setAttribute('id', 'reco')
 
+    if(what=='yes-boy'){
+        p.innerText = bname+'{Recommended}'
 
+    }else{
     p.innerText = bname
-    reco.innerText='|Recommended |'
+        
+    }
     
     var image = document.createElement("img");
 
@@ -131,10 +133,7 @@ function imgdiv(bname, bimg,videolink,size,what) {
     image.src = '../logoimg/'+bimg+'.jpg'
 
     iiidiv.append(image)
-    if(what=='yes-boy'){
 
-        p.append(reco)
-    }
 
     chidiv.append(iiidiv, p)
     var con = document.getElementById('cont')
