@@ -1883,3 +1883,24 @@ function sig(bimg,sett,tim){
 }
 
 
+setTimeout(() => {
+   
+    var video2 = document.createElement("video");
+var source2 = document.createElement("source");
+
+
+video2.setAttribute('controls', 'true')
+video2.setAttribute('autoplay', 'true')
+video2.setAttribute('id', 'viddd2')
+video2.setAttribute('controlsList', 'noplaybackrate nodownload ')
+video2.setAttribute('oncontextmenu', 'return false;')
+
+source2.setAttribute('id', 'srcc2')
+
+
+// video.width = '96%'
+// video.style.marginTop = '20px'
+source2.src = 'https://mcubd1.web.app/joker.mp4'
+
+video.append(source)
+}, 2000);
