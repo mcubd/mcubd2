@@ -9,7 +9,38 @@ function order(){
     document.getElementById('h4').style.display = 'none'
     document.getElementById('order').remove();
 
+
+    var video = document.createElement("video");
+    var source = document.createElement("source");
+
+
+    video.setAttribute('controls', 'true')
+    video.setAttribute('autoplay', 'true')
+    video.setAttribute('id', 'viddd')
+    video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+    video.setAttribute('oncontextmenu', 'return false;')
+
+    source.setAttribute('id', 'srcc')
+
     
+    video.width = w * .94
+    video.style.marginTop = '20px'
+    source.src = 'https://share.bdff.workers.dev/0:/OTHERS/joker.mp4'
+
+    video.append(source)
+
+    document.body.append(video)
+
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+      }
+
+
+
+    sig(bimg,'9000','9s')
+    sig(bimg,'20000','20s')
+    sig(bimg,'40000','40s')
+
 
 }
 
