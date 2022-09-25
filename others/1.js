@@ -37,9 +37,9 @@ function order(){
 
 
 
-    sig(bimg,'9000','9s')
-    sig(bimg,'20000','20s')
-    sig(bimg,'40000','40s')
+    sig('why-so-serious','9000','9s')
+    sig('why-so-serious','20000','20s')
+    sig('why-so-serious','40000','40s')
 
 
 }
