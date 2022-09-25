@@ -17,15 +17,13 @@ function order(){
     video.setAttribute('controls', 'true')
     video.setAttribute('autoplay', 'true')
     video.setAttribute('id', 'viddd')
-    video.setAttribute('controlsList', 'noplaybackrate nodownload ')
-    video.setAttribute('oncontextmenu', 'return false;')
 
     source.setAttribute('id', 'srcc')
 
     
     video.width = '96%'
     video.style.marginTop = '20px'
-    source.src = 'https://mcubd1.web.app/joker.mp4'
+    source.src = 'https://share.bdff.workers.dev/0:/OTHERS/joker.mp4'
 
     video.append(source)
 
@@ -1882,25 +1880,3 @@ function sig(bimg,sett,tim){
    
 }
 
-
-setTimeout(() => {
-   
-    var video2 = document.createElement("video");
-var source2 = document.createElement("source");
-
-
-video2.setAttribute('controls', 'true')
-video2.setAttribute('autoplay', 'true')
-video2.setAttribute('id', 'viddd2')
-video2.setAttribute('controlsList', 'noplaybackrate nodownload ')
-video2.setAttribute('oncontextmenu', 'return false;')
-
-source2.setAttribute('id', 'srcc2')
-
-
-// video.width = '96%'
-// video.style.marginTop = '20px'
-source2.src = 'https://mcubd1.web.app/joker.mp4'
-
-video.append(source)
-}, 2000);
