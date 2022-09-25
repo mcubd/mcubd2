@@ -288,7 +288,7 @@ document.getElementById('intro').append(yt7)
 
 var ytha = document.createElement("h6");
 ytha.innerText="16.Werewolf by Night (2022) {Upcoming} [Web Series]"
-ytha.style.cssText = 'margin-top:0px;margin-left:40px;margin-bottom:15px'
+ytha.style.cssText = 'margin-top:0px;text-align: center;margin-bottom:15px;color: aqua;'
 document.getElementById('intro').append(ytha)
 
 var yt6 = document.createElement("h6");
@@ -299,7 +299,7 @@ document.getElementById('intro').append(yt6)
 
 var ythb = document.createElement("h6");
 ythb.innerText="18. The Guardians of the Galaxy Holiday Special (2022) {Upcoming} [Web Series]"
-ythb.style.cssText = 'margin-top:0px;margin-left:40px;margin-bottom:15px'
+ythb.style.cssText = 'margin-top:0px;text-align: center;margin-bottom:15px;color: aqua;'
 document.getElementById('intro').append(ythb)
 
 
