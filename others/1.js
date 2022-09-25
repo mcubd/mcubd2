@@ -117,7 +117,13 @@ function imgdiv(bname, bimg,videolink,size) {
     var chidiv = document.createElement("div");
     var iiidiv = document.createElement("div");
     var p = document.createElement("p");
-    p.innerText = bname
+    var reco = document.createElement("p");
+    reco.setAttribute('id', 'reco')
+
+
+    p.innerText = 
+    reco.innerText='| Recommended |'
+    
     var image = document.createElement("img");
 
     chidiv.classList.add('chi');
@@ -125,6 +131,8 @@ function imgdiv(bname, bimg,videolink,size) {
     image.src = '../logoimg/'+bimg+'.jpg'
 
     iiidiv.append(image)
+    p.append(reco)
+
     chidiv.append(iiidiv, p)
     var con = document.getElementById('cont')
     con.appendChild(chidiv)
