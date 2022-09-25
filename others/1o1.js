@@ -3,6 +3,7 @@ var div2 = document.createElement("div");
 var a = document.createElement("a");
 var button = document.createElement("button");
 var h4 = document.createElement("h4");
+var reco = document.createElement("h4");
 var img = document.createElement("img");
 var hr = document.createElement("hr");
 var h7 = document.createElement("h7");
@@ -31,6 +32,8 @@ button2.setAttribute('id', 'but2')
 button3.setAttribute('id', 'but3')
 button4.setAttribute('id', 'but4')
 hr.setAttribute('id', 'hr')
+reco.setAttribute('id', 'reco')
+
 
 
 
@@ -60,6 +63,7 @@ button4.setAttribute('onclick', 'other()')
 
 button.innerText = 'Contact me?/Movie request'
 h4.innerText = 'Video stuck ??? reload the website and continue watching from  where you left '
+reco.innerText='| Recommended |'
 button1.innerText = 'MCU'
 button2.innerText = 'MCU-Seris'
 button3.innerText = 'Marvel'
@@ -85,7 +89,7 @@ button.style.display = 'none'
 a.append(img)
 div.append(a, button, hr, h7, button1, button2, button3, button4)
 
-
+h4.append(reco)
 
 document.body.append(div, h4,div2)
 
