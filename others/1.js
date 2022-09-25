@@ -122,7 +122,7 @@ function imgdiv(bname, bimg,videolink,size,what) {
 
 
     p.innerText = bname
-    reco.innerText='| Recommended |'
+    reco.innerText='|Recommended |'
     
     var image = document.createElement("img");
 
