@@ -167,11 +167,14 @@ j4.innerText="11.Spider-Man: Far From Home (2019)"
 j4.style.cssText = 'margin-top:0px;margin-left:40px;margin-bottom:15px'
 document.getElementById('intro').append(j4)
 
-
-var xhttp = new XMLHttpRequest();
+setTimeout(() => {
+    var xhttp = new XMLHttpRequest();
 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
 xhttp.setRequestHeader('reqs', 'Orderly-marvel-mcu-movies-send2')
 xhttp.send();
+}, 8000);
+
+
 
 var yt43 = document.createElement("h6");
 yt43.innerText="(PHASE 1 - PHASE 3 is known as infinity SAGA.PHASE 4 - PHASE 6 will be known as The Multiverse SAGA)"
@@ -390,10 +393,14 @@ var hr1 = document.createElement("hr");
 hr1.style.cssText = 'border: 0; border-top: 1px solid grey'
 document.getElementById('intro').append(hr1)
 
-var xhttp = new XMLHttpRequest();
+setTimeout(() => {
+    var xhttp = new XMLHttpRequest();
 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
 xhttp.setRequestHeader('reqs', 'Orderly-marvel-mcu-movies-send3')
 xhttp.send();
+}, 16000);
+
+
 
 
 
