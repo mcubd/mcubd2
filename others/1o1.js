@@ -38,7 +38,7 @@ hr.setAttribute('id', 'hr')
 
 
 
-a.setAttribute('onclick', 'home()')
+img.setAttribute('onclick', 'home()')
 
 
 

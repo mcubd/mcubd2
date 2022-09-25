@@ -50,6 +50,8 @@ button1.setAttribute('onclick', 'mcu()')
 button2.setAttribute('onclick', 'mcus()')
 button3.setAttribute('onclick', 'mar()')
 button4.setAttribute('onclick', 'other()')
+img.setAttribute('onclick', 'home()')
+
 
 order.setAttribute('onclick', 'order()')
 
