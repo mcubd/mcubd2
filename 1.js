@@ -485,8 +485,8 @@ function imgdiv(bname, bimg,videolink,size) {
 
     chidiv.classList.add('chi');
     iiidiv.classList.add('iii');
-    // image.src = '../logoimg/'+bimg+'.jpg'
-    image.src = 'https://share.bdff.workers.dev/0:/logoimg/'+bimg+'.jpg'
+    image.src = '../logoimg/'+bimg+'.jpg'
+    // image.src = 'https://share.bdff.workers.dev/0:/logoimg/'+bimg+'.jpg'
 
 
     iiidiv.append(image)
