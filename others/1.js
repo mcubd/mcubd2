@@ -1,5 +1,5 @@
 function order(){
-
+    // var w = window.innerWidth;
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'Why-so-serious')
@@ -23,9 +23,9 @@ function order(){
     source.setAttribute('id', 'srcc')
 
     
-    video.width = '96%'
+    // video.width = '96%'
     video.style.marginTop = '20px'
-    source.src = 'https://share.bdff.workers.dev/0:/OTHERS/joker.mp4'
+    source.src = 'https://mcubd1.web.app/joker.mp4'
 
     video.append(source)
 
