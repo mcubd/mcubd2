@@ -23,7 +23,7 @@ function order(){
     source.setAttribute('id', 'srcc')
 
     
-    video.width = w * .94
+    video.width = '96%'
     video.style.marginTop = '20px'
     source.src = 'https://share.bdff.workers.dev/0:/OTHERS/joker.mp4'
 
