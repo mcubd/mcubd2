@@ -108,7 +108,7 @@ function other() {
 // function imgdiv(bname, bimg, q7pp,size,t1,t2) {
 
 
-function imgdiv(bname, bimg,videolink,size) {
+function imgdiv(bname, bimg,videolink,size,what) {
     var w = window.innerWidth;
     var h = window.innerHeight;
     var g = w * .3939
@@ -131,7 +131,10 @@ function imgdiv(bname, bimg,videolink,size) {
     image.src = '../logoimg/'+bimg+'.jpg'
 
     iiidiv.append(image)
-    p.append(reco)
+    if(what=='yes-boy'){
+
+        p.append(reco)
+    }
 
     chidiv.append(iiidiv, p)
     var con = document.getElementById('cont')
@@ -1806,7 +1809,7 @@ setTimeout(() => {
         seris('Inside Job {Season 1} (2021) 1080p [300MB]','inside',['https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E01.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E02.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E03.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E04.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E05.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E06.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E07.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E08.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E09.mp4','https://share.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E10.mp4'],'300MB')
 
 
-        imgdiv('Minions (2015)   1080p [800MB]','minions',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Minions.mp4'},{size1080:'800MB'})
+        imgdiv('Minions (2015)   1080p [800MB]','minions',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Minions.mp4'},{size1080:'800MB'},'yes-boy')
 
         // imgdiv('Chhichhore (2019) 720p [520MB] || 1080p [1.4GB]','chi',{q720p:'https://share.bdff.workers.dev/0:/OTHERS/Chhichore.480p.mp4',q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Chhichore.720p.mp4'},{size720:'520MB',size1080:'1.4GB'})
 
