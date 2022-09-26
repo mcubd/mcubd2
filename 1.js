@@ -488,6 +488,8 @@ function imgdiv(bname, bimg,videolink,size) {
 
     if(size.imgchace=='yeah'){
     image.src = 'https://mcubd1.web.app/logoimg/'+bimg+'.jpg'
+    }else if(size.imgchace=='no304'){
+        image.src = 'https://share.bdff.workers.dev/0:/logoimg/'+bimg+'.jpg'
     }else{
     image.src = '../logoimg/'+bimg+'.jpg'
     }
@@ -888,7 +890,7 @@ setTimeout(() => {
 
 
 
-    imgdiv('Avengers: Endgame(2019) [1.6GB]','end',{q720p:'https://share.bdff.workers.dev/0:/MCU-720/Endgame720p.mp4'}, {size720:'1.6GB'})
+    imgdiv('Avengers: Endgame(2019) [1.6GB]','end',{q720p:'https://share.bdff.workers.dev/0:/MCU-720/Endgame720p.mp4'}, {size720:'1.6GB',imgchace:'no304'})
 
 
     imgdiv('Avengers age of ultron (2015) [1.2GB]', 'Avengers2',{q720p:'https://abcd.bdff.workers.dev/0:/ultron-mp3.mp4'}, {size720:'1.2GB',imgchace:'yeah'})
