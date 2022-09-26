@@ -930,7 +930,7 @@ setTimeout(() => {
 
 
 
-    imgdiv('Ant-Man and the Wasp  (2018)  [1.2GB]','ant2',{q720p:'https://share.bdff.workers.dev/0:/MCU-720/ant2.mp4'}, {size720:'1.2GB',imgchace:'yeah'})
+    imgdiv('Ant-Man and the Wasp  (2018)  [1.2GB]','ant2',{q720p:'https://share.bdff.workers.dev/0:/MCU-720/ant2.mp4'}, {size720:'1.2GB'})
 
     imgdiv('Doctor Strange in the Multiverse of Madness (2022)  [1.5GB]','drst2',{downonly:'https://share.bdff.workers.dev/0:/MCU-720/imax/dr.strange.2-imax-hevc.mp4'}, {sizedownonly:'1.5GB',imgchace:'yeah'})
 
