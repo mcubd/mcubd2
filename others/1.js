@@ -1834,15 +1834,15 @@ setTimeout(() => {
 
 
 
-        imgdiv('Dream Girl (2019) || 720p [400MB] ||1080p [1.2GB]','dream',{q720p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl-480.mp4',q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl.mp4'},{size720:'350MB',size1080:'1.2GB'})
+        // imgdiv('Dream Girl (2019) || 720p [400MB] ||1080p [1.2GB]','dream',{q720p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl-480.mp4',q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Dream-Girl.mp4'},{size720:'350MB',size1080:'1.2GB'})
 
 
-        imgdiv('De De Pyaar De (2019)|| 1080p [1.2GB]','de-de',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/De-De-Pyaar-De.mp4'},{size1080:'1.2GB'})
+        // imgdiv('De De Pyaar De (2019)|| 1080p [1.2GB]','de-de',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/De-De-Pyaar-De.mp4'},{size1080:'1.2GB'})
 
-        imgdiv('Love Aaj Kal (2020)|| 1080p [1.3GB]','love-aaj-kal',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Love-Aaj-Kal.mp4'},{size1080:'1.3GB'})
+        // imgdiv('Love Aaj Kal (2020)|| 1080p [1.3GB]','love-aaj-kal',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Love-Aaj-Kal.mp4'},{size1080:'1.3GB'})
 
 
-        imgdiv('Sonu Ke Titu Ki Sweety (2018)|| 1080p [1.2GB]','sonu',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Sonu.Ke.Titu.Ki.Sweety.mp4'},{size1080:'1.2GB'})
+        // imgdiv('Sonu Ke Titu Ki Sweety (2018)|| 1080p [1.2GB]','sonu',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Sonu.Ke.Titu.Ki.Sweety.mp4'},{size1080:'1.2GB'})
 
 
 
