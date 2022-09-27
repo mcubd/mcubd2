@@ -268,3 +268,4 @@ function sig(bimg,sett,tim){
        }, sett);
    
 }
+ 
