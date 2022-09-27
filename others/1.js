@@ -1091,7 +1091,7 @@ function seris(bname, bimg,videolink,size) {
             video.width = w * .94
             video.style.marginTop = '20px'
     
-            source.src = videolink[4]
+            source.src = videolink[3]
     
             video.append(source)
             document.body.append(video)
@@ -1133,7 +1133,7 @@ function seris(bname, bimg,videolink,size) {
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg+'-ep-4-download')
                 xhttp.send();
-                window.open(videolink[4], '_self') 
+                window.open(videolink[3], '_self') 
              
             }
 
