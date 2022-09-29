@@ -1826,7 +1826,7 @@ setTimeout(() => {
     // imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2','https://share.bdff.workers.dev/0:/OTHERS/kgf2.mp4','1.6GB')
 
 
-    imgdiv('John Wick [1.7GB]', 'john1', 'https://abcd.bdff.workers.dev/0:/John.Wick.1-mp3.mp4', '1.7GB')
+    // imgdiv('John Wick [1.7GB]', 'john1', 'https://abcd.bdff.workers.dev/0:/John.Wick.1-mp3.mp4', '1.7GB')
 
     // imgdiv('John Wick 2     [1.6GB]', 'john2', 'https://abcd.bdff.workers.dev/0:/John.Wick-2-mp3.mp4', '1.6GB')
 
