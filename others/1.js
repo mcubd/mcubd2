@@ -1869,6 +1869,7 @@ setTimeout(() => {
    
 
 
+    imgdiv('Befikre 1080p [1.2GB]','befikre',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Befikre.mp4'},{size1080:'1.2GB'})
 
 
 
