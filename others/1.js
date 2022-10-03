@@ -1869,7 +1869,7 @@ setTimeout(() => {
    
 
 
-    imgdiv('Befikre 1080p [1.2GB]','befikre',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Befikre.mp4'},{size1080:'1.2GB'})
+    imgdiv('Encanto 1080p [1GB]','encanto',{q1080p:'https://gdriv.bdff.workers.dev/0:/DriveSharer/Encanto.2021.720p.Hindi.English.Esubs.MoviesVerse.me.mkv'},{size1080:'1GB'})
 
 
 
