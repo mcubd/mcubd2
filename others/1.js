@@ -1811,7 +1811,7 @@ setTimeout(() => {
         imgdiv('Extraction (2020) 1080p [1.1GB]','dhaka',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Extraction.mp4'},{size1080:'1.1GB'})
 
 
-        seris('Rick and Morty {Season 1} {English Only} 1080p [185MB]','look',['https://share.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-save-summer-e1-2-6.mp4','https://share.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-pickle-e2-3-3.mp4','https://share.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-love-spray-e3-1-6.mp4','https://share.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-sleppy-garry-e4-2-4.mp4'],'185MB')
+        seris('Rick and Morty {Season 1} {English Only} 1080p [185MB]','rickk',['https://share.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-save-summer-e1-2-6.mp4','https://share.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-pickle-e2-3-3.mp4','https://share.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-love-spray-e3-1-6.mp4','https://share.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-sleppy-garry-e4-2-4.mp4'],'185MB')
 
         // imgdiv('Chhichhore (2019) 720p [520MB] || 1080p [1.4GB]','chi',{q720p:'https://share.bdff.workers.dev/0:/OTHERS/Chhichore.480p.mp4',q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Chhichore.720p.mp4'},{size720:'520MB',size1080:'1.4GB'})
 
