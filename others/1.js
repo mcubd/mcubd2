@@ -3243,7 +3243,7 @@ setTimeout(() => {
 
 
 
-    seris('Doctors {Season 1} 1080p [400 MB]','doc',['https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E01.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E02.mkv'],'400MB')
+    seris('Doctors {Season 1} 1080p [400 MB]','doc',['https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E01.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E02.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E03.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E04.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E05.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E06.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E07.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E08.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E09.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E10.mkv'],'400MB')
 
 
 
