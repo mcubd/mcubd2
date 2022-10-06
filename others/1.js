@@ -1873,6 +1873,10 @@ setTimeout(() => {
 
 
 
+    seris('Doctors {Season 1} 1080p [150 MB]','doc',['https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E01.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E02..mkv'],'150MB')
+
+
+
 }, 1);
 
 
