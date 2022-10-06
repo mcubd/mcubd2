@@ -613,6 +613,18 @@ function seris(bname, bimg,videolink,size) {
             var e8 = document.createElement("button");
             var e9 = document.createElement("button");
             var e10 = document.createElement("button");
+            var e11 = document.createElement("button");
+            var e12 = document.createElement("button");
+            var e13 = document.createElement("button");
+            var e14 = document.createElement("button");
+            var e15 = document.createElement("button");
+            var e16 = document.createElement("button");
+            var e17 = document.createElement("button");
+            var e18 = document.createElement("button");
+            var e19 = document.createElement("button");
+            var e20 = document.createElement("button");
+
+
     
         
             e1.innerText='Episode 1'
@@ -625,6 +637,18 @@ function seris(bname, bimg,videolink,size) {
             e8.innerText='Episode 8'
             e9.innerText='Episode 9'
             e10.innerText='Episode 10'
+            e11.innerText='Episode 11'
+            e12.innerText='Episode 12'
+            e13.innerText='Episode 13'
+            e14.innerText='Episode 14'
+            e15.innerText='Episode 15'
+            e16.innerText='Episode 16'
+            e17.innerText='Episode 17'
+            e18.innerText='Episode 18'
+            e19.innerText='Episode 19'
+            e20.innerText='Episode 20'
+
+
     
     
     
@@ -639,6 +663,17 @@ function seris(bname, bimg,videolink,size) {
             e8.style.display = 'block'
             e9.style.display = 'block'
             e10.style.display = 'block'
+            e11.style.display = 'block'
+            e12.style.display = 'block'
+            e13.style.display = 'block'
+            e14.style.display = 'block'
+            e15.style.display = 'block'
+            e16.style.display = 'block'
+            e17.style.display = 'block'
+            e18.style.display = 'block'
+            e19.style.display = 'block'
+            e20.style.display = 'block'
+
     
     
             e1.style.width = '100%'
@@ -651,6 +686,17 @@ function seris(bname, bimg,videolink,size) {
             e8.style.width = '100%'
             e9.style.width = '100%'
             e10.style.width = '100%'
+            e11.style.width = '100%'
+            e12.style.width = '100%'
+            e13.style.width = '100%'
+            e14.style.width = '100%'
+            e15.style.width = '100%'
+            e16.style.width = '100%'
+            e17.style.width = '100%'
+            e18.style.width = '100%'
+            e19.style.width = '100%'
+            e20.style.width = '100%'
+
     
     
             e1.style.padding = '12px'
@@ -663,6 +709,17 @@ function seris(bname, bimg,videolink,size) {
             e8.style.padding = '12px'
             e9.style.padding = '12px'
             e10.style.padding = '12px'
+            e11.style.padding = '12px'
+            e12.style.padding = '12px'
+            e13.style.padding = '12px'
+            e14.style.padding = '12px'
+            e15.style.padding = '12px'
+            e16.style.padding = '12px'
+            e17.style.padding = '12px'
+            e18.style.padding = '12px'
+            e19.style.padding = '12px'
+            e20.style.padding = '12px'
+
     
     
     
@@ -677,6 +734,17 @@ function seris(bname, bimg,videolink,size) {
             e8.style.marginBottom = '10px'
             e9.style.marginBottom = '10px'
             e10.style.marginBottom = '10px'
+            e11.style.marginBottom = '10px'
+            e12.style.marginBottom = '10px'
+            e13.style.marginBottom = '10px'
+            e14.style.marginBottom = '10px'
+            e15.style.marginBottom = '10px'
+            e16.style.marginBottom = '10px'
+            e17.style.marginBottom = '10px'
+            e18.style.marginBottom = '10px'
+            e19.style.marginBottom = '10px'
+            e20.style.marginBottom = '10px'
+
     
       
     
@@ -705,6 +773,36 @@ function seris(bname, bimg,videolink,size) {
             }else if(count==10){
                 document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10)
     
+            }else if(count==11){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11)
+
+            }else if(count==12){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12)
+
+            }else if(count==13){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13)
+
+            }else if(count==14){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14)
+
+            }else if(count==15){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15)
+
+            }else if(count==16){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16)
+
+            }else if(count==17){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17)
+
+            }else if(count==18){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18)
+
+            }else if(count==19){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19)
+
+            }else if(count==20){
+                document.body.append(e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16,e17,e18,e19,e20)
+
             }else{
     
             }
@@ -723,6 +821,17 @@ function seris(bname, bimg,videolink,size) {
             e8.remove()
             e9.remove()
             e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
+
 
 
             var onli = document.createElement("button");
@@ -1787,6 +1896,7 @@ function seris(bname, bimg,videolink,size) {
 
 
 
+
    }
 
 
@@ -1873,7 +1983,7 @@ setTimeout(() => {
 
 
 
-    seris('Doctors {Season 1} 1080p [150 MB]','doc',['https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E01.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E02..mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E03.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E04.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E05.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E06.mkv'],'150MB')
+    seris('Doctors {Season 1} 1080p [150 MB]','doc',['https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E01.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E02..mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E03.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E04.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E05.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E06.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E07.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E08.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E09.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E10.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E11.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E12.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E13.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E14.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E15.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E16.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E17.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E18.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E19.mkv','https://share.bdff.workers.dev/0:/OTHERS/doc/Doctors.S01E20.mkv'],'150MB')
 
 
 
