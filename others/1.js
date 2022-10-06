@@ -940,6 +940,16 @@ function seris(bname, bimg,videolink,size) {
             e8.remove()
             e9.remove()
             e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
 
 
             var onli = document.createElement("button");
@@ -1046,6 +1056,16 @@ function seris(bname, bimg,videolink,size) {
             e8.remove()
             e9.remove()
             e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
 
 
             var onli = document.createElement("button");
@@ -1153,6 +1173,16 @@ function seris(bname, bimg,videolink,size) {
             e8.remove()
             e9.remove()
             e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
 
 
             var onli = document.createElement("button");
@@ -1260,6 +1290,16 @@ function seris(bname, bimg,videolink,size) {
             e8.remove()
             e9.remove()
             e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
 
 
             var onli = document.createElement("button");
@@ -1365,6 +1405,16 @@ function seris(bname, bimg,videolink,size) {
             e8.remove()
             e9.remove()
             e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
 
 
             var onli = document.createElement("button");
@@ -1472,6 +1522,16 @@ function seris(bname, bimg,videolink,size) {
             e8.remove()
             e9.remove()
             e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
 
 
             var onli = document.createElement("button");
@@ -1579,6 +1639,16 @@ function seris(bname, bimg,videolink,size) {
             e8.remove()
             e9.remove()
             e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
 
 
             var onli = document.createElement("button");
@@ -1685,6 +1755,16 @@ function seris(bname, bimg,videolink,size) {
             e8.remove()
             e9.remove()
             e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
 
 
             var onli = document.createElement("button");
@@ -1793,6 +1873,16 @@ function seris(bname, bimg,videolink,size) {
             e8.remove()
             e9.remove()
             e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
 
 
             var onli = document.createElement("button");
