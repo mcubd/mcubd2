@@ -1979,6 +1979,474 @@ function seris(bname, bimg,videolink,size) {
 
 
         }
+        e11.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[10]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+
+            sig(bimg+'-ep-10','9000','9s')
+            sig(bimg+'-ep-10','20000','20s')
+            sig(bimg+'-ep-10','40000','40s')
+            sig(bimg+'-ep-10','120000','2m')
+            sig(bimg+'-ep-10','300000','5m')
+            sig(bimg+'-ep-10','900000','15m')
+            sig(bimg+'-ep-10','1200000','20m')
+            sig(bimg+'-ep-10','1800000','30m')
+            sig(bimg+'-ep-10','2400000','40m')
+            sig(bimg+'-ep-10','3000000','50m')
+            sig(bimg+'-ep-10','3600000','1h')
+            sig(bimg+'-ep-10','4200000','1h-10m')
+            sig(bimg+'-ep-10','4800000','1h-20m')
+            sig(bimg+'-ep-10','5400000','1h-30m')
+            sig(bimg+'-ep-10','6000000','1h-40m')
+            sig(bimg+'-ep-10','6600000','1h-50m')
+            sig(bimg+'-ep-10','7200000','2h')
+            sig(bimg+'-ep-10','7500000','2h-5m')
+            sig(bimg+'-ep-10','7800000','2h-10m')
+            sig(bimg+'-ep-10','8100000','2h-15m')
+            sig(bimg+'-ep-10','8400000','2h-20m')
+            sig(bimg+'-ep-10','8700000','2h-25m')
+            sig(bimg+'-ep-10','9000000','2h-30m')
+            sig(bimg+'-ep-10','9300000','2h-35m')
+            sig(bimg+'-ep-10','9600000','2h-40m')
+             
+            }
+
+
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'-ep-11-download')
+                xhttp.send();
+                window.open(videolink[10], '_self') 
+             
+            }
+
+
+
+        }
+        e12.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[11]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+
+            sig(bimg+'-ep-10','9000','9s')
+            sig(bimg+'-ep-10','20000','20s')
+            sig(bimg+'-ep-10','40000','40s')
+            sig(bimg+'-ep-10','120000','2m')
+            sig(bimg+'-ep-10','300000','5m')
+            sig(bimg+'-ep-10','900000','15m')
+            sig(bimg+'-ep-10','1200000','20m')
+            sig(bimg+'-ep-10','1800000','30m')
+            sig(bimg+'-ep-10','2400000','40m')
+            sig(bimg+'-ep-10','3000000','50m')
+            sig(bimg+'-ep-10','3600000','1h')
+            sig(bimg+'-ep-10','4200000','1h-10m')
+            sig(bimg+'-ep-10','4800000','1h-20m')
+            sig(bimg+'-ep-10','5400000','1h-30m')
+            sig(bimg+'-ep-10','6000000','1h-40m')
+            sig(bimg+'-ep-10','6600000','1h-50m')
+            sig(bimg+'-ep-10','7200000','2h')
+            sig(bimg+'-ep-10','7500000','2h-5m')
+            sig(bimg+'-ep-10','7800000','2h-10m')
+            sig(bimg+'-ep-10','8100000','2h-15m')
+            sig(bimg+'-ep-10','8400000','2h-20m')
+            sig(bimg+'-ep-10','8700000','2h-25m')
+            sig(bimg+'-ep-10','9000000','2h-30m')
+            sig(bimg+'-ep-10','9300000','2h-35m')
+            sig(bimg+'-ep-10','9600000','2h-40m')
+             
+            }
+
+
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'-ep-12-download')
+                xhttp.send();
+                window.open(videolink[11], '_self') 
+             
+            }
+
+
+
+        }
+        e13.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[12]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+
+            sig(bimg+'-ep-10','9000','9s')
+            sig(bimg+'-ep-10','20000','20s')
+            sig(bimg+'-ep-10','40000','40s')
+            sig(bimg+'-ep-10','120000','2m')
+            sig(bimg+'-ep-10','300000','5m')
+            sig(bimg+'-ep-10','900000','15m')
+            sig(bimg+'-ep-10','1200000','20m')
+            sig(bimg+'-ep-10','1800000','30m')
+            sig(bimg+'-ep-10','2400000','40m')
+            sig(bimg+'-ep-10','3000000','50m')
+            sig(bimg+'-ep-10','3600000','1h')
+            sig(bimg+'-ep-10','4200000','1h-10m')
+            sig(bimg+'-ep-10','4800000','1h-20m')
+            sig(bimg+'-ep-10','5400000','1h-30m')
+            sig(bimg+'-ep-10','6000000','1h-40m')
+            sig(bimg+'-ep-10','6600000','1h-50m')
+            sig(bimg+'-ep-10','7200000','2h')
+            sig(bimg+'-ep-10','7500000','2h-5m')
+            sig(bimg+'-ep-10','7800000','2h-10m')
+            sig(bimg+'-ep-10','8100000','2h-15m')
+            sig(bimg+'-ep-10','8400000','2h-20m')
+            sig(bimg+'-ep-10','8700000','2h-25m')
+            sig(bimg+'-ep-10','9000000','2h-30m')
+            sig(bimg+'-ep-10','9300000','2h-35m')
+            sig(bimg+'-ep-10','9600000','2h-40m')
+             
+            }
+
+
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'-ep-13-download')
+                xhttp.send();
+                window.open(videolink[12], '_self') 
+             
+            }
+
+
+
+        }
+        e14.onclick=function (){
+            e1.remove()
+            e2.remove()
+            e3.remove()
+            e4.remove()
+            e5.remove()
+            e6.remove()
+            e7.remove()
+            e8.remove()
+            e9.remove()
+            e10.remove()
+            e11.remove()
+            e12.remove()
+            e13.remove()
+            e14.remove()
+            e15.remove()
+            e16.remove()
+            e17.remove()
+            e18.remove()
+            e19.remove()
+            e20.remove()
+
+
+            var onli = document.createElement("button");
+            var down = document.createElement("button");
+            
+    
+            onli.innerText = 'Watch Online'
+            down.innerText = 'Download('+size+')'
+    
+            onli.style.display = 'block'
+            onli.style.width = '100%'
+            onli.style.padding ='50px'
+            onli.style.marginBottom = '10px'
+            
+            down.style.display = 'block'
+            down.style.width = '100%'
+            down.style.padding = '15px'
+            down.style.marginBottom = '10px'
+
+    
+            document.body.append(onli,down)
+
+
+            onli.onclick=function ()  {
+            down.remove()
+            onli.remove()
+
+            var video = document.createElement("video");
+            var source = document.createElement("source");
+    
+    
+            video.setAttribute('controls', 'true')
+            video.setAttribute('autoplay', 'true')
+            video.setAttribute('id', 'viddd')
+            video.setAttribute('controlsList', 'noplaybackrate nodownload ')
+            video.setAttribute('oncontextmenu', 'return false;')
+    
+    
+    
+    
+    
+    
+            source.setAttribute('id', 'srcc')
+            
+            video.width = w * .94
+            video.style.marginTop = '20px'
+    
+            source.src = videolink[13]
+    
+            video.append(source)
+            document.body.append(video)
+
+
+
+            sig(bimg+'-ep-10','9000','9s')
+            sig(bimg+'-ep-10','20000','20s')
+            sig(bimg+'-ep-10','40000','40s')
+            sig(bimg+'-ep-10','120000','2m')
+            sig(bimg+'-ep-10','300000','5m')
+            sig(bimg+'-ep-10','900000','15m')
+            sig(bimg+'-ep-10','1200000','20m')
+            sig(bimg+'-ep-10','1800000','30m')
+            sig(bimg+'-ep-10','2400000','40m')
+            sig(bimg+'-ep-10','3000000','50m')
+            sig(bimg+'-ep-10','3600000','1h')
+            sig(bimg+'-ep-10','4200000','1h-10m')
+            sig(bimg+'-ep-10','4800000','1h-20m')
+            sig(bimg+'-ep-10','5400000','1h-30m')
+            sig(bimg+'-ep-10','6000000','1h-40m')
+            sig(bimg+'-ep-10','6600000','1h-50m')
+            sig(bimg+'-ep-10','7200000','2h')
+            sig(bimg+'-ep-10','7500000','2h-5m')
+            sig(bimg+'-ep-10','7800000','2h-10m')
+            sig(bimg+'-ep-10','8100000','2h-15m')
+            sig(bimg+'-ep-10','8400000','2h-20m')
+            sig(bimg+'-ep-10','8700000','2h-25m')
+            sig(bimg+'-ep-10','9000000','2h-30m')
+            sig(bimg+'-ep-10','9300000','2h-35m')
+            sig(bimg+'-ep-10','9600000','2h-40m')
+             
+            }
+
+
+            down.onclick=function () {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+                xhttp.setRequestHeader('reqs', bimg+'-ep-14-download')
+                xhttp.send();
+                window.open(videolink[13], '_self') 
+             
+            }
+
+
+
+        }
 
 
 
