@@ -61,9 +61,9 @@ button4.setAttribute('onclick', 'other()')
 
 button.innerText = 'Contact me?/Movie request'
 h4.innerText = 'Video stuck ??? reload the website and continue watching from  where you left '
-button1.innerText = 'MCU'
-button2.innerText = 'MCU-Seris'
-button3.innerText = 'Marvel'
+button1.innerText = 'Marvel'
+button2.innerText = 'Marvel-Seris'
+button3.innerText = 'Marvel-2'
 button4.innerText = 'Others'
 
 
@@ -101,8 +101,8 @@ img.style.cssText = 'height:calc(100vh*.144*.5) ;padding-left:calc(100vw*.045) ;
 button.style.cssText = 'float: right;padding: calc(100vh*.144*.03);background-color: #acacac;font-size: 10px;'
 
 button1.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
-button2.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
-button3.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
+button2.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.04) 0 calc(100vw*.04);'
+button3.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.04) 0 calc(100vw*.04);'
 button4.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
 
 hr.style.cssText = 'margin: 0;border-color: #473737;'
