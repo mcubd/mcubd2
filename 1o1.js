@@ -104,7 +104,7 @@ img.style.cssText = 'height:calc(100vh*.144*.5) ;padding-left:calc(100vw*.045) ;
 button.style.cssText = 'float: right;padding: calc(100vh*.144*.07);background-color: #acacac;font-size: 10px;'
 
 button1.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
-button2.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.04) 0 calc(100vw*.04);'
+button2.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.01) 0 calc(100vw*.01);'
 button3.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
 button4.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
 
