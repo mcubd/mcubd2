@@ -3212,7 +3212,7 @@ setTimeout(() => {
         // imgdiv('Love Aaj Kal (2020)|| 1080p [1.3GB]','love-aaj-kal',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Love-Aaj-Kal.mp4'},{size1080:'1.3GB'})
 
 
-        imgdiv('Sonu Ke Titu Ki Sweety (2018)|| 1080p [1.2GB]','sonu',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Sonu.Ke.Titu.Ki.Sweety.mp4'},{size1080:'1.2GB'})
+        // imgdiv('Sonu Ke Titu Ki Sweety (2018)|| 1080p [1.2GB]','sonu',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/Sonu.Ke.Titu.Ki.Sweety.mp4'},{size1080:'1.2GB'})
 
 
 
