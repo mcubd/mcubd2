@@ -3248,6 +3248,10 @@ setTimeout(() => {
 
     imgdiv('She hulk || 480p {play in vlc onlly}[200MB]','she',{q1080p:'https://gdriv.bdff.workers.dev/0:/DriveRoot/She.Hulk.Attorney.at.Law.S01E09.480p.x264.Hindi.English.Esubs.MoviezVerse.in.mkv'},{size1080:'200MB'})
 
+        // imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2','https://share.bdff.workers.dev/0:/OTHERS/kgf2.mp4','1.6GB')
+
+
+        imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2',{q1080p:'https://share.bdff.workers.dev/0:/OTHERS/kgf2.mp4'},{size1080:'1.6GB'})
 
 }, 1);
 
