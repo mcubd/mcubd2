@@ -60,7 +60,7 @@ button4.setAttribute('onclick', 'other()')
 
 
 button.innerText = 'Contact me?/Movie request'
-h4.innerText = 'Video stuck ??? reload the website and continue watching from  where you left '
+h4.innerText = 'Fixing link not found eror,it may take 1 day'
 button1.innerText = 'Marvel'
 button2.innerText = 'Marvel-Seris'
 button3.innerText = 'Marvel-2'

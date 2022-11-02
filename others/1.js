@@ -3172,86 +3172,32 @@ setTimeout(() => {
 
     // imgdiv('Chhichhore (2019) [1.4GB] & 720','chi',{q720p:'',q1080p:''},{size720:'',size1080:''})
 
-        seris('Inside Job {Season 1} (2021) 1080p [300MB]','inside',['https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E01.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E02.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E03.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E04.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E05.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E06.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E07.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E08.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E09.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E10.mp4'],'300MB')
+    //     seris('Inside Job {Season 1} (2021) 1080p [300MB]','inside',['https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E01.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E02.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E03.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E04.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E05.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E06.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E07.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E08.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E09.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Inside-job/Inside-Job-S01-E10.mp4'],'300MB')
 
 
-        imgdiv('Minions (2015)   1080p [800MB]','minions',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/Minions.mp4'},{size1080:'800MB'})
+    //     imgdiv('Minions (2015)   1080p [800MB]','minions',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/Minions.mp4'},{size1080:'800MB'})
 
 
-        imgdiv('Extraction (2020) 1080p [1.1GB]','dhaka',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/Extraction.mp4'},{size1080:'1.1GB'})
+    //     imgdiv('Extraction (2020) 1080p [1.1GB]','dhaka',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/Extraction.mp4'},{size1080:'1.1GB'})
 
 
-        seris('Rick and Morty {Season 1} {English Only} 1080p [185MB]','rickk',['https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-save-summer-e1-2-6.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-pickle-e2-3-3.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-love-spray-e3-1-6.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-sleppy-garry-e4-2-4.mp4'],'185MB')
-
-        // imgdiv('Chhichhore (2019) 720p [520MB] || 1080p [1.4GB]','chi',{q720p:'https://gdriv.bdff.workers.dev/0:/OTHERS/Chhichore.480p.mp4',q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/Chhichore.720p.mp4'},{size720:'520MB',size1080:'1.4GB'})
-
-    // imgdiv('Chhichhore (2019) [1.4GB]','chi','https://gdriv.bdff.workers.dev/0:/OTHERS/Chhichore.720p.mp4','1.4GB')
-
-
-    // imgdiv('The Little Rascals (1994) [750MB]','little','https://gdriv.bdff.workers.dev/0:/OTHERS/The.Little.Rascals.1994.mp4','750MB')
-
-
-        // imgdiv('The Little Rascals (1994) 1080p [750MB]','little',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/The.Little.Rascals.1994.mp4'},{size1080:'750MB'})
-
-    // imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2','https://gdriv.bdff.workers.dev/0:/OTHERS/kgf2.mp4','1.6GB')
-
-
-    // imgdiv('John Wick [1.7GB]', 'john1', 'https://abcd.bdff.workers.dev/0:/John.Wick.1-mp3.mp4', '1.7GB')
-
-    // imgdiv('John Wick 2     [1.6GB]', 'john2', 'https://abcd.bdff.workers.dev/0:/John.Wick-2-mp3.mp4', '1.6GB')
-
-        imgdiv('John Wick 2 || 1080p [1.6GB]','john2',{q1080p:'https://abcd.bdff.workers.dev/0:/John.Wick-2-mp3.mp4'},{size1080:'1.6GB'})
+    //     seris('Rick and Morty {Season 1} {English Only} 1080p [185MB]','rickk',['https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-save-summer-e1-2-6.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-pickle-e2-3-3.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-love-spray-e3-1-6.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-sleppy-garry-e4-2-4.mp4'],'185MB')
 
 
 
-        // imgdiv('Dream Girl (2019) || 720p [400MB] ||1080p [1.2GB]','dream',{q720p:'https://gdriv.bdff.workers.dev/0:/OTHERS/Dream-Girl-480.mp4',q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/Dream-Girl.mp4'},{size720:'350MB',size1080:'1.2GB'})
-
-
-        // imgdiv('De De Pyaar De (2019)|| 1080p [1.2GB]','de-de',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/De-De-Pyaar-De.mp4'},{size1080:'1.2GB'})
-
-        // imgdiv('Love Aaj Kal (2020)|| 1080p [1.3GB]','love-aaj-kal',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/Love-Aaj-Kal.mp4'},{size1080:'1.3GB'})
-
-
-        // imgdiv('Sonu Ke Titu Ki Sweety (2018)|| 1080p [1.2GB]','sonu',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/Sonu.Ke.Titu.Ki.Sweety.mp4'},{size1080:'1.2GB'})
+    //     imgdiv('John Wick 2 || 1080p [1.6GB]','john2',{q1080p:'https://abcd.bdff.workers.dev/0:/John.Wick-2-mp3.mp4'},{size1080:'1.6GB'})
 
 
 
 
 
-
-    // imgdiv('365  [1.3GB]','365','https://gdriv.bdff.workers.dev/0:/Subtittle/365.mp4','1.3GB')
-
-    // imgdiv('Ra.One [1.5GB]','rone','https://gdriv.bdff.workers.dev/0:/OTHERS/ra-one.mp4','1.5GB')
-
-    // imgdiv('Chandni Chowk to China [1.5GB]','chandnichowk','https://gdriv.bdff.workers.dev/0:/OTHERS/chandnichowk.mp4','1.5GB')
-
-    // imgdiv('Rab Ne Bana Di Jodi [1.5GB]','Rab.Ne.Bana.Di.Jodi','https://gdriv.bdff.workers.dev/0:/OTHERS/Rab.Ne.Bana.Di.Jodi.mp4','1.5GB')
-
-
-    // imgdiv('Attack: Part 1 (2022) [985MB]','attack','https://gdriv.bdff.workers.dev/0:/OTHERS/Attack-Part-1.mp4','985MB')
+    // seris('Doctors {Season 1} 1080p [400 MB]','doc',['https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E01.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E02.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E03.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E04.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E05.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E06.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E07.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E08.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E09.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E10.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E11.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E12.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E13.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E14.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E15.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E16.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E17.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E18.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E19.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E20.mkv'],'400MB')
 
 
 
-    // imgdiv('Pushpa: The Rise[1.63GB]','pushpa','https://gdriv.bdff.workers.dev/0:/OTHERS/pushpa.mp4','1.63GB')
 
 
-
-   
-
-
-    // imgdiv('Encanto 1080p [1GB]','encanto',{q1080p:'https://gdriv.bdff.workers.dev/0:/DriveSharer/Encanto.2021.720p.Hindi.English.Esubs.MoviesVerse.me.mkv'},{size1080:'1GB'})
-
-
-
-    seris('Doctors {Season 1} 1080p [400 MB]','doc',['https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E01.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E02.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E03.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E04.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E05.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E06.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E07.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E08.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E09.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors-S01E10.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E11.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E12.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E13.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E14.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E15.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E16.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E17.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E18.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E19.mkv','https://gdriv.bdff.workers.dev/0:/OTHERS/doc/720p/Doctors.2016.S01E20.mkv'],'400MB')
-
-
-    // imgdiv('She hulk || 480p {play in vlc onlly}[200MB]','she',{q1080p:'https://gdriv.bdff.workers.dev/0:/DriveRoot/She.Hulk.Attorney.at.Law.S01E09.480p.x264.Hindi.English.Esubs.MoviezVerse.in.mkv'},{size1080:'200MB'})
-
-        // imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2','https://gdriv.bdff.workers.dev/0:/OTHERS/kgf2.mp4','1.6GB')
-
-
-        imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/kgf2.mp4'},{size1080:'1.6GB'})
+    //     imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/kgf2.mp4'},{size1080:'1.6GB'})
 
 }, 1);
 
