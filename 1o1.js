@@ -64,7 +64,7 @@ button.innerText = 'Contact me?/Movie request'
 h4.innerText = 'Problem in online watching? Download the video and watch it '
 button1.innerText = 'Marvel'
 button2.innerText = 'Marvel-Seris'
-button3.innerText = 'Marvel-2'
+button3.innerText = 'fox & sony'
 button4.innerText = 'Others'
 order.innerText = ' Orderly marvel-mcu movies'
 
