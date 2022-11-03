@@ -3197,7 +3197,7 @@ setTimeout(() => {
 
 
 
-        imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/kgf2.mp4'},{size1080:'1.6GB'})
+        // imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/kgf2.mp4'},{size1080:'1.6GB'})
 
 }, 1);
 
