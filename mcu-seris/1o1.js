@@ -58,7 +58,7 @@ button.innerText = 'Contact me?/Movie request'
 h4.innerText = 'Video stuck ??? reload the website and continue watching from  where you left'
 button1.innerText = 'Marvel'
 button2.innerText = 'Marvel-Seris'
-button3.innerText = 'Marvel-2'
+button3.innerText = 'fox & sony'
 button4.innerText = 'Others'
 
 

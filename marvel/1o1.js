@@ -58,7 +58,7 @@ button.innerText = 'Contact me?/Movie request'
 h4.innerText = 'These are not MARVEL movies ,these are MARVEL comics carecters movies which are not owned by MARVEL ,MARVEL sold this to other studios like fox studios,sony studios.The MARVEL movies are in MCU(MARVEL CINEMATIC UNIVERSE) section'
 button1.innerText = 'Marvel'
 button2.innerText = 'Marvel-Seris'
-button3.innerText = 'Marvel-2'
+button3.innerText = 'fox & sony'
 button4.innerText = 'Others'
 
 
