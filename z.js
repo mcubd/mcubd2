@@ -1,7 +1,29 @@
-let a='22'
-if(1){
-    let a='hh'
+var but=document.getElementById('but')
 
-    console.log(a)
+
+
+function debounce(fn,delay){
+    var timeou
+    
+    return function (){
+        // console.log(timeou)
+        
+        clearTimeout(timeou)
+        
+        
+        timeou = setTimeout(() => {fn()}, delay);
+
+    }
+
+
+
 }
-console.log(a)
+
+
+but.addEventListener('click',
+debounce(function (){console.log('clicked')},400)
+
+)
+
+
+
