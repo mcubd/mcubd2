@@ -94,7 +94,7 @@ document.body.append(div, h4,order,div3,div2)
 
 
 
-
+ 
 document.body.style.cssText = 'background-color: #0F0F0F;color: rgb(255, 255, 255);margin: 0px;padding: 0px;margin-left: 1.2%;margin-right: 1.2%;';
 
 div.style.cssText = 'background-color: #373737;height: calc(100vh*.144);position: sticky;top: 0;'
@@ -108,7 +108,8 @@ button2.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3)
 button3.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.04) 0 calc(100vw*.04);'
 button4.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
 
-order.style.cssText = 'padding: 8px   calc(100vw*.06) 15px calc(100vw*.06);background-color: rgb(154, 238, 29);margin-bottom: 45px;border-radius:10px ;'
+// order.style.cssText = 'padding: 8px   calc(100vw*.06) 15px calc(100vw*.06);background-color: rgb(154, 238, 29);margin-bottom: 45px;border-radius:10px ;'
+order.style.cssText = 'padding: 8px   calc(100vw*.06) 15px calc(100vw*.06);background-color: rgb(154, 238, 29);margin-bottom: 55px;border-radius:10px ;'
 
 hr.style.cssText = 'margin: 0;border-color: #473737;'
 
