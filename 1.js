@@ -531,7 +531,7 @@ function imgdiv(bname, bimg,videolink,size) {
 
     chidiv.onclick = () => {
         document.getElementById('intro').innerHTML=''
-        document.getElementById('h4').style.display = ''
+        document.getElementById('h4').remove()
         document.body.style.cssText = 'background-image:none;background-color: #0F0F0F;color: rgb(255, 255, 255);margin: 0px;padding: 0px;margin-left: 1.2%;margin-right: 1.2%;'
         // document.getElementById('order').style.cssText='padding: 8px   calc(100vw*.06) 15px calc(100vw*.06); background-color:rgba(0, 0, 0, 0.1);color: rgba(255, 255, 255, 0.4);margin-bottom: 45px; outline: none !important;border: none !important;box-shadow: none !important;'
         document.getElementById('order').remove()
