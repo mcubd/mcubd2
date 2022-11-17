@@ -109,7 +109,7 @@ button3.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3)
 button4.style.cssText = 'height: calc(100vh*.056);font-size: calc(100vh*.056*.3);padding: 0   calc(100vw*.06) 0 calc(100vw*.06);'
 
 // order.style.cssText = 'padding: 8px   calc(100vw*.06) 15px calc(100vw*.06);background-color: rgb(154, 238, 29);margin-bottom: 45px;border-radius:10px ;'
-order.style.cssText = 'padding: 8px   calc(100vw*.06) 15px calc(100vw*.06); background-color:rgba(0, 0, 0, 0.9);color: #fff;margin-bottom: 165px;'
+order.style.cssText = 'padding: 8px   calc(100vw*.06) 15px calc(100vw*.06); background-color:rgba(0, 0, 0, 0.1);color: #fff;margin-bottom: 165px;'
 
 hr.style.cssText = 'margin: 0;border-color: #473737;'
 
