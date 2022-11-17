@@ -113,7 +113,7 @@ order.style.cssText = 'padding: 8px   calc(100vw*.06) 15px calc(100vw*.06);backg
 
 hr.style.cssText = 'margin: 0;border-color: #473737;'
 
-h4.style.cssText = 'opacity: 0.35;'
+h4.style.cssText = 'opacity: 0.15;'
 
 document.getElementById('but1').style.display = ''
 document.getElementById('but1').style.backgroundColor = 'grey'
