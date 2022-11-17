@@ -66,7 +66,7 @@ button1.innerText = 'Marvel'
 button2.innerText = 'Marvel-Seris'
 button3.innerText = 'fox & sony'
 button4.innerText = 'Others'
-order.innerText = ' Orderly marvel-mcu movies'
+order.innerText = 'Magic!'
 
 
 
