@@ -532,8 +532,8 @@ function imgdiv(bname, bimg,videolink,size) {
     chidiv.onclick = () => {
         document.getElementById('intro').innerHTML=''
         document.getElementById('h4').style.display = ''
-        document.body.style.cssText = 'background-image:none'
-        document.body.style.cssText = 'background-color: #0F0F0F;color: rgb(255, 255, 255);margin: 0px;padding: 0px;margin-left: 1.2%;margin-right: 1.2%;';
+        document.body.style.cssText = 'background-image:none;background-color: #0F0F0F;color: rgb(255, 255, 255);margin: 0px;padding: 0px;margin-left: 1.2%;margin-right: 1.2%;'
+       
 
 
 
