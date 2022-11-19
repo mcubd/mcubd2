@@ -61,7 +61,7 @@ order.setAttribute('onclick', 'order()')
 
 
 button.innerText = 'Contact me?/Movie request'
-h4.innerText = 'Henry Cavill is back!!!!'
+h4.innerText = ''
 button1.innerText = 'Marvel'
 button2.innerText = 'Marvel-Seris'
 button3.innerText = 'fox & sony'
