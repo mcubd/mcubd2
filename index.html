@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <video id="bg-vid" height="100%" autoplay muted loop id="myVideo">
+    <video id="bg-vid" autoplay muted loop >
         <source src="./logoimg/16-9.webm" type="video/mp4">
       </video>
 
@@ -24,10 +24,6 @@ script.src = './1o1.js';
 document.body.appendChild(script);
 </script>
 
-<!-- <script>
-        var w=window.innerHeight
-        document.getElementById('bg-vid').style.height=w
-</script> -->
 
 <style>#cont>div:nth-child(odd) {margin-right: calc(100vw*.176)}
 h6{
@@ -39,12 +35,10 @@ h6{
     background-attachment: fixed;
     background-position: center;
 } */
-#myVideoo {
+#bg-vid {
   position: fixed;
   right: 0;
   bottom: 0;
-  /* min-width: 100%;
-  min-height: 100%; */
   height: 100vh;
   /* transform: translateX(calc((100% - 100vw) / 2)); */
 }
