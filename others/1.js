@@ -2743,10 +2743,10 @@ setTimeout(() => {
 
     seris('Doctors {Season 1} 1080p [400 MB]', 'doc', ['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E01.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E02.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E03.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E04.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E05.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E06.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E07.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E08.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E09.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E10.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E11.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E12.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E13.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E14.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E15.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E16.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E17.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E18.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E19.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E20.mkv'], '400MB')
 
+    seris('Shubh Mangal Zyada Saavdhan  [1.3GB]','shuv',['https://root.bdff.workers.dev/0:/mcubd/others/Shubh.Mangal.Zyada-Saavdhan.mp4'],'1.3GB','mv')
 
     seris('Generation Ami   [580MB]','ami',['https://root.bdff.workers.dev/0:/mcubd/others/Generation-Aami-(2018).mp4'],'580MB','mv')
 
-    seris('Shubh Mangal Zyada Saavdhan  [1.3GB]','shuv',['https://root.bdff.workers.dev/0:/mcubd/others/Shubh.Mangal.Zyada-Saavdhan.mp4'],'1.3GB','mv')
 
    
  
