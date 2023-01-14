@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico?" type="image/x-icon">
+    <title>Mcubd</title>
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div style="display:none" id="content">
+
+        <h3 id="h3">Request A Movie</h3>
+        <form name="myForm" onsubmit="return mySubmitFunction(event)" autocomplete="off">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your name.." spellcheck="false">
+
+
+            <label for="subject">Movie name / Message</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:70px"
+                spellcheck="false"></textarea>
+
+            <input type="submit" name="submitt" value="Submit">
+        </form>
+
+        <div style="display:none" id="fsending" class="fsending">
+            <div class="sending">
+                <div class="box">
+                    <div class="border one"></div>
+                    <div class="border two"></div>
+                    <div class="border three"></div>
+                    <div class="border four"></div>
+
+                    <div class="line one"></div>
+                    <div class="line two"></div>
+                    <div class="line three"></div>
+                </div>
+            </div>
+            <p id="sendtxt">Sending</p>
+        </div>
+
+        <div style="display:none" id="fsent" class="fsent">
+            <lottie-player id="sentsvg" src="f20_voBLTvIbhG.json" background="transparent" speed="1"
+                style=" height: 80px;" loop autoplay></lottie-player>
+            <p id="sendtxt">Sent</p>
+        </div>
+
+        <div style="display:none" id="failed" class="failed">
+            <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_ose4iyma.json"
+                background="transparent" speed="1" style=" height: 120px;" loop autoplay></lottie-player>
+
+            <p id="sendtxt">Failed to send.Plz cheak ur internet connection or refresh the website</p>
+        </div>
+
+    </div>
+
+
+    <style>
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            /* font-size: 12px;
+            font-weight: 600; */
+        }
+
+        #h3 {
+            font-size: 1.7rem;
+            font-weight: 400;
+            color: #000;
+            font-family: "Poppins", Arial, sans-serif;
+        }
+
+        label {
+            color: #000;
+        }
+
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Add a background color and some padding around the form */
+        #content {
+            border-radius: 5px;
+            background-color: #fcfbfc;
+            padding: 20px;
+        }
+    </style>
+
+
+    <script>
+
+        var info
+        if (navigator.deviceMemory) {
+            info = navigator.deviceMemory + 'gb-h' + screen.height + 'x' + screen.width
+        } else { info = screen.height + 'x' + screen.width }
+
+        if (navigator) { var platformm = navigator.platform; var devicee = navigator.appVersion } else { var platformm = 'sorry!'; var devicee = 'sorry!' }
+
+
+        document.getElementById('content').style.display = ''
+
+
+
+        function mySubmitFunction(e) {
+            e.preventDefault();
+            var x = document.forms["myForm"]["subject"].value;
+            if (x == "") {
+                alert("can't send empty messege");
+                return false;
+            } else {
+                serverSend(e.target.fname.value, e.target.subject.value);
+                e.target.submitt.style.display = "none";
+                return false;
+            }
+        }
+
+        function serverSend(fname, msg) {
+            document.getElementById('fsending').style.display = ''
+
+
+
+            let xhttp = new XMLHttpRequest();
+            xhttp.open("POST", 'https://nodebd.vercel.app/ram', true);
+            xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhttp.send(JSON.stringify({ name: 'req!-' + fname + '=>' + msg + '-' + platformm, ramxhw: info, device: devicee, platform: platformm }));
+
+            xhttp.onload = function () {
+
+
+
+                const obj = JSON.parse(this.responseText);
+
+                if (obj.name == 'req!-' + fname + '=>' + msg + '-' + platformm) {
+
+
+
+
+
+                    var xhttp2 = new XMLHttpRequest();
+                    xhttp2.open("GET", 'https://nodebd.vercel.app/his', true);
+                    xhttp2.setRequestHeader('n', obj.num - 1)
+                    xhttp2.send()
+                    xhttp2.onload = function () {
+
+                        const obj2 = JSON.parse(this.responseText)[0];
+                        console.log(obj2)
+                        console.log(obj2.name)
+
+                        if (obj2.name == 'req!-' + fname + '=>' + msg + '-' + platformm) {
+                            document.getElementById('fsending').style.display = 'none'
+                            document.getElementById('fsent').style.display = ''
+                            document.getElementById('fname').value = ''
+                            document.getElementById('subject').value = ''
+                            clearInterval(timeout)
+                        }
+
+                    }
+
+
+                } else {
+
+                }
+
+
+            }
+
+           var timeout= setTimeout(() => {
+                xhttp.abort();
+                document.getElementById('fsending').style.display = 'none'
+                document.getElementById('fsent').style.display = 'none'
+                document.getElementById('failed').style.display = ''
+
+            }, 30000);
+        }
+
+        function cheaking() {
+
+
+
+        }
+
+    </script>
+
+    <style>
+        .box,
+        .sending {
+            height: 50px;
+            width: 40px
+        }
+
+        .sending {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto
+        }
+
+        #sendtxt {
+            color: #007298;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            margin-top: 45px;
+            text-align: center
+        }
+
+        .box {
+            position: relative;
+            animation: 5s linear infinite box
+        }
+
+        .border,
+        .line {
+            background: #007298;
+            position: absolute
+        }
+
+        .border.one {
+            height: 4px;
+            top: 0;
+            left: 0;
+            animation: 5s linear infinite border-one
+        }
+
+        .border.two {
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 4px;
+            animation: 5s linear infinite border-two
+        }
+
+        .border.three {
+            bottom: 0;
+            right: 0;
+            height: 4px;
+            width: 100%;
+            animation: 5s linear infinite border-three
+        }
+
+        .border.four {
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 4px;
+            animation: 5s linear infinite border-four
+        }
+
+        .line {
+            height: 4px;
+            width: 0%;
+            left: 25%
+        }
+
+        .line.one {
+            top: 25%;
+            width: 0%;
+            animation: 5s linear infinite line-one
+        }
+
+        .line.two {
+            top: 45%;
+            animation: 5s linear infinite line-two
+        }
+
+        .line.three {
+            top: 65%;
+            animation: 5s linear infinite line-three
+        }
+
+        @keyframes border-one {
+            0% {
+                width: 0
+            }
+
+            10%,
+            100% {
+                width: 100%
+            }
+        }
+
+        @keyframes border-two {
+            0% {
+                height: 0
+            }
+
+            10% {
+                height: 0%
+            }
+
+            100%,
+            20% {
+                height: 100%
+            }
+        }
+
+        @keyframes border-three {
+            0% {
+                width: 0
+            }
+
+            20% {
+                width: 0%
+            }
+
+            100%,
+            30% {
+                width: 100%
+            }
+        }
+
+        @keyframes border-four {
+            0% {
+                height: 0
+            }
+
+            30% {
+                height: 0%
+            }
+
+            100%,
+            40% {
+                height: 100%
+            }
+        }
+
+        @keyframes line-one {
+            0% {
+                left: 25%;
+                width: 0
+            }
+
+            40%,
+            54% {
+                left: 25%;
+                width: 0%
+            }
+
+            43%,
+            52% {
+                left: 25%;
+                width: 50%
+            }
+
+            55% {
+                right: 25%;
+                left: auto
+            }
+
+            100%,
+            63% {
+                width: 10%;
+                right: 25%;
+                left: auto
+            }
+        }
+
+        @keyframes line-two {
+            0% {
+                width: 0
+            }
+
+            42%,
+            54% {
+                width: 0%
+            }
+
+            100%,
+            45%,
+            53%,
+            60% {
+                width: 50%
+            }
+        }
+
+        @keyframes line-three {
+            0% {
+                width: 0
+            }
+
+            100%,
+            45%,
+            52% {
+                width: 0%
+            }
+
+            48%,
+            51% {
+                width: 50%
+            }
+        }
+
+        @keyframes box {
+            0% {
+                opacity: 1;
+                margin-left: 0;
+                height: 50px;
+                width: 40px
+            }
+
+            55% {
+                margin-left: 0;
+                height: 50px;
+                width: 40px
+            }
+
+            60% {
+                margin-left: 0;
+                height: 35px;
+                width: 50px
+            }
+
+            74% {
+                msthin-left: 0
+            }
+
+            80% {
+                margin-left: -50px;
+                opacity: 1
+            }
+
+            90% {
+                height: 35px;
+                width: 50px;
+                margin-left: 50px;
+                opacity: 0
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+    </style>
+
+    <script src="lottie-player.js"></script>
+
+
+
+</body>
+
+</html>

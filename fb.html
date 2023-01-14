@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB-image-finder</title>
+</head>
+<body>
+    
+
+    <h3 id="h3">Find Background Image</h3>
+    <form name="myForm" onsubmit="return mySubmitFunction(event)" autocomplete="off">
+        <label for="subject">Fb profile link</label>
+        <input id="subject" name="subject" placeholder="Paste the link.." style="height:70px;width:90%;"
+            spellcheck="false"></input>
+
+        <input  id="submit" type="submit" name="submitt" value="Submit">
+    </form>
+
+
+
+
+
+<script>
+            function mySubmitFunction(e) {
+            e.preventDefault();
+            var y = document.forms["myForm"]["subject"].value;
+            // " +" 
+            const regex = /^.+ /;
+            var x= y.replace(regex, '');
+            if (x == "" || x==" ") {
+                alert("can't send empty messege");
+                return false;
+            } else {
+                // document.forms["myForm"]["subject"].value=''
+                document.getElementById('submit').style.cssText = 'background: rgb(169, 199, 169);'
+
+                serverSend(x);
+                return false;
+            }
+        }
+
+
+        function serverSend(link) {
+
+            let xhttp = new XMLHttpRequest();
+            xhttp.open("POST", 'https://fbbg.vercel.app/', true); 
+            xhttp.setRequestHeader('data',link);
+
+            xhttp.send();
+
+            xhttp.onload = function () {
+
+                const obj =JSON.parse(this.responseText);
+
+                // document.getElementById('h3').innerHTML=this.responseText
+                console.log(obj)
+                console.log(Object.keys(obj).length)
+
+                for (let i = 0; i < Object.keys(obj).length; i++) {
+                // text += cars[i] + "<br>";
+                let img= document.createElement("img")
+                img.setAttribute('src',obj[i])
+                document.body.append(img)
+              
+                }
+
+
+            }
+
+
+        }
+
+
+</script>
+
+<style>
+    #submit{
+        background: rgb(151, 155, 151);
+
+
+        margin-top: 15px;
+        padding: 10px 20px 10px 20px;
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important
+    }
+</style>
+
+
+</body>
+</html>
