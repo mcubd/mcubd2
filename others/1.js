@@ -2748,7 +2748,7 @@ setTimeout(() => {
     seris('Generation Ami   [580MB]','ami',['https://root.bdff.workers.dev/0:/mcubd/others/Generation-Aami-(2018).mp4'],'580MB','mv')
 
 
-    seris('Bird Box', 'birdbox',['https://root.bdff.workers.dev/0:/mcubd/others/Bird-Box.mp4','1.08GB','mv'])
+    seris('Bird Box', 'birdbox',['https://root.bdff.workers.dev/0:/mcubd/others/Bird-Box.mp4'],'1.08GB','mv')
 
 
    
