@@ -2748,6 +2748,9 @@ setTimeout(() => {
     seris('Generation Ami   [580MB]','ami',['https://root.bdff.workers.dev/0:/mcubd/others/Generation-Aami-(2018).mp4'],'580MB','mv')
 
 
+    seris('Bird Box', 'birdbox',['https://root.bdff.workers.dev/0:/mcubd/others/Bird-Box.mp4','1.08GB','mv'])
+
+
    
  
     // imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/kgf2.mp4'},{size1080:'1.6GB'})
