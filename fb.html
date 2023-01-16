@@ -32,7 +32,8 @@
             if (x == "" || x==" ") {
                 alert("can't send empty messege");
                 return false;
-            } else {
+            } 
+            else {
                 // document.forms["myForm"]["subject"].value=''
                 document.getElementById('submit').style.cssText = 'background: rgb(169, 199, 169);'
 
@@ -45,16 +46,15 @@
         function serverSend(link) {
 
             let xhttp = new XMLHttpRequest();
-            xhttp.open("POST", 'https://fbbg.vercel.app/', true); 
-            xhttp.setRequestHeader('data',link);
+            xhttp.open("POST", 'https://pptrbd.vercel.app/', true); 
+            // xhttp.setRequestHeader('data',link);
 
-            xhttp.send();
+            xhttp.send(link);
 
             xhttp.onload = function () {
 
                 const obj =JSON.parse(this.responseText);
-
-                // document.getElementById('h3').innerHTML=this.responseText
+                
                 console.log(obj)
                 console.log(Object.keys(obj).length)
 
