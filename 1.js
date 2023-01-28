@@ -3563,7 +3563,7 @@ setTimeout(() => {
 
     // imgdiv('Chhichhore (2019) [1.4GB] & 720','chi',{q720p:'',q1080p:''},{size720:'',size1080:''})
 
-    seris('Avengers: Endgame(2019) [1.6GB]', 'end', ["https://flame2.bdff.workers.dev/0:/mcubd/Endgame720p.mp4"], '1.6GB', 'mv')
+
 
 
     seris('Thor ragnarok (2017) [1.3GB]', 'thor3', ['https://flame2.bdff.workers.dev/0:/mcubd/Thor-ragnarock-mp3.mp4'], '1.3GB', 'mv')
