@@ -2769,6 +2769,9 @@ setTimeout(() => {
 
 
     seris('Jagga Jasoos  [1.2GB]','jagga',['https://root.bdff.workers.dev/0:/mcubd/others/Jagga-Jasoos.mp4'],'1.2GB','mv')
+
+
+    seris('Badhaai ho [1.2GB]','hoo',['https://root.bdff.workers.dev/0:/mcubd/others/Badhaai-Ho.mp4'],'1.2GB','mv')
     
 
 
