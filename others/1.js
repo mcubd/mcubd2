@@ -2764,6 +2764,8 @@ setTimeout(() => {
     seris('Your Name  (2016) [903MB]','name',['https://root.bdff.workers.dev/0:/mcubd/others/your-name.mkv'],'903MB','mv')
 
 
+    seris('Buddy Daddies (2023) {season 1} [250MB]','buddy',['https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-1.mp4'],'250MB')
+
     
     // seris('Gangubai Kathiawadi [1.38GB]','gangu',['https://root.bdff.workers.dev/0:/mcubd/others/Gangubai-Kathiawadi.mp4'],'1.38GB','mv')
 
