@@ -297,8 +297,8 @@ function seris(bname, bimg, videolink, size, type) {
     chidiv.onclick = () => {
         var con = document.getElementById('cont')
         con.style.display = 'none';
-        document.getElementById('order').remove()
-        document.getElementById('h4').remove()
+        
+        
 
 
 
