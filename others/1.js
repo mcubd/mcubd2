@@ -2765,8 +2765,10 @@ setTimeout(() => {
 
 
     
-    seris('Gangubai Kathiawadi [1.38GB]','gangu',['https://root.bdff.workers.dev/0:/mcubd/others/Gangubai-Kathiawadi.mp4'],'1.38GB','mv')
+    // seris('Gangubai Kathiawadi [1.38GB]','gangu',['https://root.bdff.workers.dev/0:/mcubd/others/Gangubai-Kathiawadi.mp4'],'1.38GB','mv')
 
+
+    seris('Jagga Jasoos  [1.2GB]','jagga',['https://root.bdff.workers.dev/0:/mcubd/others/Jagga-Jasoos.mp4'],'1.2GB','mv')
     
 
 
