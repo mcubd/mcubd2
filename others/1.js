@@ -2757,15 +2757,15 @@ setTimeout(() => {
  
     // imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/kgf2.mp4'},{size1080:'1.6GB'})
 
-    seris('Jab We Met   [1.3GB]','jab',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/Jab-We-Met.mp4'],'1.3GB')
+    seris('Jab We Met   [1.3GB]','jab',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/Jab-We-Met.mp4'],'1.3GB','mv')
     
-        seris('Cheeni  [768MB]','chini',['https://root.bdff.workers.dev/0:/mcubd/others/chini.mp4'],'768MB')
+        seris('Cheeni  [768MB]','chini',['https://root.bdff.workers.dev/0:/mcubd/others/chini.mp4'],'768MB','mv')
 
-    seris('Your Name  (2016) [903MB]','name',['https://root.bdff.workers.dev/0:/mcubd/others/your-name.mkv'],'903MB')
+    seris('Your Name  (2016) [903MB]','name',['https://root.bdff.workers.dev/0:/mcubd/others/your-name.mkv'],'903MB','mv')
 
 
     
-    seris('Gangubai Kathiawadi [1.38GB]','gangu',['https://root.bdff.workers.dev/0:/mcubd/others/Gangubai-Kathiawadi.mp4'],'1.38GB')
+    seris('Gangubai Kathiawadi [1.38GB]','gangu',['https://root.bdff.workers.dev/0:/mcubd/others/Gangubai-Kathiawadi.mp4'],'1.38GB','mv')
 
     
 
