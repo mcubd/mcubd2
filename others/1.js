@@ -2750,7 +2750,7 @@ setTimeout(() => {
     seris('Generation Ami   [580MB]','ami',['https://root.bdff.workers.dev/0:/mcubd/others/Generation-Aami-(2018).mp4'],'580MB','mv')
 
 
-    // seris('Bird Box [1.08GB]', 'birdbox',['https://root.bdff.workers.dev/0:/mcubd/others/Bird-Box.mp4'],'1.08GB','mv')
+
 
 
    
@@ -2762,6 +2762,10 @@ setTimeout(() => {
         seris('Cheeni  [768MB]','chini',['https://root.bdff.workers.dev/0:/mcubd/others/chini.mp4'],'768MB')
 
     seris('Your Name  (2016) [903MB]','name',['https://root.bdff.workers.dev/0:/mcubd/others/your-name.mkv'],'903MB')
+
+
+    
+    seris('Gangubai Kathiawadi [1.38GB]','gangu',['https://root.bdff.workers.dev/0:/mcubd/others/Gangubai-Kathiawadi.mp4'],'1.38GB')
 
     
 
