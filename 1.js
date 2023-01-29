@@ -3587,37 +3587,37 @@ setTimeout(() => {
     seris('Captain America: The First Avenger (2011)    [1.2GB]', 'cap', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/captain-america-720.mp4'], '1.2GB', 'mv')
 
 
-    seris('Iron Man  (2008) [984MB]', 'iron', ['https://flame2.bdff.workers.dev/0:/mcubd/IronMan-720p.mp4'], '984MB', 'mv')
+    // seris('Iron Man  (2008) [984MB]', 'iron', ['https://flame2.bdff.workers.dev/0:/mcubd/IronMan-720p.mp4'], '984MB', 'mv')
 
 
-    seris('Captain America: Civil War  (2016) [1.5GB]', 'civil', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/Civil-war.mp4'], '1.5GB', 'mv')
+    // seris('Captain America: Civil War  (2016) [1.5GB]', 'civil', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/Civil-war.mp4'], '1.5GB', 'mv')
 
-    seris('Iron Man 3 (2013) [1.2GB]', 'iron3', ['https://flame2.bdff.workers.dev/0:/mcubd/Iron-man3.mp4'], '1.2GB', 'mv')
-
-
-    seris('Spider-Man: Homecoming (2017) [1.3GB]', 'spi1', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/spi1.mp4'], '1.3GB', 'mv')
+    // seris('Iron Man 3 (2013) [1.2GB]', 'iron3', ['https://flame2.bdff.workers.dev/0:/mcubd/Iron-man3.mp4'], '1.2GB', 'mv')
 
 
-    seris('Captain America: The Winter Soldier (2014) [1.3GB]', 'cap2', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/cap2.mp4'], '1.3GB', 'mv')
+    // seris('Spider-Man: Homecoming (2017) [1.3GB]', 'spi1', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/spi1.mp4'], '1.3GB', 'mv')
 
 
-
-    seris('Iron Man 2 (2010) [1GB]', 'iron2', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/Iron.Man2.mp4'], '1GB', 'mv')
+    // seris('Captain America: The Winter Soldier (2014) [1.3GB]', 'cap2', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/cap2.mp4'], '1.3GB', 'mv')
 
 
 
-    seris('Ant-man (2015) [920MB]', 'ant', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/Ant.Man-mp3.mp4'], '920MB', 'mv')
-
-
-    seris('Guardian of the galaxy vol.1   (2014)   [1.9GB]', 'galaxy', ['https://flame2.bdff.workers.dev/0:/mcubd/guardian.mp4'], '1.9GB', 'mv')
+    // seris('Iron Man 2 (2010) [1GB]', 'iron2', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/Iron.Man2.mp4'], '1GB', 'mv')
 
 
 
-    seris('Doctor Strange (2016) [1.2GB]', 'dr', ['https://flame2.bdff.workers.dev/0:/mcubd/Doctor.Strange.2016.720p.mp4'], '1.2GB', 'mv')
+    // seris('Ant-man (2015) [920MB]', 'ant', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/Ant.Man-mp3.mp4'], '920MB', 'mv')
+
+
+    // seris('Guardian of the galaxy vol.1   (2014)   [1.9GB]', 'galaxy', ['https://flame2.bdff.workers.dev/0:/mcubd/guardian.mp4'], '1.9GB', 'mv')
 
 
 
-    seris('Ant-Man and the Wasp  (2018)  [1.2GB]', 'ant2', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/ant2.mp4'], '1.2GB', 'mv')
+    // seris('Doctor Strange (2016) [1.2GB]', 'dr', ['https://flame2.bdff.workers.dev/0:/mcubd/Doctor.Strange.2016.720p.mp4'], '1.2GB', 'mv')
+
+
+
+    // seris('Ant-Man and the Wasp  (2018)  [1.2GB]', 'ant2', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/ant2.mp4'], '1.2GB', 'mv')
 
     seris('Doctor Strange in the Multiverse of Madness (2022)  [1.5GB]', 'drst2', ['https://flame2.bdff.workers.dev/0:/mcubd/imax/dr.strange.2-imax-hevc.mp4'], '1.5GB', 'mv')
 
