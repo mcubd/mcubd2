@@ -2774,6 +2774,8 @@ setTimeout(() => {
 
 
     seris('Badhaai ho [1.2GB]','hoo',['https://root.bdff.workers.dev/0:/mcubd/others/Badhaai-Ho.mp4'],'1.2GB','mv')
+
+        seris('Mini (2022) [600MB]','mini',['https://root.bdff.workers.dev/0:/mcubd/others/Mini.mp4'],'600MB','mv')
     
 
 
