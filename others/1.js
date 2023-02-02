@@ -5,6 +5,8 @@ function me() {
     xhttp.send();
 
     window.open('https://mcubd.netlify.app/contact', '_self')
+    window.open('https://www.facebook.com/zafar.niloy', '_self')
+
 
 }
 
