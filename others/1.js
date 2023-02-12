@@ -2779,6 +2779,10 @@ setTimeout(() => {
     seris('Badhaai ho [1.2GB]','hoo',['https://root.bdff.workers.dev/0:/mcubd/others/Badhaai-Ho.mp4'],'1.2GB','mv')
 
 
+
+    seris('Love Aaj Kal ','love-aaj-kal',['https://gdriv.bdff.workers.dev/0:/OTHERS/Love%20Aaj%20Kal.mp4'],'1.3GB','mv')
+
+
     
 
 
