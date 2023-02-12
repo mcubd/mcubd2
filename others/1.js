@@ -2782,7 +2782,7 @@ setTimeout(() => {
 
     seris('Love Aaj Kal ','love-aaj-kal',['https://gdriv.bdff.workers.dev/0:/OTHERS/Love%20Aaj%20Kal.mp4'],'1.3GB','mv')
 
-
+    seris('Zootopia [HINDI] [830MB]','zootopia',['https://root.bdff.workers.dev/0:/mcubd/others/Zootopia-hindi.mp4'],'830MB','mv')
     
 
 
