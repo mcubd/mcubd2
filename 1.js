@@ -3621,7 +3621,7 @@ setTimeout(() => {
 
     // seris('Ant-Man and the Wasp  (2018)  [1.2GB]', 'ant2', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/ant2.mp4'], '1.2GB', 'mv')
 
-    seris('Doctor Strange in the Multiverse of Madness (2022)  [1.5GB]', 'drst2', ['https://flame2.bdff.workers.dev/0:/mcubd/imax/dr.strange.2-imax-hevc.mp4'], '1.5GB', 'mv')
+    // seris('Doctor Strange in the Multiverse of Madness (2022)  [1.5GB]', 'drst2', ['https://flame2.bdff.workers.dev/0:/mcubd/imax/dr.strange.2-imax-hevc.mp4'], '1.5GB', 'mv')
 
 
 }, 1);
