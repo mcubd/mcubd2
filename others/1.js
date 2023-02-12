@@ -2780,9 +2780,13 @@ setTimeout(() => {
 
 
 
-    // seris('Love Aaj Kal ','love-aaj-kal',['https://gdriv.bdff.workers.dev/0:/OTHERS/Love%20Aaj%20Kal.mp4'],'1.3GB','mv')
+ 
 
     seris('Zootopia [HINDI] [940MB]','zootopia',['https://root.bdff.workers.dev/0:/mcubd/others/Zootopia-hindi.mp4'],'940MB','mv')
+
+
+
+    seris('Love Aaj Kal [450MB]','love-aaj-kal',['https://flame2.bdff.workers.dev/0:/mcubd2/Others/Love.Aaj.Kal.mp4'],'450MB','mv')
 
 
     seris('Alvin and the Chipmunks [2007] [830MB]','alvin',['https://root.bdff.workers.dev/0:/mcubd/others/Alvin.and.the.Chipmunks-2007.mp4'],'830MB','mv')
