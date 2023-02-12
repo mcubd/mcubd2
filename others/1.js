@@ -2786,7 +2786,7 @@ setTimeout(() => {
 
 
 
-    seris('Love Aaj Kal [450MB]','love-aaj-kal',['https://flame2.bdff.workers.dev/0:/mcubd2/Others/Love.Aaj.Kal.mp4'],'450MB','mv')
+
 
 
     seris('Alvin and the Chipmunks [2007] [830MB]','alvin',['https://root.bdff.workers.dev/0:/mcubd/others/Alvin.and.the.Chipmunks-2007.mp4'],'830MB','mv')
