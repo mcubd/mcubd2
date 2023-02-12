@@ -2786,6 +2786,9 @@ setTimeout(() => {
 
 
     seris('Alvin and the Chipmunks [2007] [830MB]','alvin',['https://root.bdff.workers.dev/0:/mcubd/others/Alvin.and.the.Chipmunks-2007.mp4'],'830MB','mv')
+
+
+    seris('Work It [930MB]','work-it',['https://root.bdff.workers.dev/0:/mcubd/others/Work.It.mp4'],'930MB','mv')
     
 
 
