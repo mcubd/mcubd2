@@ -2731,6 +2731,13 @@ setTimeout(() => {
     seris('Extraction (2020) 1080p [1.1GB]', 'dhaka',['https://flame2.bdff.workers.dev/0:/mcubd2/Others/Extraction.mp4' ],'1.1GB','mv')
 
 
+    seris('Bekas [800MB]', 'bekas',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/Bekas.mp4' ],'800MB','mv')
+
+    seris('Monpura [650MB]', 'monpura',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/Monpura.mp4' ],'650MB','mv')
+
+    seris('Moonfall [1.1GB]', 'moonfall',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/Moonfall.mp4' ],'1.1GB','mv')
+
+
     //     seris('Rick and Morty {Season 1} {English Only} 1080p [185MB]','rickk',['https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-save-summer-e1-2-6.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-pickle-e2-3-3.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-love-spray-e3-1-6.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-sleppy-garry-e4-2-4.mp4'],'185MB')
 
 
