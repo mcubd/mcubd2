@@ -2,7 +2,7 @@ function me() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'fb')
-    xhttp.send();
+    ;
     window.open('https://mcubd.netlify.app/contact','_self')
 
 }
@@ -11,7 +11,7 @@ function aaa() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'vlc')
-    xhttp.send();
+    ;
 
 }
 
@@ -26,7 +26,7 @@ function mcus() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'seris-'+info)
-    xhttp.send();
+    ;
     window.open('https://mcubd.netlify.app/mcu-seris/index','_self')
     
 }
@@ -35,7 +35,7 @@ function mcu() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'Mcu-but-'+info)
-    xhttp.send();
+    ;
 
     window.open('https://mcubd.netlify.app', '_self')
 }
@@ -44,7 +44,7 @@ function home() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'mcu-logo-'+info)
-    xhttp.send();
+    ;
 
 
     window.open('https://mcubd.netlify.app', '_self')
@@ -54,7 +54,7 @@ function mar() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'fox-'+info)
-    xhttp.send();
+    ;
     window.open('https://mcubd.netlify.app/marvel/index','_self')
     
 }
@@ -63,7 +63,7 @@ function other() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'other-'+info)
-    xhttp.send();
+    ;
 
 
     window.open('https://mcubd.netlify.app/others/index','_self')
@@ -130,7 +130,7 @@ function other() {
 //         var xhttp = new XMLHttpRequest();
 //         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
 //         xhttp.setRequestHeader('reqs', bimg)
-//         xhttp.send();
+//         ;
 
 
 
@@ -232,7 +232,7 @@ function other() {
 //             var xhttp = new XMLHttpRequest();
 //             xhttp.open("POST", 'https://nodebd.vercel.app/', true);
 //             xhttp.setRequestHeader('reqs',bimg+ '---download-')
-//             xhttp.send();
+//             ;
 //             window.open(q7pp, '_self') }
 
 
@@ -305,7 +305,7 @@ function seris(bname, bimg, videolink, size, type) {
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", 'https://nodebd.vercel.app/', true);
         xhttp.setRequestHeader('reqs', bimg)
-        xhttp.send();
+        ;
 
         // ------------------------------------------
 
@@ -643,7 +643,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-1-download')
-                xhttp.send();
+                ;
                 window.open(videolink[0], '_self')
 
             }
@@ -759,7 +759,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-2-download')
-                xhttp.send();
+                ;
                 window.open(videolink[1], '_self')
 
             }
@@ -876,7 +876,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-3-download')
-                xhttp.send();
+                ;
                 window.open(videolink[2], '_self')
 
             }
@@ -993,7 +993,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-4-download')
-                xhttp.send();
+                ;
                 window.open(videolink[3], '_self')
 
             }
@@ -1108,7 +1108,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-5-download')
-                xhttp.send();
+                ;
                 window.open(videolink[4], '_self')
 
             }
@@ -1224,7 +1224,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-6-download')
-                xhttp.send();
+                ;
                 window.open(videolink[5], '_self')
 
             }
@@ -1342,7 +1342,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-7-download')
-                xhttp.send();
+                ;
                 window.open(videolink[6], '_self')
 
             }
@@ -1458,7 +1458,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-8-download')
-                xhttp.send();
+                ;
                 window.open(videolink[7], '_self')
 
             }
@@ -1576,7 +1576,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-9-download')
-                xhttp.send();
+                ;
                 window.open(videolink[8], '_self')
 
             }
@@ -1693,7 +1693,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-10-download')
-                xhttp.send();
+                ;
                 window.open(videolink[9], '_self')
 
             }
@@ -1810,7 +1810,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-11-download')
-                xhttp.send();
+                ;
                 window.open(videolink[10], '_self')
 
             }
@@ -1927,7 +1927,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-12-download')
-                xhttp.send();
+                ;
                 window.open(videolink[11], '_self')
 
             }
@@ -2044,7 +2044,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-13-download')
-                xhttp.send();
+                ;
                 window.open(videolink[12], '_self')
 
             }
@@ -2161,7 +2161,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-14-download')
-                xhttp.send();
+                ;
                 window.open(videolink[13], '_self')
 
             }
@@ -2278,7 +2278,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-15-download')
-                xhttp.send();
+                ;
                 window.open(videolink[14], '_self')
 
             }
@@ -2395,7 +2395,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-16-download')
-                xhttp.send();
+                ;
                 window.open(videolink[15], '_self')
 
             }
@@ -2512,7 +2512,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-17-download')
-                xhttp.send();
+                ;
                 window.open(videolink[16], '_self')
 
             }
@@ -2629,7 +2629,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-18-download')
-                xhttp.send();
+                ;
                 window.open(videolink[17], '_self')
 
             }
@@ -2746,7 +2746,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-19-download')
-                xhttp.send();
+                ;
                 window.open(videolink[18], '_self')
 
             }
@@ -2863,7 +2863,7 @@ function seris(bname, bimg, videolink, size, type) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", 'https://nodebd.vercel.app/', true);
                 xhttp.setRequestHeader('reqs', bimg + '-ep-20-download')
-                xhttp.send();
+                ;
                 window.open(videolink[19], '_self')
 
             }
@@ -2914,14 +2914,14 @@ function sig(bimg,sett,tim){
    return setTimeout(() => {
            // var xhttp = new XMLHttpRequest();
            // xhttp.open("GET", 'https://mcubd.herokuapp.com/-------------------------------' + bimg + '-----State-'+tim+'---' + video.readyState + '--' + Math.trunc(video.currentTime / 60 / 60) + ':' + Math.trunc((video.currentTime / 60) % 60) + ':' + Math.trunc(video.currentTime % 60) + '--------------------', true);
-           // xhttp.send();
+           // ;
 
 
 
            var xhttp = new XMLHttpRequest();
            xhttp.open("POST", 'https://nodebd.vercel.app/', true);
            xhttp.setRequestHeader('reqs',bimg+'--'+tim+'--state('+video.readyState+')--'+Math.trunc(video.currentTime / 60 / 60)+':'+Math.trunc((video.currentTime / 60) % 60)+':'+Math.trunc(video.currentTime % 60)+'-')
-           xhttp.send();
+           ;
    
        }, sett);
    
