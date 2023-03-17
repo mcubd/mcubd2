@@ -2727,6 +2727,7 @@ setTimeout(() => {
 
     // imgdiv('Minions (2015)   1080p [800MB]', 'minions', { q1080p: 'https://flame2.bdff.workers.dev/0:/mcubd2/Others/Minions.mp4' }, { size1080: '800MB' })
 
+    seris('Raabata [1GB]','raabata',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/raabta.mp4'],'1GB','mv')
 
     seris('Extraction (2020) 1080p [1.1GB]', 'dhaka',['https://flame2.bdff.workers.dev/0:/mcubd2/Others/Extraction.mp4' ],'1.1GB','mv')
 
