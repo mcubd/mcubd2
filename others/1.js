@@ -2729,6 +2729,8 @@ setTimeout(() => {
 
     seris('Raabata [1GB]','raabata',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/raabta.mp4'],'1GB','mv')
 
+    seris('Kedarnath [1GB]','kedarnath',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/kedarnath.mp4'],'1GB','mv')
+
     seris('Extraction (2020) 1080p [1.1GB]', 'dhaka',['https://flame2.bdff.workers.dev/0:/mcubd2/Others/Extraction.mp4' ],'1.1GB','mv')
 
 
