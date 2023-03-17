@@ -486,10 +486,7 @@ function mar() {
 
 
 function other() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/ram', true);
-    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    xhttp.send(JSON.stringify({ name: 'others--', ramxhw: info, device: devicee, platform: platformm }));
+
 
 
     window.open('https://mcubd.netlify.app/others/index', '_self')
