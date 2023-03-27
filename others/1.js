@@ -2803,7 +2803,8 @@ setTimeout(() => {
 
 
     seris('Work It [930MB]','work-it',['https://root.bdff.workers.dev/0:/mcubd/others/Work.It.mp4'],'930MB','mv')
-    
+
+    seris('tazaa khabar [250mb]','taja',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/Taaza.Khabar.mp4'],'250mb','mv')
 
 
 
