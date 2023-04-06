@@ -2729,6 +2729,8 @@ setTimeout(() => {
 
     seris('Ekannoborti [1GB]','ekanno',['https://root.bdff.workers.dev/0:/mcubd/others/Ekannoborti.mp4'],'1GB','mv')
 
+    seris('ইন্দুবালা ভাতের হোটেল [1.5GB]','vhat',['https://root.bdff.workers.dev/0:/mcubd/others/Indubala-Bhaater-Hotel.mp4'],'1.5GB','mv')
+
     seris('Raabata [1GB]','raabata',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/raabta.mp4'],'1GB','mv')
 
     seris('Kedarnath [1GB]','kedarnath',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/kedarnath.mp4'],'1GB','mv')
