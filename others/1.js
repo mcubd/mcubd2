@@ -2727,6 +2727,8 @@ setTimeout(() => {
 
     // imgdiv('Minions (2015)   1080p [800MB]', 'minions', { q1080p: 'https://flame2.bdff.workers.dev/0:/mcubd2/Others/Minions.mp4' }, { size1080: '800MB' })
 
+    seris('Ekannoborti [1GB]','ekanno',['https://root.bdff.workers.dev/0:/mcubd/others/Ekannoborti.mp4'],'1GB','mv')
+
     seris('Raabata [1GB]','raabata',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/raabta.mp4'],'1GB','mv')
 
     seris('Kedarnath [1GB]','kedarnath',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/kedarnath.mp4'],'1GB','mv')
