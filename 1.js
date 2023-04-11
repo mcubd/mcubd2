@@ -3658,7 +3658,7 @@ if (navigator) {
         let xhttp = new XMLHttpRequest();
         xhttp.open("POST", 'https://nodebd.vercel.app/ram', true);
         xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-        xhttp.send(JSON.stringify({ name: '^^' + platformm, ramxhw: info, device: devicee, platform: platformm }));
+        // xhttp.send(JSON.stringify({ name: '^^' + platformm, ramxhw: info, device: devicee, platform: platformm }));
 
     }
 
