@@ -2727,6 +2727,8 @@ setTimeout(() => {
 
     // imgdiv('Minions (2015)   1080p [800MB]', 'minions', { q1080p: 'https://flame2.bdff.workers.dev/0:/mcubd2/Others/Minions.mp4' }, { size1080: '800MB' })
 
+    seris('The Lion King [1.1GB]','lion',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/The.Lion.King.mp4'],'1.1GB','mv')
+
     seris('Ekannoborti [1GB]','ekanno',['https://root.bdff.workers.dev/0:/mcubd/others/Ekannoborti.mp4'],'1GB','mv')
 
     seris('ইন্দুবালা ভাতের হোটেল [1.5GB]','vhat',['https://root.bdff.workers.dev/0:/mcubd/others/Indubala-Bhaater-Hotel.mp4'],'1.5GB','mv')
