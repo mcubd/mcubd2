@@ -2727,7 +2727,7 @@ setTimeout(() => {
 
     // imgdiv('Minions (2015)   1080p [800MB]', 'minions', { q1080p: 'https://flame2.bdff.workers.dev/0:/mcubd2/Others/Minions.mp4' }, { size1080: '800MB' })
 
-    seris('The Lion King [1.1GB]','lion',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/The.Lion.King.mp4'],'1.1GB','mv')
+    seris('The Lion King [1.1GB]','lion',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/the-lion-king.mp4'],'1.1GB','mv')
 
     seris('Sarkaru Vaari Paata [1.4GB]','sarkaru',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/Sarkaru-Vaari-Paata.mp4'],'1.4GB','mv')
 
