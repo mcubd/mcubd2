@@ -2801,10 +2801,10 @@ setTimeout(() => {
 
  
 
-    seris('Zootopia [HINDI] [940MB]','zootopia',['https://root.bdff.workers.dev/0:/mcubd/others/Zootopia-hindi.mp4'],'940MB','mv')
+    seris('Zootopia [HINDI] [940MB]','zootopia',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/Zootopia-hindi.mp4'],'940MB','mv')
 
 
-
+// ami basay aile jen porar kotha na koi
 
 
 
