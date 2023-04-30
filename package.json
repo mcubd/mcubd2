@@ -1,0 +1,25 @@
+{
+  "name": "mcubd",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/don1know/mcubd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/don1know/mcubd/issues"
+  },
+  "homepage": "https://github.com/don1know/mcubd#readme",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "node-fetch": "^3.3.1"
+  }
+}
