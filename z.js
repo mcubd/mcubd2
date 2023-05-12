@@ -48,7 +48,7 @@ for (let i = 0; i < obj.length; i++) {
 var i=0
 setInterval(async () => {
     
-    var data= fetch(JSON.parse(obj[i])[0]).then((res) => { return { status: res.status, url: JSON.parse(obj[i])[0] } })
+    var data= fetch(arr[i]).then((res) => { return { status: res.status, url: arr[i] } })
 
     console.log(await data)
     
@@ -58,4 +58,4 @@ setInterval(async () => {
 // const ar = []
 // for (const i of document.getElementById('cont').children) {
 //   ar.push(i.getElementsByClassName('link')[0].innerText)
-// };console.log(ar)
+// };console.log(ar)j

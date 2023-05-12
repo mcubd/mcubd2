@@ -2816,6 +2816,9 @@ setTimeout(() => {
     seris('tazaa khabar [250mb]','taja',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/Taaza.Khabar.mp4'],'250mb','mv')
 
 
+    seris('wanted [1.4gb]','wan',['https://root.bdff.workers.dev/0:/mcubd/others/Wanted.mp4'],'1.4gb','mv')
+
+
 
 
 
