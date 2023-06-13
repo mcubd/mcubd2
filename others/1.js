@@ -2768,13 +2768,13 @@ setTimeout(() => {
     seris('Sita Ramam  [1.3GB]', 'sita',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/Sita-Ramam.mp4' ], '1.3GB','mv' )
 
 
-    seris('Doctors {Season 1} 1080p [400 MB]', 'doc', ['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E01.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E02.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E03.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E04.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E05.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E06.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E07.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E08.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E09.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E10.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E11.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E12.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E13.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E14.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E15.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E16.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E17.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E18.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E19.mkv', 'https://flame.bdff.workers.dev/0:/mcubd/OTHERS/doctors/Doctors-S01E20.mkv'], '400MB')
 
-        seris('Netflixs  Bird Box (2018) [1.08GB]', 'birdbox',['https://root.bdff.workers.dev/0:/mcubd/others/Bird-Box.mp4'],'1.08GB','mv')
 
-    seris('Shubh Mangal Zyada Saavdhan  [1.3GB]','shuv',['https://root.bdff.workers.dev/0:/mcubd/others/Shubh.Mangal.Zyada-Saavdhan.mp4'],'1.3GB','mv')
 
-    seris('Generation Ami   [580MB]','ami',['https://root.bdff.workers.dev/0:/mcubd/others/Generation-Aami-(2018).mp4'],'580MB','mv')
+
+
+
+
 
 
 
@@ -2782,13 +2782,12 @@ setTimeout(() => {
 
    
  
-    // imgdiv('K.G.F: Chapter 2   [1.6GB]','kgf2',{q1080p:'https://gdriv.bdff.workers.dev/0:/OTHERS/kgf2.mp4'},{size1080:'1.6GB'})
 
-    seris('Jab We Met   [1.3GB]','jab',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/Jab-We-Met.mp4'],'1.3GB','mv')
+
+
     
-        seris('Cheeni  [768MB]','chini',['https://root.bdff.workers.dev/0:/mcubd/others/chini.mp4'],'768MB','mv')
 
-    seris('Your Name  (2016) [903MB]','name',['https://root.bdff.workers.dev/0:/mcubd/others/your-name.mkv'],'903MB','mv')
+
 
 
     seris('Buddy Daddies (2023) {season 1} [250MB]','buddy',['https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-1.mp4','https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-2.mp4','https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-3.mp4','https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-4.mp4'],'250MB')
@@ -2796,33 +2795,29 @@ setTimeout(() => {
     
     // seris('Gangubai Kathiawadi [1.38GB]','gangu',['https://root.bdff.workers.dev/0:/mcubd/others/Gangubai-Kathiawadi.mp4'],'1.38GB','mv')
 
-    seris('Mini (2022) [600MB]','mini',['https://root.bdff.workers.dev/0:/mcubd/others/Mini.mp4'],'600MB','mv')
-
-    seris('Jagga Jasoos  [1.2GB]','jagga',['https://root.bdff.workers.dev/0:/mcubd/others/Jagga-Jasoos.mp4'],'1.2GB','mv')
 
 
-    seris('Badhaai ho [1.2GB]','hoo',['https://root.bdff.workers.dev/0:/mcubd/others/Badhaai-Ho.mp4'],'1.2GB','mv')
+
+
+
+
 
 
 
  
 
-    seris('Zootopia [HINDI] [940MB]','zootopia',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/Zootopia-hindi.mp4'],'940MB','mv')
-
-
-// ami basay aile jen porar kotha na koi
 
 
 
-    seris('Alvin and the Chipmunks [2007] [830MB]','alvin',['https://root.bdff.workers.dev/0:/mcubd/others/Alvin.and.the.Chipmunks-2007.mp4'],'830MB','mv')
 
 
-    seris('Work It [930MB]','work-it',['https://root.bdff.workers.dev/0:/mcubd/others/Work.It.mp4'],'930MB','mv')
-
-    seris('tazaa khabar [250mb]','taja',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/Taaza.Khabar.mp4'],'250mb','mv')
 
 
-    seris('wanted [1.4gb]','wan',['https://root.bdff.workers.dev/0:/mcubd/others/Wanted.mp4'],'1.4gb','mv')
+
+
+
+
+
 
 
 
