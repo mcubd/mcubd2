@@ -2734,38 +2734,38 @@ setTimeout(() => {
 
     seris("Vincenzo {season 1} [650MB]",'vin',['https://flame2.bdff.workers.dev/0:/mcubd2/Others/vin/Vincenzo.A.K.A.Binsenjo.S01e01.mp4','https://flame2.bdff.workers.dev/0:/mcubd2/Others/vin/Vincenzo.A.K.A.Binsenjo.S01e02.mp4','https://flame2.bdff.workers.dev/0:/mcubd2/Others/vin/Vincenzo.A.K.A.Binsenjo.S01e03.mp4','https://flame2.bdff.workers.dev/0:/mcubd2/Others/vin/Vincenzo.A.K.A.Binsenjo.S01e04.mp4','https://flame2.bdff.workers.dev/0:/mcubd2/Others/vin/Vincenzo.A.K.A.Binsenjo.S01e05.mp4','https://flame2.bdff.workers.dev/0:/mcubd2/Others/vin/Vincenzo.A.K.A.Binsenjo.S01e06.mp4','https://flame2.bdff.workers.dev/0:/mcubd2/Others/vin/Vincenzo.A.K.A.Binsenjo.S01e07.mp4','https://flame2.bdff.workers.dev/0:/mcubd2/Others/vin/Vincenzo.A.K.A.Binsenjo.S01e08.mp4','https://flame2.bdff.workers.dev/0:/mcubd2/Others/vin/Vincenzo.A.K.A.Binsenjo.S01e09.mp4'],'650MB')
 
-    seris('The Lion King [1.1GB]','lion',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/the-lion-king.mp4'],'1.1GB','mv')
-
-    seris('Sarkaru Vaari Paata [1.4GB]','sarkaru',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/Sarkaru-Vaari-Paata.mp4'],'1.4GB','mv')
-
-    seris('Ekannoborti [1GB]','ekanno',['https://root.bdff.workers.dev/0:/mcubd/others/Ekannoborti.mp4'],'1GB','mv')
-
-    seris('ইন্দুবালা ভাতের হোটেল [1.5GB]','vhat',['https://root.bdff.workers.dev/0:/mcubd/others/Indubala-Bhaater-Hotel.mp4'],'1.5GB','mv')
-
-    seris('Raabata [1GB]','raabata',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/raabta.mp4'],'1GB','mv')
-
-    seris('Kedarnath [1GB]','kedarnath',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/kedarnath.mp4'],'1GB','mv')
-
-    seris('Extraction (2020) 1080p [1.1GB]', 'dhaka',['https://flame2.bdff.workers.dev/0:/mcubd2/Others/Extraction.mp4' ],'1.1GB','mv')
 
 
-    seris('Bekas [800MB]', 'bekas',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/Bekas.mp4' ],'800MB','mv')
 
-    seris('Monpura [650MB]', 'monpura',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/Monpura.mp4' ],'650MB','mv')
 
-    seris('Moonfall [1.1GB]', 'moonfall',['https://flame.bdff.workers.dev/0:/mcubd/OTHERS/Moonfall.mp4' ],'1.1GB','mv')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //     seris('Rick and Morty {Season 1} {English Only} 1080p [185MB]','rickk',['https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-save-summer-e1-2-6.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-pickle-e2-3-3.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-love-spray-e3-1-6.mp4','https://gdriv.bdff.workers.dev/0:/OTHERS/Rick/S1/Rick.and.Morty-sleppy-garry-e4-2-4.mp4'],'185MB')
 
 
 
-    seris('John Wick 2 || 1080p [1.6GB]','john2',['https://root.bdff.workers.dev/0:/mcubd/others/John-Wick-Chapter-2.mp4'],'1.6GB','mv')
 
 
-    seris('Major (2022)  [960MB]', 'major',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/Major.mp4' ], '960MB','mv' )
 
-    seris('Sita Ramam  [1.3GB]', 'sita',['https://zaynr2h.bdff.workers.dev/0:/mcubd/Others/Sita-Ramam.mp4' ], '1.3GB','mv' )
+
+
+
 
 
 
@@ -2789,7 +2789,7 @@ setTimeout(() => {
 
 
 
-
+    seris('A Business Proposal','prop',[],'500MB')
     seris('Buddy Daddies (2023) {season 1} [250MB]','buddy',['https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-1.mp4','https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-2.mp4','https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-3.mp4','https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-4.mp4'],'250MB')
 
     
