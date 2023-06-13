@@ -2789,8 +2789,7 @@ setTimeout(() => {
 
 
 
-    seris('A Business Proposal','prop',[],'500MB')
-    seris('Buddy Daddies (2023) {season 1} [250MB]','buddy',['https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-1.mp4','https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-2.mp4','https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-3.mp4','https://root.bdff.workers.dev/0:/mcubd/others/buddy_daddys/buddy-daddies-episode-4.mp4'],'250MB')
+    seris('A Business Proposal','prop',['https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E01.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E02.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E03.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E04.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E05.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E06.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E07.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E08.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E09.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E10.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E11.mkv','https://root.bdff.workers.dev/0:/mcubd/others/Business%20Proposal%20/A.Business.Proposal.S01E12.mkv'],'500MB');
 
     
     // seris('Gangubai Kathiawadi [1.38GB]','gangu',['https://root.bdff.workers.dev/0:/mcubd/others/Gangubai-Kathiawadi.mp4'],'1.38GB','mv')
