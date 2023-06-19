@@ -427,8 +427,8 @@ function me() {
     xhttp.open("POST", 'https://nodebd.vercel.app/', true);
     xhttp.setRequestHeader('reqs', 'fb')
     ;
-    // window.open('https://mcubd.netlify.app/contact', '_self')
-    window.open('https://www.facebook.com/zafar.niloy', '_self')
+     window.open('https://mcubd.netlify.app/contact', '_self')
+    
 
 
 }
