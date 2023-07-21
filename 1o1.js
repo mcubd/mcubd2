@@ -61,7 +61,7 @@ order.setAttribute('onclick', 'order()')
 contact.innerText = 'Movies!'
 // contact.innerText = ''
 
-h4.innerText = 'Sorry,amar khalato vai er intikal er jonno giechilam.okhane gie amar mobaile nosto hoe jai,tai movie er request dekhte pari ni'
+h4.innerText = ''
 button1.innerText = 'Marvel'
 button2.innerText = 'Marvel-Seris'
 button3.innerText = 'fox & sony'
