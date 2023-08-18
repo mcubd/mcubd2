@@ -115,12 +115,13 @@
     }
 
 
-
-
+ 
+    
+ 
     // -----------a-get
     function get() {
       var xhttp = new XMLHttpRequest();
-      xhttp.open("GET", 'https://nodebd.onrender.com/chatdata', true);
+      xhttp.open("GET", 'https://gifted-pear-loincloth.cyclic.cloud/chatdata', true);
       xhttp.onload = function () {
 
         if (this.responseText == [] || this.responseText == '[]') {
@@ -508,7 +509,7 @@
 
 
       var xhttp = new XMLHttpRequest();
-      xhttp.open("POST", 'https://nodebd.onrender.com/chatdata', true);
+      xhttp.open("POST", 'https://gifted-pear-loincloth.cyclic.cloud/chatdata', true);
       xhttp.onload = function () {
         const arr = JSON.parse(this.responseText);
         const obj = arr[0]
@@ -525,7 +526,7 @@
 
           }
 
-          fetch("https://nodebd.onrender.com/chatnot",{
+          fetch("https://gifted-pear-loincloth.cyclic.cloud/chatnot",{
             method:"POST",
             body:obj.data
           })
@@ -560,7 +561,7 @@
       }
       else {
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", 'https://nodebd.onrender.com/chatdatahis', true);
+        xhttp.open("POST", 'https://gifted-pear-loincloth.cyclic.cloud/chatdatahis', true);
 
         xhttp.onload = function () {
           if (this.responseText == '[]') {
@@ -611,7 +612,7 @@
 
       if (ul.childElementCount > 0) {
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", 'https://nodebd.onrender.com/chatdatanew', true);
+        xhttp.open("POST", 'https://gifted-pear-loincloth.cyclic.cloud/chatdatanew', true);
 
         xhttp.onload = function () {
           if (this.responseText == '[]' || this.responseText == []) { }
@@ -626,7 +627,7 @@
       }
       else {
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", 'https://nodebd.onrender.com/chatdatanew', true);
+        xhttp.open("POST", 'https://gifted-pear-loincloth.cyclic.cloud/chatdatanew', true);
 
         xhttp.onload = function () {
           if (this.responseText == '[]' || this.responseText == []) { }
@@ -682,7 +683,7 @@
             dbsend(url, '', filename);
           }
           else {
-            fetch('https://nodebd.onrender.com/filetype', {
+            fetch('https://gifted-pear-loincloth.cyclic.cloud/filetype', {
               method: "POST",
               body: url
             }).then(async (res) => {
