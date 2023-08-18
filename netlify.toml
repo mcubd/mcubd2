@@ -1,4 +1,1 @@
-[[headers]]
-  for = "/*"
-    [headers.values]
-      Cache-Control = "public, max-age=214748360" # Adjust the max-age value as needed
+
