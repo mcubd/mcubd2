@@ -61,7 +61,7 @@ order.setAttribute('onclick', 'order()')
 contact.innerText = 'Movies!'
 // contact.innerText = ''
 
-h4.innerText = 'download  eror asle page ta refresh korlei eror thik hoe jabe.sorry computer nosto tai somossa gula thik korte parchi na.'
+h4.innerText = 'download  error asle page ta refresh korlei eror thik hoe jabe.sorry computer nosto tai eto vejal die download korte hocceh.sorry'
 button1.innerText = 'Marvel'
 button2.innerText = 'Marvel-Seris'
 button3.innerText = 'fox & sony'
