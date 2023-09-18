@@ -11,7 +11,21 @@ document.body.innerHTML = `
   
 </div>
 `;
-  
+
+
+var arr=['one j','gh','three','for'];
+for(let i = 0; i < arr.length; i++){
+ // alert(arr[i]);
+  let span = document.createElement("span");
+
+span.setAttribute('class', 'word');
+span.innerText = arr[i];
+document.getElementById('parent').append(span);
+
+
+};
+
+
 
     
 var newLink = document.createElement("link");
@@ -83,16 +97,5 @@ setInterval(changeWord, 2000);
 
 
 //------------------
-var arr=['one j','gh','three','for'];
-for(let i = 0; i < arr.length; i++){
- // alert(arr[i]);
-  let span = document.createElement("span");
-
-span.setAttribute('class', 'word');
-span.innerText = arr[i];
-document.getElementById('parent').append(span);
-
-
-};
 
 
