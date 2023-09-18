@@ -18,6 +18,7 @@ p {
   display: inline-block;
   vertical-align: 100px;
   margin: 0;
+  position: relative;
 }
 
 .word {
