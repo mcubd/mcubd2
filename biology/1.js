@@ -1,7 +1,7 @@
 document.body.innerHTML = `
 <div class="text">
-  <p>Nachos are</p>
-  <p>
+  <p class="questions">dna virus names</p>
+  <p class="main1">
     <span class="word wisteria">tasty.</span>
     <span class="word belize">wonderful.</span>
     <span class="word pomegranate">fancy.</span>
@@ -10,8 +10,6 @@ document.body.innerHTML = `
   </p>
   <p></p>
 </div>
-
-
-Resources`;
+`;
 
 
