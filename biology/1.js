@@ -80,7 +80,7 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 2000);
-delay(7000);
+
 
 //------------------
 var arr=['one j','gh','three','for'];
