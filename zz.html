@@ -1,1 +1,49 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Animation</title>
+    <style>
+        /* Style for the input box */
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        /* Style for the animated text */
+        .animated-text {
+            font-size: 24px;
+            font-weight: bold;
+            animation: text-animation 3s infinite alternate;
+        }
+
+        /* Keyframes for the animation */
+        @keyframes text-animation {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-20px);
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Animation Example</h1>
+    <input type="text" id="inputText" placeholder="Enter text">
+    <div class="animated-text" id="animatedText"></div>
+
+    <script>
+        // JavaScript to capture input and update the animated text
+        const inputText = document.getElementById('inputText');
+        const animatedText = document.getElementById('animatedText');
+
+        inputText.addEventListener('input', () => {
+            animatedText.textContent = inputText.value;
+        });
+    </script>
+</body>
+</html>
