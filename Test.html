@@ -19,7 +19,17 @@
 <script>
     function clickul(event) {
   console.log(event.target.innerHTML);
-                
+
+
+          var  scriptElement=document.createElement('script');
+
+scriptElement.type = 'text/javascript';
+
+scriptElement.src = './'+event.target.innerHTML+'.js';
+
+script.setAttribute('id', 'scr1')
+
+document.body.appendChild(scriptElement);
 };
  
 </script>
