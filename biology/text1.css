@@ -10,7 +10,11 @@ body {
   color:#4f7054;
 }
 .text {
-
+ left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+  overflow: hidden;
   
 }
 
@@ -22,11 +26,7 @@ p {
   position: absolute;
   text-align: center;
   opacity: 1;
-  left: 50%;
-  margin-left: -50px;
-  top: 50%;
-  margin-top: -50px;
-  overflow: hidden;
+ 
 }
 
 .letter {
