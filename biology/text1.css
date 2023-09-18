@@ -23,7 +23,7 @@ p {
 .word {
   position: absolute;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
   left: 50%;
   margin-left: -50px;
   top: 50%;
