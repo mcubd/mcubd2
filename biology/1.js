@@ -1,5 +1,5 @@
 document.body.innerHTML = `
-<span id="ques">dna list</span>
+
 <div class="text">
   <p class="main1">
     <span class="word wisteria">tasty.</span>
