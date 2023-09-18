@@ -31,7 +31,8 @@ p {
   transform: translate(-50%, -50%); /* Center both horizontally and vertically */
   padding: 0px;
   width: auto;
-  border: 2px solid red;
+  
+  white-space: pre;
 }
 
 .letter {
