@@ -34,7 +34,7 @@ if(r==1){
 }else{
   span.classList.add("midnight")
 }
-span.innerText = dataa.[i];
+span.innerText = dataa[i];
 document.getElementById('parent').append(span);
 
 
