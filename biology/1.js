@@ -1,3 +1,17 @@
-document.body.innerHTML = '';
+document.body.innerHTML = `
+<div class="text">
+  <p>Nachos are</p>
+  <p>
+    <span class="word wisteria">tasty.</span>
+    <span class="word belize">wonderful.</span>
+    <span class="word pomegranate">fancy.</span>
+    <span class="word green">beautiful.</span>
+    <span class="word midnight">cheap.</span>
+  </p>
+  <p></p>
+</div>
 
-alert("১.js file")
+
+Resources`;
+
+
