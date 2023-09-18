@@ -13,7 +13,7 @@ fetch('./biology/'+'1'+'.json') // Replace 'data.json' with the path to your JSO
   .then(data => {
     // 'data' now contains the parsed JSON data
     var dataa=data// You can access and use the data here
-  console.log(dataa)
+  console.log(typeof dataa)
 
     for(let i = 0; i < dataa[0].length; i++){
  // alert(arr[i]);
