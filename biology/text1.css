@@ -30,7 +30,8 @@ p {
   left: 50%;
   transform: translate(-50%, -50%); /* Center both horizontally and vertically */
 background-color: lightblue;
-  padding: 10px;
+  padding: 0px;
+  margin :0px;
   border: 2px solid red;
 }
 
