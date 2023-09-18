@@ -1,6 +1,6 @@
 document.body.innerHTML = `
 
-<div class="text">
+<div id="parent" class="text">
   
   <span class="word wisteria">tasty.</span>
     <span class="word belize">কসাই .</span>
@@ -85,7 +85,14 @@ setInterval(changeWord, 2000);
 //------------------
 var arr=['one j','gh','three','for'];
 for(let i = 0; i < arr.length; i++){
-  alert(arr[i]);
+ // alert(arr[i]);
+  let span = document.createElement("span");
+
+span.setAttribute('class', 'word');
+span.innerText = arr[i];
+document.getElementById('parent').append(span);
+
+
 };
 
 
