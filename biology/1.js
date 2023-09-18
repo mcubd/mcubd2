@@ -17,7 +17,7 @@ fetch('./biology/'+'1'+'.json') // Replace 'data.json' with the path to your JSO
   console.log(typeof dataa)
   console.log(dataa)
     console.log(dataa.length)
-    for(let i = 0; i < dataa.length; i++){
+    for(let ii = 0; ii < dataa.length; ii++){
  // alert(arr[i]);
   let span = document.createElement("span");
 
@@ -34,7 +34,7 @@ if(r==1){
 }else{
   span.classList.add("midnight")
 }
-span.innerText = dataa[i];
+span.innerText = dataa[ii];
 document.getElementById('parent').append(span);
 
       //-------------------
