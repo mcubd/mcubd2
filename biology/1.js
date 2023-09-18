@@ -2,12 +2,8 @@ document.body.innerHTML = `
 
 <div id="parent" class="text">
   
-  <span class="word wisteria">tasty.</span>
-    <span class="word belize">কসাই .</span>
-    <span class="word pomegranate">hello there whatsupp kiobostavai.</span>
-    <span class="word green">beautiful.</span>
-    <span class="word midnight">cheapset on our head.</span>
-  
+  <span class="word green">START</span>
+    
   
 </div>
 `;
