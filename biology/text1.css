@@ -26,7 +26,7 @@ p {
 }
 
 .word {
-
+  position: absolute;
   text-align: center;
   opacity: 1;
  
