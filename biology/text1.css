@@ -18,13 +18,16 @@ p {
   display: inline-block;
   vertical-align: 100px;
   margin: 0;
-  position: relative;
 }
 
 .word {
   position: absolute;
   text-align: center;
   opacity: 0;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
 }
 
 .letter {
