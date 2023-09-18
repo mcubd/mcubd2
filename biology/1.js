@@ -4,7 +4,7 @@ document.body.innerHTML = `
   
   <span class="word green">START</span>
     
-  
+   
 </div>
 `;
 var dataa={}
