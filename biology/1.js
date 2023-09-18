@@ -12,7 +12,7 @@ fetch('./biology/'+'1'+'.json') // Replace 'data.json' with the path to your JSO
   .then(response => response.json()) // Parse the JSON response
   .then(data => {
     // 'data' now contains the parsed JSON data
-    dataa={...data} // You can access and use the data here
+    dataa=data // You can access and use the data here
   })
   .catch(error => {
     console.error('Error:', error);
