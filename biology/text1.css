@@ -6,7 +6,9 @@ body {
   font-size: 40px;
   background-color: #273329;
 }
-
+#ques{
+  color:#4f7054;
+}
 .text {
   position: absolute;
   width: 450px;
