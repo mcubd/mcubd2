@@ -7,7 +7,7 @@ document.body.innerHTML = `
   
 </div>
 `;
-fetch('./biology'+'1'+'.json') // Replace 'data.json' with the path to your JSON file
+fetch('./biology/'+'1'+'.json') // Replace 'data.json' with the path to your JSON file
   .then(response => response.json()) // Parse the JSON response
   .then(data => {
     // 'data' now contains the parsed JSON data
