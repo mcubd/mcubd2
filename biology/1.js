@@ -37,36 +37,11 @@ if(r==1){
 span.innerText = dataa[i];
 document.getElementById('parent').append(span);
 
-
-};
-
-    
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+      //-------------------
 
 
 
-var arr=['one j','gh','three','for'];
-
-
-
-
-    
-var newLink = document.createElement("link");
-
-newLink.rel = "stylesheet"; // Example: Adding a stylesheet
-newLink.type = "text/css"; // Type of the link (CSS in this case)
-newLink.href = "./biology/text1.css"; // URL to your stylesheet
-
-
-document.head.appendChild(newLink);
-
-//---------------------------
-
-var words = document.getElementsByClassName('word');
-var wordArray = [];
+      var wordArray = [];
 var currentWord = 0;
 
 words[currentWord].style.opacity = 1;
@@ -120,6 +95,39 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 2000);
+
+
+      //------------
+
+};
+
+    
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+
+
+var arr=['one j','gh','three','for'];
+
+
+
+
+    
+var newLink = document.createElement("link");
+
+newLink.rel = "stylesheet"; // Example: Adding a stylesheet
+newLink.type = "text/css"; // Type of the link (CSS in this case)
+newLink.href = "./biology/text1.css"; // URL to your stylesheet
+
+
+document.head.appendChild(newLink);
+
+//---------------------------
+
+var words = document.getElementsByClassName('word');
+
 
 
 //------------------
