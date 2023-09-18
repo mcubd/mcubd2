@@ -33,7 +33,7 @@ p {
   width: auto;
   word-wrap: break-word;
   white-space: pre-wrap;
-  
+  font-size: 26px;
 }
 
 .letter {
