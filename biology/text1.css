@@ -24,6 +24,7 @@ p {
 }
 
 .word {
+  position: absolute;
   
   opacity: 0;
 }
