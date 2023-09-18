@@ -33,6 +33,7 @@ p {
   width: auto;
   word-wrap: break-word;
   white-space: pre;
+  max-width:80vw !important;
 }
 
 .letter {
