@@ -2,11 +2,11 @@ document.body.innerHTML = `
 
 <div class="text">
   <p class="main1">
-    <span class="word wisteria">tasty.</span>
-    <span class="word belize">কসাই .</span>
-    <span class="word pomegranate">fancsjsjdjdkdjxkxjxjxxky.</span>
-    <span class="word green">beautiful.</span>
-    <span class="word midnight">cheap easy fast affordable yummy gast sust cool buoijo jamsoi kdghpouy dkdkd dkdkdk smdkdk dndmdkd dkdkdk dkdkdk.</span>
+    <div class="word wisteria"> <span class="text"> tasty.</span></div>
+    <div class="word belize"><span class="text"> কসাই .</span></div>
+    <div class="word pomegranate"><span class="text">fancsjsjdj.</span></div>
+    <div class="word green">beautifulnxjfjcjcjcjcj.</ div>
+    <div class="word midnight">cheap easy fast affordable yummy gast sust cool buoijo jamsoi kdghpouy dkdkd dkdkdk smdkdk dndmdkd dkdkdk dkdkdk.</ div>
   </p>
   <p></p>
 </div>
