@@ -10,7 +10,7 @@ body {
   color:#4f7054;
 }
 .text {
-text-align: center; /* Center horizontally */
+
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
@@ -25,7 +25,7 @@ p {
 
 .word {
   position: absolute;
-  
+  text-align: center;
   opacity: 0;
 }
 
