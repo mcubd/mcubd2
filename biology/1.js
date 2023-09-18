@@ -82,6 +82,10 @@ changeWord();
 setInterval(changeWord, 2000);
 delay(7000);
 
-
+//------------------
+var arr=['one j','gh','three','for'];
+for(let i = 0; i < arr.length; i++){
+  alert(arr[i]);
+};
 
 
