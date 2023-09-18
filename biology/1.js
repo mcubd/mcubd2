@@ -19,6 +19,18 @@ for(let i = 0; i < arr.length; i++){
   let span = document.createElement("span");
 
 span.setAttribute('class', 'word');
+  let r = Math.floor(Math.random() * 5) + 1;
+if(r==1){
+  span.classList.add("wisteria")
+}else if(r==2){
+  span.classList.add("belize")
+}else if(r==3){
+  span.classList.add("pomegranate")
+}else if(r==4){
+  span.classList.add("green")
+}else{
+  span.classList.add("midnight")
+}
 span.innerText = arr[i];
 document.getElementById('parent').append(span);
 
