@@ -29,9 +29,8 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center both horizontally and vertically */
-background-color: lightblue;
   padding: 0px;
-  margin :0px;
+  width: auto;
   border: 2px solid red;
 }
 
