@@ -10,6 +10,7 @@ body {
   color:#4f7054;
 }
 .text {
+ position: absolute;
  left: 50%;
   margin-left: -50px;
   top: 50%;
