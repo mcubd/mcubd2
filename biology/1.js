@@ -1,4 +1,5 @@
 document.body.innerHTML = `
+<span id="ques">dna list</span>
 <div class="text">
   <p class="questions">dna virus names</p>
   <p class="main1">
