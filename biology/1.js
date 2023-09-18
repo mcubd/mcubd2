@@ -16,6 +16,7 @@ fetch('./biology/'+'1'+'.json') // Replace 'data.json' with the path to your JSO
     var dataa= datak.a// You can access and use the data here
   console.log(typeof dataa)
   console.log(dataa)
+    console.log(dataa[0])
     for(let i = 0; i < dataa.a.length; i++){
  // alert(arr[i]);
   let span = document.createElement("span");
