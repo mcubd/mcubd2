@@ -1,7 +1,6 @@
 document.body.innerHTML = `
 <span id="ques">dna list</span>
 <div class="text">
-  <p class="questions"></p>
   <p class="main1">
     <span class="word wisteria">tasty.</span>
     <span class="word belize">কসাই .</span>
