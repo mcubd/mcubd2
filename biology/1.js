@@ -12,10 +12,10 @@ fetch('./biology/'+'1'+'.json') // Replace 'data.json' with the path to your JSO
   .then(response => response.json()) // Parse the JSON response
   .then(data => {
     // 'data' now contains the parsed JSON data
-    dataa=data // You can access and use the data here
+    var dataa=data// You can access and use the data here
   console.log(dataa[0].length)
 
-    for(let i = 0; i < data[0].length; i++){
+    for(let i = 0; i < dataa[0].length; i++){
  // alert(arr[i]);
   let span = document.createElement("span");
 
@@ -32,7 +32,7 @@ if(r==1){
 }else{
   span.classList.add("midnight")
 }
-span.innerText = data[0][i];
+span.innerText = dataa[0][i];
 document.getElementById('parent').append(span);
 
 
