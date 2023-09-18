@@ -11,7 +11,7 @@ document.body.innerHTML = `
   <p></p>
 </div>
 `;
-  <link rel="stylesheet" href="./biology/text1.css">
+  
 
     
 var newLink = document.createElement("link");
