@@ -17,7 +17,7 @@ fetch('./biology/'+'1'+'.json') // Replace 'data.json' with the path to your JSO
   console.log(typeof dataa)
   console.log(dataa)
     console.log(dataa.length)
-    return ;
+  
     for(let ii = 0; ii < dataa.length; ii++){
  // alert(arr[i]);
   let span = document.createElement("span");
@@ -37,7 +37,7 @@ if(r==1){
 }
 span.innerText = dataa[ii];
 document.getElementById('parent').append(span);
-
+  };
       //-------------------
 
 
@@ -100,7 +100,7 @@ setInterval(changeWord, 2000);
 
       //------------
 
-};
+
 
     
   })
