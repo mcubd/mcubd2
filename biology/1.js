@@ -26,6 +26,7 @@ document.getElementById('ques').innerHTML=dataa[0]
     
     for(let ii = 0; ii < dataa.length; ii++){
  // alert(arr[i]);
+      if(ii==0){ return}
   let span = document.createElement("span");
 
 span.setAttribute('class', 'word');
