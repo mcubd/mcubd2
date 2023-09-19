@@ -6,7 +6,7 @@
 <title>Online HTML Editor</title>
 </head>
 <body>
-<ul onclick="clickul(event)" >
+<ul class="ul" onclick="clickul(event)" >
             <li>1</li>
             <li>2</li>
             <li>3</li>    
@@ -34,5 +34,28 @@ document.body.appendChild(scriptElement);
 };
  
 </script>
+
+
+
+<style>
+    /* Apply styling to the ul to create a box-like appearance */
+.ul {
+    list-style: none;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Style for list items */
+.ul li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+</style>
 </body>
 </html>
