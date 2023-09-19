@@ -22,7 +22,7 @@ fetch('./biology/'+'1'+'.json') // Replace 'data.json' with the path to your JSO
   console.log(typeof dataa)
   console.log(dataa)
     console.log(dataa.length)
-document.getElementsById('ques').innerHTML=dataa[0]
+document.getElementById('ques').innerHTML=dataa[0]
     
     for(let ii = 0; ii < dataa.length; ii++){
  // alert(arr[i]);
