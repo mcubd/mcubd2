@@ -16,8 +16,8 @@ fetch('./biology/'+'1'+'.json') // Replace 'data.json' with the path to your JSO
     console.log(Object.keys(datak))
 
     let num = Math.floor(Math.random() * Object.keys(datak).length);
-    alert(num)
-    var dataa= datak.a// You can access and use the data here
+    
+    var dataa= datak[Object.keys(datak)[num]]// You can access and use the data here
   console.log(typeof dataa)
   console.log(dataa)
     console.log(dataa.length)
