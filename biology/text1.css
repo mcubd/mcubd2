@@ -8,6 +8,9 @@ body {
 }
 #ques{
   color:#4f7054;
+  position: absolute;
+  top: 20px; /* Position from the top of the containing element */
+  left: 30px;
 }
 .text {
  position: relative;
