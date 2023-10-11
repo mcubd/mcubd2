@@ -1,49 +1,22 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Text Animation</title>
-    <style>
-        /* Style for the input box */
-        input[type="text"] {
-            width: 300px;
-            padding: 10px;
-            font-size: 16px;
-        }
-        
-        /* Style for the animated text */
-        .animated-text {
-            font-size: 24px;
-            font-weight: bold;
-            animation: text-animation 3s infinite alternate;
-        }
-
-        /* Keyframes for the animation */
-        @keyframes text-animation {
-            0% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-20px);
-                opacity: 0.5;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Page title</title>
 </head>
 <body>
-    <h1>Text Animation Example</h1>
-    <input type="text" id="inputText" placeholder="Enter text">
-    <div class="animated-text" id="animatedText"></div>
+    <h1>hdjd</ h1>
 
-    <script>
-        // JavaScript to capture input and update the animated text
-        const inputText = document.getElementById('inputText');
-        const animatedText = document.getElementById('animatedText');
+<script>
 
-        inputText.addEventListener('input', () => {
-            animatedText.textContent = inputText.value;
-        });
-    </script>
+     const myTimeout = setTimeout(my, 4000);
+    
+
+function my() {
+    alert("go");
+  window.open("http://root.bdff.workers.dev/0:/Acs/Matrix-lecture2.mp4","_blank")
+}
+</script>
+    
 </body>
 </html>
