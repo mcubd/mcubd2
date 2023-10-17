@@ -17,7 +17,7 @@
 
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
     import {
-      getDatabase, ref, onValue, remove, onChildChanged, update,get,child
+      getDatabase, ref, onValue, remove, onChildChanged, update,get,child,set
     } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
 
 
@@ -61,6 +61,22 @@ get(child(dbRef, `db/child-db-1/val`)).then((snapshot) => {
 });
 
 
+
+
+
+function writeUserData() {
+  const db = getDatabase();
+  set(ref(db, 'db/user2' ), {
+    username: 'hname',
+    email: 'email'
+    
+  });
+}
+           writeUserData()
+
+
+
+    
           
 
 
