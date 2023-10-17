@@ -54,6 +54,7 @@ function renderCafe(doc){
 
 // getting data
 db.collection('07VwZtmL3ZBKtC8uMIzM').get().then(snapshot => {
+    console.log(snapshot.docs)
     snapshot.docs.forEach(doc => {
         console.log(doc)
         renderCafe(doc);
