@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
     <style>
         body {
             background-color: grey;
@@ -59,9 +61,53 @@
 </video>
 
 
-<img src="" alt="">
-    <iframe src="https://app.tpstreams.com/embed/4m8rfh/7zJX7bdBZtP/?access_token=a192205f-3e63-4f9e-9eb0-d702c8d51aab" width="100%" height="450px" frameborder="0" allow="autoplay; fullscreen; picture-in-picture accelerometer; clipboard-write; encrypted-media; gyroscope"></iframe>
 
+ 
+
+
+
+    <script>
+  // Import the functions you need from the SDKs you need
+  // mport { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBzaFL1XOU-_152duOo0baL1DfgVVuSwMI",
+    authDomain: "test2-5bbd8.firebaseapp.com",
+    databaseURL: "https://test2-5bbd8-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "test2-5bbd8",
+    storageBucket: "test2-5bbd8.appspot.com",
+    messagingSenderId: "683307239625",
+    appId: "1:683307239625:web:d28ed1c2fb6b31dd4e6518"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+        firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true });
+</script>
+
+
+<script>
+
+
+db.collection('data').get().then(snapshot => {
+    console.log(snapshot.docs)
+    snapshot.docs.forEach(doc => {
+        renderCafe(doc);
+    });
+
+
+    
+    
+</script>
+
+
+
+    
 
 </body>
 
