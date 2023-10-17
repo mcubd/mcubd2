@@ -95,6 +95,7 @@
 
 
 db.collection('data').get().then(snapshot => {
+    alart(snapshot.docs)
     console.log(snapshot.docs)
     snapshot.docs.forEach(doc => {
         renderCafe(doc);
