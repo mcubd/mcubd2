@@ -18,18 +18,47 @@
 
         <script>
             // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyBrItE-kYM4dU0kaft7WYjb3749lCv42uA",
-                authDomain: "ninja-firestore.firebaseapp.com",
-                databaseURL: "https://ninja-firestore.firebaseio.com",
-                projectId: "ninja-firestore",
-                storageBucket: "ninja-firestore.appspot.com",
-                messagingSenderId: "176079657618"
-            };
+           const firebaseConfig = {
+    apiKey: "AIzaSyBzaFL1XOU-_152duOo0baL1DfgVVuSwMI",
+    authDomain: "test2-5bbd8.firebaseapp.com",
+    databaseURL: "https://test2-5bbd8-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "test2-5bbd8",
+    storageBucket: "test2-5bbd8.appspot.com",
+    messagingSenderId: "683307239625",
+    appId: "1:683307239625:web:d28ed1c2fb6b31dd4e6518"
+  };
             firebase.initializeApp(config);
             const db = firebase.firestore();
             db.settings({ timestampsInSnapshots: true }); 
         </script>
-        <script src="app.js"></script>
+        <script >
+
+
+const cafeList = document.querySelector('#cafe-list');
+
+// create element & render cafe
+function renderCafe(doc){
+    let li = document.createElement('li');
+    let name = document.createElement('span');
+    let city = document.createElement('span');
+
+    li.setAttribute('data-id', doc.id);
+    name.textContent = doc.data().name;
+    city.textContent = doc.data().city;
+
+    li.appendChild(name);
+    li.appendChild(city);
+
+    cafeList.appendChild(li);
+}
+
+// getting data
+db.collection('cafes').get().then(snapshot => {
+    snapshot.docs.forEach(doc => {
+        renderCafe(doc);
+    });
+});
+            
+        </script>
     </body>
     </html>
