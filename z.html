@@ -98,7 +98,13 @@ db.collection('data').get().then(snapshot => {
     //alart(snapshot.docs)
     console.log(snapshot.docs)
     snapshot.docs.forEach(doc => {
-        alert(doc)
+       // alert(doc)
+        const myTimeout = setTimeout(myGreeting, 5000);
+
+function myStopFunction() {
+  console.log(doc);
+}
+
     });
 
 
