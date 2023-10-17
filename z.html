@@ -52,7 +52,7 @@
 const dbRef = ref(getDatabase());
 get(child(dbRef, `db/child-db-1/val`)).then((snapshot) => {
   if (snapshot.exists()) {
-    console.log(snapshot.val());
+    console.log(snapshot.val()+'------dooone');
   } else {
     console.log("No data available");
   }
