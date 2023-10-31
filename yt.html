@@ -30,9 +30,11 @@
    
        
        let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val);
-        let myText = await myObjectt.text();
+       let myText = await myObjectt.text();
            let status=await myObjectt.status;
-   window.open(myText,'_self')
+   let res= myText.replace(/&title.*/, '');
+
+   window.open(res,'_self')
    
    }else{
        const text = await navigator.clipboard.readText();
