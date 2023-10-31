@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mcubd</title>
 </head>
 <body>
    
@@ -28,7 +30,7 @@ console.log(result[0]);
 var srcc=`https://www.googleapis.com/drive/v3/files/${result[0]}?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc`
 document.body.innerHTML=`
 <video width="98%" height="auto" controls>
-  <source src=srcc type="video/mp4">
+  <source src=${srcc} type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -42,7 +44,7 @@ var srcc=`https://www.googleapis.com/drive/v3/files/${resultt[1]}?alt=media&key=
 console.log(srcc)
 document.body.innerHTML=`
 <video width="98%" height="auto" controls>
-  <source src=srcc type="video/mp4">
+  <source src=${srcc} type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
