@@ -63,6 +63,36 @@ let resullt = yourText1.replace(/&title.*/, '');
 
 console.log(resullt); // Outputs: "This is an example sentence. Cut everything after this "
 
+
+
+async function askClipboardPermission() {
+    try {
+        const status = await navigator.permissions.query({ name: 'clipboard-read' });
+
+        if (status.state === 'granted') {
+            // Permission already granted
+            console.log('Clipboard access granted!');
+            // You can proceed with clipboard operations
+        } else {
+            // Ask for permission
+            const result = await navigator.permissions.request({ name: 'clipboard-read' });
+
+            if (result.state === 'granted' || result.state === 'prompt') {
+                console.log('Clipboard access granted!');
+                // You can proceed with clipboard operations
+            } else {
+                console.log('Clipboard access denied.');
+                // Handle the denial of clipboard access
+            }
+        }
+    } catch (error) {
+        console.error('Error requesting clipboard permission:', error);
+        // Handle any errors that occur during the permission request
+    }
+}
+
+askClipboardPermission();
+
     
     </script>
     
