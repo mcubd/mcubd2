@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+   
+   <input id="in" type="text">
+  <button id="btn">Lets go!!!</button> 
+  <script>
+  // JavaScript code
+   document.getElementById('btn').onclick = async function() { 
+ 
+   var val=document.getElementById("in").value
+   
+   
+
+const regex = /id=/;
+const isIdPresent = regex.test(val);
+
+console.log(); // This will output true if "id=" is present, otherwise false
+
+   if(isIdPresent){
+const regex = /(?<=id=).*?(?=&export)/;
+const result = val.match(regex);
+console.log(result[0]);
+var srcc=`https://www.googleapis.com/drive/v3/files/${result[0]}?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc`
+document.body.innerHTML=`
+<video width="98%" height="auto" controls>
+  <source src=srcc type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+`
+       
+   }else{
+       const regexx = /d\/(.*?)\/view/;
+const resultt = val.match(regexx);
+console.log(resultt[1]);
+var srcc=`https://www.googleapis.com/drive/v3/files/${resultt[1]}?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc`
+console.log(srcc)
+document.body.innerHTML=`
+<video width="98%" height="auto" controls>
+  <source src=srcc type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+`
+
+       
+   }
+   
+   }
+
+
+    
+    
+
+
+
+
+
+
+</script>
+</body>
+</html>
