@@ -39,9 +39,30 @@
       let  myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+text);
         let myText = await myObjectt.text();
            let status=await myObjectt.status;
-   window.open(myText,'_self')
+   let res= myText.replace(/&title.*/, '');
+
+   window.open(res,'_self')
    }
-    }; </script>
+   
+   
+
+    }; 
+    
+    
+    let yourText = "This is an exampleexampletitlesentence. Cut everything after this word.";
+let result = yourText.replace(/(.*?title).*/, '$1');
+
+console.log(result);
+ // Outputs: "This is an example sentence. Cut everything after this"
+    
+    
+    let yourText1= "This is an example&title= sentence. Cut everything after this word.";
+let resullt = yourText1.replace(/&title.*/, '');
+
+console.log(resullt); // Outputs: "This is an example sentence. Cut everything after this "
+
+    
+    </script>
     
 </body>
 </html>
