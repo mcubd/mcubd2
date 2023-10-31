@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mcubd</title>
+    <style>
+        body{
+            background-color:grey;
+        }
+        #btn{
+            background-color:#8f9491;
+            
+        }
+        #in{
+            background-color:#8f9491
+        }
+    </style>
+</head>
+<body>
+    
+    <input id="in" type="text">
+  <button id="btn">Lets go!!!</button> <script> // JavaScript code
+   document.getElementById('btn').onclick = async function() { 
+ 
+   var val=document.getElementById("in").value
+   
+   
+   if(val.length >8){
+   
+       
+       let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val);
+        let myText = await myObjectt.text();
+           let status=await myObjectt.status;
+   window.open(myText,'_self')
+   
+   }else{
+       const text = await navigator.clipboard.readText();
+      let  myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+text);
+        let myText = await myObjectt.text();
+           let status=await myObjectt.status;
+   window.open(myText,'_self')
+   }
+    }; </script>
+    
+</body>
+</html>
