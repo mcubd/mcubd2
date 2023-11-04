@@ -43,7 +43,7 @@ console.log(resultt[1]);
 var srcc=`https://www.googleapis.com/drive/v3/files/${resultt[1]}?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc`
 console.log(srcc)
 document.body.innerHTML=`
-<video width="98%" height="auto" controls>
+<video loop width="98%" height="auto" controls>
   <source src=${srcc} type="video/mp4">
   Your browser does not support the video tag.
 </video>
