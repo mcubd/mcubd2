@@ -662,10 +662,10 @@
       var dbsendtype
 
       firestr = firebase.storage().ref("chat/" + filename)
-      filestr.updateMetadata({
-  contentDisposition: 'attachment'
-})
-      var uploadtusk = firestr.put(fileitem)
+      var metadata = {
+    contentDisposition: 'attachment'// Force download
+  };
+      var uploadtusk = firestr.put(fileitem,metadata)
 
       document.getElementById('status').style.display = ''
       document.getElementById('status').style.cssText = 'z-index:1'
