@@ -662,6 +662,10 @@
       var dbsendtype
 
       firestr = firebase.storage().ref("chat/" + filename)
+      filestr.updateMetadata({
+  contentType: 'image/jpeg',
+  contentDisposition: 'attachment'
+})
       var uploadtusk = firestr.put(fileitem)
 
       document.getElementById('status').style.display = ''
