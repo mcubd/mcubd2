@@ -553,7 +553,7 @@
       }
 
 
-      ws()
+      ws('down')
       let ram = 'not-found'
       let device = 'not-found'
       let platform = 'not-found'
@@ -564,9 +564,11 @@
 
       // var xhttp = new XMLHttpRequest();
       // xhttp.open("POST", 'https://gifted-pear-loincloth.cyclic.cloud/chatdata', true);
+      const lastnum = document.getElementById('messages').lastElementChild.getAttribute('id');
+   try{
       const date = await fetch('https://gifted-pear-loincloth.cyclic.cloud/time/f');
       const lastnum = document.getElementById('messages').lastElementChild.getAttribute('id');
-      if (date.ok) {
+    
         const docRef = await firestore.collection("chat").doc(`${parseInt(lastnum) + 1}`)
         await docRef.set({
           data: msgdata,
@@ -574,13 +576,29 @@
           num: parseInt(lastnum) + 1
         });
 
-      }
-
-
-      setTimeout(() => {
+        setTimeout(() => {
         window.scroll(0, document.body.scrollHeight)
-        console.log('scroll')
-      }, 1800);
+        document.getElementById('input').value = ''
+      }, 800);
+
+    
+    }catch(e){
+      console.log(e+'eror bro')
+      const lastnum = document.getElementById('messages').lastElementChild.getAttribute('id');
+      const docRef = await firestore.collection("chat").doc(`${parseInt(lastnum) + 1}`)
+        await docRef.set({
+          data: msgdata,
+          date: '',
+          num: parseInt(lastnum) + 1
+        });
+        setTimeout(() => {
+        window.scroll(0, document.body.scrollHeight)
+        document.getElementById('input').value = ''
+      }, 800);
+    }
+
+
+
 
 
 
@@ -684,6 +702,9 @@
 
     async function neww() {
 
+        
+ 
+
       const collectionRef = firestore.collection('chat').orderBy('num', 'desc').limit(1);
       const querySnapshot = await collectionRef.get();
 
@@ -692,11 +713,11 @@
         if (lastnum != querySnapshot.docs[0].id) {
           const obj = querySnapshot.docs[0].data();
           console.log(obj)
-          if (obj.media) { print2(obj, obj.media) } else { print(obj,'down') }
+          if (obj.media) { print2(obj, obj.media) } else { print(obj, 'down') }
           console.log(6666)
         }
       }
-      return
+
       //     if (parseInt(lastnum) > 0) {
       //       const collectionRef = firestore.collection('chat').orderBy('num', 'desc').limit(1);
       // const querySnapshot = await collectionRef.get();
@@ -845,15 +866,29 @@
       var con = time.concat(ran)
       update(ref(database, 'db/' + 'child-db-1'), { val: con });
 
-      for (let i = 1; i < 11; i++) {
+
+
+      let count = 0
+      let interval = setInterval(() => {
+        count = count + 1;if (count == 30) { clearInterval(interval); }
+        const time = new Date().toLocaleTimeString();
+          const ran = Math.random();
+          var con = time.concat(ran)
+          update(ref(database, 'db/' + 'child-db-1'), { val: con });
+
+      }, 100);
+
+      for (let i = 1; i < 31; i++) {
         setTimeout(() => {
           const time = new Date().toLocaleTimeString();
           const ran = Math.random();
           var con = time.concat(ran)
           update(ref(database, 'db/' + 'child-db-1'), { val: con });
         }, i + '000');
+        console.log(i)
 
       }
+
 
 
 
