@@ -234,10 +234,11 @@
       var copy = document.createElement('button')
       node.setAttribute("id", obj.num)
       copy.setAttribute("class", "copy")
+      txt.setAttribute("class", "data-span")
       copy.setAttribute("onClick", "copy(this)")
       ip.setAttribute("style", "float:right; ")
       ip.setAttribute("class", "ipspan")
-      txt.textContent = obj.data
+      txt.innerText = obj.data
       ip.textContent = ' ' + '[' + obj.ip + ']'
       time.textContent = obj.date
       num.textContent = obj.num
