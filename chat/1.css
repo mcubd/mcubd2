@@ -155,6 +155,11 @@ a{
             -ms-user-select:text; 
             user-select:text;
       }
+      .data-span{
+             white-space: pre-wrap;
+      }
+
+
 
 
 
