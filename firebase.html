@@ -51,7 +51,7 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
       border-top: 1px solid #c7c7c7;
       font-size:15px ;
       font-weight: 600;
-
+      user-select: none;
 
 
 
@@ -69,22 +69,66 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
       background-color: rgb(241, 241, 241);
       position: fixed;
       top: 0;
+
     }
     #location{
       font-size: 18px;
     }
+    #fullname{
+      font-size: 10px;
+      word-wrap: break-word;
+      height: 36px;
+      overflow: hidden;
+      background-color: aquamarine;
+    }
+    #upload{
+      font-weight: 800;
+      height: 36px;
+      width: 36px;
+      background-color: rgba(175, 255, 228, 0.4);  
+      display: inline-block;
+    }
+
+      #progress_div{
+background-color:rgba(241, 241, 241,.7) ;
+
+        width: 100vw;
+        position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+      }
+      .parent{
+        padding:8px ;
+
+      }
+      .play{
+        background-color: rgb(0, 82, 54);
+        height: 36px;
+      width: 36px;
+      display: inline-block;
+      position: fixed;
+  /* top: 0; */
+  right: 0; 
+      }
   </style>
 </head>
 <body>
-  <div class="cpanel">
+  <div id="cpanel" class="cpanel">
     <div id="location">Home/</div>
     <div id="fullname"></div>
-  </div>
+    <input style="display:none" id="input"  onchange="upload(event)" type="file" multiple/>
+    <div onclick="document.getElementById('input').click()" id="upload"><img height="100%" src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/24%2Fup.png?alt=media&token=5ee0c1f8-5a31-4422-86d3-ddc26f5a81db" alt=""></div>
+    <div onclick="play(event)" id="play" class="play"><img src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/playy.png?alt=media&token=5855f2b4-ff8a-48ea-9114-cef783e69945" height="100%" alt=""></div>
+    </div>
+
+    
   <ul id="ul" style="opacity: 1;"></ul>
+  <div id="progress_div"></div>
   <script type="module">
  
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-    import { getStorage, ref, listAll,getDownloadURL,getMetadata   } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js";
+    import { getStorage, ref, listAll,getDownloadURL,getMetadata ,uploadBytesResumable  } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js";
 
   
     const firebaseConfig = {
@@ -180,7 +224,7 @@ async function listItems(folder) {
 
     });
 
-
+//file
     result.items.forEach(async (itemRef,index) => {
       const metadata = await getMetadata(itemRef);
       console.log(itemRef.fullPath+'-----'+await getDownloadURL(itemRef));
@@ -217,10 +261,13 @@ touchlistfile[index]='no'
     touchlistfile[index]='yes'
     console.log(touchlistfile)
     node.style.cssText = ' background-color:#F0F1F1'
-   setTimeout(() => {
+   setTimeout(async() => {
     if(touchlistfile[index]=='yes'){
       console.log('You touched the element!'+itemRef.name);
       document.getElementById('fullname').innerText=itemRef.name
+      document.getElementById('play').setAttribute("href", await getDownloadURL(itemRef))
+
+
 
     }
     }, 800);
@@ -248,10 +295,100 @@ touchlistfile[index]='no'
 listItems('/');
 
 
+window.upload=async function (e){
+
+  function uploadFiles() {
+  for (var i = 0; i < e.target.files.length; i++) {
+    uploadfile(e.target.files[i],i);
+  }
+};uploadFiles()
+  
+
+function uploadfile(file,index){
 
 
 
+    const storageRef = ref(storage, "trash/"+file.name);
+      var metadata = {contentDisposition: 'attachment'};
+      const uploadTask = uploadBytesResumable(storageRef, file, metadata);
 
+
+      let parent = document.createElement('div')
+        let progress = document.createElement('div')
+        let bar = document.createElement('div')
+        let percentt = document.createElement('span')
+        let fname = document.createElement('span')
+
+        progress.style.cssText = `background:#141515;border-radius: 4px;height: 100%;width: 0%;`
+        bar.style.cssText = `height: calc(1vh);width: calc(85vw);border-radius:4px;background-color: #fff;`
+        // fname.style.cssText=`display:block`
+        percentt.style.cssText=`font-size:16px; text-align: left;`
+        fname.style.cssText=`font-size:10px;  margin-left: 60vw;`
+
+
+        progress.setAttribute("id", 'num'+index)
+        percentt.setAttribute("id", 'per'+index)
+        parent.setAttribute("class", 'parent')
+
+
+
+        // percentt.innerText=percent+'%'
+        fname.innerText=shortenFileName(file.name)
+        bar.append(progress)
+        parent.append(bar,percentt,fname)
+        document.getElementById('progress_div').append(parent)
+
+
+      uploadTask.on("state_changed", (snapshot) => {
+        const percent = Math.floor((snapshot.bytesTransferred / snapshot.totalBytes) * 100)
+        console.log(percent)
+
+        
+
+
+      // node.setAttribute("id", index)
+      // node.setAttribute("class", 'li')
+
+      // type.style.cssText = 'margin-right:12px'
+      // name.style.cssText = 'margin-top:20px'
+      // <div class="bar">
+      //   <div id="progress" class="progress"></div>
+      // </div>
+      // <span id="two" class="upspan two">0%</span>
+
+
+        // document.getElementById('per').innerHTML='Uploading'+file.name+'---------'+percent+'%'
+        document.getElementById('num'+index).style.width = percent + '%'
+        document.getElementById('per'+index).innerText = percent + '%'
+
+      }, (err) => {
+        console.log(err)
+      }, () => {
+        uploadtusk.snapshot.ref.getDownloadURL().then((url) => {
+          console.log(url)
+          // document.getElementById('per').innerHTML=url
+        }).catch((err) => {
+          console.log(err)
+        })
+      })
+
+    }
+}
+
+
+
+document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+       window.play=function (e){
+        let link=document.getElementById('play').getAttribute('href')
+        console.log(link)
+
+        document.getElementById('cpanel').innerHTML=`<video controls src="${link}">
+</video>`
+        
+        }
 
   </script>
 </body>
