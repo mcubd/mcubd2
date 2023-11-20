@@ -4,16 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100&display=swap" rel="stylesheet">
+  <style>
+    /* bengali */
+@font-face {
+font-family: 'Noto Sans Bengali';
+font-style: normal;
+font-weight: 100;
+font-stretch: 100%;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/notosansbengali/v20/Cn-SJsCGWQxOjaGwMQ6fIiMywrNJIky6nvd8BjzVMvJx2mcSPVFpVEqE-6KmsolKicWu8w7LwlYc8g.woff2) format('woff2');
+unicode-range: U+0964-0965, U+0980-09FE, U+1CF7, U+1CFA, U+200C-200D, U+20B9, U+25CC;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Noto Sans Bengali';
+font-style: normal;
+font-weight: 100;
+font-stretch: 100%;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/notosansbengali/v20/Cn-SJsCGWQxOjaGwMQ6fIiMywrNJIky6nvd8BjzVMvJx2mcSPVFpVEqE-6KmsolKidmu8w7LwlYc8g.woff2) format('woff2');
+unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Noto Sans Bengali';
+font-style: normal;
+font-weight: 100;
+font-stretch: 100%;
+font-display: swap;
+src: url(https://fonts.gstatic.com/s/notosansbengali/v20/Cn-SJsCGWQxOjaGwMQ6fIiMywrNJIky6nvd8BjzVMvJx2mcSPVFpVEqE-6KmsolKideu8w7LwlY.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
   <style>
     *{
       margin: 0;
       padding: 0;
+      font-family: 'Noto Sans Bengali', sans-serif;
     }
     li{
       padding-top: 10px;
       padding-bottom: 10px;
-      border-top: 1px solid #000;
+      border-top: 1px solid #c7c7c7;
       font-size:15px ;
+      font-weight: 600;
+
+
 
 
     }
@@ -21,6 +60,7 @@
       list-style: none;
       margin-top: 20px;
       margin-left: 40px;
+      background-color: #FFFFFF;
     }
   </style>
 </head>
@@ -72,6 +112,11 @@ async function listItems(folder) {
       node.setAttribute("id", index)
       node.setAttribute("class", 'li')
 
+      type.style.cssText = 'margin-right:12px'
+      name.style.cssText = 'margin-top:20px'
+
+
+
 
   touchlist[index]='no'
   console.log(touchlist)
@@ -92,7 +137,13 @@ async function listItems(folder) {
   node.addEventListener('touchend',endTouch);
 
 
-      type.innerHTML=`<svg focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368" class="a-s-fa-Ha-pa"><g><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path><path d="M0 0h24v24H0z" fill="none"></path></g></svg>`
+      type.innerHTML=`<svg    viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368" class="a-s-fa-Ha-pa"><g><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path><path d="M0 0h24v24H0z" fill="none"></path></g></svg>`
+
+      // <svg height="16px" width="16px" fill="black" viewBox="0 0 64 64">
+      //       <path  d="M49,13c3.314,0,6,2.686,6,6v26c0,3.314-2.686,6-6,6H15c-3.314,0-6-2.686-6-6V19c0-3.314,2.686-6,6-6H49z M23,23	c-2.209,0-4,1.791-4,4c0,2.209,1.791,4,4,4c2.209,0,4-1.791,4-4C27,24.791,25.209,23,23,23z M51,45v-3.566l-9.319-8.38	c-1.524-1.37-3.836-1.367-5.356,0.006l-7.922,7.158l-3.793-3.244c-1.501-1.284-3.714-1.28-5.211,0.009L13,42.496V45	c0,1.105,0.895,2,2,2h34C50.104,47,51,46.105,51,45z">
+
+      //       </path>
+      //     </svg>
       name.innerText = itemRef.name
 
       node.addEventListener('click', () => {
@@ -115,6 +166,8 @@ async function listItems(folder) {
       let type = document.createElement('span')
       let size = document.createElement('span')
       let date = document.createElement('span')
+
+      type.style.cssText = 'margin-right:12px'
 
       const videoRegex = /\bvideo\b/i;
       const imageRegex = /\bimage\b/i;
@@ -139,6 +192,7 @@ touchlistfile[index]='no'
   function startTouch(index) {
     touchlistfile[index]='yes'
     console.log(touchlistfile)
+    node.style.cssText = ' background-color:#F0F1F1'
    setTimeout(() => {
     if(touchlistfile[index]=='yes'){
       console.log('You touched the element!'+itemRef.name);
@@ -147,7 +201,7 @@ touchlistfile[index]='no'
     }, 800);
   }
 
-  function endTouch() {touchlistfile[index]='no'}
+  function endTouch() {touchlistfile[index]='no';node.style.cssText = ' background-color:white;'}
   node.addEventListener('touchstart',startTouch);
   node.addEventListener('touchend',endTouch);
 
@@ -169,33 +223,7 @@ touchlistfile[index]='no'
 listItems('/');
 
 
-const touchArea = document.getElementById('touchArea');
-  let touchStartTime;
-  let touchTimer;
-  window.touchState='no'
 
-  function startTouch() {
-    touchState='yes'
-   touchTimer=setTimeout(() => {
-      showAlert();
-    }, 800);
-    touchStartTime = new Date().getTime();
-  }
-
-  function endTouch() {
-    console.log('ended')
-    touchState='no'
-    const touchDuration = new Date().getTime() - touchStartTime;
-    if (touchDuration >= 801) {}
-  }
-
-
-
-  function showAlert() {
-    if(touchState=='yes'){
-      console.log('You touched the element!');
-    }
-  }
 
 
 
