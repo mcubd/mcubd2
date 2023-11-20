@@ -143,15 +143,17 @@ async function listItems(folder) {
   function startTouch(index) {
     touchlist[index]='yes'
     console.log(touchlist)
+    node.style.cssText = ' background-color:#F0F1F1'
+
    setTimeout(() => {
     if(touchlist[index]=='yes'){
       console.log('You touched the element!'+itemRef.name);
-      alert(itemRef.name)
+ 
     }
     }, 800);
   }
 
-  function endTouch() {touchlist[index]='no'}
+  function endTouch() {touchlist[index]='no';node.style.cssText = ' background-color:white;'}
   node.addEventListener('touchstart',startTouch);
   node.addEventListener('touchend',endTouch);
 
@@ -215,7 +217,7 @@ touchlistfile[index]='no'
    setTimeout(() => {
     if(touchlistfile[index]=='yes'){
       console.log('You touched the element!'+itemRef.name);
-      alert(itemRef.name)
+
     }
     }, 800);
   }
