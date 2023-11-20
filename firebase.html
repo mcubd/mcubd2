@@ -126,18 +126,17 @@ const touchArea = document.getElementById('touchArea');
     const touchDuration = new Date().getTime() - touchStartTime;
 
     if (touchDuration >= 801) {
-      clearTimeout(touchTimer);
+      // clearTimeout(touchTimer);
     }
   }
 
-  function moveTouch() {
-    if (isTouched) {
-      console.log('moved.');
-    }
-  }
+
 
   function showAlert() {
-    alert('You touched the element!');
+    if(touchState=='yes'){
+
+      alert('You touched the element!');
+    }
   }
 
   touchArea.addEventListener('touchstart', startTouch);
