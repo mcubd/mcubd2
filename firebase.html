@@ -113,6 +113,7 @@ const touchArea = document.getElementById('touchArea');
   }
 
   function endTouch() {
+    console.log('ended')
     // Calculate the duration of the touch
     const touchDuration = new Date().getTime() - touchStartTime;
 
