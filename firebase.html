@@ -42,21 +42,29 @@ async function listItems(folder) {
     const result = await listAll(storageRef);
     let ul = document.getElementById('ul');
         ul.innerHTML = '';
+        window.touchlist={}
 
-    result.prefixes.forEach(async (itemRef) => {
-      console.log(itemRef.fullPath);
+    result.prefixes.forEach(async (itemRef,index) => {
       let node = document.createElement('li')
       let name = document.createElement('span')
       let type = document.createElement('span')
+      node.setAttribute("id", index)
 
       // let touchStartTime;
   let touchTimer;
-  window.touchState='no'
+  window.index='no'
 
-  function startTouch() {
-    touchState='yes'
+  touchlist[index]='no'
+  console.log(touchlist)
+
+
+  function startTouch(index) {
+    touchlist[index]='yes'
+    console.log(touchlist)
    touchTimer=setTimeout(() => {
-    console.log('You touched the element! '+itemRef.name);
+    if(touchState=='yes'){
+      console.log('You touched the element!'+itemRef.name);
+    }
     }, 800);
     // touchStartTime = new Date().getTime();
   }
@@ -75,7 +83,9 @@ async function listItems(folder) {
   //   }
   // }
 
-  touchArea.addEventListener('touchstart', startTouch);
+  touchArea.addEventListener('touchstart', function() {
+    startTouch(index);
+  });
   touchArea.addEventListener('touchend', endTouch);
 
 
