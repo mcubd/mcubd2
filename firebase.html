@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="ul" style="opacity: 1;"></ul>
+  <script type="module">
+ 
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+    import { getStorage, ref, listAll,getDownloadURL,getMetadata   } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js";
+
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyBzaFL1XOU-_152duOo0baL1DfgVVuSwMI",
+      authDomain: "test2-5bbd8.firebaseapp.com",
+      databaseURL: "https://test2-5bbd8-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "test2-5bbd8",
+      storageBucket: "test2-5bbd8.appspot.com",
+      messagingSenderId: "683307239625",
+      appId: "1:683307239625:web:d28ed1c2fb6b31dd4e6518"
+    };
+  
+
+    const app = initializeApp(firebaseConfig);
+    const storage = getStorage(app);
+//const storageRef = ref(storage,folder);
+
+
+
+
+async function listItems(folder) {
+  try {
+
+   let storageRef = ref(storage, folder);
+
+
+
+    const result = await listAll(storageRef);
+    let ul = document.getElementById('ul');
+        ul.innerHTML = '';
+
+    result.prefixes.forEach(async (itemRef) => {
+      console.log(itemRef.fullPath);
+      let node = document.createElement('li')
+      let name = document.createElement('span')
+      let type = document.createElement('span')
+      type.innerHTML=`<svg focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368" class="a-s-fa-Ha-pa"><g><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path><path d="M0 0h24v24H0z" fill="none"></path></g></svg>`
+      name.innerText = itemRef.name
+
+      node.addEventListener('click', () => {
+            listItems(itemRef.fullPath);
+          });
+      
+      node.append(type, name);
+      let ul = document.getElementById('ul')
+      ul.appendChild(node);
+
+    });
+
+
+    result.items.forEach(async (itemRef) => {
+      const metadata = await getMetadata(itemRef);
+      console.log(itemRef.fullPath+'-----'+await getDownloadURL(itemRef));
+      console.log(metadata)
+      let node = document.createElement('li')
+      let name = document.createElement('span')
+      let type = document.createElement('span')
+      let size = document.createElement('span')
+      let date = document.createElement('span')
+
+      const videoRegex = /\bvideo\b/i;
+      const imageRegex = /\bimage\b/i;
+      if (videoRegex.test(metadata.contentType)) {
+        type.innerHTML=`<img  style="height:16px;width:16px;margin-left:" src="https://drive-thirdparty.googleusercontent.com/16/type/video/mp4" alt="Video">`
+}else if(imageRegex.test(metadata.contentType)){
+  type.innerHTML=`<svg height="16px" width="16px" fill="black" viewBox="0 0 64 64">
+            <path  d="M49,13c3.314,0,6,2.686,6,6v26c0,3.314-2.686,6-6,6H15c-3.314,0-6-2.686-6-6V19c0-3.314,2.686-6,6-6H49z M23,23	c-2.209,0-4,1.791-4,4c0,2.209,1.791,4,4,4c2.209,0,4-1.791,4-4C27,24.791,25.209,23,23,23z M51,45v-3.566l-9.319-8.38	c-1.524-1.37-3.836-1.367-5.356,0.006l-7.922,7.158l-3.793-3.244c-1.501-1.284-3.714-1.28-5.211,0.009L13,42.496V45	c0,1.105,0.895,2,2,2h34C50.104,47,51,46.105,51,45z">
+
+            </path>
+          </svg>`
+}else{
+  type.innerHTML=`0-`
+}
+
+      name.innerText = itemRef.name
+      
+      node.append(type, name, size, date);
+      let ul = document.getElementById('ul')
+      ul.appendChild(node);
+
+    });
+
+
+  } catch (error) {
+    console.error('Error listing items:', error);
+  }
+}
+
+// Call the async function
+listItems('/');
+
+
+function showAlert() {
+    alert('You touched the element!');
+  }
+
+  // Add a touch event listener to the touch area
+  document.body.addEventListener('touchstart', function() {
+    // Use setTimeout to delay the execution of the showAlert function by 3000 milliseconds (3 seconds)
+    setTimeout(showAlert, 3000);
+  });
+
+  </script>
+</body>
+</html>
