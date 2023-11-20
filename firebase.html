@@ -88,7 +88,18 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
     const storage = getStorage(app);
 //const storageRef = ref(storage,folder);
 
+function shortenFileName(fileName) {
 
+  if (fileName.length <= 20) {
+    return fileName; 
+  }
+
+  const firstFive = fileName.slice(0, 15);
+  const lastFive = fileName.slice(-5);
+  const middleDots = '...';
+
+  return `${firstFive}${middleDots}${lastFive}`;
+}
 
 
 async function listItems(folder) {
@@ -205,7 +216,7 @@ touchlistfile[index]='no'
   node.addEventListener('touchstart',startTouch);
   node.addEventListener('touchend',endTouch);
 
-      name.innerText = itemRef.name
+      name.innerText = shortenFileName( itemRef.name);
       
       node.append(type, name, size, date);
       let ul = document.getElementById('ul')
