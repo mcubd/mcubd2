@@ -118,8 +118,14 @@ const touchArea = document.getElementById('touchArea');
     const touchDuration = new Date().getTime() - touchStartTime;
 
     // If the touch duration is greater than or equal to 3000 milliseconds (3 seconds), show the alert
-    if (touchDuration >= 1000) {
+    if (touchDuration >= 700) {
       showAlert();
+    }
+  }
+
+  function moveTouch() {
+    if (isTouched) {
+      console.log('moved.');
     }
   }
 
@@ -129,6 +135,7 @@ const touchArea = document.getElementById('touchArea');
 
   touchArea.addEventListener('touchstart', startTouch);
   touchArea.addEventListener('touchend', endTouch);
+  touchArea.addEventListener('touchmove', moveTouch);
 
   </script>
 </body>
