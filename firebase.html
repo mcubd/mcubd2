@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-  <h1 id="touchArea">touch h11</h1>
+  <h1 id="touchArea">touch h1</h1>
   <ul id="ul" style="opacity: 1;"></ul>
   <script type="module">
  
@@ -71,22 +71,15 @@ async function listItems(folder) {
 
   function endTouch() {
     touchState='no'
+    console.log(888888)
     // const touchDuration = new Date().getTime() - touchStartTime;
     // if (touchDuration >= 801) {}
   }
 
-
-
-  // function showAlert() {
-  //   if(touchState=='yes'){
-  //     console.log('You touched the element!');
-  //   }
-  // }
-
-  touchArea.addEventListener('touchstart', function() {
+  node.addEventListener('startTouch', function() {
     startTouch(index);
   });
-  touchArea.addEventListener('touchend', endTouch);
+  node.addEventListener('endTouch', endTouch);
 
 
       type.innerHTML=`<svg focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368" class="a-s-fa-Ha-pa"><g><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path><path d="M0 0h24v24H0z" fill="none"></path></g></svg>`
@@ -173,8 +166,7 @@ const touchArea = document.getElementById('touchArea');
     }
   }
 
-  touchArea.addEventListener('touchstart', startTouch);
-  touchArea.addEventListener('touchend', endTouch);
+
 
 
   </script>
