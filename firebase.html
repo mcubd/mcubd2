@@ -78,6 +78,7 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
 <body>
   <div class="cpanel">
     <div id="location">Home/</div>
+    <div id="fullname"></div>
   </div>
   <ul id="ul" style="opacity: 1;"></ul>
   <script type="module">
@@ -154,6 +155,7 @@ async function listItems(folder) {
    setTimeout(() => {
     if(touchlist[index]=='yes'){
       console.log('You touched the element!'+itemRef.name);
+      document.getElementById('fullname').innerText=itemRef.name
  
     }
     }, 800);
@@ -166,11 +168,6 @@ async function listItems(folder) {
 
       type.innerHTML=`<svg    viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368" class="a-s-fa-Ha-pa"><g><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path><path d="M0 0h24v24H0z" fill="none"></path></g></svg>`
 
-      // <svg height="16px" width="16px" fill="black" viewBox="0 0 64 64">
-      //       <path  d="M49,13c3.314,0,6,2.686,6,6v26c0,3.314-2.686,6-6,6H15c-3.314,0-6-2.686-6-6V19c0-3.314,2.686-6,6-6H49z M23,23	c-2.209,0-4,1.791-4,4c0,2.209,1.791,4,4,4c2.209,0,4-1.791,4-4C27,24.791,25.209,23,23,23z M51,45v-3.566l-9.319-8.38	c-1.524-1.37-3.836-1.367-5.356,0.006l-7.922,7.158l-3.793-3.244c-1.501-1.284-3.714-1.28-5.211,0.009L13,42.496V45	c0,1.105,0.895,2,2,2h34C50.104,47,51,46.105,51,45z">
-
-      //       </path>
-      //     </svg>
       name.innerText = itemRef.name
 
       node.addEventListener('click', () => {
@@ -223,6 +220,7 @@ touchlistfile[index]='no'
    setTimeout(() => {
     if(touchlistfile[index]=='yes'){
       console.log('You touched the element!'+itemRef.name);
+      document.getElementById('fullname').innerText=itemRef.name
 
     }
     }, 800);
