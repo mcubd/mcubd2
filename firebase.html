@@ -106,21 +106,26 @@ listItems('/');
 
 const touchArea = document.getElementById('touchArea');
   let touchStartTime;
+  window.touchState='no'
 
   function startTouch() {
+    touchState='yes'
+    setTimeout(() => {
+      showAlert();
+    }, 800);
     // Record the start time of the touch
     touchStartTime = new Date().getTime();
   }
 
   function endTouch() {
     console.log('ended')
+    touchState='no'
     // Calculate the duration of the touch
     const touchDuration = new Date().getTime() - touchStartTime;
 
-    // If the touch duration is greater than or equal to 3000 milliseconds (3 seconds), show the alert
-    if (touchDuration >= 700) {
-      showAlert();
-    }
+    // if (touchDuration >= 700) {
+    //   showAlert();
+    // }
   }
 
   function moveTouch() {
