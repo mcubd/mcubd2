@@ -4,6 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid #000;
+      font-size:15px ;
+
+
+    }
+    ul{
+      list-style: none;
+      margin-top: 20px;
+      margin-left: 40px;
+    }
+  </style>
 </head>
 <body>
   <h1 id="touchArea">touch h1</h1>
@@ -43,12 +62,16 @@ async function listItems(folder) {
     let ul = document.getElementById('ul');
         ul.innerHTML = '';
         window.touchlist={}
+        window.touchlistfile={}
+
 
     result.prefixes.forEach(async (itemRef,index) => {
       let node = document.createElement('li')
       let name = document.createElement('span')
       let type = document.createElement('span')
       node.setAttribute("id", index)
+      node.setAttribute("class", 'li')
+
 
   touchlist[index]='no'
   console.log(touchlist)
@@ -110,21 +133,21 @@ else if(imageRegex.test(metadata.contentType)){
 
 
 
-touchlist[index]='no'
-  console.log(touchlist)
+touchlistfile[index]='no'
+  console.log(touchlistfile)
 
   function startTouch(index) {
-    touchlist[index]='yes'
-    console.log(touchlist)
+    touchlistfile[index]='yes'
+    console.log(touchlistfile)
    setTimeout(() => {
-    if(touchlist[index]=='yes'){
+    if(touchlistfile[index]=='yes'){
       console.log('You touched the element!'+itemRef.name);
       alert(itemRef.name)
     }
     }, 800);
   }
 
-  function endTouch() {touchlist[index]='no'}
+  function endTouch() {touchlistfile[index]='no'}
   node.addEventListener('touchstart',startTouch);
   node.addEventListener('touchend',endTouch);
 
