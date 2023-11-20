@@ -168,6 +168,13 @@ async function listItems(folder) {
 
 
     const result = await listAll(storageRef);
+
+        document.getElementById('cpanel').innerHTML=`    <div id="location">Home/</div>
+    <div id="fullname"></div>
+    <input style="display:none" id="input"  onchange="upload(event)" type="file" multiple/>
+    <div onclick="document.getElementById('input').click()" id="upload"><img height="100%" src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/24%2Fup.png?alt=media&token=5ee0c1f8-5a31-4422-86d3-ddc26f5a81db" alt=""></div>
+    <div onclick="play(event)" id="play" class="play"><img src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/playy.png?alt=media&token=5855f2b4-ff8a-48ea-9114-cef783e69945" height="100%" alt=""></div>`
+
     let ul = document.getElementById('ul');
     document.getElementById('location').innerHTML=folder
         ul.innerHTML = '';
@@ -385,7 +392,7 @@ document.addEventListener('contextmenu', function (e) {
         let link=document.getElementById('play').getAttribute('href')
         console.log(link)
 
-        document.getElementById('cpanel').innerHTML=`<video controls src="${link}">
+        document.getElementById('cpanel').innerHTML=`<video width="100%" controls src="${link}">
 </video>`
         
         }
