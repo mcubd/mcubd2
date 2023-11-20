@@ -6,6 +6,7 @@
   <title>Document</title>
 </head>
 <body>
+  <h1 id="touchArea">touch h1</h1>
   <ul id="ul" style="opacity: 1;"></ul>
   <script type="module">
  
@@ -103,15 +104,30 @@ async function listItems(folder) {
 listItems('/');
 
 
-function showAlert() {
+const touchArea = document.getElementById('touchArea');
+  let touchStartTime;
+
+  function startTouch() {
+    // Record the start time of the touch
+    touchStartTime = new Date().getTime();
+  }
+
+  function endTouch() {
+    // Calculate the duration of the touch
+    const touchDuration = new Date().getTime() - touchStartTime;
+
+    // If the touch duration is greater than or equal to 3000 milliseconds (3 seconds), show the alert
+    if (touchDuration >= 3000) {
+      showAlert();
+    }
+  }
+
+  function showAlert() {
     alert('You touched the element!');
   }
 
-  // Add a touch event listener to the touch area
-  document.body.addEventListener('touchstart', function() {
-    // Use setTimeout to delay the execution of the showAlert function by 3000 milliseconds (3 seconds)
-    setTimeout(showAlert, 3000);
-  });
+  touchArea.addEventListener('touchstart', startTouch);
+  touchArea.addEventListener('touchend', endTouch);
 
   </script>
 </body>
