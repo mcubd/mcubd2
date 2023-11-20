@@ -106,11 +106,12 @@ listItems('/');
 
 const touchArea = document.getElementById('touchArea');
   let touchStartTime;
+  let touchTimer;
   window.touchState='no'
 
   function startTouch() {
     touchState='yes'
-    setTimeout(() => {
+   touchTimer=setTimeout(() => {
       showAlert();
     }, 800);
     // Record the start time of the touch
@@ -118,14 +119,15 @@ const touchArea = document.getElementById('touchArea');
   }
 
   function endTouch() {
+    
     console.log('ended')
     touchState='no'
     // Calculate the duration of the touch
     const touchDuration = new Date().getTime() - touchStartTime;
 
-    // if (touchDuration >= 700) {
-    //   showAlert();
-    // }
+    if (touchDuration >= 801) {
+      clearTimeout(touchTimer);
+    }
   }
 
   function moveTouch() {
