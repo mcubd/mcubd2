@@ -111,6 +111,24 @@ background-color:rgba(241, 241, 241,.7) ;
   /* top: 0; */
   right: 0; 
       }
+      .delete{
+        background-color: rgba(41, 53, 49,.01);
+        height: 36px;
+      width: 36px;
+      display: inline-block;
+      position: fixed;
+  /* top: 0; */
+  right: 80px; 
+      }
+      .edit{
+        background-color: rgba(41, 53, 49,.01);
+        height: 36px;
+      width: 36px;
+      display: inline-block;
+      position: fixed;
+  /* top: 0; */
+  left: 70px; 
+      }
   </style>
 </head>
 <body>
@@ -120,6 +138,7 @@ background-color:rgba(241, 241, 241,.7) ;
     <input style="display:none" id="input"  onchange="upload(event)" type="file" multiple/>
     <div onclick="document.getElementById('input').click()" id="upload"><img height="100%" src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/24%2Fup.png?alt=media&token=5ee0c1f8-5a31-4422-86d3-ddc26f5a81db" alt=""></div>
     <div onclick="play(event)" id="play" class="play"><img src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/playy.png?alt=media&token=5855f2b4-ff8a-48ea-9114-cef783e69945" height="100%" alt=""></div>
+    
     </div>
 
     
@@ -128,7 +147,7 @@ background-color:rgba(241, 241, 241,.7) ;
   <script type="module">
  
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-    import { getStorage, ref, listAll,getDownloadURL,getMetadata ,uploadBytesResumable  } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js";
+    import { getStorage, ref, listAll,getDownloadURL,getMetadata ,uploadBytesResumable,deleteObject ,uploadBytes,updateMetadata  } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js";
 
   
     const firebaseConfig = {
@@ -146,6 +165,11 @@ background-color:rgba(241, 241, 241,.7) ;
     const storage = getStorage(app);
 //const storageRef = ref(storage,folder);
 
+window.html=`    <div id="location">Home/</div>
+    <div id="fullname"></div>
+    <input style="display:none" id="input"  onchange="upload(event)" type="file" multiple/>
+    <div onclick="document.getElementById('input').click()" id="upload"><img height="100%" src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/24%2Fup.png?alt=media&token=5ee0c1f8-5a31-4422-86d3-ddc26f5a81db" alt=""></div>
+    <div onclick="play(event)" id="play" class="play"><img src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/playy.png?alt=media&token=5855f2b4-ff8a-48ea-9114-cef783e69945" height="100%" alt=""></div><div onclick="delete_file(event)" class="delete" id='delete'><img width='100%' src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/d.png?alt=media&token=d2694b38-d2cc-42e9-ade4-1a20d61f447b" alt=""></div><div id="edit" onclick="edit()" class="edit"><img src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/r.png?alt=media&token=c3642d14-44bb-49c5-8347-e8a205fee482" height='100%' alt=""></div>`
 function shortenFileName(fileName) {
 
   if (fileName.length <= 20) {
@@ -169,11 +193,10 @@ async function listItems(folder) {
 
     const result = await listAll(storageRef);
 
-        document.getElementById('cpanel').innerHTML=`    <div id="location">Home/</div>
-    <div id="fullname"></div>
-    <input style="display:none" id="input"  onchange="upload(event)" type="file" multiple/>
-    <div onclick="document.getElementById('input').click()" id="upload"><img height="100%" src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/24%2Fup.png?alt=media&token=5ee0c1f8-5a31-4422-86d3-ddc26f5a81db" alt=""></div>
-    <div onclick="play(event)" id="play" class="play"><img src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/playy.png?alt=media&token=5855f2b4-ff8a-48ea-9114-cef783e69945" height="100%" alt=""></div>`
+        document.getElementById('cpanel').innerHTML=html
+
+
+
 
     let ul = document.getElementById('ul');
     document.getElementById('location').innerHTML=folder
@@ -181,7 +204,7 @@ async function listItems(folder) {
         window.touchlist={}
         window.touchlistfile={}
 
-
+//folder
     result.prefixes.forEach(async (itemRef,index) => {
       let node = document.createElement('li')
       let name = document.createElement('span')
@@ -207,9 +230,9 @@ async function listItems(folder) {
     if(touchlist[index]=='yes'){
       console.log('You touched the element!'+itemRef.name);
       document.getElementById('fullname').innerText=itemRef.name
- 
+      document.getElementById('delete').setAttribute("fullpath",itemRef.fullPath)
     }
-    }, 800);
+    }, 1500);
   }
 
   function endTouch() {touchlist[index]='no';node.style.cssText = ' background-color:white;'}
@@ -273,6 +296,8 @@ touchlistfile[index]='no'
       console.log('You touched the element!'+itemRef.name);
       document.getElementById('fullname').innerText=itemRef.name
       document.getElementById('play').setAttribute("href", await getDownloadURL(itemRef))
+console.log(itemRef.fullPath)
+document.getElementById('delete').setAttribute("fullpath",itemRef.fullPath)
 
 
 
@@ -283,6 +308,13 @@ touchlistfile[index]='no'
   function endTouch() {touchlistfile[index]='no';node.style.cssText = ' background-color:white;'}
   node.addEventListener('touchstart',startTouch);
   node.addEventListener('touchend',endTouch);
+  node.addEventListener('touchmove', function(event) {
+
+  // event.preventDefault();
+  touchlistfile[index]='no';
+
+});
+
 
       name.innerText = shortenFileName( itemRef.name);
       
@@ -315,7 +347,7 @@ function uploadfile(file,index){
 
 
 
-    const storageRef = ref(storage, "trash/"+file.name);
+    const storageRef = ref(storage, document.getElementById('location').innerText+'/'+file.name);
       var metadata = {contentDisposition: 'attachment'};
       const uploadTask = uploadBytesResumable(storageRef, file, metadata);
 
@@ -336,6 +368,8 @@ function uploadfile(file,index){
         progress.setAttribute("id", 'num'+index)
         percentt.setAttribute("id", 'per'+index)
         parent.setAttribute("class", 'parent')
+        parent.setAttribute("id", 'parent'+index)
+
 
 
 
@@ -350,30 +384,18 @@ function uploadfile(file,index){
         const percent = Math.floor((snapshot.bytesTransferred / snapshot.totalBytes) * 100)
         console.log(percent)
 
-        
 
-
-      // node.setAttribute("id", index)
-      // node.setAttribute("class", 'li')
-
-      // type.style.cssText = 'margin-right:12px'
-      // name.style.cssText = 'margin-top:20px'
-      // <div class="bar">
-      //   <div id="progress" class="progress"></div>
-      // </div>
-      // <span id="two" class="upspan two">0%</span>
-
-
-        // document.getElementById('per').innerHTML='Uploading'+file.name+'---------'+percent+'%'
         document.getElementById('num'+index).style.width = percent + '%'
         document.getElementById('per'+index).innerText = percent + '%'
 
       }, (err) => {
         console.log(err)
       }, () => {
-        uploadtusk.snapshot.ref.getDownloadURL().then((url) => {
+        getDownloadURL(uploadTask.snapshot.ref).then((url) => {
           console.log(url)
           // document.getElementById('per').innerHTML=url
+          document.getElementById('parent'+index).remove()
+          // console.log(document.getElementById('progress_div').childElementCount)
         }).catch((err) => {
           console.log(err)
         })
@@ -396,6 +418,77 @@ document.addEventListener('contextmenu', function (e) {
 </video>`
         
         }
+        window.delete_file=function (){
+          let file=document.getElementById('delete').getAttribute('fullpath')
+          console.log(file)
+if(file==null || file==undefined || file=='' || file=='/'){return false}
+
+
+
+var result = window.confirm("delete "+file+' ?');
+    if (!result) {return}
+
+        const desertRef = ref(storage, document.getElementById('delete').getAttribute('fullpath'));
+
+// Delete the file
+deleteObject(desertRef).then(() => {
+  document.getElementById('fullname').innerText=`Deleted ${file}`
+}).catch((error) => {
+  document.getElementById('fullname').innerText=`Could not delete ${file}`
+  console.log(error)
+});
+        
+        }
+
+
+        window.edit=async function (){
+
+
+          let oldpath=document.getElementById('delete').getAttribute('fullpath')
+          console.log(oldpath)
+if(oldpath==null || oldpath==undefined || oldpath=='' || oldpath=='/'){return false}
+
+const originalFileRef = ref(storage, `test2-5bbd8.appspot.com/a1.png`);
+  const newFileRef = ref(storage, `test2-5bbd8.appspot.com/a31.png`);
+
+  await copyObject(originalFileRef, newFileRef);
+
+
+
+
+return
+
+    //       const oldFileRef = ref(storage, oldpath);
+
+    //       const downloadURL = await getDownloadURL(oldFileRef);
+
+    //       const newFilePath = oldpath.replace(oldFileRef.name, 'll83.png');
+    // const newFileRef = ref(storage, newFilePath);
+
+    // Upload the file with the new name
+    // const response = await uploadBytes(newFileRef, new Uint8Array(0)); 
+    const oldFileContent = await getUint8Array(oldFileRef);
+
+    const metadata = { contentDisposition: 'attachment'};
+    await updateMetadata(newFileRef, metadata);
+
+    const uploadTask = uploadBytesResumable(newFileRef, oldFileContent, metadata);
+
+// Wait for the upload to complete
+await uploadTask;
+
+    console.log("File name updated.");
+    document.getElementById('fullname').innerText=`renamed file as ${1} `
+    // await deleteObject(oldFileRef);
+
+        
+        }
+        async function getUint8Array(fileRef) {
+  const url = await getDownloadURL(fileRef);
+  const response = await fetch(url);
+  const arrayBuffer = await response.arrayBuffer();
+  return new Uint8Array(arrayBuffer);
+}
 
   </script>
 </body>
