@@ -8,8 +8,8 @@
   <title>Chat</title>
   <meta http-equiv="Cache-control" content="public">
   <link href="https://mcubd.github.io/mcubd/chat/1.css" rel="stylesheet">
-  <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore-compat.js"></script>
+
+  
 </head>
 
 <body>
@@ -86,7 +86,11 @@
 
 
 
-  <script>
+  <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js";
+import { getFirestore, collection, addDoc ,query, orderBy, limit,getDocs , doc, setDoc } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js";
+
 
     var messages = document.getElementById('messages');
     var form = document.getElementById('form');
@@ -101,17 +105,20 @@
     };
 
 
-    firebase.initializeApp(firebaseConfig);
+    const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
 
 
     // Initialize Firestore
-    const firestore = firebase.firestore();
+    const firestore = getFirestore(app);
     var fileitem, filename, percent
 
 
     function sendclick() {
-      let value = document.getElementById('input').value;
-      if (value) { dbsend(value, 'normal') }
+      let value = document.getElementById('input').value.replace(/^\s+|\s+$/g, '')
+      // if (value.length>0) { dbsend(value, 'normal') }
+      if (value.length>0) { dbsend(value, 'normal') }
+
     }
 
 
@@ -120,11 +127,18 @@
 
     // -----------a-get
     async function get() {
-      const chat = firestore.collection('chat')
-      var a = await chat.orderBy('num', 'desc').limit(10).get()
 
 
-      a.forEach((doc) => {
+      const chat =collection(firestore,'chat')
+    const q = query(chat, orderBy("num", "desc"), limit(10));
+    const querySnapshot = await getDocs(q);
+    // const lastdoc=querySnapshot.docs[0].data().num
+
+
+      // var a = await chat.orderBy('num', 'desc').limit(10).get()
+
+
+     await querySnapshot.forEach((doc) => {
         console.log(doc.id, ' => ', doc.data());
 
         if (doc.media) {
@@ -134,66 +148,15 @@
 
         }
         else {
-          // if (arr.length == ind + 1) {
-          //   print(doc, 'firstload', 'show')
-          // } else { print(doc, 'firstload') }
           print(doc.data())
 
         }
-
-
 
 
       });
 
       document.getElementById('messages').style.opacity = '1'
       window.scroll(0, document.body.scrollHeight)
-
-      // xhttp.onload = function () {
-
-      //   if (this.responseText == [] || this.responseText == '[]') {
-      //     document.getElementById('h5').innerText = '0 data in collection'
-      //     document.getElementById('loading').style.opacity = '0';
-      //     setTimeout(() => {
-      //       document.getElementById('messages').style.opacity = '1';
-      //     }, 800);
-      //   }
-      //   else {
-      //     const arr = JSON.parse(this.responseText)
-      //     let maxar = []
-      //     arr.forEach((item) => { maxar.push(item.num) });
-      //     let maxnum = Math.max(...maxar)
-
-      //     arr.forEach((item, ind) => {
-
-      //       let obj = arr.find((i) => {
-      //         if (document.getElementById('messages').childElementCount == 0) {
-      //           return i.num == maxnum
-      //         } else {
-      //           return i.num == document.getElementById('messages').children[0].children[1].innerText - 1
-      //         }
-
-      //       })
-
-
-      //       if (obj.media) {
-      //         if (arr.length == ind + 1) {
-      //           print2(obj, 'firstload', 'show')
-      //         } else { print2(obj, 'firstload') }
-
-      //       }
-      //       else {
-      //         if (arr.length == ind + 1) {
-      //           print(obj, 'firstload', 'show')
-      //         } else { print(obj, 'firstload') }
-
-      //       }
-
-      //     });
-
-
-      //   }
-      // }
 
 
 
@@ -276,7 +239,7 @@
         messages.insertBefore(node, document.getElementById('messages').children[0])
       }
 
-
+return 
       if (two == 'hisprint') {
 
         let ul8 = document.getElementById('messages').children[0]
@@ -525,12 +488,12 @@
     }
 
 
-    async function dbsend(msgdata, media, fname) {
-      let dbsendtype
+   window.dbsend= async function (msgdata, media, fname) {
+      let type
 
       if (media != 'normal') {
 
-        if (media == '') { dbsendtype = 'file' }
+        if (media == '') { type = 'file' }
         else {
           let filetype = JSON.parse(media).mime
           let type = filetype.toLowerCase();
@@ -540,13 +503,13 @@
           let resvid = type.match(/video/i)
 
           if (resimg) {
-            dbsendtype = 'img';
+            type = 'img';
           } else if (resaudio) {
-            dbsendtype = 'audio';
+            type = 'audio';
           } else if (resvid) {
-            dbsendtype = 'vid';
+            type = 'vid';
           } else {
-            dbsendtype = 'file';
+            type = 'file';
           }
 
         }
@@ -554,7 +517,7 @@
       }
 
 
-      ws('down')
+
       let ram = 'not-found'
       let device = 'not-found'
       let platform = 'not-found'
@@ -563,82 +526,25 @@
       if (window.navigator.platform) { platform = navigator.platform }
 
 
-      // var xhttp = new XMLHttpRequest();
-      // xhttp.open("POST", 'https://gifted-pear-loincloth.cyclic.cloud/chatdata', true);
-      const lastnum = document.getElementById('messages').lastElementChild.getAttribute('id');
-   try{
-      const date = await fetch('https://gifted-pear-loincloth.cyclic.cloud/time/f');
-      const lastnum = document.getElementById('messages').lastElementChild.getAttribute('id');
-    
-        const docRef = await firestore.collection("chat").doc(`${parseInt(lastnum) + 1}`)
-        await docRef.set({
-          data: msgdata,
-          date: await date.text(),
-          num: parseInt(lastnum) + 1
-        });
 
-        setTimeout(() => {
-        window.scroll(0, document.body.scrollHeight)
-        document.getElementById('input').value = ''
-      }, 800);
+
+
+
+    const res = await fetch('https://gifted-pear-loincloth.cyclic.cloud/firestore_write',{
+  method: 'POST',
+  headers: {'Content-Type': 'application/json'},
+  body: JSON.stringify({data:msgdata})
+});
+if(res.ok){ws('down'); document.getElementById('input').value = ''
+       setTimeout(() => {
+        // window.scroll(0, document.body.scrollHeight)
+        window.scrollTo({ top: document.body.scrollHeight, left:0, behavior: 'smooth' });
+      }, 800);}
 
     
-    }catch(e){
-      console.log(e+'eror bro')
-      const lastnum = document.getElementById('messages').lastElementChild.getAttribute('id');
-      const docRef = await firestore.collection("chat").doc(`${parseInt(lastnum) + 1}`)
-        await docRef.set({
-          data: msgdata,
-          date: '',
-          num: parseInt(lastnum) + 1
-        });
-        setTimeout(() => {
-        window.scroll(0, document.body.scrollHeight)
-        document.getElementById('input').value = ''
-      }, 800);
-    }
+  
 
 
-
-
-
-
-
-      xhttp.onload = function () {
-        const arr = JSON.parse(this.responseText);
-        const obj = arr[0]
-        if (obj.data == msgdata) {
-
-          setTimeout(() => {
-            window.scroll(0, document.body.scrollHeight)
-          }, 800);
-
-          if (obj.media) {
-            document.getElementById('status').style.display = 'none'; print2(obj)
-          } else {
-            print(obj); document.getElementById('input').value = ''
-
-          }
-
-          fetch("https://gifted-pear-loincloth.cyclic.cloud/chatnot", {
-            method: "POST",
-            body: obj.data
-          })
-
-        }
-        else {
-          alert('eror app.post.dbsend_API,send again')
-          window.location.reload();
-        }
-
-
-      }
-
-      // xhttp.send(JSON.stringify({
-      //   "data": msgdata, "ram": ram
-      //   , "device": device, "platform": platform, "media": dbsendtype, "fname": fname
-      // })
-      // );
 
     }
 
@@ -701,13 +607,17 @@
     }
 
 
-    async function neww() {
+   window.neww= async function () {
 
         
- 
+    const chat =collection(firestore,'chat')
+    const q = query(chat, orderBy("num", "desc"), limit(1));
+    const querySnapshot = await getDocs(q);
 
-      const collectionRef = firestore.collection('chat').orderBy('num', 'desc').limit(1);
-      const querySnapshot = await collectionRef.get();
+
+
+      // const collectionRef = firestore.collection('chat').orderBy('num', 'desc').limit(1);
+      // const querySnapshot = await collectionRef.get();
 
       if (querySnapshot.docs[0].id != 0) {
         const lastnum = document.getElementById('messages').lastElementChild.getAttribute('id');
@@ -715,7 +625,7 @@
           const obj = querySnapshot.docs[0].data();
           console.log(obj)
           if (obj.media) { print2(obj, obj.media) } else { print(obj, 'down') }
-          console.log(6666)
+
         }
       }
 
@@ -762,17 +672,63 @@
 
     }
 
+async function a(){
+//   const chat = firestore.collection('chat')
+
+//   var aa = await chat.orderBy('num', 'desc').limit(1).get()
+
+// console.log(aa.docs[0].data())
+
+// const res = await fetch('http://localhost:8000/firestore_write',{
+//   method: 'POST',
+//   headers: {'Content-Type': 'application/json'},
+//   body: JSON.stringify({data:"jjjj"})
+// });
+}a()
+  
+
+    // setTimeout(() => { firebase.initializeApp(firebaseConfig); }, 2000);
+
+
+    
+   window.gotfile=function (e) { 
+      let file = e.target.files[0]
+      document.getElementById('status').style.display = ''
 
 
 
-    setTimeout(() => { firebase.initializeApp(firebaseConfig); }, 2000);
+      const storageRef = ref(storage,'chat/'+file.name);
+      var metadata = {contentDisposition: 'attachment'};
+      const uploadTask = uploadBytesResumable(storageRef, file, metadata);
 
 
-    function gotfile(e) {
-      fileitem = e.target.files[0]
-      filename = fileitem.name
-      var firestr
-      var dbsendtype
+      uploadTask.on("state_changed", (snapshot) => {
+        const percent = Math.floor((snapshot.bytesTransferred / snapshot.totalBytes) * 100)
+        console.log(percent)
+
+
+        document.getElementById('progress').style.width = percent + '%'
+        document.getElementById('two').innerText = percent + '%'
+
+      }, (err) => {
+        console.log(err)
+      },() => {
+        getDownloadURL(uploadTask.snapshot.ref).then((url) => {
+          console.log(url)
+      document.getElementById('status').style.display = 'none'
+
+          // document.getElementById('per').innerHTML=url
+          // document.getElementById('parent'+index).remove()
+          // console.log(document.getElementById('progress_div').childElementCount)
+          dbsend(url, 'media', file.name);
+        }).catch((err) => {
+          console.log(err)
+        })
+      })
+
+
+
+return 6
 
       firestr = firebase.storage().ref("chat/" + filename)
       var metadata = {
@@ -797,22 +753,7 @@
         uploadtusk.snapshot.ref.getDownloadURL().then((url) => {
           console.log(url)
 
-          if (fileitem.size / 1024 < 10) {
-            console.log('filesize too low')
-            dbsend(url, '', filename);
-          }
-          else {
-            fetch('https://gifted-pear-loincloth.cyclic.cloud/filetype', {
-              method: "POST",
-              body: url
-            }).then(async (res) => {
-              const ext = await res.text();
-              console.log('raw ext-- ' + ext);
-              dbsend(url, ext, filename);
-
-            }).catch((e) => { console.log(e) })
-            // dbsend(url, dbsendtype)
-          }
+          // dbsend(url, '', filename);
 
         }).catch((err) => {
           console.log(err)
