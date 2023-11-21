@@ -183,7 +183,7 @@ window.scrol=function (){
 
     }; get()
 
-    function copy(ele) {
+   window.copy= function (ele) {
       console.log('copied:' + ele.parentElement.firstChild.innerText)
       navigator.clipboard.writeText(ele.parentElement.firstChild.innerText)
 
@@ -528,7 +528,7 @@ window.scrol=function (){
 
 
 
-    const res = await fetch('http://localhost:8000/firestore_write',{
+    const res = await fetch('https://gifted-pear-loincloth.cyclic.cloud/firestore_write',{
   method: 'POST',
   headers: {'Content-Type': 'application/json'},
   body: JSON.stringify({data:String(msgdata),media:String(type),fname:String(fname)})
