@@ -10,6 +10,19 @@
   <link href="https://mcubd.github.io/mcubd/chat/1.css" rel="stylesheet">
 
   
+
+  <style>
+    .arrow{
+      height: 36px;
+      width: 36px;
+      background-color: rgb(69, 151, 223);
+      position: fixed;
+      right: 10vw;
+      top: 40vh;
+
+    }
+
+  </style>
 </head>
 
 <body>
@@ -82,7 +95,7 @@
   </div>
 
 
-
+<div onclick="scrol()" id="arrow" style="display: none;" class="arrow"><img width="100%" src="https://firebasestorage.googleapis.com/v0/b/test2-5bbd8.appspot.com/o/dow.png?alt=media&token=fb158794-10dd-44bd-bb7f-11c068270fa0" alt=""></div>
 
 
 
@@ -114,15 +127,20 @@ const storage = getStorage(app);
     var fileitem, filename, percent
 
 
-    function sendclick() {
+    window.sendclick= function () {
       let value = document.getElementById('input').value.replace(/^\s+|\s+$/g, '')
       // if (value.length>0) { dbsend(value, 'normal') }
-      if (value.length>0) { dbsend(value, 'normal') }
+      if (value.length>0) { dbsend(value, 'text') }
 
     }
+ 
 
+window.scrol=function (){
+  window.scrollTo({ top: document.body.scrollHeight, left:0, behavior: 'smooth' })
 
+  document.getElementById('arrow').style.display='none'
 
+}
 
 
     // -----------a-get
@@ -139,16 +157,19 @@ const storage = getStorage(app);
 
 
      await querySnapshot.forEach((doc) => {
-        console.log(doc.id, ' => ', doc.data());
+        // console.log(doc.id, ' => ', doc.data());
+        let obj=doc.data()
 
-        if (doc.media) {
+        if (obj.media !='text') {
           // if (arr.length == ind + 1) {
           //   print2(obj, 'firstload', 'show')
-          // } else { print2(obj, 'firstload') }
+          // } else { 
+            print2(obj,'') 
+
 
         }
         else {
-          print(doc.data())
+          print(obj)
 
         }
 
@@ -200,6 +221,7 @@ const storage = getStorage(app);
       txt.setAttribute("class", "data-span")
       copy.setAttribute("onClick", "copy(this)")
       ip.setAttribute("style", "float:right; ")
+      // node.setAttribute("style", "opacity:0; ")
       ip.setAttribute("class", "ipspan")
       txt.innerText = obj.data
       ip.textContent = ' ' + '[' + obj.ip + ']'
@@ -216,6 +238,8 @@ const storage = getStorage(app);
 
 
 
+
+
       if (append_type == 'down') {
         let ul = document.getElementById('messages').lastChild
         if (ul) {
@@ -226,64 +250,22 @@ const storage = getStorage(app);
         }
 
         messages.appendChild(node);
+        if(bottomdist() >200){
+        document.getElementById('arrow').style.display='block'
+      }
 
       }
       else {
         let ul8 = document.getElementById('messages').children[0]
         if (ul8) {
           if (obj.num == ul8.children[1].innerText) { return 'j' }
-
+          
           if (Number(obj.num) > Number(ul8.children[1].innerText)) { return 'l' }
         }
-
+        console.log(111)
         messages.insertBefore(node, document.getElementById('messages').children[0])
-      }
-
-return 
-      if (two == 'hisprint') {
-
-        let ul8 = document.getElementById('messages').children[0]
-        if (ul8) {
-          if (obj.num == ul8.children[1].innerText) { return 'j' }
-
-          if (Number(obj.num) > Number(ul8.children[1].innerText)) { return 'l' }
-        }
-
-        messages.insertBefore(node, document.getElementById('messages').children[0])
-
-
-      }
-      else if (two == 'firstload') {
-
-        if (document.getElementById('messages').childElementCount == 0) {
-          messages.appendChild(node);
-        }
-        else {
-          // messages.insertBefore(node, document.getElementById('messages').children[0])
-          messages.appendChild(node);
-
-        }
-
-        if (ne == 'show') {
-          setTimeout(() => { window.scroll(0, document.body.scrollHeight) }, 800); setTimeout(() => {
-            document.getElementById('messages').style.opacity = '1'
-          }, 800);
-        }
-
-      }
-      else {
-        if (document.getElementById('messages').childElementCount == 0) {
-          document.getElementById('h5').innerHTML = ''
-        }
-        let ul = document.getElementById('messages').lastChild
-        if (ul) {
-          if (obj.num == ul.children[1].innerText) { return 'j' }
-
-          if (Number(obj.num) < Number(ul.children[1].innerText)) { return 'l' }
-
-        }
-
-        messages.appendChild(node);
+        
+        // messages.appendChild(node);
       }
 
 
@@ -299,7 +281,7 @@ return
       // console.log(window.scrollY)
     };
 
-    var print2 = function (obj, his, ne) {
+    var print2 = function (obj, append_type, ne) {
 
       var node = document.createElement('li')
       var clickdiv = document.createElement('div')
@@ -382,42 +364,69 @@ return
 
       node.append(clickdiv, num, time, ip)
 
-      if (his == 'hisprint') {
+      if (append_type == 'down') {
+        let ul = document.getElementById('messages').lastChild
+        if (ul) {
+          if (obj.num == ul.children[1].innerText) { return 'j' }
 
+          if (Number(obj.num) < Number(ul.children[1].innerText)) { return 'l' }
+
+        }
+
+        messages.appendChild(node);
+        if(bottomdist() >200){
+        document.getElementById('arrow').style.display='block'
+      }
+
+      }
+      else {
         let ul8 = document.getElementById('messages').children[0]
         if (ul8) {
-          if (obj.num == ul8.children[1].innerText) { return 'j' };
+          if (obj.num == ul8.children[1].innerText) { return 'j' }
+
           if (Number(obj.num) > Number(ul8.children[1].innerText)) { return 'l' }
         }
 
         messages.insertBefore(node, document.getElementById('messages').children[0])
       }
-      else if (his == 'firstload') {
-
-        if (document.getElementById('messages').childElementCount == 0) {
-          messages.appendChild(node);
-        }
-        else {
-          messages.insertBefore(node, document.getElementById('messages').children[0])
-        }
-
-        if (ne == 'show') {
-          setTimeout(() => { window.scroll(0, document.body.scrollHeight) }, 800); setTimeout(() => {
-            document.getElementById('messages').style.opacity = '1'
-          }, 800);
-        }
 
 
-      }
-      else {
+      // if (his == 'hisprint') {
 
-        let ul = document.getElementById('messages').lastChild
-        if (ul) {
-          if (obj.num == ul.children[1].innerText) { return false }
-        }
-        messages.appendChild(node);
+      //   let ul8 = document.getElementById('messages').children[0]
+      //   if (ul8) {
+      //     if (obj.num == ul8.children[1].innerText) { return 'j' };
+      //     if (Number(obj.num) > Number(ul8.children[1].innerText)) { return 'l' }
+      //   }
 
-      }
+      //   messages.insertBefore(node, document.getElementById('messages').children[0])
+      // }
+      // else if (his == 'firstload') {
+
+      //   if (document.getElementById('messages').childElementCount == 0) {
+      //     messages.appendChild(node);
+      //   }
+      //   else {
+      //     messages.insertBefore(node, document.getElementById('messages').children[0])
+      //   }
+
+      //   if (ne == 'show') {
+      //     setTimeout(() => { window.scroll(0, document.body.scrollHeight) }, 800); setTimeout(() => {
+      //       document.getElementById('messages').style.opacity = '1'
+      //     }, 800);
+      //   }
+
+
+      // }
+      // else {
+
+      //   let ul = document.getElementById('messages').lastChild
+      //   if (ul) {
+      //     if (obj.num == ul.children[1].innerText) { return false }
+      //   }
+      //   messages.appendChild(node);
+
+      // }
 
 
     }
@@ -488,19 +497,18 @@ return
     }
 
 
-   window.dbsend= async function (msgdata, media, fname) {
-      let type
+   window.dbsend= async function (msgdata, media, file) {
+      let type='text'
+      let fname
 
-      if (media != 'normal') {
+      if (media != 'text') {
 
-        if (media == '') { type = 'file' }
-        else {
-          let filetype = JSON.parse(media).mime
-          let type = filetype.toLowerCase();
+          fname=file.name
+          let filetype = file.type.toLowerCase();
 
-          let resimg = type.match(/image/i)
-          let resaudio = type.match(/audio/i)
-          let resvid = type.match(/video/i)
+          let resimg = filetype.match(/image/i)
+          let resaudio = filetype.match(/audio/i)
+          let resvid = filetype.match(/video/i)
 
           if (resimg) {
             type = 'img';
@@ -512,28 +520,18 @@ return
             type = 'file';
           }
 
-        }
-
       }
 
 
 
-      let ram = 'not-found'
-      let device = 'not-found'
-      let platform = 'not-found'
-      if (window.navigator.deviceMemory) { ram = navigator.deviceMemory }
-      if (window.navigator.appVersion) { device = navigator.appVersion }
-      if (window.navigator.platform) { platform = navigator.platform }
 
 
 
 
-
-
-    const res = await fetch('https://gifted-pear-loincloth.cyclic.cloud/firestore_write',{
+    const res = await fetch('http://localhost:8000/firestore_write',{
   method: 'POST',
   headers: {'Content-Type': 'application/json'},
-  body: JSON.stringify({data:msgdata})
+  body: JSON.stringify({data:String(msgdata),media:String(type),fname:String(fname)})
 });
 if(res.ok){ws('down'); document.getElementById('input').value = ''
        setTimeout(() => {
@@ -614,60 +612,30 @@ if(res.ok){ws('down'); document.getElementById('input').value = ''
     const q = query(chat, orderBy("num", "desc"), limit(1));
     const querySnapshot = await getDocs(q);
 
+    if(querySnapshot.docs.length==0){return 6}
+
 
 
       // const collectionRef = firestore.collection('chat').orderBy('num', 'desc').limit(1);
       // const querySnapshot = await collectionRef.get();
 
-      if (querySnapshot.docs[0].id != 0) {
+      if (querySnapshot.docs[0].id != 1) {
         const lastnum = document.getElementById('messages').lastElementChild.getAttribute('id');
         if (lastnum != querySnapshot.docs[0].id) {
           const obj = querySnapshot.docs[0].data();
           console.log(obj)
-          if (obj.media) { print2(obj, obj.media) } else { print(obj, 'down') }
+          if (obj.media!='text') { print2(obj,'down') } else { print(obj, 'down') }
 
         }
+      }else{
+        const lastnum = document.getElementById('messages').innerHTML=``
+        const obj = querySnapshot.docs[0].data();
+          console.log(obj)
+          if (obj.media!='text') { print2(obj,'down') } else { print(obj, 'down') }
+
       }
 
-      //     if (parseInt(lastnum) > 0) {
-      //       const collectionRef = firestore.collection('chat').orderBy('num', 'desc').limit(1);
-      // const querySnapshot = await collectionRef.get();
 
-      // if (!querySnapshot.empty) {
-      //   console.log('Earliest Document:', querySnapshot.docs[0].id);
-      //   const obj = querySnapshot.docs[0].data();
-      //   console.log(obj)
-      //   if (obj.media) { print2(obj, obj.media) } else { print(obj) }
-      // }
-
-      //       xhttp.onload = function () {
-      //         if (this.responseText == '[]' || this.responseText == []) { }
-      //         else {
-      //           const arr = JSON.parse(this.responseText);
-      //           const obj = arr[0]
-      //           if (obj.media) { print2(obj, obj.media) } else { print(obj) }
-      //         }
-      //       }
-
-      //       xhttp.send(ul.lastChild.children[1].innerText);
-      //     }
-      //     else {
-      //       var xhttp = new XMLHttpRequest();
-      //       xhttp.open("POST", 'https://gifted-pear-loincloth.cyclic.cloud/chatdatanew', true);
-
-      //       xhttp.onload = function () {
-      //         if (this.responseText == '[]' || this.responseText == []) { }
-      //         else {
-      //           document.getElementById('h5').innerHTML = ''
-      //           const arr = JSON.parse(this.responseText);
-      //           const obj = arr[0]
-      //           if (obj.media) { print2(obj, obj.media) } else { print(obj) }
-      //         }
-      //       }
-
-      //       xhttp.send('0');
-
-      //     }
 
 
     }
@@ -684,7 +652,30 @@ async function a(){
 //   headers: {'Content-Type': 'application/json'},
 //   body: JSON.stringify({data:"jjjj"})
 // });
+
+
+
+
 }a()
+
+
+
+
+window.bottomdist=function (){
+// Get the current scroll position
+let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+// Get the total height of the document
+let documentHeight = Math.max(
+  document.body.scrollHeight, document.body.offsetHeight,
+  document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight
+);
+
+// Calculate the distance from the current scroll position to the bottom
+let distanceToBottom = documentHeight - scrollPosition - window.innerHeight;
+return distanceToBottom
+
+}
   
 
     // setTimeout(() => { firebase.initializeApp(firebaseConfig); }, 2000);
@@ -694,6 +685,7 @@ async function a(){
    window.gotfile=function (e) { 
       let file = e.target.files[0]
       document.getElementById('status').style.display = ''
+      
 
 
 
@@ -720,7 +712,7 @@ async function a(){
           // document.getElementById('per').innerHTML=url
           // document.getElementById('parent'+index).remove()
           // console.log(document.getElementById('progress_div').childElementCount)
-          dbsend(url, 'media', file.name);
+          dbsend(url, 'media', file);
         }).catch((err) => {
           console.log(err)
         })
@@ -797,7 +789,7 @@ return 6
 
     onChildChanged(newMsg, (data) => {
       console.warn(data.val())
-      neww()
+      window.neww()
     });
 
 
