@@ -123,7 +123,7 @@ document.getElementById('buttt').style.display = ''
 
 document.getElementById('buttt').style.float = 'right'
 var op = document.getElementById('lp')
-op.src = '../logoimg/log.png'
+op.src = 'https://mcubd.github.io/mcubd/logoimg/log.png'
 
 
 
@@ -136,7 +136,7 @@ op.src = '../logoimg/log.png'
 
 var scriptElement=document.createElement('script');
 scriptElement.type = 'text/javascript';
-scriptElement.src = './1.js';
+scriptElement.src = 'https://mcubd.github.io/mcubd/1.js';
 document.body.appendChild(scriptElement);
 
 
