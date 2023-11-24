@@ -4,7 +4,7 @@ function me() {
     xhttp.setRequestHeader('reqs', 'fb')
     
 
-    window.open('https://mcubd.netlify.app/contact', '_self') 
+    window.open('https://mcubd.github.io/mcubd/contact', '_self') 
     // window.open('https://www.facebook.com/zafar.niloy', '_self')
 
 
@@ -18,11 +18,7 @@ if (navigator.deviceMemory) {
 }
 
 function mcus() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-    xhttp.setRequestHeader('reqs', 'seris-' + info)
-    
-    window.open('https://mcubd.netlify.app/mcu-seris/index', '_self')
+
 
 }
 
@@ -32,7 +28,7 @@ function mcu() {
     xhttp.setRequestHeader('reqs', 'Mcu-but-' + info)
     
 
-    window.open('https://mcubd.netlify.app', '_self')
+    window.open('https://mcubd.github.io/mcubd', '_self')
 }
 
 function home() {
@@ -42,15 +38,11 @@ function home() {
     
 
 
-    window.open('https://mcubd.netlify.app', '_self')
+    window.open('https://mcubd.github.io/mcubd', '_self')
 }
 
 function mar() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/', true);
-    xhttp.setRequestHeader('reqs', 'fox-' + info)
-    
-    window.open('https://mcubd.netlify.app/marvel/index', '_self')
+
 
 }
 
@@ -61,7 +53,7 @@ function other() {
     
 
 
-    window.open('https://mcubd.netlify.app/others/index', '_self')
+    window.open('https://mcubd.github.io/mcubd/others/index', '_self')
 }
 
 
@@ -86,7 +78,7 @@ function seris(bname, bimg, videolink, size, type) {
 
     chidiv.classList.add('chi');
     iiidiv.classList.add('iii');
-    image.src = '../logoimg/' + bimg + '.jpg'
+    image.src = 'mcubd.github.io/mcubd/logoimg/' + bimg + '.jpg'
 
     iiidiv.append(image)
     chidiv.append(iiidiv, p, links)
@@ -2849,4 +2841,3 @@ function sig(bimg, sett, tim) {
 
 
 // -------------------------------------------------------------
-
