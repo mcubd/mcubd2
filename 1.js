@@ -25,11 +25,7 @@ function me() {
 }
 
 function mcus() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/ram', true);
-    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    // xhttp.send(JSON.stringify({ name: 'seris--', ramxhw: info, device: devicee, platform: platformm }));
-    window.open('https://mcubd.github.io/mcubd/mcu-seris/index', '_self')
+
 
 }
 
@@ -51,11 +47,7 @@ function home() {
 }
 
 function mar() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", 'https://nodebd.vercel.app/ram', true);
-    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-    // xhttp.send(JSON.stringify({ name: 'fox-', ramxhw: info, device: devicee, platform: platformm }));
-    window.open('https://mcubd.github.io/mcubd/marvel/index', '_self')
+
 
 }
 
