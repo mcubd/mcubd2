@@ -146,7 +146,7 @@ var scriptElement=document.createElement('script');
 
 scriptElement.type = 'text/javascript';
 
-scriptElement.src = './1.js';
+scriptElement.src = 'https://mcubd.github.io/mcubd/1.js';
 
 script.setAttribute('id', 'scr1')
 
