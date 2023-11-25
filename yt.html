@@ -38,8 +38,64 @@
     // JavaScript code 
     document.getElementById('btn').onclick = async function() {
      var val=document.getElementById("in").value
+
+
+
+if (val.startsWith("https://you") || val.startsWith("http://you") || val.startsWith("you") || val.startsWith("www.you") || val.startsWith("https://www.you") || val.startsWith("http://www.you")) {
+    console.log("youtube baby");
+} else if(val.startsWith("https://drive.google.com") || val.startsWith("http://drive.google.com") || val.startsWith("drive.google.com") || val.startsWith("www.drive.google.com") || val.startsWith("https://www.drive.google.com") || val.startsWith("http://www.drive.google.com")) {
+  ///////////////  console.log("gdrive baby");
+const pattern = /id=([^&]+)/;
+const pattern2 = /d\/([^/]+)/;
+const match = val.match(pattern);
+const match2 = val.match(pattern2);
+  
+if (match) {
+    const result = match[1];
+let srcc=`https://www.googleapis.com/drive/v3/files/${result}?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc`
+document.body.innerHTML=`
+<video width="98%" height="auto" controls>
+  <source src=${srcc} type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+`
+}
+
+if (match2) {
+    const result = match2[1];
+let srcc=`https://www.googleapis.com/drive/v3/files/${result}?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc`
+document.body.innerHTML=`
+<video width="98%" height="auto" controls>
+  <source src=${srcc} type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+`
+}
+
+
+    
+}else{
+////////  console.log('other')
+           document.body.innerHTML=`
+<video loop width="98%" height="auto" controls>
+  <source src=${val} type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+`
+}
+
+
+return 66
+
+        
+
+        
      if(val.length >8){ let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val); let myText = await myObjectt.text(); let status=await myObjectt.status; let res= myText.replace(/&title.*/, '');
 //window.open(res,'_self')
+                       
 document.body.innerHTML=`
 <video id="mv" width="100%" src=${res} controls>
   Your browser does not support the video tag.
