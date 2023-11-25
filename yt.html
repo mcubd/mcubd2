@@ -54,11 +54,11 @@ if (val.startsWith("https://you") || val.startsWith("http://you") || val.startsW
 
 
  let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val);
-    if(!myObjectt.ok){document.body.innerHTML=`<div>NOT AVAILABLE</div>` }
   let myText = await myObjectt.text(); 
   let status=await myObjectt.status; 
   let res= myText.replace(/&title.*/, '');
 //window.open(res,'_self')
+    if(status!='200){document.body.innerHTML=`<div>NOT AVAILABLE</div>`;  return 33}
 document.body.innerHTML=`
 <video id="mv" width="100%" src=${myText} controls>
   Your browser does not support the video tag.
