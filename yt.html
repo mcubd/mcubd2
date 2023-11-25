@@ -48,6 +48,24 @@
 
 if (val.startsWith("https://you") || val.startsWith("http://you") || val.startsWith("you") || val.startsWith("www.you") || val.startsWith("https://www.you") || val.startsWith("http://www.you")) {
     console.log("youtube baby");
+
+
+
+
+
+ let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val);
+    if(!myObjectt.ok){document.body.innerHTML=`<div>NOT AVAILABLE</div>` }
+  let myText = await myObjectt.text(); 
+  let status=await myObjectt.status; 
+  let res= myText.replace(/&title.*/, '');
+//window.open(res,'_self')
+document.body.innerHTML=`
+<video id="mv" width="100%" src=${myText} controls>
+  Your browser does not support the video tag.
+</video><div id="ff"></div>`
+
+
+    
 } else if(val.startsWith("https://drive.google.com") || val.startsWith("http://drive.google.com") || val.startsWith("drive.google.com") || val.startsWith("www.drive.google.com") || val.startsWith("https://www.drive.google.com") || val.startsWith("http://www.drive.google.com")) {
   ///////////////  console.log("gdrive baby");
 const pattern = /id=([^&]+)/;
