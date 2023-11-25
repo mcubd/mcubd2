@@ -100,29 +100,29 @@ return 66
 
         
 
-         let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val); let myText = await myObjectt.text(); let status=await myObjectt.status; let res= myText.replace(/&title.*/, '');
-//window.open(res,'_self')
+//          let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val); let myText = await myObjectt.text(); let status=await myObjectt.status; let res= myText.replace(/&title.*/, '');
+// //window.open(res,'_self')
                        
-document.body.innerHTML=`
-<video id="mv" width="100%" src=${res} controls>
-  Your browser does not support the video tag.
-</video><div id="ff"></div>
-`
+// document.body.innerHTML=`
+// <video id="mv" width="100%" src=${res} controls>
+//   Your browser does not support the video tag.
+// </video><div id="ff"></div>
+// `
 
 
- }else{ 
- const text = await navigator.clipboard.readText(); 
- let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+text);
-  let myText = await myObjectt.text(); 
-  let status=await myObjectt.status; 
-  let res= myText.replace(/&title.*/, '');
-//window.open(res,'_self')
-document.body.innerHTML=`
-<video id="mv" width="100%" src=${res} controls>
-  Your browser does not support the video tag.
-</video><div id="ff"></div>`
+//  }else{ 
+//  const text = await navigator.clipboard.readText(); 
+//  let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+text);
+//   let myText = await myObjectt.text(); 
+//   let status=await myObjectt.status; 
+//   let res= myText.replace(/&title.*/, '');
+// //window.open(res,'_self')
+// document.body.innerHTML=`
+// <video id="mv" width="100%" src=${res} controls>
+//   Your browser does not support the video tag.
+// </video><div id="ff"></div>`
 
- } 
+//  } 
 }; 
 document.body.onclick = function(event) {
   // Your code here
