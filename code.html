@@ -46,8 +46,8 @@
             position: fixed;
             top:20px;
             bottom: 20px;
-            left: 170px;
-            right: 160px;
+            left: 10vw;
+            right: 10vw;
             background-color: #2A2C2B;
             border-radius: 7px;
             z-index: 2;
@@ -71,7 +71,7 @@
             height: 30px;
             margin-top: 20px;
             position: fixed;
-            right: 170px; 
+            right: 12vw; 
         }
         #full{
             color: #e8eaed;
@@ -81,12 +81,16 @@
 
         }
 
-        .r{
-            animation: slide-in 2s ease-in-out;
-        }
+#add{
+    position: fixed;
+    top: 20px;
+    right:5vw ;
+}
+
     </style>
 </head>
 <body>
+    <div id="add" onclick="add()" class="add">Add+</div>
 
     <div id="popup" class="dont" style="display: none;"></div>
 
@@ -578,8 +582,82 @@ ff
     if(e.target.className!='dont' && document.getElementById('popup').style.display!='none'){
         cut()
     }
-    
     }
+
+
+
 </script>
+
+
+
+
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+    import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js";
+    import { getFirestore, collection, addDoc ,query, orderBy, limit,getDocs , doc, setDoc } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js";
+    
+    
+        var messages = document.getElementById('messages');
+        var form = document.getElementById('form');
+        const firebaseConfig = {
+          apiKey: "AIzaSyBzaFL1XOU-_152duOo0baL1DfgVVuSwMI",
+          authDomain: "test2-5bbd8.firebaseapp.com",
+          databaseURL: "https://test2-5bbd8-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "test2-5bbd8",
+          storageBucket: "test2-5bbd8.appspot.com",
+          messagingSenderId: "683307239625",
+          appId: "1:683307239625:web:d28ed1c2fb6b31dd4e6518"
+        };
+    
+    
+        const app = initializeApp(firebaseConfig);
+    const firestore = getFirestore(app);
+
+
+
+ window.get=async function () {
+    console.log('getting')
+
+
+const chat =collection(firestore,'codepad')
+const q = query(chat, orderBy("date", "desc"), limit(10));
+const querySnapshot = await getDocs(q);
+
+await querySnapshot.forEach((doc) => {
+
+  let obj=doc.data()
+
+ console.log(obj)
+
+
+});
+
+// document.getElementById('messages').style.opacity = '1'
+// window.scroll(0, document.body.scrollHeight)
+
+
+
+}; get()
+
+window.add=async function (){
+    
+    document.getElementById('popup').innerHTML=`
+    <div id='cut' onclick="cut()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#e8eaed" d="M5.146 5.146a.5.5 0 0 1 .708 0L12 11.293l6.146-6.147a.5.5 0 0 1 .638-.057l.07.057a.5.5 0 0 1 0 .708L12.707 12l6.147 6.146a.5.5 0 0 1 .057.638l-.057.07a.5.5 0 0 1-.708 0L12 12.707l-6.146 6.147a.5.5 0 0 1-.638.057l-.07-.057a.5.5 0 0 1 0-.708L11.293 12 5.146 5.854a.5.5 0 0 1-.057-.638z"></path></svg></div> <div class='dont' id='full'>${e.target.textContent}</div>`
+    document.body.style.cssText=`background-color: rgb(0,0,0);`
+    document.getElementById('main').style.cssText=`opacity:.5`
+
+
+    
+    let timeout= setTimeout(() => {
+        document.getElementById('popup').style.display=``
+    }, 1);
+
+
+
+}
+
+        </script>
 </body>
 </html>
