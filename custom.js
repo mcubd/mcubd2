@@ -1,5 +1,5 @@
 
-document.body.addEventListener("keyup", function(event) {
+document.body.addEventListener("keydown", function(event) {
     event.preventDefault()
   console.log(event.key)
   if (event.key === "f") {
