@@ -1,170 +1,173 @@
+
 <!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Mcubd</title> <style> body{ background-color:grey; } #btn{ background-color:#8f9491; } #in{ background-color:#8f9491 } </style>
-<style>
-    video,body{
-        margin:0;
-        padding :0
-    }
-    #ff{
-        height:100vh;
+    <style>
+        video,body{
+            margin:0;
+            padding :0
+        }
+        #ff{
+            height:100vh;
+           
+        }
+        .a{
+            margin:40vh
+        }
+        input,button{
+        margin :1px;
+        width: 200px; 
+        /* Adjust widths as needed */ 
+        height: 40px; }
+       .m{
+       display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        }
+        
        
-    }
-    .a{
-        margin:40vh
-    }
-    input,button{
-    margin :1px;
-    width: 200px; 
-    /* Adjust widths as needed */ 
-    height: 40px; }
-   .m{
-   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    }
+    </style>
     
-   
-</style>
-
-
-</head><body>
-    <div class="a"></div>
-    <div class="m">
-     <input autocomplete="off" id="in" type="text">
-     <button id="btn">Lets go!!!</button> 
-     </div>
-     <script> 
-    // JavaScript code 
-    document.getElementById('btn').onclick = async function() {
-     let vall=document.getElementById("in").value;
-        window.val=''
-
-     if(vall.length >8){ val=vall     }else{
-
-          const text = await navigator.clipboard.readText(); 
-            val=text
-     }
-
-if (val.startsWith("m.you") || val.startsWith("http://m.you") || val.startsWith("https://m.you") || val.startsWith("https://you") || val.startsWith("http://you") || val.startsWith("you") || val.startsWith("www.you") || val.startsWith("https://www.you") || val.startsWith("http://www.you")) {
-    console.log("youtube baby");
-
-
-
-
-  
-  try{
-
-  
-  
-  
-   let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val);
-    let myText = await myObjectt.text(); 
-    let status=await myObjectt.status; 
-    let res= myText.replace(/&title.*/, '');
-  //window.open(res,'_self')
-      if(status!='200'){
-        console.log('pipbd 500 error');
-      document.body.innerHTML=`<h1>NOT AVAILABLE</h1>`;
-        return 33
+    
+    </head><body>
+        <div class="a"></div>
+        <div class="m">
+         <input autocomplete="off" id="in" type="text">
+         <button id="btn">Lets go!!!</button> 
+         </div>
+         <script> 
+        // JavaScript code 
+        document.getElementById('btn').onclick = async function() {
+         let vall=document.getElementById("in").value;
+            window.val=''
+    
+         if(vall.length >8){ val=vall     }else{
+    
+              const text = await navigator.clipboard.readText(); 
+                val=text
+         }
+    
+    if (val.startsWith("m.you") || val.startsWith("http://m.you") || val.startsWith("https://m.you") || val.startsWith("https://you") || val.startsWith("http://you") || val.startsWith("you") || val.startsWith("www.you") || val.startsWith("https://www.you") || val.startsWith("http://www.you")) {
+        console.log("youtube baby");
+    
+    
+    
+    
+      
+      try{
+    
+      
+      
+      
+       let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val);
+        let myText = await myObjectt.text(); 
+        let status=await myObjectt.status; 
+        let res= myText.replace(/&title.*/, '');
+      //window.open(res,'_self')
+          if(status!='200'){
+            console.log('pipbd 500 error');
+          document.body.innerHTML=`<h1>NOT AVAILABLE</h1>`;
+            return 33
+          }
+      document.body.innerHTML=`
+      <video id="mv" width="100%" src=${myText} controls>
+        Your browser does not support the video tag.
+      </video><div id="ff"></div>`
+      
+    }catch(e){
+      console.log('pipbd 500 error');
+          document.body.innerHTML=`<h1>NOT AVAILABLE</h1>`;
+            return 33
       }
-  document.body.innerHTML=`
-  <video id="mv" width="100%" src=${myText} controls>
-    Your browser does not support the video tag.
-  </video><div id="ff"></div>`
-  
-}catch(e){
-  console.log('pipbd 500 error');
-      document.body.innerHTML=`<h1>NOT AVAILABLE</h1>`;
-        return 33
-  }
-
-
     
-} else if(val.startsWith("https://drive.google.com") || val.startsWith("http://drive.google.com") || val.startsWith("drive.google.com") || val.startsWith("www.drive.google.com") || val.startsWith("https://www.drive.google.com") || val.startsWith("http://www.drive.google.com")) {
-  ///////////////  console.log("gdrive baby");
-const pattern = /id=([^&]+)/;
-const pattern2 = /d\/([^/]+)/;
-const match = val.match(pattern);
-const match2 = val.match(pattern2);
-  
-if (match) {
-    const result = match[1];
-let srcc=`https://www.googleapis.com/drive/v3/files/${result}?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc`
-document.body.innerHTML=`
-<video width="98%" height="auto" controls>
-  <source src=${srcc} type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-`
-}
-
-if (match2) {
-    const result = match2[1];
-let srcc=`https://www.googleapis.com/drive/v3/files/${result}?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc`
-document.body.innerHTML=`
-<video width="98%" height="auto" controls>
-  <source src=${srcc} type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-`
-}
-
-
     
-}else{
-////////  console.log('other')
-           document.body.innerHTML=`
-<video loop width="98%" height="auto" controls>
-  <source src=${val} type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-`
-}
-
-
-
-return 66
-
         
-
+    } else if(val.startsWith("https://drive.google.com") || val.startsWith("http://drive.google.com") || val.startsWith("drive.google.com") || val.startsWith("www.drive.google.com") || val.startsWith("https://www.drive.google.com") || val.startsWith("http://www.drive.google.com")) {
+      ///////////////  console.log("gdrive baby");
+    const pattern = /id=([^&]+)/;
+    const pattern2 = /d\/([^/]+)/;
+    const match = val.match(pattern);
+    const match2 = val.match(pattern2);
+      
+    if (match) {
+        const result = match[1];
+    let srcc=`https://www.googleapis.com/drive/v3/files/${result}?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc`
+    document.body.innerHTML=`
+    <video width="98%" height="auto" controls>
+      <source src=${srcc} type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    `
+    }
+    
+    if (match2) {
+        const result = match2[1];
+    let srcc=`https://www.googleapis.com/drive/v3/files/${result}?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc`
+    document.body.innerHTML=`
+    <video width="98%" height="auto" controls>
+      <source src=${srcc} type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    `
+    }
+    
+    
         
+    }else{
+    ////////  console.log('other')
+               document.body.innerHTML=`
+    <video loop width="98%" height="auto" controls>
+      <source src=${val} type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    `
+    }
+    
+    
+    
+    return 66
+    
+            
+    
+            
+    
+    //          let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val); let myText = await myObjectt.text(); let status=await myObjectt.status; let res= myText.replace(/&title.*/, '');
+    // //window.open(res,'_self')
+                           
+    // document.body.innerHTML=`
+    // <video id="mv" width="100%" src=${res} controls>
+    //   Your browser does not support the video tag.
+    // </video><div id="ff"></div>
+    // `
+    
+    
+    //  }else{ 
+    //  const text = await navigator.clipboard.readText(); 
+    //  let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+text);
+    //   let myText = await myObjectt.text(); 
+    //   let status=await myObjectt.status; 
+    //   let res= myText.replace(/&title.*/, '');
+    // //window.open(res,'_self')
+    // document.body.innerHTML=`
+    // <video id="mv" width="100%" src=${res} controls>
+    //   Your browser does not support the video tag.
+    // </video><div id="ff"></div>`
+    
+    //  } 
+    }; 
+    document.body.onclick = function(event) {
+      // Your code here
+      var video = document.getElementById("mv"); 
+      video.requestFullscreen();
+      video.play()
+    };
+    
+    
+    </script> 
 
-//          let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+val); let myText = await myObjectt.text(); let status=await myObjectt.status; let res= myText.replace(/&title.*/, '');
-// //window.open(res,'_self')
-                       
-// document.body.innerHTML=`
-// <video id="mv" width="100%" src=${res} controls>
-//   Your browser does not support the video tag.
-// </video><div id="ff"></div>
-// `
-
-
-//  }else{ 
-//  const text = await navigator.clipboard.readText(); 
-//  let myObjectt = await fetch('https://pipbd.cyclic.app/yt?yt='+text);
-//   let myText = await myObjectt.text(); 
-//   let status=await myObjectt.status; 
-//   let res= myText.replace(/&title.*/, '');
-// //window.open(res,'_self')
-// document.body.innerHTML=`
-// <video id="mv" width="100%" src=${res} controls>
-//   Your browser does not support the video tag.
-// </video><div id="ff"></div>`
-
-//  } 
-}; 
-document.body.onclick = function(event) {
-  // Your code here
-  var video = document.getElementById("mv"); 
-  video.requestFullscreen();
-  video.play()
-};
-
-
-</script> 
-
-</body></html>
+<script src="https://mcubd.github.io/mcubd/custom.js"></script>    
+    </body></html>
+    
