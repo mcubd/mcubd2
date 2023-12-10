@@ -3166,7 +3166,7 @@ setTimeout(() => {
 
 
 
-    seris('Captain America: The First Avenger (2011)    [1.2GB]', 'cap', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/captain-america-720.mp4'], '1.2GB', 'mv')
+   // seris('Captain America: The First Avenger (2011)    [1.2GB]', 'cap', ['https://zaynr2h.bdff.workers.dev/0:/mcubd/mcu/captain-america-720.mp4'], '1.2GB', 'mv')
 
 
     // seris('Iron Man  (2008) [984MB]', 'iron', ['https://flame2.bdff.workers.dev/0:/mcubd/IronMan-720p.mp4'], '984MB', 'mv')
