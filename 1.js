@@ -1,6 +1,6 @@
  function me() {
   var xhttp = new XMLHttpRequest();
-  xhttp.open("POST", 'https://mcubd.vercel.app/', true);
+  xhttp.open("POST", 'https://mcubd2.vercel.app/', true);
   xhttp.setRequestHeader('reqs', 'fb')
   
 
@@ -109,7 +109,7 @@ function seris(bname, bimg, videolink, size, type,server) {
 
   chidiv.classList.add('chi');
   iiidiv.classList.add('iii');
-  image.src = 'https://mcubd.vercel.app/logoimg/' + bimg + '.jpg'
+  image.src = 'https://mcubd2.vercel.app/logoimg/' + bimg + '.jpg'
 
   iiidiv.append(image)
   chidiv.append(iiidiv, p, links)
