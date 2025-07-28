@@ -2,483 +2,551 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./favicon.ico?" type="image/x-icon">
-    <title>Mcubd</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.ico?" type="image/x-icon">
+  <title>Mcubd</title>
 
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <style>
+    .box,
+    .sending {
+      height: 50px;
+      width: 40px
+    }
+
+    .sending {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto
+    }
+
+    #sendtxt {
+      color: #007298;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      margin-top: 45px;
+      text-align: center
+    }
+
+    .box {
+      position: relative;
+      animation: 5s linear infinite box
+    }
+
+    .border,
+    .line {
+      background: #007298;
+      position: absolute
+    }
+
+    .border.one {
+      height: 4px;
+      top: 0;
+      left: 0;
+      animation: 5s linear infinite border-one
+    }
+
+    .border.two {
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 4px;
+      animation: 5s linear infinite border-two
+    }
+
+    .border.three {
+      bottom: 0;
+      right: 0;
+      height: 4px;
+      width: 100%;
+      animation: 5s linear infinite border-three
+    }
+
+    .border.four {
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 4px;
+      animation: 5s linear infinite border-four
+    }
+
+    .line {
+      height: 4px;
+      width: 0%;
+      left: 25%
+    }
+
+    .line.one {
+      top: 25%;
+      width: 0%;
+      animation: 5s linear infinite line-one
+    }
+
+    .line.two {
+      top: 45%;
+      animation: 5s linear infinite line-two
+    }
+
+    .line.three {
+      top: 65%;
+      animation: 5s linear infinite line-three
+    }
+
+    @keyframes border-one {
+      0% {
+        width: 0
+      }
+
+      10%,
+      100% {
+        width: 100%
+      }
+    }
+
+    @keyframes border-two {
+      0% {
+        height: 0
+      }
+
+      10% {
+        height: 0%
+      }
+
+      100%,
+      20% {
+        height: 100%
+      }
+    }
+
+    @keyframes border-three {
+      0% {
+        width: 0
+      }
+
+      20% {
+        width: 0%
+      }
+
+      100%,
+      30% {
+        width: 100%
+      }
+    }
+
+    @keyframes border-four {
+      0% {
+        height: 0
+      }
+
+      30% {
+        height: 0%
+      }
+
+      100%,
+      40% {
+        height: 100%
+      }
+    }
+
+    @keyframes line-one {
+      0% {
+        left: 25%;
+        width: 0
+      }
+
+      40%,
+      54% {
+        left: 25%;
+        width: 0%
+      }
+
+      43%,
+      52% {
+        left: 25%;
+        width: 50%
+      }
+
+      55% {
+        right: 25%;
+        left: auto
+      }
+
+      100%,
+      63% {
+        width: 10%;
+        right: 25%;
+        left: auto
+      }
+    }
+
+    @keyframes line-two {
+      0% {
+        width: 0
+      }
+
+      42%,
+      54% {
+        width: 0%
+      }
+
+      100%,
+      45%,
+      53%,
+      60% {
+        width: 50%
+      }
+    }
+
+    @keyframes line-three {
+      0% {
+        width: 0
+      }
+
+      100%,
+      45%,
+      52% {
+        width: 0%
+      }
+
+      48%,
+      51% {
+        width: 50%
+      }
+    }
+
+    @keyframes box {
+      0% {
+        opacity: 1;
+        margin-left: 0;
+        height: 50px;
+        width: 40px
+      }
+
+      55% {
+        margin-left: 0;
+        height: 50px;
+        width: 40px
+      }
+
+      60% {
+        margin-left: 0;
+        height: 35px;
+        width: 50px
+      }
+
+      74% {
+        msthin-left: 0
+      }
+
+      80% {
+        margin-left: -50px;
+        opacity: 1
+      }
+
+      90% {
+        height: 35px;
+        width: 50px;
+        margin-left: 50px;
+        opacity: 0
+      }
+
+      100% {
+        opacity: 0
+      }
+    }
+  </style>
+
+
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      /* font-size: 12px;
+            font-weight: 600; */
+    }
+
+    #h3 {
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: #000;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    label {
+      color: #000;
+    }
+
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      /* Full width */
+      padding: 12px;
+      /* Some padding */
+      border: 1px solid #ccc;
+      /* Gray border */
+      border-radius: 4px;
+      /* Rounded borders */
+      box-sizing: border-box;
+      /* Make sure that padding and width stays in place */
+      margin-top: 6px;
+      /* Add a top margin */
+      margin-bottom: 16px;
+      /* Bottom margin */
+      resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    /* Add a background color and some padding around the form */
+    #content {
+      border-radius: 5px;
+      background-color: #fcfbfc;
+      padding: 20px;
+    }
+  </style>
 
 </head>
 
 <body>
 
-    <div style="display:none" id="content">
+  <div style="display:none" id="content">
 
-        <h3 id="h3">Request A Movie</h3>
-        <form name="myForm" onsubmit="return mySubmitFunction(event)" autocomplete="off">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="fname" placeholder="Nam deua lagbe na,this option is not nedded" spellcheck="false">
+    <h3 id="h3">Request Lectures</h3>
+    <form name="myForm" onsubmit="return mySubmitFunction(event)" autocomplete="off">
+      <label for="fname">Subject</label>
 
 
-            <label for="subject">Movie name / Message</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:70px"
-                spellcheck="false"></textarea>
+      <select name="" id="subjectt">
+        <option value="math">Math</option>
+        <option value="math2">Math 2nd</option>
+        <option value="chem">Chemistry</option>
+        <option value="chem2">Chemistry 2nd</option>
+        <option value="phys">Physics</option>
+        <option value="phys2">Physics 2nd</option>
 
-            <input type="submit" name="submitt" value="Submit">
-        </form>
 
-        <div style="display:none" id="fsending" class="fsending">
-            <div class="sending">
-                <div class="box">
-                    <div class="border one"></div>
-                    <div class="border two"></div>
-                    <div class="border three"></div>
-                    <div class="border four"></div>
+      </select>
 
-                    <div class="line one"></div>
-                    <div class="line two"></div>
-                    <div class="line three"></div>
-                </div>
-            </div>
-            <p id="sendtxt">Sending</p>
+
+      <label for="subject">Chapter</label>
+
+
+     
+
+
+      <select name="" id="topicss">
+        <option value="Chapter-1  (ম্যাট্রিক্স ও নির্ণায়ক)">Chapter-1 (ম্যাট্রিক্স ও নির্ণায়ক)</option>
+        <option value="Chapter-3  (সরলরেখা)">Chapter-3 (সরলরেখা)</option>
+        <option value="Chapter-4  (বৃত্ত)">Chapter-4 (বৃত্ত)</option>
+        <option value="Chapter-7  (সংযুক্ত কোণের ত্রিকোণমিতিক অনুপাত)">Chapter-7 (সংযুক্ত কোণের ত্রিকোণমিতিক অনুপাত)
+        </option>
+        <option value="Chapter-9  (অন্তরীকরণ)">Chapter-9 (অন্তরীকরণ)</option>
+        <option value="Chapter-10  (যোগজীকরণ)">Chapter-10 (যোগজীকরণ)</option>
+
+      </select>
+
+
+
+
+      <script>
+        const subjectSelect = document.getElementById('subjectt');
+        const topicsSelect = document.getElementById('topicss');
+
+        const topics = {
+          math: ['Chapter-1  (ম্যাট্রিক্স ও নির্ণায়ক)', 'Chapter-3  (সরলরেখা)', 'Chapter-4  (বৃত্ত)', 'Chapter-7  (সংযুক্ত কোণের ত্রিকোণমিতিক অনুপাত)', 'Chapter-9  (অন্তরীকরণ)', 'Chapter-10  (যোগজীকরণ)'
+          ],
+          math2: ['Chapter-3  (জটিল সংখ্যা)', 'Chapter-4  (বহুপদী ও বহুপদী সমীকরণ)', 'Chapter-6  (কনিক)', 'Chapter-7  (বিপরীত ত্রিকোণমিতিক ফাংশন )', 'Chapter-8  (স্থিতিবিদ্যা)', 'Chapter-9  (সমতলে বস্তুকণার গতি)'
+          ],
+          chem: ['Chapter-2  (গুণগত)', 'Chapter-3  (মৌলের পর্যায়বৃত্ত ধর্ম ও রাসায়নিক বন্ধন  )', 'Chapter-4  (রাসায়নিক পরিবর্তন)', 'Chapter-5  (কর্মমুখী রসায়ন)'
+          ],
+          chem2: ['Chapter-1  (পরিবেশ রসায়ন)', 'Chapter-2  (জৈব রসায়ন)', 'Chapter-3  (পরিমাণগত রসায়ন)', 'Chapter-4  (তড়িৎ রসায়ন)'
+          ],
+          phys2: ['Chapter-1  (তাপগতিবিদ্যা)', 'Chapter-2  (স্থির তড়িৎ)', 'Chapter-3  (চল তড়িৎ)', 'Chapter-7  (ভৌত আলোকবিজ্ঞান)', 'Chapter-8  (আধুনিক পদার্থবিজ্ঞানের সূচনা)', 'Chapter-9  (পরমাণুর মডেল এবং নিউক্লিয়ার পদার্থবিজ্ঞান)', 'Chapter-10  (সেমিকন্ডাক্টর ও ইলেকট্রনিক্স)'
+          ],
+          phys: ['Chapter-2  (ভেক্টর)', 'Chapter-4  (নিউটনিয়ান বলবিদ্যা)', 'Chapter-5  (কাজ, শক্তি ও ক্ষমতা)', 'Chapter-6  (মহাকর্ষ ও অভিকর্ষ)', 'Chapter-7  (পদার্থের গাঠনিক ধর্ম)', 'Chapter-8  (পর্যাবৃত্ত গতি)', 'Chapter-10  (আদর্শ গ্যাস ও গ্যাসের গতিতত্ত্ব)'
+          ]
+        };
+
+        subjectSelect.addEventListener('change', function () {
+          const selectedSubject = this.value;
+          topicsSelect.innerHTML = ''; // clear old options
+
+          if (topics[selectedSubject]) {
+            topics[selectedSubject].forEach(topic => {
+              const option = document.createElement('option');
+              option.value = topic.toLowerCase().replace(/\s+/g, '-');
+              option.textContent = topic;
+              topicsSelect.appendChild(option);
+            });
+          } else {
+            const defaultOption = document.createElement('option');
+            defaultOption.textContent = '-- Select a subject first --';
+            topicsSelect.appendChild(defaultOption);
+          }
+        });
+      </script>
+
+       <input type="submit" name="submitt" value="Submit">
+
+
+    </form>
+
+    <div style="display:none" id="fsending" class="fsending">
+      <div class="sending">
+        <div class="box">
+          <div class="border one"></div>
+          <div class="border two"></div>
+          <div class="border three"></div>
+          <div class="border four"></div>
+
+          <div class="line one"></div>
+          <div class="line two"></div>
+          <div class="line three"></div>
         </div>
-
-        <div style="display:none" id="fsent" class="fsent">
-            <lottie-player id="sentsvg" src="f20_voBLTvIbhG.json" background="transparent" speed="1"
-                style=" height: 80px;" loop autoplay></lottie-player>
-            <p id="sendtxt">Sent</p>
-        </div>
-
-        <div style="display:none" id="failed" class="failed">
-            <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_ose4iyma.json"
-                background="transparent" speed="1" style=" height: 120px;" loop autoplay></lottie-player>
-
-            <p id="sendtxt">Failed to send(server problem). plz try again after some hour or next day.</p>
-        </div>
-
+      </div>
+      <p id="sendtxt">Sending</p>
     </div>
 
+    <div style="display:none" id="fsent" class="fsent">
+      <lottie-player id="sentsvg" src="f20_voBLTvIbhG.json" background="transparent" speed="1" style=" height: 80px;"
+        loop autoplay></lottie-player>
+      <p id="sendtxt">Sent</p>
+    </div>
 
-    <style>
-        body {
-            font-family: "Poppins", Arial, sans-serif;
-            /* font-size: 12px;
-            font-weight: 600; */
-        }
+    <div style="display:none" id="failed" class="failed">
+      <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_ose4iyma.json" background="transparent"
+        speed="1" style=" height: 120px;" loop autoplay></lottie-player>
 
-        #h3 {
-            font-size: 1.7rem;
-            font-weight: 400;
-            color: #000;
-            font-family: "Poppins", Arial, sans-serif;
-        }
+      <p id="sendtxt">Failed to send(server problem). plz try again after some hour or next day.</p>
+    </div>
 
-        label {
-            color: #000;
-        }
-
-
-        input[type=text],
-        select,
-        textarea {
-            width: 100%;
-            /* Full width */
-            padding: 12px;
-            /* Some padding */
-            border: 1px solid #ccc;
-            /* Gray border */
-            border-radius: 4px;
-            /* Rounded borders */
-            box-sizing: border-box;
-            /* Make sure that padding and width stays in place */
-            margin-top: 6px;
-            /* Add a top margin */
-            margin-bottom: 16px;
-            /* Bottom margin */
-            resize: vertical
-                /* Allow the user to vertically resize the textarea (not horizontally) */
-        }
-
-        /* Style the submit button with a specific background color etc */
-        input[type=submit] {
-            background-color: #04AA6D;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-
-        /* Add a background color and some padding around the form */
-        #content {
-            border-radius: 5px;
-            background-color: #fcfbfc;
-            padding: 20px;
-        }
-    </style>
-
-
-    <script>
-
-        var info
-        if (navigator.deviceMemory) {
-            info = navigator.deviceMemory + 'gb-h' + screen.height + 'x' + screen.width
-        } else { info = screen.height + 'x' + screen.width }
-
-        if (navigator) { var platformm = navigator.platform; var devicee = navigator.appVersion } else { var platformm = 'sorry!'; var devicee = 'sorry!' }
-
-
-        document.getElementById('content').style.display = ''
-
-
-
-        function mySubmitFunction(e) {
-            e.preventDefault();
-            var x = document.forms["myForm"]["subject"].value;
-            if (x == "") {
-                alert("can't send empty messege");
-                return false;
-            } else {
-                serverSend(e.target.fname.value, e.target.subject.value);
-                e.target.submitt.style.display = "none";
-                return false;
-            }
-        }
-
-        function serverSend(fname, msg) {
-            document.getElementById('fsending').style.display = ''
-
-
-
-            let xhttp = new XMLHttpRequest();
-            xhttp.open("POST", 'https://nodebd.vercel.app/ram', true);
-            xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-            xhttp.send(JSON.stringify({ name: 'req!-' + fname + '=>' + msg + '-' + platformm, ramxhw: info, device: devicee, platform: platformm }));
-
-            xhttp.onload = function () {
-
-
-
-                const obj = JSON.parse(this.responseText);
-
-                if (obj.name == 'req!-' + fname + '=>' + msg + '-' + platformm) {
+  </div>
 
 
 
 
+  <script>
 
-                    var xhttp2 = new XMLHttpRequest();
-                    xhttp2.open("GET", 'https://nodebd.vercel.app/his', true);
-                    xhttp2.setRequestHeader('n', obj.num - 1)
-                    xhttp2.send()
-                    xhttp2.onload = function () {
+ 
 
-                        const obj2 = JSON.parse(this.responseText)[0];
-                        console.log(obj2)
-                        console.log(obj2.name)
-
-                        if (obj2.name == 'req!-' + fname + '=>' + msg + '-' + platformm) {
-                            document.getElementById('fsending').style.display = 'none'
-                            document.getElementById('fsent').style.display = ''
-                            document.getElementById('fname').value = ''
-                            document.getElementById('subject').value = ''
-                            clearInterval(timeout)
-                        }
-
-                    }
+    document.getElementById('content').style.display = ''
 
 
-                } else {
 
-                }
+    function mySubmitFunction(e) {
+      e.preventDefault();
+    
+      if ("jjjjj" == "jjc") {
+        alert("can't send empty messege");
+        return false;
+      } else {
+        const select = document.getElementById("subjectt");
+const selectedText = select.options[select.selectedIndex].text;
+const select2 = document.getElementById("topicss");
+const selectedText2 = select2.options[select2.selectedIndex].text
+ 
+
+ 
+        serverSend(selectedText,selectedText2);
+        e.target.submitt.style.display = "none";
+        return false;
+      }
+    }
+
+    function serverSend(fname, msg) {
+      document.getElementById('fsending').style.display = ''
 
 
+
+      let xhttp = new XMLHttpRequest();
+      xhttp.open("POST", 'http://localhost:3000/ram', true);
+      xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xhttp.send(JSON.stringify({ name: 'Lec!---' + fname + '-------=>' + msg   }));
+
+      xhttp.onload = function () {
+
+
+
+        const obj = JSON.parse(this.responseText);
+
+        if (obj.name == 'Lec!---' + fname + '-------=>' + msg) {
+
+   
+          
+
+
+
+
+          var xhttp2 = new XMLHttpRequest();
+          xhttp2.open("GET", 'https://exam-server2.vercel.app/his', true);
+          xhttp2.setRequestHeader('n', obj.num - 1)
+          xhttp2.send()
+          xhttp2.onload = function () {
+
+            const obj2 = JSON.parse(this.responseText)[0];
+            console.log(obj2)
+            console.log(obj2.name)
+
+            if (obj2.name == 'Lec!---' + fname + '-------=>' + msg) {
+              document.getElementById('fsending').style.display = 'none'
+              document.getElementById('fsent').style.display = ''
+   
+              clearInterval(timeout)
             }
 
-           var timeout= setTimeout(() => {
-                xhttp.abort();
-                document.getElementById('fsending').style.display = 'none'
-                document.getElementById('fsent').style.display = 'none'
-                document.getElementById('failed').style.display = ''
+          }
 
-            }, 30000);
 
-             var xhttpop = new XMLHttpRequest();
-            xhttpop.open("POST", 'https://nodebd.vercel.app/chatnot', true);
-           // xhttpop.setRequestHeader("Content-Type": "text/plain;charset=UTF-8");
-            xhttpop.send("kya hal bidu");
+        } else {
 
         }
 
-        function cheaking() {
+
+      }
+
+      var timeout = setTimeout(() => {
+        xhttp.abort();
+        document.getElementById('fsending').style.display = 'none'
+        document.getElementById('fsent').style.display = 'none'
+        document.getElementById('failed').style.display = ''
+
+      }, 30000);
+
+      var xhttpop = new XMLHttpRequest();
+      xhttpop.open("POST", 'https://nodebd.vercel.app/chatnot', true);
+      // xhttpop.setRequestHeader("Content-Type": "text/plain;charset=UTF-8");
+      xhttpop.send("kya hal bidu");
+
+    }
+
+ 
+
+  </script>
 
 
-
-        }
-
-    </script>
-
-    <style>
-        .box,
-        .sending {
-            height: 50px;
-            width: 40px
-        }
-
-        .sending {
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto
-        }
-
-        #sendtxt {
-            color: #007298;
-            font-weight: 700;
-            font-family: 'Playfair Display', serif;
-            margin-top: 45px;
-            text-align: center
-        }
-
-        .box {
-            position: relative;
-            animation: 5s linear infinite box
-        }
-
-        .border,
-        .line {
-            background: #007298;
-            position: absolute
-        }
-
-        .border.one {
-            height: 4px;
-            top: 0;
-            left: 0;
-            animation: 5s linear infinite border-one
-        }
-
-        .border.two {
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 4px;
-            animation: 5s linear infinite border-two
-        }
-
-        .border.three {
-            bottom: 0;
-            right: 0;
-            height: 4px;
-            width: 100%;
-            animation: 5s linear infinite border-three
-        }
-
-        .border.four {
-            bottom: 0;
-            left: 0;
-            height: 100%;
-            width: 4px;
-            animation: 5s linear infinite border-four
-        }
-
-        .line {
-            height: 4px;
-            width: 0%;
-            left: 25%
-        }
-
-        .line.one {
-            top: 25%;
-            width: 0%;
-            animation: 5s linear infinite line-one
-        }
-
-        .line.two {
-            top: 45%;
-            animation: 5s linear infinite line-two
-        }
-
-        .line.three {
-            top: 65%;
-            animation: 5s linear infinite line-three
-        }
-
-        @keyframes border-one {
-            0% {
-                width: 0
-            }
-
-            10%,
-            100% {
-                width: 100%
-            }
-        }
-
-        @keyframes border-two {
-            0% {
-                height: 0
-            }
-
-            10% {
-                height: 0%
-            }
-
-            100%,
-            20% {
-                height: 100%
-            }
-        }
-
-        @keyframes border-three {
-            0% {
-                width: 0
-            }
-
-            20% {
-                width: 0%
-            }
-
-            100%,
-            30% {
-                width: 100%
-            }
-        }
-
-        @keyframes border-four {
-            0% {
-                height: 0
-            }
-
-            30% {
-                height: 0%
-            }
-
-            100%,
-            40% {
-                height: 100%
-            }
-        }
-
-        @keyframes line-one {
-            0% {
-                left: 25%;
-                width: 0
-            }
-
-            40%,
-            54% {
-                left: 25%;
-                width: 0%
-            }
-
-            43%,
-            52% {
-                left: 25%;
-                width: 50%
-            }
-
-            55% {
-                right: 25%;
-                left: auto
-            }
-
-            100%,
-            63% {
-                width: 10%;
-                right: 25%;
-                left: auto
-            }
-        }
-
-        @keyframes line-two {
-            0% {
-                width: 0
-            }
-
-            42%,
-            54% {
-                width: 0%
-            }
-
-            100%,
-            45%,
-            53%,
-            60% {
-                width: 50%
-            }
-        }
-
-        @keyframes line-three {
-            0% {
-                width: 0
-            }
-
-            100%,
-            45%,
-            52% {
-                width: 0%
-            }
-
-            48%,
-            51% {
-                width: 50%
-            }
-        }
-
-        @keyframes box {
-            0% {
-                opacity: 1;
-                margin-left: 0;
-                height: 50px;
-                width: 40px
-            }
-
-            55% {
-                margin-left: 0;
-                height: 50px;
-                width: 40px
-            }
-
-            60% {
-                margin-left: 0;
-                height: 35px;
-                width: 50px
-            }
-
-            74% {
-                msthin-left: 0
-            }
-
-            80% {
-                margin-left: -50px;
-                opacity: 1
-            }
-
-            90% {
-                height: 35px;
-                width: 50px;
-                margin-left: 50px;
-                opacity: 0
-            }
-
-            100% {
-                opacity: 0
-            }
-        }
-    </style>
-
-    <script src="lottie-player.js"></script>
+  <script src="lottie-player.js"></script>
 
 
 
