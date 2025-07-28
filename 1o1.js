@@ -125,7 +125,7 @@ document.getElementById('buttt').style.display = ''
 document.getElementById('buttt').style.float = 'right'
 
 var op = document.getElementById('lp')
-op.src = 'https://mcubd.github.io/mcubd/logoimg/log.png'
+op.src = 'https://mcubd.vercel.app/logoimg/log.png'
 
 
 
