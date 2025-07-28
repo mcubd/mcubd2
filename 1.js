@@ -4,7 +4,7 @@
   xhttp.setRequestHeader('reqs', 'fb')
   
 
-  window.open('https://mcubd.vercel.app/about.html', '_self') 
+  window.open('https://mcubd2.vercel.app/about2.html', '_self') 
   // window.open('https://www.facebook.com/zafar.niloy', '_self')
 
 
@@ -55,7 +55,7 @@ function mcus() {
 
 function mcu() {
   var xhttp = new XMLHttpRequest();
-  xhttp.open("POST", 'https://nodebd.vercel.app/', true);
+  xhttp.open("POST", 'https://nodebd2.vercel.app/', true);
   xhttp.setRequestHeader('reqs', 'Mcu-but-' + info)
   
 
@@ -69,7 +69,7 @@ function home() {
   
 
 
-  window.open("https://mcubd2.web.app/", '_self')
+  window.open("https://mcubd2.vercel.app/", '_self')
 }
 
 function mar() {
@@ -84,7 +84,7 @@ function other() {
   
 
 
-  window.open("https://mcubd2.web.app/", '_self')
+  window.open("https://mcubd2.vercel.app/", '_self')
 }
 
 
