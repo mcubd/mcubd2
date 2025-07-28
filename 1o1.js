@@ -59,7 +59,7 @@ button4.setAttribute('onclick', 'other()')
 
 
 
-button.innerText = 'Movie'
+button.innerText = 'Lec...'
 h4.innerText = ''
 button1.innerText = 'Marvel'
 button2.innerText = 'Marvel-Seris'
