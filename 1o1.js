@@ -60,7 +60,7 @@ button4.setAttribute('onclick', 'other()')
 
 
 button.innerText = 'Lec...'
-h4.innerText = ''
+h4.innerText = 'Extract after downloading'
 button1.innerText = 'Marvel'
 button2.innerText = 'Marvel-Seris'
 button3.innerText = 'fox & sony'
