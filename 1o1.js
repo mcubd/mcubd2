@@ -138,6 +138,6 @@ op.src = 'https://mcubd.github.io/mcubd/logoimg/log.png'
 
 var scriptElement=document.createElement('script');
 scriptElement.type = 'text/javascript';
-scriptElement.src = 'https://mcubd.vercel.app/others/1.js';
+scriptElement.src = 'https://mcubd2.vercel.app/1.js';
 document.body.appendChild(scriptElement);
 
