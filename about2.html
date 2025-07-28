@@ -481,7 +481,7 @@ const selectedText2 = select2.options[select2.selectedIndex].text
 
 
       let xhttp = new XMLHttpRequest();
-      xhttp.open("POST", 'http://localhost:3000/ram', true);
+      xhttp.open("POST", 'https://exam-server2.vercel.app/ram', true);
       xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
       xhttp.send(JSON.stringify({ name: 'Lec!---' + fname + '-------=>' + msg   }));
 
