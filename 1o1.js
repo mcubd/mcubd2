@@ -45,7 +45,7 @@ img.setAttribute('onclick', 'home()')
 
 
 
-//button.setAttribute('onclick', 'me()')
+ button.setAttribute('onclick', 'me()')
 
 button1.setAttribute('onclick', 'mcu()')
 button2.setAttribute('onclick', 'mcus()')
