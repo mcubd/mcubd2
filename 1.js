@@ -2803,7 +2803,48 @@ setTimeout(() => {
 //  seris('Ru Bio Extra [308MB]','fffff',['https://www.googleapis.com/drive/v3/files/1FsfiXa-pkghQq2AvPDTnJ2aOr-ubF3r_?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'308MB','mv')
  seris('gas(1-4).zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1MwQLRn9pzrcwmMakoGfIouVE8uTXR92x?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
  seris('gas(5-9).zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1E-5vDslDdQ5YSxdLWWWU6g8qyeSzCMkj?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
-
+ 
+ 
+ seris('পরমানুর মডেল এবং নিউক্লি পদার্থবিজ্ঞান[1-4].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1P1ARW9ug7ZD0WIjOkkmTNB4Wod2nt3p9?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+  seris('পরমানুর মডেল এবং নিউক্লি পদার্থবিজ্ঞান[5-9].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1MGPCa0Q4Oq9cK43WDqrUzQKKwI5IEGhj?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('সেমিকন্ডাক্টর ও ইলেকট্রনিক্স[1-4].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1dzx4LL9vEyZMlh7_YCFSw5eUKuuFdkIx?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('সেমিকন্ডাক্টর ও ইলেকট্রনিক্স[5-8].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1hrGIC1I26ALXEnXHgvu533yrmuATAGh1?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('স্থির তড়িৎ[1-5].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1GtMMbbbWFBcdslpMn3nI0xypayekdcQN?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('স্থির তড়িৎ[6-11].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1mCBDRi-I36SD28VMGbcgvH9hiArkYC8P?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('তাপগতিবিদ্যা[1-5].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1bdrjTdtGoUfPbh9HwFwI3QxCmKxHbElm?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('তাপগতিবিদ্যা[6-10].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1_Zuc1kc-qQWrXf8pnGQJhOE1uE3qD4VT?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('তাপগতিবিদ্যা[11-15].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1thFMNuJZ2m4MNg5mGgTeLHUwu84XLBmf?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('ভেক্টর[1-5].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1MYwmrDC_Mcp6j18Y4d6RyAAyrzQHlWWF?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('ভেক্টর[6-11].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1XStY89MeX-nxBOPtgJL2KCsEDCqGTPyz?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('ভেক্টর[12-17].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1PFeizKIZgeqfG5FXgKHTnOJPttpnJN5v?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ seris('alo[1-4].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1JxpY-76D8MsVK_hvEffrKCHpf3utdEty?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('alo[5-8].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1ouTgACJhlYm1uIwpEx-NKXNU2uiUqG9t?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('current[1-5].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1IX3-w2DfgEiYfQrc0HJfM9BbfTYWciwN?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('current[6-10].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1VQbjCxeuZnJS1tbmzY_vgazG9E13alez?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('gas(1-4).zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1MwQLRn9pzrcwmMakoGfIouVE8uTXR92x?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('gas(5-9).zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1E-5vDslDdQ5YSxdLWWWU6g8qyeSzCMkj?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('gathonik[1-4].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1Tg_d0nwVhGbb7PuStEqX5AtZRe5qG-5D?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('gathonik[5-8].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1GLES8z4C8lUi_gKrRPNHMaT_mVGPOC73?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('modern[1-5].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1jk2W52YS_FBBp37Q7keZ9s_p5g1BIV0j?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('modern[6-10].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/15TgTN-2e9Fi6yRYF1Dspi22geaCw7yWQ?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('porjay[1-4].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/10sWFXV2wlVpM-0W5pzIZCnQCGBlTvPLS?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+   seris('porjay[5-9].zip [1GB]','p',['https://www.googleapis.com/drive/v3/files/1diMaZPSGT5KJ13jvo35hO62ZE5APWlPB?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
+ 
  
  //seris('Pawn [500MB]','pawn',['https://www.googleapis.com/drive/v3/files/1-1pjiV2PAeQyKiIKI1W1h19ZKz9WpqcU?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'500MB','mv')
  //  seris('October [1GB]','octo',['https://www.googleapis.com/drive/v3/files/1TF_WC9geOeONb3U0iVaFIqTNx_nWwWVc?alt=media&key=AIzaSyCZ8IJ6yrMTPetNZyYVH4vyX4rc0L46AGc'],'1GB','mv')
